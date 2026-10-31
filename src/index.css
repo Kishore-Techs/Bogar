@@ -1,0 +1,4507 @@
+/* ==========================================================================
+   BOGAR — Traditional + Buddha-Inspired Heritage Design System
+   Strictly following the provided reference image layout and palette
+   ========================================================================== */
+
+:root {
+  /* Brand Color Palette */
+  --color-deep-brown: #1B140F;
+  --color-dark-brown: #2E2218;
+  --color-muted-gold: #8B6A3F;
+  --color-antique-gold: #D4B675;
+  --color-antique-gold-glow: rgba(212, 182, 117, 0.35);
+  --color-cream: #F8F5EE;
+  --color-cream-light: #FDFBF7;
+  --color-cream-card: #F2EFE8;
+  --color-white: #FFFFFF;
+  --color-dark-text: #2E2E2E;
+  --color-body-text: #4A3E36;
+  --color-muted-text: #7A6C60;
+
+  /* Typography */
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Transitions */
+  --transition-smooth: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Base Reset & Styling */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  background-color: var(--color-deep-brown);
+  color: var(--color-cream);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: var(--color-deep-brown);
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ==========================================================================
+   BUTTONS & ACCENTS
+   ========================================================================== */
+
+.bogar-btn-book {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: var(--color-antique-gold);
+  color: var(--color-deep-brown);
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 0.65rem 1.4rem;
+  border-radius: 9999px;
+  border: 1px solid var(--color-antique-gold);
+  box-shadow: 0 4px 14px rgba(212, 182, 117, 0.25);
+  transition: var(--transition-smooth);
+}
+
+.bogar-btn-book:hover {
+  background-color: #E2CA90;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(212, 182, 117, 0.4);
+}
+
+.bogar-btn-book--hero {
+  padding: 0.85rem 1.85rem;
+  font-size: 0.95rem;
+}
+
+.bogar-btn-book--full {
+  width: 100%;
+  padding: 0.85rem;
+}
+
+.bogar-btn-book--card {
+  padding: 0.55rem 1.15rem;
+  font-size: 0.82rem;
+  box-shadow: none;
+}
+
+.bogar-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: rgba(27, 20, 15, 0.65);
+  color: var(--color-cream);
+  font-size: 0.92rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  padding: 0.85rem 1.85rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(212, 182, 117, 0.4);
+  backdrop-filter: blur(8px);
+  transition: var(--transition-smooth);
+}
+
+.bogar-btn-secondary:hover {
+  border-color: var(--color-antique-gold);
+  color: var(--color-antique-gold);
+  background-color: rgba(46, 34, 24, 0.85);
+  transform: translateY(-2px);
+}
+
+.bogar-btn-view-cart {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: rgba(27, 20, 15, 0.75);
+  color: var(--color-antique-gold);
+  font-family: inherit;
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  padding: 0.65rem 1.35rem;
+  border-radius: 9999px;
+  border: 1px solid var(--color-antique-gold);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: var(--transition-smooth);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.bogar-btn-view-cart:hover,
+.bogar-btn-view-cart--active {
+  background-color: var(--color-antique-gold);
+  color: var(--color-deep-brown);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(212, 182, 117, 0.4);
+}
+
+.bogar-btn-view-cart__icon {
+  flex-shrink: 0;
+  color: inherit;
+  transition: transform 0.25s ease;
+}
+
+.bogar-btn-view-cart:hover .bogar-btn-view-cart__icon {
+  transform: scale(1.1);
+}
+
+.bogar-navbar__cart-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+  border-radius: 999px;
+  background-color: var(--color-antique-gold);
+  color: var(--color-deep-brown);
+  font-size: 0.7rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-left: 2px;
+  transition: var(--transition-smooth);
+}
+
+.bogar-btn-view-cart:hover .bogar-navbar__cart-badge,
+.bogar-btn-view-cart--active .bogar-navbar__cart-badge {
+  background-color: var(--color-deep-brown);
+  color: var(--color-antique-gold);
+}
+
+/* ==========================================================================
+   NAVBAR (Desktop & Mobile Drawer)
+   ========================================================================== */
+
+.bogar-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: var(--transition-smooth);
+  padding: 1.25rem 0;
+}
+
+.bogar-navbar--transparent {
+  background: linear-gradient(to bottom, rgba(20, 14, 10, 0.65) 0%, rgba(20, 14, 10, 0) 100%);
+}
+
+.bogar-navbar--scrolled {
+  background: rgba(27, 20, 15, 0.88);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(212, 182, 117, 0.15);
+  padding: 0.85rem 0;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.45);
+}
+
+.bogar-navbar__container {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bogar-navbar__brand {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  text-decoration: none;
+}
+
+.bogar-navbar__lotus {
+  transition: transform 0.4s ease;
+}
+
+.bogar-navbar__brand:hover .bogar-navbar__lotus {
+  transform: rotate(15deg) scale(1.05);
+}
+
+.bogar-navbar__title {
+  font-family: var(--font-heading);
+  font-size: 1.45rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: var(--color-white);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.bogar-navbar__nav {
+  display: flex;
+  align-items: center;
+}
+
+.bogar-navbar__links {
+  display: flex;
+  list-style: none;
+  gap: 2.25rem;
+}
+
+.bogar-navbar__link {
+  position: relative;
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: rgba(248, 245, 238, 0.88);
+  letter-spacing: 0.03em;
+  padding: 0.25rem 0;
+  transition: var(--transition-smooth);
+}
+
+.bogar-navbar__link:hover,
+.bogar-navbar__link--active {
+  color: var(--color-antique-gold);
+}
+
+.bogar-navbar__active-indicator {
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--color-antique-gold);
+  box-shadow: 0 0 8px var(--color-antique-gold);
+}
+
+.bogar-navbar__cta-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.bogar-navbar__icon-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(212, 182, 117, 0.08);
+  border: 1px solid rgba(212, 182, 117, 0.25);
+  color: var(--color-antique-gold);
+  transition: var(--transition-smooth);
+}
+
+.bogar-navbar__icon-btn:hover,
+.bogar-navbar__icon-btn--active {
+  background: rgba(212, 182, 117, 0.2);
+  border-color: var(--color-antique-gold);
+  transform: translateY(-1px);
+}
+
+.bogar-navbar__badge {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  min-width: 17px;
+  height: 17px;
+  padding: 0 4px;
+  border-radius: 9px;
+  background: var(--color-antique-gold);
+  color: #19120C;
+  font-size: 0.68rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.bogar-navbar__user-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.45rem 0.85rem;
+  border-radius: 20px;
+  background: rgba(212, 182, 117, 0.08);
+  border: 1px solid rgba(212, 182, 117, 0.25);
+  color: var(--color-antique-gold);
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  transition: var(--transition-smooth);
+}
+
+.bogar-navbar__user-btn:hover,
+.bogar-navbar__user-btn--active {
+  background: rgba(212, 182, 117, 0.2);
+  border-color: var(--color-antique-gold);
+  color: #F8F5EE;
+}
+
+.bogar-navbar__mobile-actions {
+  display: none;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.bogar-navbar__toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem;
+}
+
+/* Mobile Drawer */
+.bogar-mobile-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(6px);
+  z-index: 1010;
+}
+
+.bogar-mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -320px;
+  width: 300px;
+  height: 100vh;
+  background-color: var(--color-deep-brown);
+  border-left: 1px solid rgba(212, 182, 117, 0.2);
+  z-index: 1020;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1.75rem;
+  transition: right 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: -10px 0 30px rgba(0, 0, 0, 0.6);
+}
+
+.bogar-mobile-menu--open {
+  right: 0;
+}
+
+.bogar-mobile-menu__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(212, 182, 117, 0.15);
+}
+
+.bogar-mobile-menu__close {
+  padding: 0.35rem;
+}
+
+.bogar-mobile-menu__nav {
+  margin-top: 2rem;
+  flex: 1;
+}
+
+.bogar-mobile-menu__links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.35rem;
+}
+
+.bogar-mobile-menu__link {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  color: var(--color-cream);
+  text-align: left;
+  width: 100%;
+  transition: var(--transition-smooth);
+}
+
+.bogar-mobile-menu__link:hover,
+.bogar-mobile-menu__link--active {
+  color: var(--color-antique-gold);
+  padding-left: 0.5rem;
+}
+
+.bogar-mobile-menu__divider {
+  height: 1px;
+  background: rgba(212, 182, 117, 0.15);
+  margin: 0.5rem 0;
+}
+
+.bogar-mobile-menu__badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-antique-gold);
+  color: #19120C;
+  font-size: 0.72rem;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 0.1rem 0.5rem;
+  margin-left: 0.65rem;
+}
+
+.bogar-mobile-menu__link--logout {
+  color: #E07A5F !important;
+  font-size: 1.05rem !important;
+}
+
+.bogar-mobile-menu__footer {
+  margin-top: auto;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(212, 182, 117, 0.15);
+}
+
+/* ==========================================================================
+   HERO SECTION
+   ========================================================================== */
+
+.bogar-hero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.bogar-hero__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.bogar-hero__slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 1.4s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: opacity;
+}
+
+.bogar-hero__slide--active {
+  opacity: 1;
+}
+
+.bogar-hero__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  transform: scale(1.02);
+  transition: transform 12s ease-out;
+}
+
+.bogar-hero:hover .bogar-hero__image {
+  transform: scale(1.04);
+}
+
+.bogar-hero__overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.bogar-hero__overlay--top {
+  background: linear-gradient(to bottom, rgba(20, 14, 10, 0.6) 0%, rgba(20, 14, 10, 0.15) 30%, transparent 60%);
+}
+
+.bogar-hero__overlay--vignette {
+  background: radial-gradient(circle at 60% 40%, rgba(20, 14, 10, 0) 35%, rgba(15, 10, 7, 0.45) 80%, rgba(15, 10, 7, 0.75) 100%);
+}
+
+.bogar-hero__overlay--bottom {
+  display: none !important;
+}
+
+.bogar-hero__container {
+  position: relative;
+  z-index: 10;
+  max-width: 1360px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 7rem 2rem 5rem 2rem;
+  display: flex;
+  justify-content: flex-end; /* Aligns text harmoniously with Sage on left */
+}
+
+.bogar-hero__content {
+  max-width: 580px;
+  text-align: left;
+  margin-right: 5%;
+}
+
+.bogar-hero__eyebrow {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  color: var(--color-antique-gold);
+  text-transform: uppercase;
+  margin-bottom: 0.85rem;
+  display: inline-block;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+.bogar-hero__title {
+  font-family: var(--font-heading);
+  font-size: clamp(3.6rem, 7.5vw, 6.2rem);
+  font-weight: 700;
+  line-height: 1.02;
+  letter-spacing: 0.05em;
+  color: var(--color-white);
+  margin-bottom: 0.75rem;
+  text-shadow: 0 4px 24px rgba(0, 0, 0, 0.75);
+}
+
+.bogar-hero__subtitle {
+  font-family: var(--font-heading);
+  font-size: clamp(1.2rem, 2.2vw, 1.6rem);
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  color: #EAD8B1;
+  margin-bottom: 1.35rem;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+.bogar-hero__description {
+  font-size: 1.02rem;
+  line-height: 1.65;
+  color: rgba(248, 245, 238, 0.92);
+  margin-bottom: 2.2rem;
+  max-width: 500px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.bogar-hero__cta-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.bogar-hero__btn-explore {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  background-color: var(--color-antique-gold);
+  color: var(--color-deep-brown);
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  padding: 0.85rem 2.2rem;
+  border-radius: 9999px;
+  box-shadow: 0 6px 20px rgba(212, 182, 117, 0.35);
+  transition: var(--transition-smooth);
+}
+
+.bogar-hero__btn-explore:hover {
+  background-color: #E4C88A;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 26px rgba(212, 182, 117, 0.5);
+}
+
+.bogar-hero__btn-arrow {
+  transition: transform 0.3s ease;
+}
+
+.bogar-hero__btn-explore:hover .bogar-hero__btn-arrow {
+  transform: translateX(4px);
+}
+
+.bogar-hero__btn-cart {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  background: rgba(22, 16, 11, 0.78);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: var(--color-antique-gold);
+  border: 1.5px solid var(--color-antique-gold);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 0.85rem 1.85rem;
+  border-radius: 9999px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35), 0 0 16px rgba(212, 182, 117, 0.2);
+  transition: var(--transition-smooth);
+  cursor: pointer;
+}
+
+.bogar-hero__btn-cart:hover {
+  background: var(--color-antique-gold);
+  color: var(--color-deep-brown);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 26px rgba(212, 182, 117, 0.45);
+}
+
+.bogar-hero__cart-badge {
+  background: var(--color-antique-gold);
+  color: var(--color-deep-brown);
+  font-size: 0.72rem;
+  font-weight: 800;
+  border-radius: 9999px;
+  padding: 2px 7px;
+  min-width: 18px;
+  text-align: center;
+  line-height: 1;
+}
+
+.bogar-hero__btn-cart:hover .bogar-hero__cart-badge {
+  background: var(--color-deep-brown);
+  color: var(--color-antique-gold);
+}
+
+/* Floating Homepage VIEW CART button */
+.bogar-homepage-floating-cart {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 1000;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  background: rgba(22, 16, 11, 0.94);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: var(--color-antique-gold);
+  border: 1.5px solid var(--color-antique-gold);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  padding: 11px 22px;
+  border-radius: 9999px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 22px rgba(212, 182, 117, 0.35);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+  animation: bogarFloatIn 0.4s ease-out;
+}
+
+.bogar-homepage-floating-cart:hover {
+  background: var(--color-antique-gold);
+  color: var(--color-deep-brown);
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.55), 0 0 28px rgba(212, 182, 117, 0.6);
+}
+
+.bogar-floating-cart__badge {
+  background: var(--color-antique-gold);
+  color: var(--color-deep-brown);
+  font-size: 0.72rem;
+  font-weight: 800;
+  border-radius: 9999px;
+  padding: 2px 7px;
+  min-width: 18px;
+  text-align: center;
+  line-height: 1;
+}
+
+.bogar-homepage-floating-cart:hover .bogar-floating-cart__badge {
+  background: var(--color-deep-brown);
+  color: var(--color-antique-gold);
+}
+
+@keyframes bogarFloatIn {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Scroll Down Indicator matching reference image */
+.bogar-hero__scroll-indicator {
+  position: absolute;
+  bottom: 2.25rem;
+  right: 3rem;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.45rem;
+  cursor: pointer;
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
+}
+
+.bogar-hero__scroll-indicator:hover {
+  opacity: 1;
+}
+
+.bogar-hero__mouse {
+  width: 22px;
+  height: 36px;
+  border: 1.8px solid var(--color-antique-gold);
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  padding-top: 6px;
+}
+
+.bogar-hero__wheel {
+  width: 3.5px;
+  height: 7px;
+  background-color: var(--color-antique-gold);
+  border-radius: 2px;
+  animation: bogarMouseScroll 1.8s infinite;
+}
+
+@keyframes bogarMouseScroll {
+  0% { transform: translateY(0); opacity: 1; }
+  60% { transform: translateY(10px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 0; }
+}
+
+.bogar-hero__scroll-text {
+  font-size: 0.72rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-antique-gold);
+  font-weight: 500;
+}
+
+/* Hero Slide Indicator Pills (matching reference image) */
+.bogar-hero__slide-dots {
+  position: absolute;
+  bottom: 2.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  z-index: 15;
+}
+
+.bogar-hero__dot {
+  width: 32px;
+  height: 4px;
+  border-radius: 2px;
+  background: rgba(248, 245, 238, 0.28);
+  border: none;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  padding: 0;
+}
+
+.bogar-hero__dot:hover {
+  background: rgba(212, 182, 117, 0.65);
+}
+
+.bogar-hero__dot--active {
+  width: 44px;
+  background: var(--color-antique-gold);
+  box-shadow: 0 0 10px rgba(212, 182, 117, 0.7);
+}
+
+/* ==========================================================================
+   COLLECTIONS SECTION ("Discover the Essence of Bogar")
+   ========================================================================== */
+
+.bogar-collections {
+  position: relative;
+  background-color: var(--color-cream);
+  color: var(--color-dark-text);
+  padding: 4.5rem 0 5.5rem 0;
+  z-index: 5;
+}
+
+.bogar-collections__container {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.bogar-collections__header {
+  text-align: center;
+  margin-bottom: 3.25rem;
+}
+
+.bogar-collections__eyebrow {
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.24em;
+  color: var(--color-muted-gold);
+  text-transform: uppercase;
+  margin-bottom: 0.65rem;
+}
+
+.bogar-collections__heading {
+  font-family: var(--font-heading);
+  font-size: clamp(2.1rem, 3.8vw, 2.9rem);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--color-deep-brown);
+}
+
+/* 4 Cards in 1 Row */
+.bogar-collections__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+/* ── Circular Card (Discover the Essence of Bogar) ── */
+.bogar-circle-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  gap: 0;
+}
+
+.bogar-circle-card__ring {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  padding: 5px;
+  background: linear-gradient(135deg, var(--color-antique-gold) 0%, #c8a84b 50%, var(--color-antique-gold) 100%);
+  box-shadow: 0 6px 24px rgba(27, 20, 15, 0.18);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  flex-shrink: 0;
+}
+
+.bogar-circle-card:hover .bogar-circle-card__ring {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 36px rgba(27, 20, 15, 0.28);
+}
+
+.bogar-circle-card__image-wrap {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid var(--color-cream);
+}
+
+.bogar-circle-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.bogar-circle-card:hover .bogar-circle-card__image {
+  transform: scale(1.08);
+}
+
+.bogar-circle-card__body {
+  padding-top: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.bogar-circle-card__title {
+  font-family: var(--font-heading);
+  font-size: 1.45rem;
+  font-weight: 600;
+  color: var(--color-deep-brown);
+  letter-spacing: 0.02em;
+}
+
+.bogar-circle-card__desc {
+  font-size: 0.84rem;
+  line-height: 1.45;
+  color: var(--color-muted-text, #7a6a55);
+  max-width: 180px;
+}
+
+.bogar-circle-card__explore {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-top: 0.3rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: var(--color-antique-gold);
+  text-transform: uppercase;
+  transition: gap 0.25s ease;
+}
+
+.bogar-circle-card:hover .bogar-circle-card__explore {
+  gap: 0.55rem;
+}
+
+/* ==========================================================================
+   VIEW ALL BUTTON & VIEW ALL PAGE
+   ========================================================================== */
+
+.bogar-collections__view-all-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3.25rem;
+  width: 100%;
+}
+
+.bogar-btn-view-all {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  background-color: var(--color-antique-gold);
+  color: var(--color-deep-brown);
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 0.85rem 2.25rem;
+  border-radius: 9999px;
+  border: 1px solid var(--color-antique-gold);
+  box-shadow: 0 4px 16px rgba(212, 182, 117, 0.28);
+  transition: var(--transition-smooth);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.bogar-btn-view-all:hover {
+  background-color: #E2CA90;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 22px rgba(212, 182, 117, 0.45);
+}
+
+.bogar-btn-view-all:active {
+  transform: translateY(0);
+}
+
+.bogar-view-all-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 360px)) !important;
+  justify-content: center !important;
+  gap: 2rem !important;
+  max-width: 780px !important;
+  margin: 0 auto !important;
+}
+
+.bogar-view-all-card {
+  width: 100%;
+  max-width: 360px;
+  height: 440px;
+}
+
+/* ==========================================================================
+   THE WORLD OF BOGAR - HERITAGE SECTION
+   ========================================================================== */
+
+.bogar-world-section {
+  position: relative;
+  background-color: var(--color-deep-brown);
+  padding: 1.5rem 0 3.25rem 0;
+  z-index: 5;
+}
+
+.bogar-world-section__container {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.bogar-world-card {
+  position: relative;
+  width: 100%;
+  display: block;
+  background-color: #17110c;
+  border: 1px solid rgba(212, 182, 117, 0.24);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.48), 0 0 30px rgba(212, 182, 117, 0.05);
+}
+
+.bogar-world-card__img {
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+}
+
+
+
+
+
+/* ==========================================================================
+   ABOUT BOGAR SECTION ("A Legacy of Wisdom")
+   ========================================================================== */
+
+.bogar-about {
+  position: relative;
+  background-color: var(--color-cream);
+  color: var(--color-dark-text);
+  padding: 4.5rem 0 5.5rem 0;
+  overflow: hidden;
+  z-index: 5;
+}
+
+.bogar-about__container {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.bogar-about__text-col {
+  flex: 0 0 44%;
+  padding-right: 2rem;
+}
+
+.bogar-about__eyebrow {
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.24em;
+  color: var(--color-muted-gold);
+  text-transform: uppercase;
+  margin-bottom: 0.65rem;
+}
+
+.bogar-about__heading {
+  font-family: var(--font-heading);
+  font-size: clamp(2.2rem, 3.6vw, 3rem);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--color-deep-brown);
+  margin-bottom: 1.25rem;
+  line-height: 1.15;
+}
+
+.bogar-about__body {
+  font-size: 1.02rem;
+  line-height: 1.75;
+  color: var(--color-body-text);
+  margin-bottom: 2.2rem;
+  max-width: 480px;
+}
+
+.bogar-about__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background-color: transparent;
+  color: var(--color-deep-brown);
+  font-size: 0.92rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  padding: 0.75rem 1.6rem;
+  border-radius: 9999px;
+  border: 1px solid var(--color-muted-gold);
+  transition: var(--transition-smooth);
+}
+
+.bogar-about__btn:hover {
+  background-color: var(--color-muted-gold);
+  color: var(--color-white);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(139, 106, 63, 0.25);
+}
+
+.bogar-about__media-col {
+  flex: 1;
+  position: relative;
+  height: 380px;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 28px rgba(27, 20, 15, 0.1);
+}
+
+.bogar-about__img-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.bogar-about__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 70% center;
+}
+
+.bogar-about__fade-left {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 35%;
+  background: linear-gradient(to right, var(--color-cream) 0%, transparent 100%);
+}
+
+.bogar-about__fade-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 15%;
+  background: linear-gradient(to bottom, var(--color-cream) 0%, transparent 100%);
+}
+
+.bogar-about__fade-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 15%;
+  background: linear-gradient(to top, var(--color-cream) 0%, transparent 100%);
+}
+
+/* ==========================================================================
+   CATEGORY INNER PAGES (Poojas, Tea & Food, Thuni, Chains)
+   ========================================================================== */
+
+.bogar-category-page {
+  min-height: 100vh;
+  background-color: var(--color-cream);
+  color: var(--color-dark-text);
+  padding-top: 5rem;
+}
+
+.bogar-category-hero {
+  position: relative;
+  height: 320px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.bogar-category-hero__bg {
+  position: absolute;
+  inset: 0;
+}
+
+.bogar-category-hero__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+}
+
+.bogar-category-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(27, 20, 15, 0.7) 0%,
+    rgba(27, 20, 15, 0.85) 60%,
+    var(--color-cream) 100%
+  );
+}
+
+.bogar-category-hero__content {
+  position: relative;
+  z-index: 10;
+  max-width: 1360px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.bogar-category-hero__back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: var(--color-antique-gold);
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 1.25rem;
+  transition: transform 0.2s ease;
+}
+
+.bogar-category-hero__back-btn:hover {
+  transform: translateX(-4px);
+  color: var(--color-white);
+}
+
+.bogar-category-hero__title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.4rem, 4.5vw, 3.6rem);
+  font-weight: 700;
+  color: var(--color-white);
+  letter-spacing: 0.03em;
+  margin-bottom: 0.4rem;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.bogar-category-hero__subtitle {
+  font-size: 1.05rem;
+  color: #EAD8B1;
+  max-width: 600px;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.bogar-category-content {
+  padding: 3.5rem 0 3.25rem 0;
+}
+
+.bogar-category-content__container {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.bogar-category-content__header {
+  margin-bottom: 2.75rem;
+}
+
+.bogar-category-content__heading {
+  font-family: var(--font-heading);
+  font-size: 2.1rem;
+  font-weight: 600;
+  color: var(--color-deep-brown);
+  margin-bottom: 0.65rem;
+}
+
+.bogar-category-content__divider {
+  width: 60px;
+  height: 2px;
+  background-color: var(--color-antique-gold);
+}
+
+.bogar-category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.bogar-cat-card {
+  background-color: var(--color-white);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(27, 20, 15, 0.07);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.bogar-cat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(27, 20, 15, 0.14);
+}
+
+.bogar-cat-card__media {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid rgba(139, 106, 63, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.bogar-cat-card__img {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.bogar-cat-card__img--contain {
+  object-fit: contain;
+  object-position: center;
+}
+
+.bogar-cat-card__img--cover {
+  object-fit: cover;
+  object-position: center;
+}
+
+.bogar-cat-card:hover .bogar-cat-card__img {
+  transform: none;
+}
+
+.bogar-cat-card__media-overlay {
+  display: none;
+}
+
+.bogar-cat-card__body {
+  padding: 1.6rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.bogar-cat-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.65rem;
+}
+
+.bogar-cat-card__title {
+  font-family: var(--font-heading);
+  font-size: 1.45rem;
+  font-weight: 600;
+  color: var(--color-deep-brown);
+}
+
+.bogar-cat-card__arrow {
+  color: var(--color-muted-gold);
+  transition: transform 0.25s ease;
+}
+
+.bogar-cat-card:hover .bogar-cat-card__arrow {
+  transform: translateX(4px);
+  color: var(--color-antique-gold);
+}
+
+.bogar-cat-card__desc {
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--color-body-text);
+  margin-bottom: 1rem;
+}
+
+.bogar-cat-card__meta {
+  margin-bottom: 0.85rem;
+}
+
+.bogar-cat-card__tag {
+  display: inline-block;
+  font-size: 0.78rem;
+  background-color: var(--color-cream);
+  color: var(--color-muted-gold);
+  font-weight: 600;
+  padding: 0.25rem 0.65rem;
+  border-radius: 4px;
+  border: 1px solid rgba(139, 106, 63, 0.2);
+}
+
+.bogar-cat-card__detail-text {
+  font-size: 0.85rem;
+  line-height: 1.55;
+  color: var(--color-muted-text);
+  margin-top: auto;
+  padding-top: 0.85rem;
+  border-top: 1px dashed rgba(139, 106, 63, 0.2);
+}
+
+.bogar-cat-card__action {
+  margin-top: 1.25rem;
+}
+
+/* ==========================================================================
+   PRODUCT CARDS (Tea & Food 6 Cards, Thuni, Chains)
+   Strictly uniform width, image height, card height, spacing, typography
+   ========================================================================== */
+
+.bogar-product-card {
+  background-color: var(--color-white);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 18px rgba(27, 20, 15, 0.08);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.35s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid rgba(139, 106, 63, 0.1);
+}
+
+.bogar-product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 34px rgba(27, 20, 15, 0.14);
+  border-color: rgba(212, 182, 117, 0.4);
+}
+
+.bogar-product-card__media {
+  position: relative;
+  height: 240px;
+  width: 100%;
+  overflow: hidden;
+  background-color: #F5F0E8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.bogar-product-image-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F5F0E8;
+}
+
+.bogar-product-card__canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+  pointer-events: none;
+}
+
+.bogar-product-card__image {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  margin: 0 auto;
+  padding: 12px;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.bogar-product-card__image--contain {
+  object-fit: contain;
+  object-position: center;
+}
+
+.bogar-product-card__image--cover {
+  object-fit: contain;
+  object-position: center;
+}
+
+.bogar-product-card:hover .bogar-product-card__image {
+  transform: scale(1.05);
+}
+
+.bogar-product-card__overlay {
+  display: none;
+}
+
+.bogar-product-card__body {
+  padding: 1.25rem 1.4rem 1.4rem 1.4rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bogar-product-card__details {
+  flex: 1;
+  margin-bottom: 1rem;
+}
+
+.bogar-product-card__name {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-deep-brown);
+  letter-spacing: 0.01em;
+  margin-bottom: 0.45rem;
+  line-height: 1.3;
+}
+
+.bogar-product-card__description {
+  font-size: 0.875rem;
+  line-height: 1.55;
+  color: var(--color-body-text);
+  margin: 0;
+}
+
+.bogar-product-card__desc-wrap {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.45rem;
+  margin-top: 0.3rem;
+}
+
+.bogar-product-card__desc-icon {
+  flex-shrink: 0;
+  color: var(--color-muted-gold, #C5A059);
+  margin-top: 3px;
+}
+
+.bogar-product-card__actions {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: auto;
+}
+
+.bogar-product-card__actions--single {
+  width: 100%;
+}
+
+.bogar-btn-buy-now {
+  display: none !important;
+}
+
+.bogar-btn-add-cart {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  background-color: var(--color-antique-gold);
+  color: var(--color-deep-brown);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.75rem 0.9rem;
+  min-height: 42px;
+  border-radius: 9999px;
+  border: 1px solid var(--color-antique-gold);
+  box-shadow: 0 2px 10px rgba(212, 182, 117, 0.25);
+  transition: var(--transition-smooth);
+  cursor: pointer;
+}
+
+.bogar-btn-add-cart:hover {
+  background-color: #E2CA90;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(212, 182, 117, 0.45);
+}
+
+.bogar-btn-add-cart:active {
+  transform: translateY(0);
+}
+
+.bogar-btn-add-cart--full {
+  width: 100%;
+}
+
+/* ==========================================================================
+   DEDICATED POOJAS PAGE (7 Dharani Herbbals Products, 4-column layout)
+   ========================================================================== */
+
+.bogar-poojas-page {
+  padding-top: 6.5rem;
+  min-height: 100vh;
+  background-color: var(--color-cream);
+}
+
+.bogar-poojas-content {
+  padding: 2rem 0 5rem 0;
+}
+
+.bogar-poojas-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-top: 2.25rem;
+  margin-bottom: 4rem;
+}
+
+.bogar-pooja-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.bogar-pooja-card__badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-muted-gold);
+  margin-bottom: 0.4rem;
+}
+
+.bogar-pooja-card__price-wrap {
+  margin-top: 0.75rem;
+  margin-bottom: 1.15rem;
+  display: flex;
+  align-items: baseline;
+}
+
+.bogar-pooja-card__price {
+  display: inline-flex;
+  align-items: baseline;
+  color: var(--color-deep-brown);
+}
+
+.bogar-pooja-card__currency {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-right: 2px;
+  color: var(--color-deep-brown);
+}
+
+.bogar-pooja-card__amount {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--color-deep-brown);
+  letter-spacing: -0.01em;
+}
+
+@media (max-width: 1100px) {
+  .bogar-poojas-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .bogar-poojas-page {
+    padding-top: 5.5rem;
+  }
+  .bogar-poojas-content {
+    padding: 1.25rem 0 4rem 0;
+  }
+  .bogar-poojas-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+}
+
+/* Poojas page CTA Banner */
+.bogar-poojas-page-cta {
+  background: linear-gradient(135deg, #1B140F 0%, #2E2218 100%);
+  border-radius: 14px;
+  padding: 3rem;
+  text-align: center;
+  color: var(--color-cream);
+  margin-bottom: 4rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(212, 182, 117, 0.25);
+}
+
+.bogar-poojas-page-cta__content {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.bogar-poojas-page-cta__icon {
+  margin-bottom: 1rem;
+}
+
+.bogar-poojas-page-cta__title {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  color: var(--color-white);
+  margin-bottom: 0.85rem;
+}
+
+.bogar-poojas-page-cta__text {
+  font-size: 0.98rem;
+  line-height: 1.6;
+  color: rgba(248, 245, 238, 0.85);
+  margin-bottom: 1.85rem;
+}
+
+/* Category Switch */
+.bogar-category-switch {
+  padding-top: 2rem;
+  border-top: 1px solid rgba(139, 106, 63, 0.2);
+}
+
+.bogar-category-switch__title {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  color: var(--color-deep-brown);
+  margin-bottom: 1rem;
+}
+
+.bogar-category-switch__list {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.bogar-category-switch__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--color-white);
+  color: var(--color-deep-brown);
+  border: 1px solid rgba(139, 106, 63, 0.3);
+  padding: 0.65rem 1.25rem;
+  border-radius: 9999px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  transition: var(--transition-smooth);
+}
+
+.bogar-category-switch__btn:hover {
+  background-color: var(--color-antique-gold);
+  border-color: var(--color-antique-gold);
+  transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   MODALS (Booking & Know More)
+   ========================================================================== */
+
+.bogar-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 10, 7, 0.78);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  animation: bogarFadeIn 0.25s ease-out;
+}
+
+@keyframes bogarFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.bogar-modal-card {
+  background: linear-gradient(135deg, #1B140F 0%, #251B12 100%);
+  border: 1px solid rgba(212, 182, 117, 0.3);
+  border-radius: 16px;
+  max-width: 580px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 16px 50px rgba(0, 0, 0, 0.65);
+  animation: bogarSlideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  color: var(--color-cream);
+}
+
+.bogar-modal-card--editorial {
+  max-width: 680px;
+}
+
+@keyframes bogarSlideUp {
+  from { transform: translateY(20px) scale(0.97); opacity: 0; }
+  to { transform: translateY(0) scale(1); opacity: 1; }
+}
+
+.bogar-modal-card__header {
+  padding: 1.6rem 2rem;
+  border-bottom: 1px solid rgba(212, 182, 117, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bogar-modal-card__brand {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.bogar-modal-card__title {
+  font-family: var(--font-heading);
+  font-size: 1.45rem;
+  font-weight: 600;
+  color: var(--color-white);
+}
+
+.bogar-modal-card__tagline {
+  font-size: 0.78rem;
+  color: var(--color-antique-gold);
+  letter-spacing: 0.05em;
+}
+
+.bogar-modal-card__close {
+  color: rgba(248, 245, 238, 0.7);
+  padding: 0.35rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-smooth);
+}
+
+.bogar-modal-card__close:hover {
+  color: var(--color-antique-gold);
+  background-color: rgba(212, 182, 117, 0.1);
+}
+
+.bogar-modal-card__body {
+  padding: 2rem;
+}
+
+.bogar-booking-channels {
+  margin-bottom: 1.5rem;
+}
+
+.bogar-booking-channels__label {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--color-antique-gold);
+  margin-bottom: 0.85rem;
+  font-weight: 600;
+}
+
+.bogar-booking-channels__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+}
+
+.bogar-channel-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  padding: 0.95rem 0.5rem;
+  border-radius: 10px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  text-align: center;
+  border: 1px solid rgba(212, 182, 117, 0.25);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--color-cream);
+  transition: var(--transition-smooth);
+}
+
+.bogar-channel-btn:hover {
+  background: rgba(212, 182, 117, 0.15);
+  border-color: var(--color-antique-gold);
+  color: var(--color-antique-gold);
+  transform: translateY(-2px);
+}
+
+.bogar-modal-card__divider {
+  text-align: center;
+  position: relative;
+  margin: 1.75rem 0;
+}
+
+.bogar-modal-card__divider::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: rgba(212, 182, 117, 0.15);
+}
+
+.bogar-modal-card__divider span {
+  position: relative;
+  background: #211811;
+  padding: 0 1rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  color: var(--color-muted-gold);
+}
+
+.bogar-booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+}
+
+.bogar-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  text-align: left;
+}
+
+.bogar-form-group label {
+  font-size: 0.82rem;
+  color: rgba(248, 245, 238, 0.85);
+  font-weight: 500;
+}
+
+.bogar-form-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(212, 182, 117, 0.3);
+  border-radius: 8px;
+  color: var(--color-white);
+  font-family: inherit;
+  font-size: 0.92rem;
+  transition: border-color 0.25s ease;
+}
+
+.bogar-form-input:focus {
+  outline: none;
+  border-color: var(--color-antique-gold);
+  box-shadow: 0 0 8px rgba(212, 182, 117, 0.25);
+}
+
+.bogar-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.bogar-booking-success {
+  text-align: center;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.bogar-booking-success h3 {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  color: var(--color-white);
+}
+
+.bogar-booking-success p {
+  color: rgba(248, 245, 238, 0.85);
+  line-height: 1.6;
+  max-width: 440px;
+}
+
+.bogar-modal-card__footer-note {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(212, 182, 117, 0.15);
+  text-align: center;
+  font-size: 0.78rem;
+  color: rgba(248, 245, 238, 0.65);
+}
+
+.bogar-modal-card__footer-note strong {
+  color: var(--color-antique-gold);
+}
+
+/* Editorial Article in Know More */
+.bogar-editorial-article {
+  text-align: left;
+  line-height: 1.7;
+}
+
+.bogar-editorial-lead {
+  font-size: 1.08rem;
+  line-height: 1.65;
+  color: #EAD8B1;
+  font-weight: 500;
+  margin-bottom: 1.6rem;
+  border-left: 2px solid var(--color-antique-gold);
+  padding-left: 1rem;
+}
+
+.bogar-editorial-article h3 {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  color: var(--color-white);
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.bogar-editorial-article p {
+  font-size: 0.94rem;
+  color: rgba(248, 245, 238, 0.85);
+  margin-bottom: 1rem;
+}
+
+.bogar-editorial-footer {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+/* ==========================================================================
+   MOBILE BOTTOM NAVIGATION BAR (Matches mobile mockup frame)
+   ========================================================================== */
+
+.bogar-mobile-bottom-bar {
+  display: none; /* Desktop hidden */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1005;
+  background: rgba(27, 20, 15, 0.94);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-top: 1px solid rgba(212, 182, 117, 0.2);
+  padding: 0.45rem 0.5rem 0.65rem 0.5rem;
+}
+
+.bogar-mobile-bottom-bar__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.bogar-mobile-bottom-bar__btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  color: var(--color-muted-gold);
+  font-size: 0.68rem;
+  font-weight: 500;
+  padding: 0.35rem 0.6rem;
+  border-radius: 8px;
+  transition: var(--transition-smooth);
+}
+
+.bogar-mobile-bottom-bar__btn--active {
+  color: var(--color-antique-gold);
+}
+
+.bogar-mobile-bottom-bar__icon-wrapper {
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ==========================================================================
+   SACRED VIDEO SECTION (Above Footer)
+   ========================================================================== */
+
+.bogar-video-section {
+  position: relative;
+  background-color: var(--color-cream);
+  padding: 3.5rem 0 4.5rem 0;
+}
+
+.bogar-video-section__container {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.bogar-video-section__header {
+  text-align: center;
+  margin-bottom: 2.25rem;
+}
+
+.bogar-video-section__eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-muted-gold, #8B6A3F);
+  margin: 0 0 0.5rem 0;
+}
+
+.bogar-video-section__title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.85rem, 2.8vw, 2.45rem);
+  font-weight: 600;
+  color: var(--color-deep-brown, #1B140F);
+  letter-spacing: 0.02em;
+  margin: 0 0 0.75rem 0;
+}
+
+.bogar-video-section__ornament {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 240px;
+  margin: 0 auto;
+}
+
+.bogar-video-section__ornament-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(212, 182, 117, 0.7), transparent);
+}
+
+.bogar-video-section__ornament-symbol {
+  color: var(--color-antique-gold, #D4B675);
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.bogar-video-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.75rem;
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.bogar-video-card {
+  flex: 0 1 340px;
+  width: 100%;
+  max-width: 350px;
+  aspect-ratio: 9 / 16;
+  max-height: 570px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  background-color: #0d0907;
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.45s ease, border-color 0.45s ease, opacity 0.45s ease;
+  box-shadow: 0 10px 28px rgba(27, 20, 15, 0.14);
+  border: 1px solid rgba(212, 182, 117, 0.28);
+}
+
+.bogar-video-card--active {
+  transform: scale(1.04);
+  z-index: 5;
+  border: 2px solid var(--color-antique-gold, #D4B675);
+  box-shadow: 0 22px 55px rgba(27, 20, 15, 0.3), 0 0 32px rgba(212, 182, 117, 0.4);
+  opacity: 1;
+}
+
+.bogar-video-card--inactive {
+  transform: scale(0.97);
+  opacity: 0.88;
+}
+
+.bogar-video-card--inactive:hover {
+  transform: scale(0.99);
+  opacity: 0.98;
+  border-color: rgba(212, 182, 117, 0.55);
+}
+
+.bogar-video-card__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  background-color: #0d0907;
+}
+
+.bogar-video-card__overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    to top,
+    rgba(14, 10, 7, 0.88) 0%,
+    rgba(14, 10, 7, 0.3) 35%,
+    transparent 65%,
+    rgba(14, 10, 7, 0.35) 100%
+  );
+}
+
+.bogar-video-card__top {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  right: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+
+.bogar-video-card__badge {
+  background: rgba(14, 10, 7, 0.68);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(212, 182, 117, 0.35);
+  border-radius: 9999px;
+  padding: 4px 11px;
+  color: #F8F5EE;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.bogar-video-card__badge--active {
+  border-color: var(--color-antique-gold, #D4B675);
+  color: var(--color-antique-gold, #D4B675);
+  background: rgba(14, 10, 7, 0.82);
+}
+
+.bogar-video-card__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-antique-gold, #D4B675);
+  box-shadow: 0 0 8px var(--color-antique-gold, #D4B675);
+  animation: bogarPulseDot 1.4s infinite;
+}
+
+@keyframes bogarPulseDot {
+  0% { transform: scale(0.9); opacity: 0.7; }
+  50% { transform: scale(1.3); opacity: 1; }
+  100% { transform: scale(0.9); opacity: 0.7; }
+}
+
+.bogar-video-card__mute-btn {
+  background: rgba(14, 10, 7, 0.68);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(212, 182, 117, 0.35);
+  color: var(--color-antique-gold, #D4B675);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.bogar-video-card__mute-btn:hover {
+  background: rgba(212, 182, 117, 0.25);
+  border-color: var(--color-antique-gold, #D4B675);
+  transform: scale(1.08);
+}
+
+.bogar-video-card__footer {
+  position: absolute;
+  bottom: 14px;
+  left: 14px;
+  right: 14px;
+  background: rgba(22, 16, 11, 0.78);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(212, 182, 117, 0.3);
+  border-radius: 14px;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  z-index: 2;
+}
+
+.bogar-video-card__name {
+  margin: 0;
+  color: #FFFFFF;
+  font-family: var(--font-heading);
+  font-size: 0.98rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.bogar-video-card__subtitle {
+  margin: 2px 0 0 0;
+  color: rgba(234, 216, 177, 0.88);
+  font-size: 0.74rem;
+  letter-spacing: 0.02em;
+}
+
+.bogar-video-card__action-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--color-antique-gold, #D4B675);
+  color: var(--color-deep-brown, #1B140F);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-left: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 1024px) {
+  .bogar-video-row {
+    gap: 1.25rem;
+    max-width: 900px;
+  }
+  .bogar-video-card {
+    flex: 0 1 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bogar-video-section {
+    padding: 2.25rem 0 3rem 0;
+  }
+
+  .bogar-video-section__header {
+    margin-bottom: 1.5rem;
+  }
+
+  .bogar-video-row {
+    gap: 0.75rem;
+    flex-wrap: nowrap;
+    overflow-x: visible;
+  }
+
+  .bogar-video-card {
+    flex: 1 1 0;
+    min-width: 0;
+    max-width: 220px;
+    border-radius: 14px;
+  }
+
+  .bogar-video-card__top {
+    top: 8px;
+    left: 8px;
+    right: 8px;
+  }
+
+  .bogar-video-card__badge {
+    padding: 3px 7px;
+    font-size: 0.62rem;
+  }
+
+  .bogar-video-card__footer {
+    bottom: 8px;
+    left: 8px;
+    right: 8px;
+    padding: 6px 8px;
+    border-radius: 10px;
+  }
+
+  .bogar-video-card__name {
+    font-size: 0.78rem;
+  }
+
+  .bogar-video-card__subtitle {
+    display: none;
+  }
+
+  .bogar-video-card__action-icon {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+/* ==========================================================================
+   FOOTER (About and Contact exist in footer)
+   ========================================================================== */
+
+.bogar-footer {
+  background-color: var(--color-deep-brown);
+  border-top: 1px solid rgba(212, 182, 117, 0.15);
+  color: var(--color-cream);
+  padding: 5rem 0 0 0;
+  position: relative;
+  z-index: 5;
+}
+
+.bogar-footer__top-ornament {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  max-width: 600px;
+  margin: 0 auto 3.5rem auto;
+  padding: 0 1.5rem;
+}
+
+.bogar-footer__line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(212, 182, 117, 0.4), transparent);
+}
+
+.bogar-footer__container {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 2rem 4rem 2rem;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1.3fr 1.2fr;
+  gap: 3rem;
+}
+
+.bogar-footer__brand {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 0.65rem;
+}
+
+.bogar-footer__title {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: var(--color-white);
+}
+
+.bogar-footer__tagline {
+  font-size: 0.85rem;
+  color: var(--color-antique-gold);
+  letter-spacing: 0.05em;
+  margin-bottom: 1.15rem;
+}
+
+.bogar-footer__about-text {
+  font-size: 0.88rem;
+  line-height: 1.65;
+  color: rgba(248, 245, 238, 0.75);
+  margin-bottom: 1.25rem;
+}
+
+.bogar-footer__link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--color-antique-gold);
+  transition: transform 0.25s ease;
+}
+
+.bogar-footer__link-btn:hover {
+  transform: translateX(4px);
+  color: #E2CA90;
+}
+
+.bogar-footer__heading {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-white);
+  letter-spacing: 0.02em;
+  margin-bottom: 1.35rem;
+}
+
+.bogar-footer__links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.bogar-footer__links button {
+  font-size: 0.9rem;
+  color: rgba(248, 245, 238, 0.78);
+  transition: color 0.25s ease;
+}
+
+.bogar-footer__links button:hover {
+  color: var(--color-antique-gold);
+  padding-left: 0.25rem;
+}
+
+.bogar-footer__contact-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.bogar-footer__contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.88rem;
+  color: rgba(248, 245, 238, 0.78);
+  line-height: 1.5;
+}
+
+.bogar-footer__contact-item a:hover {
+  color: var(--color-antique-gold);
+}
+
+.bogar-footer__pooja-desc {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: rgba(248, 245, 238, 0.75);
+  margin-bottom: 1.5rem;
+}
+
+.bogar-footer__bottom {
+  border-top: 1px solid rgba(212, 182, 117, 0.1);
+  padding: 1.75rem 2rem;
+  background-color: #150F0B;
+}
+
+.bogar-footer__bottom-container {
+  max-width: 1360px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.82rem;
+  color: rgba(248, 245, 238, 0.6);
+}
+/* ==========================================================================
+   AUTHENTICATION PAGES (Login & Sign Up - Exact Reference Match)
+   ========================================================================== */
+
+.bogar-navbar--auth {
+  background-color: #1B140F !important;
+  border-bottom: 1px solid rgba(212, 182, 117, 0.18) !important;
+  padding: 0.85rem 0 !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.45);
+}
+
+.bogar-auth-page {
+  position: relative;
+  min-height: calc(100vh - 60px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('/assets/images/auth-bg.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 3.5rem 1.5rem 3rem 1.5rem;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.bogar-footer--auth {
+  padding-top: 2.2rem;
+  padding-bottom: 2rem;
+  border-top: 1px solid rgba(212, 182, 117, 0.18);
+  background-color: #19120C;
+}
+
+.bogar-auth-page__bg-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(14, 9, 6, 0.25) 0%, rgba(14, 9, 6, 0.65) 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.bogar-auth-card {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 440px;
+  box-sizing: border-box;
+  background: rgba(22, 16, 11, 0.88);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(212, 182, 117, 0.35);
+  border-radius: 20px;
+  padding: 2.2rem 2.4rem 1.85rem 2.4rem;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.75), 0 0 25px rgba(212, 182, 117, 0.05);
+}
+
+.bogar-auth-card__header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.bogar-auth-card__logo-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+}
+
+.bogar-auth-card__title {
+  font-family: var(--font-heading);
+  font-size: 2.05rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  letter-spacing: 0.015em;
+  line-height: 1.2;
+  margin-bottom: 0.35rem;
+}
+
+.bogar-auth-card__subtitle {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--color-antique-gold);
+  letter-spacing: 0.08em;
+  margin-bottom: 0.85rem;
+}
+
+.bogar-auth-card__description {
+  font-size: 0.82rem;
+  line-height: 1.45;
+  color: rgba(248, 245, 238, 0.82);
+  max-width: 340px;
+  margin: 0 auto;
+}
+
+.bogar-auth-card__notice {
+  margin-top: 0.85rem;
+  font-size: 0.82rem;
+  color: var(--color-antique-gold);
+  background: rgba(212, 182, 117, 0.1);
+  border: 1px solid rgba(212, 182, 117, 0.25);
+  border-radius: 6px;
+  padding: 0.45rem 0.85rem;
+}
+
+.bogar-auth-alert {
+  padding: 0.65rem 1rem;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  margin-bottom: 1.25rem;
+  text-align: center;
+}
+
+.bogar-auth-alert--error {
+  background: rgba(220, 38, 38, 0.15);
+  border: 1px solid rgba(220, 38, 38, 0.4);
+  color: #FCA5A5;
+}
+
+.bogar-auth-alert--success {
+  background: rgba(16, 185, 129, 0.15);
+  border: 1px solid rgba(16, 185, 129, 0.4);
+  color: #6EE7B7;
+}
+
+.bogar-auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.bogar-auth-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  text-align: left;
+}
+
+.bogar-auth-label {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: rgba(248, 245, 238, 0.9);
+  letter-spacing: 0.01em;
+}
+
+.bogar-auth-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.bogar-auth-input-icon {
+  position: absolute;
+  left: 0.95rem;
+  display: flex;
+  align-items: center;
+  color: #9A8D7E;
+  pointer-events: none;
+}
+
+.bogar-auth-input {
+  width: 100%;
+  box-sizing: border-box;
+  background: rgba(26, 18, 12, 0.75);
+  border: 1px solid rgba(212, 182, 117, 0.28);
+  border-radius: 8px;
+  padding: 0.72rem 1rem 0.72rem 2.65rem;
+  color: #F8F5EE;
+  font-size: 0.88rem;
+  font-family: inherit;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+  outline: none;
+}
+
+.bogar-auth-input::placeholder {
+  color: #7A6F63;
+  font-size: 0.85rem;
+}
+
+.bogar-auth-input:focus {
+  border-color: var(--color-antique-gold);
+  background: rgba(32, 22, 15, 0.95);
+  box-shadow: 0 0 0 2px rgba(212, 182, 117, 0.2);
+}
+
+.bogar-auth-input--has-toggle {
+  padding-right: 2.65rem;
+}
+
+.bogar-auth-password-toggle {
+  position: absolute;
+  right: 0.85rem;
+  background: none;
+  border: none;
+  color: #9A8D7E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.bogar-auth-password-toggle:hover {
+  color: var(--color-antique-gold);
+}
+
+.bogar-auth-helpers {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -0.45rem;
+  margin-bottom: 0.2rem;
+}
+
+.bogar-auth-link {
+  font-size: 0.8rem;
+  color: var(--color-antique-gold);
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  padding: 0;
+}
+
+.bogar-auth-link:hover {
+  color: #E2CA90;
+  text-decoration: underline;
+}
+
+.bogar-auth-btn-submit {
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--color-antique-gold);
+  color: #1B140F;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 18px rgba(212, 182, 117, 0.25);
+  transition: background-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+  margin-top: 0.2rem;
+}
+
+.bogar-auth-btn-submit:hover {
+  background-color: #E2CA90;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 22px rgba(212, 182, 117, 0.4);
+}
+
+.bogar-auth-card__footer {
+  margin-top: 1.25rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.bogar-auth-switch-text {
+  font-size: 0.82rem;
+  color: rgba(248, 245, 238, 0.7);
+}
+
+.bogar-auth-link-bold {
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: var(--color-antique-gold);
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease;
+  padding: 0.1rem 0;
+}
+
+.bogar-auth-link-bold:hover {
+  color: #E2CA90;
+}
+
+/* ==========================================================================
+   OTP VERIFICATION COMPONENT STYLES
+   ========================================================================== */
+
+.bogar-auth-phone-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: rgba(212, 182, 117, 0.08);
+  border: 1px solid rgba(212, 182, 117, 0.22);
+  border-radius: 8px;
+  padding: 0.6rem 0.85rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.88rem;
+  color: #F8F5EE;
+}
+
+.bogar-auth-phone-display strong {
+  color: var(--color-antique-gold);
+  letter-spacing: 0.04em;
+}
+
+.bogar-auth-btn-edit-phone {
+  background: none;
+  border: none;
+  color: var(--color-antique-gold);
+  font-size: 0.78rem;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-left: 0.25rem;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  transition: color 0.2s ease;
+}
+
+.bogar-auth-btn-edit-phone:hover {
+  color: #E2CA90;
+}
+
+.bogar-auth-otp-row {
+  display: flex;
+  justify-content: center;
+  gap: 0.55rem;
+  margin: 0.6rem 0 0.85rem 0;
+}
+
+.bogar-auth-otp-box {
+  width: 44px;
+  height: 52px;
+  text-align: center;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  background: rgba(26, 18, 12, 0.85);
+  border: 1.5px solid rgba(212, 182, 117, 0.35);
+  border-radius: 10px;
+  outline: none;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.bogar-auth-otp-box:focus {
+  border-color: var(--color-antique-gold);
+  background: rgba(35, 24, 16, 0.95);
+  box-shadow: 0 0 12px rgba(212, 182, 117, 0.35);
+  transform: translateY(-2px);
+}
+
+.bogar-auth-otp-box--filled {
+  border-color: rgba(212, 182, 117, 0.75);
+}
+
+.bogar-auth-resend-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  font-size: 0.82rem;
+  color: rgba(248, 245, 238, 0.75);
+  margin-top: 0.5rem;
+}
+
+.bogar-auth-btn-resend {
+  background: none;
+  border: none;
+  color: var(--color-antique-gold);
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+  transition: color 0.2s ease;
+}
+
+.bogar-auth-btn-resend:hover:not(:disabled) {
+  color: #E2CA90;
+}
+
+.bogar-auth-btn-resend:disabled {
+  color: #7A6F63;
+  cursor: not-allowed;
+  text-decoration: none;
+}
+
+.bogar-auth-test-badge {
+  font-size: 0.76rem;
+  color: #D4B675;
+  background: rgba(212, 182, 117, 0.08);
+  border: 1px dashed rgba(212, 182, 117, 0.3);
+  border-radius: 6px;
+  padding: 0.45rem 0.75rem;
+  text-align: center;
+  margin-top: 0.25rem;
+  line-height: 1.4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.bogar-auth-autofill-btn {
+  background: rgba(212, 182, 117, 0.2);
+  border: 1px solid rgba(212, 182, 117, 0.5);
+  border-radius: 4px;
+  color: #F8F5EE;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.15rem 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.bogar-auth-autofill-btn:hover {
+  background: var(--color-antique-gold);
+  color: #1A120C;
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN (Matching Reference Tablet and Mobile Rules)
+   ========================================================================== */
+
+/* Tablet (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .bogar-navbar__links {
+    gap: 1.25rem;
+  }
+  .bogar-navbar__cta-wrapper {
+    gap: 0.6rem;
+  }
+  .bogar-btn-book {
+    padding: 0.55rem 1.05rem;
+    font-size: 0.82rem;
+  }
+  .bogar-btn-view-cart {
+    padding: 0.55rem 1.05rem;
+    font-size: 0.82rem;
+  }
+
+  .bogar-collections__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .bogar-circle-card__ring {
+    width: 190px;
+    height: 190px;
+  }
+
+  .bogar-circle-card__desc {
+    max-width: 160px;
+  }
+
+  .bogar-about__container {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .bogar-about__text-col {
+    flex: none;
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .bogar-about__media-col {
+    width: 100%;
+    height: 300px;
+  }
+
+  .bogar-category-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bogar-footer__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+  }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  .bogar-navbar__container {
+    padding: 0 1.25rem;
+  }
+
+  .bogar-navbar__nav,
+  .bogar-navbar__cta-wrapper {
+    display: none;
+  }
+
+  .bogar-navbar__toggle {
+    display: flex;
+  }
+
+  .bogar-hero {
+    min-height: 100vh;
+    min-height: 100dvh;
+    height: 100vh;
+    height: 100dvh;
+    background-color: #140E0A;
+  }
+
+  .bogar-hero__bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .bogar-hero__slide {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .bogar-hero__image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center center;
+  }
+
+  .bogar-hero__overlay--bottom {
+    display: none !important;
+  }
+
+  .bogar-hero__container {
+    height: 100%;
+    min-height: 100vh;
+    min-height: 100dvh;
+    padding: 5.5rem 1.25rem 3.5rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+  .bogar-hero__content {
+    max-width: 100%;
+    margin-right: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bogar-hero__eyebrow {
+    font-size: 0.76rem;
+    letter-spacing: 0.22em;
+    margin-bottom: 0.5rem;
+  }
+
+  .bogar-hero__title {
+    font-size: clamp(2.8rem, 11vw, 4.2rem);
+    margin-bottom: 0.4rem;
+  }
+
+  .bogar-hero__subtitle {
+    font-size: clamp(0.95rem, 3.8vw, 1.25rem);
+    margin-bottom: 0.85rem;
+  }
+
+  .bogar-hero__description {
+    font-size: 0.92rem;
+    line-height: 1.55;
+    margin-bottom: 1.6rem;
+    max-width: 380px;
+  }
+
+  .bogar-hero__btn-explore {
+    padding: 12px 26px;
+    font-size: 0.9rem;
+  }
+
+  .bogar-hero__slide-dots {
+    bottom: 1.25rem;
+  }
+
+  .bogar-hero__cta-wrapper {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.85rem;
+  }
+
+  .bogar-hero__scroll-indicator {
+    display: none;
+  }
+
+  .bogar-collections {
+    padding: 3.5rem 0 4rem 0;
+  }
+
+  .bogar-collections__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .bogar-circle-card__ring {
+    width: 150px;
+    height: 150px;
+  }
+
+  .bogar-circle-card__title {
+    font-size: 1.15rem;
+  }
+
+  .bogar-circle-card__desc {
+    max-width: 140px;
+    font-size: 0.78rem;
+  }
+
+  .bogar-about {
+    padding: 3.5rem 0;
+  }
+
+  .bogar-about__text-col {
+    text-align: center;
+  }
+
+  .bogar-about__body {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .bogar-category-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bogar-booking-channels__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bogar-form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .bogar-footer__container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 0 1.25rem 3rem 1.25rem;
+  }
+
+  .bogar-footer--auth .bogar-footer__container {
+    padding: 0 1.25rem 2rem 1.25rem;
+  }
+
+  .bogar-footer__bottom-container {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+    padding: 1.25rem 1rem;
+  }
+
+  /* Auth mobile responsiveness */
+  .bogar-auth-page {
+    padding: 3.5rem 1rem 2.5rem 1rem !important;
+    min-height: auto !important;
+    width: 100% !important;
+    max-width: 100vw !important;
+    box-sizing: border-box !important;
+    overflow-x: hidden !important;
+  }
+
+  .bogar-auth-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 1.85rem 1.25rem 1.65rem 1.25rem !important;
+    border-radius: 16px !important;
+  }
+
+  .bogar-auth-card__title {
+    font-size: 1.65rem !important;
+  }
+
+  .bogar-auth-card__description {
+    font-size: 0.8rem !important;
+    max-width: 100% !important;
+  }
+}
+
+/* Compact Mobile Screens (e.g. 360px - 440px width) */
+@media (max-width: 480px) {
+  .bogar-hero {
+    height: 100vh;
+    height: 100dvh;
+    min-height: 100vh;
+    min-height: 100dvh;
+    background-color: #140E0A !important;
+    overflow: hidden !important;
+  }
+
+  .bogar-hero__bg,
+  .bogar-hero__slide {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .bogar-hero__image {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+    object-position: center center !important;
+    transform: none !important;
+  }
+
+  .bogar-hero__overlay--bottom {
+    display: none !important;
+  }
+
+  .bogar-hero__container {
+    padding: 4.8rem 1rem 3rem 1rem;
+    min-height: 100vh;
+    min-height: 100dvh;
+  }
+
+  .bogar-hero__title {
+    font-size: clamp(2.3rem, 10.5vw, 3.2rem);
+    letter-spacing: 0.04em;
+  }
+
+  .bogar-hero__subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 0.65rem;
+  }
+
+  .bogar-hero__description {
+    font-size: 0.85rem;
+    line-height: 1.48;
+    margin-bottom: 1.35rem;
+    max-width: 320px;
+  }
+
+  .bogar-hero__btn-explore {
+    padding: 10px 22px;
+    font-size: 0.85rem;
+  }
+
+  .bogar-hero__slide-dots {
+    bottom: 1rem;
+    gap: 0.45rem;
+  }
+
+  .bogar-hero__dot {
+    width: 24px;
+    height: 3px;
+  }
+
+  .bogar-hero__dot--active {
+    width: 36px;
+  }
+}
+
+/* ==========================================================================
+   TOAST NOTIFICATION WITH VIEW CART OPTION
+   ========================================================================== */
+
+.bogar-toast {
+  position: fixed;
+  top: 90px;
+  right: 24px;
+  z-index: 3000;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: rgba(22, 16, 11, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(212, 182, 117, 0.45);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.45), 0 0 20px rgba(212, 182, 117, 0.2);
+  color: #F8F5EE;
+  padding: 12px 18px;
+  border-radius: 9999px;
+  animation: bogarToastSlide 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes bogarToastSlide {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.bogar-toast__msg {
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: #F8F5EE;
+}
+
+.bogar-toast__action-btn {
+  background: var(--color-antique-gold, #D4B675);
+  color: var(--color-deep-brown, #1B140F);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 6px 14px;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  white-space: nowrap;
+}
+
+.bogar-toast__action-btn:hover {
+  background: #E5CCA2;
+  transform: scale(1.04);
+}
+
+/* ==========================================================================
+   UNIFIED CART & MY ORDERS SINGLE PAGE
+   ========================================================================== */
+
+.bogar-cart-page {
+  padding-top: 6.5rem;
+  min-height: 100vh;
+  background-color: var(--color-cream, #FAF7F2);
+  padding-bottom: 5rem;
+}
+
+.bogar-cart-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.bogar-cart-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+.bogar-cart-back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-warm-brown, #4A3A2C);
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.bogar-cart-back-btn:hover {
+  color: var(--color-deep-brown, #1B140F);
+  background-color: rgba(212, 182, 117, 0.15);
+}
+
+.bogar-cart-title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 0.4rem;
+}
+
+.bogar-cart-title {
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--color-deep-brown, #1B140F);
+  letter-spacing: 0.04em;
+  margin: 0;
+}
+
+.bogar-cart-subtitle {
+  color: var(--color-warm-brown, #5C4B3C);
+  font-size: 0.95rem;
+  margin: 0 0 1.75rem 0;
+}
+
+/* Tab Switcher on the SAME PAGE */
+.bogar-cart-tabs {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(27, 20, 15, 0.06);
+  padding: 6px;
+  border-radius: 9999px;
+  border: 1px solid rgba(212, 182, 117, 0.35);
+  margin-top: 0.5rem;
+}
+
+.bogar-cart-tab-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 24px;
+  border-radius: 9999px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--color-warm-brown, #4A3A2C);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.bogar-cart-tab-btn--active {
+  background: var(--color-deep-brown, #1B140F);
+  color: var(--color-antique-gold, #D4B675);
+  box-shadow: 0 4px 14px rgba(27, 20, 15, 0.25);
+}
+
+.bogar-cart-tab-badge {
+  background: var(--color-antique-gold, #D4B675);
+  color: var(--color-deep-brown, #1B140F);
+  font-size: 0.72rem;
+  font-weight: 800;
+  border-radius: 9999px;
+  padding: 2px 7px;
+  min-width: 18px;
+  text-align: center;
+}
+
+.bogar-cart-tab-btn--active .bogar-cart-tab-badge {
+  background: var(--color-antique-gold, #D4B675);
+  color: var(--color-deep-brown, #1B140F);
+}
+
+/* Empty State */
+.bogar-empty-state {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: #FFFFFF;
+  border: 1px solid rgba(212, 182, 117, 0.3);
+  border-radius: 20px;
+  max-width: 600px;
+  margin: 2rem auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+.bogar-empty-state__icon-wrap {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: rgba(212, 182, 117, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem auto;
+}
+
+.bogar-empty-state__title {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--color-deep-brown, #1B140F);
+  margin-bottom: 0.6rem;
+}
+
+.bogar-empty-state__desc {
+  color: var(--color-warm-brown, #6C5A4B);
+  font-size: 0.92rem;
+  line-height: 1.6;
+  margin-bottom: 1.8rem;
+}
+
+/* Cart 2-Column Layout */
+.bogar-cart-layout {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 2rem;
+  align-items: start;
+}
+
+.bogar-cart-items-header {
+  margin-bottom: 1.25rem;
+}
+
+.bogar-cart-section-title {
+  font-family: var(--font-heading);
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: var(--color-deep-brown, #1B140F);
+  margin: 0 0 4px 0;
+}
+
+.bogar-cart-items-note {
+  font-size: 0.85rem;
+  color: var(--color-warm-brown, #7C6A5B);
+}
+
+.bogar-cart-items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* Individual Cart Card */
+.bogar-cart-card {
+  display: flex;
+  background: #FFFFFF;
+  border: 1px solid rgba(212, 182, 117, 0.35);
+  border-radius: 16px;
+  padding: 1.25rem;
+  gap: 1.25rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.bogar-cart-card:hover {
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+}
+
+.bogar-cart-card__media {
+  width: 130px;
+  height: 145px;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 1px solid rgba(212, 182, 117, 0.25);
+}
+
+.bogar-cart-card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 4px;
+}
+
+.bogar-cart-card__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bogar-cart-card__category {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #8C6D2D;
+  background: rgba(212, 182, 117, 0.16);
+  padding: 2px 8px;
+  border-radius: 9999px;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+
+.bogar-cart-card__name {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--color-deep-brown, #1B140F);
+  margin: 0 0 4px 0;
+}
+
+.bogar-cart-card__desc {
+  font-size: 0.82rem;
+  color: var(--color-warm-brown, #6C5A4B);
+  line-height: 1.45;
+  margin: 0 0 10px 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.bogar-cart-card__pricing {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px dashed rgba(212, 182, 117, 0.3);
+}
+
+.bogar-cart-card__price-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.bogar-cart-card__price-label {
+  font-size: 0.8rem;
+  color: var(--color-warm-brown, #7C6A5B);
+}
+
+.bogar-cart-card__price-value {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-deep-brown, #1B140F);
+}
+
+.bogar-cart-card__price-value--bold {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #8C6D2D;
+}
+
+.bogar-cart-card__actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.bogar-cart-card__qty-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.bogar-cart-card__qty-label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--color-deep-brown, #1B140F);
+}
+
+.bogar-qty-box {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid rgba(212, 182, 117, 0.4);
+  border-radius: 9999px;
+  background: rgba(250, 247, 242, 0.8);
+  padding: 2px 4px;
+}
+
+.bogar-qty-btn {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--color-deep-brown, #1B140F);
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.bogar-qty-btn:hover {
+  background: rgba(212, 182, 117, 0.25);
+  color: #8C6D2D;
+}
+
+.bogar-qty-value {
+  font-size: 0.92rem;
+  font-weight: 700;
+  min-width: 26px;
+  text-align: center;
+  color: var(--color-deep-brown, #1B140F);
+}
+
+.bogar-cart-card__buttons {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.bogar-cart-btn-details {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #7A5B1E;
+  background: rgba(212, 182, 117, 0.15);
+  border: 1px solid rgba(212, 182, 117, 0.35);
+  padding: 6px 12px;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.bogar-cart-btn-details:hover {
+  background: rgba(212, 182, 117, 0.3);
+  color: #5A4012;
+}
+
+.bogar-cart-btn-remove {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #B93838;
+  background: rgba(185, 56, 56, 0.08);
+  border: 1px solid rgba(185, 56, 56, 0.2);
+  padding: 6px 12px;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.bogar-cart-btn-remove:hover {
+  background: rgba(185, 56, 56, 0.16);
+  color: #8B1A1A;
+}
+
+/* Order Summary Column */
+.bogar-cart-summary-card {
+  background: #FFFFFF;
+  border: 1px solid rgba(212, 182, 117, 0.35);
+  border-radius: 18px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 90px;
+}
+
+.bogar-cart-summary__title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-deep-brown, #1B140F);
+  margin: 0 0 1.25rem 0;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(212, 182, 117, 0.25);
+}
+
+.bogar-cart-summary__breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.bogar-summary-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #2E2218;
+  font-weight: 500;
+}
+
+.bogar-summary-row span:last-child {
+  color: #1B140F;
+  font-weight: 600;
+}
+
+.bogar-summary-highlight {
+  color: #2E7D32 !important;
+  font-weight: 700 !important;
+}
+
+.bogar-summary-divider {
+  height: 1px;
+  background: rgba(212, 182, 117, 0.25);
+  margin: 0.25rem 0;
+}
+
+.bogar-summary-row--total {
+  font-size: 1.05rem;
+  color: #1B140F;
+}
+
+.bogar-summary-row--total strong {
+  color: #1B140F;
+  font-weight: 700;
+}
+
+.bogar-summary-total-amt {
+  font-size: 1.35rem;
+  color: #8C6D2D;
+  font-weight: 800;
+}
+
+.bogar-cart-summary__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Text Visibility and Contrast for Dispatch & Order Summary form */
+.bogar-cart-summary-card .bogar-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  text-align: left;
+}
+
+.bogar-cart-summary-card .bogar-form-group label {
+  color: #2E2218 !important;
+  font-size: 0.86rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.bogar-cart-summary-card .bogar-form-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: #FAF7F2;
+  border: 1px solid rgba(140, 109, 45, 0.35);
+  border-radius: 8px;
+  color: #1B140F !important;
+  font-family: inherit;
+  font-size: 0.92rem;
+  font-weight: 500;
+  transition: border-color 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
+}
+
+.bogar-cart-summary-card .bogar-form-input::placeholder {
+  color: #7A695A !important;
+  opacity: 1;
+}
+
+.bogar-cart-summary-card .bogar-form-input:focus {
+  outline: none;
+  background: #FFFFFF;
+  border-color: #8C6D2D;
+  box-shadow: 0 0 0 3px rgba(212, 182, 117, 0.22);
+}
+
+/* ==========================================================================
+   MY ORDERS SECTION
+   ========================================================================== */
+
+.bogar-orders-section {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.bogar-orders-header {
+  text-align: center;
+  margin-bottom: 1.75rem;
+}
+
+.bogar-orders-subtitle {
+  font-size: 0.9rem;
+  color: var(--color-warm-brown, #6C5A4B);
+  margin: 4px 0 0 0;
+}
+
+.bogar-orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.bogar-order-card {
+  background: #FFFFFF;
+  border: 1px solid rgba(212, 182, 117, 0.35);
+  border-radius: 16px;
+  padding: 1.35rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+}
+
+.bogar-order-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(212, 182, 117, 0.2);
+}
+
+.bogar-order-card__id-badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.bogar-order-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--color-warm-brown, #7C6A5B);
+}
+
+.bogar-order-id {
+  font-family: monospace;
+  font-size: 0.95rem;
+  color: #8C6D2D;
+}
+
+.bogar-order-status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: rgba(46, 125, 50, 0.1);
+  color: #2E7D32;
+  border: 1px solid rgba(46, 125, 50, 0.25);
+  padding: 4px 10px;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.bogar-order-card__body {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.bogar-order-card__media {
+  width: 90px;
+  height: 95px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(212, 182, 117, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.bogar-order-card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 4px;
+}
+
+.bogar-order-card__info {
+  flex: 1;
+}
+
+.bogar-order-card__title {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  color: var(--color-deep-brown, #1B140F);
+  margin: 0 0 8px 0;
+}
+
+.bogar-order-meta-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 8px 16px;
+}
+
+.bogar-order-meta-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.bogar-order-meta-label {
+  font-size: 0.72rem;
+  color: var(--color-warm-brown, #7C6A5B);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.bogar-order-meta-val {
+  font-size: 0.85rem;
+  color: var(--color-deep-brown, #1B140F);
+  font-weight: 600;
+  word-break: break-all;
+}
+
+.bogar-order-card__actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  justify-content: flex-end;
+  padding-top: 0.75rem;
+  border-top: 1px dashed rgba(212, 182, 117, 0.25);
+}
+
+.bogar-btn-order-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: 9999px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.bogar-btn-order-action--view {
+  background: rgba(212, 182, 117, 0.15);
+  color: #7A5B1E;
+  border: 1px solid rgba(212, 182, 117, 0.35);
+}
+
+.bogar-btn-order-action--view:hover {
+  background: rgba(212, 182, 117, 0.28);
+}
+
+.bogar-btn-order-action--receipt {
+  background: var(--color-antique-gold, #D4B675);
+  color: var(--color-deep-brown, #1B140F);
+  border: 1px solid var(--color-antique-gold, #D4B675);
+}
+
+.bogar-btn-order-action--receipt:hover {
+  background: #E5CCA2;
+  transform: translateY(-1px);
+}
+
+/* ==========================================================================
+   PRODUCT & ORDER DETAILS MODALS
+   ========================================================================== */
+
+.bogar-modal-card--product-details {
+  max-width: 680px;
+}
+
+.bogar-product-modal-body {
+  display: flex;
+  gap: 1.75rem;
+  padding: 1.75rem 2rem;
+}
+
+.bogar-product-modal-media {
+  width: 220px;
+  height: 250px;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(212, 182, 117, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.bogar-product-modal-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 8px;
+}
+
+.bogar-product-modal-info {
+  flex: 1;
+}
+
+.bogar-product-modal-name {
+  font-family: var(--font-heading);
+  font-size: 1.45rem;
+  color: #FFFFFF;
+  margin: 0 0 8px 0;
+}
+
+.bogar-product-modal-price-wrap {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  margin-bottom: 1rem;
+}
+
+.bogar-product-modal-currency {
+  font-size: 1.1rem;
+  color: var(--color-antique-gold, #D4B675);
+  font-weight: 600;
+}
+
+.bogar-product-modal-price {
+  font-size: 1.45rem;
+  color: var(--color-antique-gold, #D4B675);
+  font-weight: 700;
+}
+
+.bogar-modal-subtitle {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-antique-gold, #D4B675);
+  margin: 0 0 4px 0;
+}
+
+.bogar-product-modal-desc {
+  font-size: 0.88rem;
+  color: rgba(248, 245, 238, 0.88);
+  line-height: 1.6;
+  margin: 0 0 1rem 0;
+}
+
+.bogar-product-modal-subdesc {
+  font-size: 0.84rem;
+  color: rgba(248, 245, 238, 0.75);
+  line-height: 1.5;
+  margin: 0 0 1.25rem 0;
+}
+
+.bogar-product-modal-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+/* Order Details Modal */
+.bogar-modal-card--order-details {
+  max-width: 580px;
+}
+
+.bogar-order-modal-body {
+  padding: 1.75rem 2rem;
+}
+
+.bogar-order-modal-receipt-header {
+  margin-bottom: 1.25rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(212, 182, 117, 0.2);
+}
+
+.bogar-order-badge-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bogar-order-pill {
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  color: var(--color-antique-gold, #D4B675);
+  font-weight: 700;
+}
+
+.bogar-order-modal-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 1.5rem;
+}
+
+.bogar-order-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.92rem;
+  padding: 4px 0;
+  border-bottom: 1px dashed rgba(212, 182, 117, 0.15);
+}
+
+.bogar-order-row__label {
+  color: rgba(248, 245, 238, 0.7);
+}
+
+.bogar-order-row__val {
+  color: #FFFFFF;
+}
+
+.bogar-order-row__val--highlight {
+  font-family: monospace;
+  color: var(--color-antique-gold, #D4B675);
+}
+
+.bogar-order-row__val--confirmed {
+  color: #81C784;
+}
+
+.bogar-order-modal-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+/* ==========================================================================
+   CART RESPONSIVE MEDIA QUERIES
+   ========================================================================== */
+
+@media (max-width: 900px) {
+  .bogar-cart-layout {
+    grid-template-columns: 1fr;
+  }
+  .bogar-product-modal-body {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .bogar-product-modal-media {
+    width: 160px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 600px) {
+  .bogar-cart-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .bogar-cart-card__media {
+    width: 140px;
+    height: 140px;
+  }
+  .bogar-cart-card__pricing {
+    justify-content: center;
+  }
+  .bogar-cart-card__actions {
+    justify-content: center;
+  }
+  .bogar-order-card__body {
+    flex-direction: column;
+    text-align: center;
+  }
+  .bogar-order-meta-grid {
+    grid-template-columns: 1fr;
+  }
+  .bogar-order-card__actions {
+    justify-content: center;
+  }
+  .bogar-cart-tabs {
+    width: 100%;
+    justify-content: center;
+  }
+  .bogar-cart-tab-btn {
+    padding: 8px 14px;
+    font-size: 0.78rem;
+  }
+}
+
+/* ==========================================================================
+   ORDER CANCELLATION & DEVOTEE PROFILE MODAL STYLES
+   ========================================================================== */
+.bogar-btn-order-action--cancel {
+  background: rgba(220, 53, 69, 0.12);
+  color: #E63946;
+  border: 1px solid rgba(220, 53, 69, 0.4);
+}
+
+.bogar-btn-order-action--cancel:hover:not(:disabled) {
+  background: #E63946;
+  color: #FFFFFF;
+  border-color: #E63946;
+  transform: translateY(-1px);
+}
+
+.bogar-btn-order-action--cancelled {
+  background: rgba(108, 117, 125, 0.15);
+  color: #8C847B;
+  border: 1px solid rgba(108, 117, 125, 0.35);
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+.bogar-order-status-badge--cancelled {
+  background: rgba(220, 53, 69, 0.18) !important;
+  color: #FF5A5F !important;
+  border: 1px solid rgba(220, 53, 69, 0.4) !important;
+}
+
+.bogar-modal-card--profile {
+  max-width: 520px;
+}
+
+.bogar-profile-modal-body {
+  padding: 1.6rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.bogar-profile-hero {
+  display: flex;
+  align-items: center;
+  gap: 1.15rem;
+  padding: 1rem 1.25rem;
+  background: rgba(212, 182, 117, 0.08);
+  border: 1px solid rgba(212, 182, 117, 0.22);
+  border-radius: 12px;
+}
+
+.bogar-profile-avatar {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #3D2B1D 0%, #1A120C 100%);
+  border: 2px solid var(--color-antique-gold, #D4B675);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-antique-gold, #D4B675);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+  flex-shrink: 0;
+}
+
+.bogar-profile-hero__text {
+  flex: 1;
+  min-width: 0;
+}
+
+.bogar-profile-name {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin: 0 0 0.35rem 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bogar-profile-badge-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.bogar-profile-status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--color-antique-gold, #D4B675);
+  background: rgba(212, 182, 117, 0.12);
+  padding: 2px 8px;
+  border-radius: 9999px;
+  border: 1px solid rgba(212, 182, 117, 0.3);
+}
+
+.bogar-profile-role-badge {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #B5A89B;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 2px 8px;
+  border-radius: 9999px;
+}
+
+.bogar-profile-details-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(212, 182, 117, 0.18);
+  border-radius: 10px;
+  padding: 0.6rem 1rem;
+}
+
+.bogar-profile-detail-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid rgba(212, 182, 117, 0.1);
+  font-size: 0.88rem;
+  gap: 0.75rem;
+}
+
+.bogar-profile-detail-row:last-child {
+  border-bottom: none;
+}
+
+.bogar-profile-detail-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: rgba(248, 245, 238, 0.72);
+  font-size: 0.82rem;
+}
+
+.bogar-profile-detail-val {
+  color: #FFFFFF;
+  font-weight: 600;
+  text-align: right;
+  word-break: break-all;
+}
+
+.bogar-profile-detail-val--gold {
+  color: var(--color-antique-gold, #D4B675);
+  font-family: monospace;
+  font-size: 0.92rem;
+}
+
+.bogar-profile-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.85rem;
+}
+
+.bogar-profile-stat-box {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(212, 182, 117, 0.2);
+  border-radius: 10px;
+  padding: 0.85rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+}
+
+.bogar-profile-stat-box:hover {
+  background: rgba(212, 182, 117, 0.12);
+  border-color: var(--color-antique-gold, #D4B675);
+  transform: translateY(-2px);
+}
+
+.bogar-profile-stat-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.bogar-profile-stat-count {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-antique-gold, #D4B675);
+}
+
+.bogar-profile-stat-name {
+  font-size: 0.72rem;
+  color: rgba(248, 245, 238, 0.65);
+}
+
+.bogar-profile-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+.bogar-btn-logout-full {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 11px 20px;
+  border-radius: 8px;
+  background: rgba(220, 53, 69, 0.12);
+  color: #FF5A5F;
+  border: 1px solid rgba(220, 53, 69, 0.35);
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.bogar-btn-logout-full:hover {
+  background: #DC3545;
+  color: #FFFFFF;
+  border-color: #DC3545;
+  transform: translateY(-1px);
+}
+
+/* Print Styles */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #bogar-order-details-printable,
+  #bogar-order-details-printable * {
+    visibility: visible;
+  }
+  #bogar-order-details-printable {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: #FFFFFF !important;
+    color: #000000 !important;
+  }
+}
+

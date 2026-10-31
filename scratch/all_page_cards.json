@@ -1,0 +1,1046 @@
+{
+  "#food": [
+    {
+      "name": "Amutham Nattu Charkkarai",
+      "src": "https://vedanmart.com/images/Food/AMUTHAM%20NATTU%20CHARKKARAI.jpg"
+    },
+    {
+      "name": "KADALAI MITTAI JAR",
+      "src": "https://vedanmart.com/images/Food/KADALAI%20MITTAI.webp"
+    },
+    {
+      "name": "Vallarai Sambar Powder",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/vallarai%20sambar%20powder.jpeg"
+    },
+    {
+      "name": "Mudakathan Soup Powder",
+      "src": "https://vedanmart.com/images/herbal/3.jpeg"
+    },
+    {
+      "name": "Vallarai Sadha Podi",
+      "src": "https://vedanmart.com/images/herbal/2.jpeg"
+    },
+    {
+      "name": "Veppilai Powder",
+      "src": "https://vedanmart.com/images/Baby/Vaishnavi.jpeg"
+    },
+    {
+      "name": "Karuveppilai Sadha Podi",
+      "src": "https://vedanmart.com/images/Baby/Vaishnavi.jpeg"
+    },
+    {
+      "name": "Karupatti Halwa",
+      "src": "https://vedanmart.com/images/Food/KARUPATTI%20HALWA.jpeg"
+    },
+    {
+      "name": "Mann Kattiya Toor Dal",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/Mann%20kattiya%20Toor%20Dal.jpeg"
+    },
+    {
+      "name": "Vallarai Mixture",
+      "src": "https://vedanmart.com/images/herbal/6.jpeg"
+    },
+    {
+      "name": "Pirandai Powder Jar",
+      "src": "https://vedanmart.com/images/herbal/9.jpeg"
+    },
+    {
+      "name": "Ooty Varkey",
+      "src": "https://vedanmart.com/images/Food/Ooty%20Varkey.jpg"
+    },
+    {
+      "name": "Banana Stem Pickle Jar",
+      "src": "https://vedanmart.com/images/Food/Banana%20stem%20pickel%20jar.jpg"
+    },
+    {
+      "name": "Banana Blossom Pickle",
+      "src": "https://vedanmart.com/images/Food/Banana%20blossom%20pickel.jpg"
+    },
+    {
+      "name": "Pirandai Pickle",
+      "src": "https://vedanmart.com/images/Food/PIRANDAI%20PICKLE.jpeg"
+    },
+    {
+      "name": "Pulithokku",
+      "src": "https://vedanmart.com/images/Food/PULITHOKKU.jpg"
+    },
+    {
+      "name": "Sundakkai Thokku",
+      "src": "https://vedanmart.com/images/Food/SUNDAIKKAI%20THOKKU.jpg"
+    },
+    {
+      "name": "Lemon Pickle (Jar)",
+      "src": "https://vedanmart.com/images/Food/lemonpickel.jpg"
+    },
+    {
+      "name": "Curry Leaf Gravy (Jar)",
+      "src": "https://vedanmart.com/images/Food/CURRYLEAF%20Gravy%20JAR.jpg"
+    },
+    {
+      "name": "Jathikkai Pickle",
+      "src": "https://vedanmart.com/images/Food/Jathikkai%20Pickle.jpg"
+    },
+    {
+      "name": "Vallarai Idly Powder Jar",
+      "src": "https://vedanmart.com/images/Food/VALLARAI%20IDLY%20POWDER%20JAR.jpg"
+    },
+    {
+      "name": "Pirandai Idly Powder Jar",
+      "src": "https://vedanmart.com/images/Food/PIRANDAI%20IDLY%20POWDER%20JAR.jpg"
+    },
+    {
+      "name": "Mudakkatran Sadha Podi Jar",
+      "src": "https://vedanmart.com/images/Food/MUTTAKATRAN%20SADA%20POWDER%20JAR.jpg"
+    },
+    {
+      "name": "Murungai Keerai Sadha Podi Jar",
+      "src": "https://vedanmart.com/images/Food/Drumstick%20Leaf%20Rice%20Powder%20Jar.jpg"
+    },
+    {
+      "name": "Pirandai Sadha Podi Jar",
+      "src": "https://vedanmart.com/images/Food/PIRANDAI%20SADA%20POWDER%20JAR.jpg"
+    },
+    {
+      "name": "Kollu Sadha Podi",
+      "src": "https://vedanmart.com/images/Food/Horse%20Gram%20Rice%20Powder%20(JAR).jpg"
+    },
+    {
+      "name": "Amutham Nattu Charkkarai",
+      "src": "https://vedanmart.com/images/Food/AMUTHAM%20NATTU%20CHAKKARAI%20(Sukku+Elakai).jpg"
+    },
+    {
+      "name": "Wild Honey Jar(NR)",
+      "src": "https://vedanmart.com/images/Food/WILD%20HONEY%20JAR(NR).jpg"
+    },
+    {
+      "name": "Wild Honey Jar(NR)",
+      "src": "https://vedanmart.com/images/Food/WILD%20HONEYJAR(NR).jpg"
+    },
+    {
+      "name": "Wild Honey Jar(NR)",
+      "src": "https://vedanmart.com/images/Food/WILD%20HONEYJAR(NR).jpg"
+    },
+    {
+      "name": "Foxtail Millet (Thinai Rice)",
+      "src": "https://vedanmart.com/images/Food/Foxtail%20Millet%20(thinai%20rice).png"
+    },
+    {
+      "name": "Karuppu Kavuni Rice",
+      "src": "https://vedanmart.com/images/Food/KARUPPU%20KAVUNI%20RICE.png"
+    },
+    {
+      "name": "Samai Rice",
+      "src": "https://vedanmart.com/images/Food/SAMAI%20RICE.png"
+    },
+    {
+      "name": "Varagu Rice",
+      "src": "https://vedanmart.com/images/Food/VARAGU%20RICE.png"
+    },
+    {
+      "name": "Mappillai Samba Rice",
+      "src": "https://vedanmart.com/images/Food/MAPPILLAI%20SAMBA%20RICE.png"
+    },
+    {
+      "name": "Millet Nutritional Mix (PO)",
+      "src": "https://vedanmart.com/images/Food/Millet%20Nutritional%20Mix%20(PO).jpg"
+    },
+    {
+      "name": "Little Millet - Indian Pennywort (Vallarai Pongal)Mix 250G",
+      "src": "https://vedanmart.com/images/Food/LITTLE%20MILLET%20-%20INDIAN%20PENNYWORT.jpg"
+    },
+    {
+      "name": "Kodo - Moringa Millet Pongal Mix 250G",
+      "src": "https://vedanmart.com/images/Food/KODO%20-%20MORINGA%20MILLET%20PONGAL%20MIX.jpg"
+    },
+    {
+      "name": "Athiyaman Country Sugar (PO)",
+      "src": "https://vedanmart.com/images/Food/Athiyaman%20Country%20Sugar%20(PO).png"
+    },
+    {
+      "name": "Kambu Maavu(PO)",
+      "src": "https://vedanmart.com/images/Food/KAMBU%20MAAVU(PO).png"
+    },
+    {
+      "name": "Kambu Puttu Maavu(PO)",
+      "src": "https://vedanmart.com/images/Food/KAMBU%20PUTTU%20MAAVU(PO).png"
+    },
+    {
+      "name": "Kambu Dosa Mix (PO)",
+      "src": "https://vedanmart.com/images/Food/KAMBU%20DOSA%20MIX(PO).jpg"
+    },
+    {
+      "name": "Beetroot Malt(JAR)",
+      "src": "https://vedanmart.com/images/Food/BEETROOT%20MALT(JAR).png"
+    },
+    {
+      "name": "Beetroot Malt(JAR)",
+      "src": "https://vedanmart.com/images/Food/BEETROOT%20MALT1(JAR).jpg"
+    },
+    {
+      "name": "Carrot Malt(JAR)",
+      "src": "https://vedanmart.com/images/Food/CARROT%20MALT(JAR).jpg"
+    },
+    {
+      "name": "Ginger Garlic Pickle Jar",
+      "src": "https://vedanmart.com/images/Food/GINGER%20GARLIC%20PICKLE%20JAR.jpg"
+    },
+    {
+      "name": "Ginger Garlic Pickle Jar",
+      "src": "https://vedanmart.com/images/Food/GINGER%20GARLIC%20PICKLE%20JAR1.jpg"
+    },
+    {
+      "name": "Narthankai Pickle",
+      "src": "https://vedanmart.com/images/Food/NARTHANKAI%20PICKLE.jpg"
+    },
+    {
+      "name": "Kadukkai Chicken Biriyani Powder Jar",
+      "src": "https://vedanmart.com/images/Food/KADUKKAI%20CHICKEN%20BRIYANI%20POWDER%20JAR(NR).jpg"
+    },
+    {
+      "name": "Chilli Powder",
+      "src": "https://vedanmart.com/images/Food/CHILLI%20POWDER.png"
+    },
+    {
+      "name": "Kulambu Milagai Thool(PO)",
+      "src": "https://vedanmart.com/images/Food/KULAMBU%20MILAGAI%20THOOL(PO).png"
+    },
+    {
+      "name": "Manjal Powder",
+      "src": "https://vedanmart.com/images/Food/KULAMBU%20MANJAL%20POWDER.png"
+    },
+    {
+      "name": "Malli Powder",
+      "src": "https://vedanmart.com/images/Food/MALLI%20POWDER%20(PO).jpg"
+    },
+    {
+      "name": "Murungaikeerai Soup (PO)",
+      "src": "https://vedanmart.com/images/Food/MURUNGAIKEERAI%20SOUP%20(PO).jpg"
+    },
+    {
+      "name": "Mutakkatran Idly Power Jar",
+      "src": "https://vedanmart.com/images/Food/MUTAKKATRAN%20IDLY%20POWDER%20JAR.jpg"
+    },
+    {
+      "name": "Murungai Llai Idly Podi Jar",
+      "src": "https://vedanmart.com/images/Food/Drumstick%20Leaf%20Idli%20Powder%20JAR.jpg"
+    },
+    {
+      "name": "Neem Flower Rasam Powder",
+      "src": "https://vedanmart.com/images/Food/Neem%20Flower%20Rasam%20Powder.jpg"
+    },
+    {
+      "name": "Adhiyaman Country Jaggery",
+      "src": "https://vedanmart.com/images/Food/Adhiyaman%20Country%20Jaggery.png"
+    },
+    {
+      "name": "Ragi Dosai Mix",
+      "src": "https://vedanmart.com/images/Food/RAGI%20DOSAI%20MIX.png"
+    },
+    {
+      "name": "Kambu Rice",
+      "src": "https://vedanmart.com/images/Food/KAMBU%20RICE.jpg"
+    },
+    {
+      "name": "Kuthiraivaali Rice",
+      "src": "https://vedanmart.com/images/Food/KUTHIRAIVAALI%20RICE(PO).jpg"
+    },
+    {
+      "name": "Wheat Flour",
+      "src": "https://vedanmart.com/images/Food/WHEAT%20MAAVU%20POWDER.jpg"
+    },
+    {
+      "name": "Paruppu Dosai Mix",
+      "src": "https://vedanmart.com/images/Food/PARUPPU%20DOSAI%20MIX.jpg"
+    },
+    {
+      "name": "Sivappu Kavuni Rice",
+      "src": "https://vedanmart.com/images/Food/SIVAPPU%20KAVUNI%20RICE.jpg"
+    },
+    {
+      "name": "Nattu Samba Brown Rice",
+      "src": "https://vedanmart.com/images/Food/NATTU%20SAMBA%20BROWN%20RICE.png"
+    },
+    {
+      "name": "Kadukkai Baji Bonda Mix(PO)",
+      "src": "https://vedanmart.com/images/Food/KADUKKAI%20BAJI%20BONDA%20MIX.png"
+    },
+    {
+      "name": "Ragi Powder(PO)",
+      "src": "https://vedanmart.com/images/Food/RAGI%20POWDER.png"
+    },
+    {
+      "name": "Ponni (Brown Rice)",
+      "src": "https://vedanmart.com/images/Food/PONNI.png"
+    }
+  ],
+  "#poojas": [
+    {
+      "name": "108 Homa Dravyangal",
+      "src": "https://vedanmart.com/images/Poojas%20Gallery/108%20Homa%20Draviyangal.jpeg"
+    },
+    {
+      "name": "Deepa Oil",
+      "src": "https://vedanmart.com/images/Poojas/DEEPA%20OIL.jpg"
+    },
+    {
+      "name": "Herbal Dhoopa Powder (PO)",
+      "src": "https://vedanmart.com/images/Poojas/Herbal%20Incense%20Powder%20(PO).jpg"
+    },
+    {
+      "name": "27 Types of Homa Offerings",
+      "src": "https://vedanmart.com/images/Poojas/27%20Types%20of%20Homa%20Offerings.jpg"
+    },
+    {
+      "name": "Thirumanjal Powder (PO)",
+      "src": "https://vedanmart.com/images/Poojas/THIRUMANJANA%20POWDER%20(PO).jpg"
+    },
+    {
+      "name": "Thalampoo Kunkumam",
+      "src": "https://vedanmart.com/images/Poojas/Screw%20Pine%20Kumkum.png"
+    },
+    {
+      "name": "54 Vagai Homa Thiraviyangal",
+      "src": "https://vedanmart.com/images/Poojas/54VAGAI%20HOMA%20THIRAVIYANGAL.jpg"
+    }
+  ],
+  "#tea-food": [
+    {
+      "name": "Aavaram Flower Tea",
+      "src": "https://vedanmart.com/images/Beverages/Aavaram%20Flower%20Tea.png"
+    },
+    {
+      "name": "Black Tea(G)",
+      "src": "https://vedanmart.com/images/Beverages/BLACK%20TEA.jpg"
+    },
+    {
+      "name": "Guava Leaf Tea",
+      "src": "https://vedanmart.com/images/Beverages/Guava%20Leaf%20Tea.jpg"
+    },
+    {
+      "name": "Herbal Tea Powder",
+      "src": "https://vedanmart.com/images/Beverages/Herbal%20Tea%20Powder.jpg"
+    },
+    {
+      "name": "Sukku Powder (Po)",
+      "src": "https://vedanmart.com/images/Beverages/SUKKU%20POWDER%20PO.jpg"
+    },
+    {
+      "name": "Green Tea (Jar)",
+      "src": "https://vedanmart.com/images/Beverages/GREEN%20TEA%20JAR.jpg"
+    },
+    {
+      "name": "Nannari Sherbet",
+      "src": "https://vedanmart.com/images/Beverages/Nannari%20Sherbet.jpg"
+    },
+    {
+      "name": "Green Tea",
+      "src": "https://vedanmart.com/images/Beverages/GREEN%20TEA.jpg"
+    },
+    {
+      "name": "Vilvam Sherbet",
+      "src": "https://vedanmart.com/images/Beverages/Vilvam%20Sherbet.jpg"
+    },
+    {
+      "name": "Dry Ginger Coffee",
+      "src": "https://vedanmart.com/images/Beverages/Dry%20Ginger%20Coffee.jpg"
+    },
+    {
+      "name": "Thirikadugu Tea",
+      "src": "https://vedanmart.com/images/Beverages/Thirikadugu%20Tea.jpg"
+    },
+    {
+      "name": "TULSI TEA (G)",
+      "src": "https://vedanmart.com/images/Beverages/TULSI%20TEA.jpg"
+    },
+    {
+      "name": "Hibiscus Tea Powder",
+      "src": "https://vedanmart.com/images/Beverages/hibiscus%20tea.jpeg"
+    }
+  ],
+  "#thuni": [
+    {
+      "name": "Traditional Buddhist Robes",
+      "src": "http://localhost:5173/assets/images/thuni-robes.jpg"
+    },
+    {
+      "name": "Meditation Shawls",
+      "src": "http://localhost:5173/assets/images/thuni-shawl.jpg"
+    },
+    {
+      "name": "Traditional Temple Cloth",
+      "src": "http://localhost:5173/assets/images/thuni-temple-cloth.jpg"
+    },
+    {
+      "name": "Sacred Devotee Angavastram",
+      "src": "http://localhost:5173/assets/images/thuni-angavastram.jpg"
+    }
+  ],
+  "#chains": [
+    {
+      "name": "Buddha-Inspired Chain",
+      "src": "http://localhost:5173/assets/images/chain-buddha-chain.jpg"
+    },
+    {
+      "name": "Buddha-Inspired Pendant",
+      "src": "http://localhost:5173/assets/images/chain-buddha-pendant.jpg"
+    },
+    {
+      "name": "Tibet Om Mani Padme Hum Mantra Amulet",
+      "src": "http://localhost:5173/assets/images/chain-tibet-mantra-amulet.jpg"
+    },
+    {
+      "name": "Traditional Tamil Rudraksha Bracelet",
+      "src": "http://localhost:5173/assets/images/chain-tamil-rudraksha-bracelet.jpg"
+    },
+    {
+      "name": "Traditional Tamil Temple Bracelet",
+      "src": "http://localhost:5173/assets/images/chain-tamil-temple-bracelet.jpg"
+    },
+    {
+      "name": "Traditional Tamil Sandalwood Mala",
+      "src": "http://localhost:5173/assets/images/chain-tamil-sandalwood-mala.jpg"
+    }
+  ],
+  "#hair": [
+    {
+      "name": "Chemparuthi Herbal Shampoo",
+      "src": "http://localhost:5173/assets/images/hair/hair_1255.jpg"
+    },
+    {
+      "name": "Avarampoo Baby Shampoo",
+      "src": "http://localhost:5173/assets/images/hair/hair_1248.jpg"
+    },
+    {
+      "name": "Arappu Shampoo",
+      "src": "http://localhost:5173/assets/images/hair/hair_1246.jpg"
+    },
+    {
+      "name": "Vettiver Shampoo",
+      "src": "http://localhost:5173/assets/images/hair/hair_1229.jpg"
+    },
+    {
+      "name": "Karisalankanni Shampoo",
+      "src": "http://localhost:5173/assets/images/hair/hair_1226.jpg"
+    },
+    {
+      "name": "Dr. Amla Shampoo",
+      "src": "http://localhost:5173/assets/images/hair/hair_1224.jpg"
+    },
+    {
+      "name": "Onion Shampoo",
+      "src": "http://localhost:5173/assets/images/hair/hair_1223.jpg"
+    },
+    {
+      "name": "Shikakkai Shampoo",
+      "src": "http://localhost:5173/assets/images/hair/hair_1222.jpg"
+    },
+    {
+      "name": "Poduthalai Powder",
+      "src": "http://localhost:5173/assets/images/hair/hair_1296.jpeg"
+    },
+    {
+      "name": "Herbal Arappu Powder",
+      "src": "http://localhost:5173/assets/images/hair/hair_1292.jpeg"
+    },
+    {
+      "name": "Karisalankanni Hair Oil",
+      "src": "http://localhost:5173/assets/images/hair/hair_1267.jpg"
+    },
+    {
+      "name": "Avarampoo Hair Wash Powder (NR)",
+      "src": "http://localhost:5173/assets/images/hair/hair_1266.jpg"
+    },
+    {
+      "name": "Aloe vera Shampoo",
+      "src": "http://localhost:5173/assets/images/hair/hair_1250.jpg"
+    },
+    {
+      "name": "Hibiscus Herbal Hair Oil",
+      "src": "http://localhost:5173/assets/images/hair/hair_1238.jpg"
+    },
+    {
+      "name": "Hibiscus Hair Wash Powder",
+      "src": "http://localhost:5173/assets/images/hair/hair_1233.jpg"
+    },
+    {
+      "name": "Green Arappu Powder 250G",
+      "src": "http://localhost:5173/assets/images/hair/hair_1221.jpeg"
+    },
+    {
+      "name": "Green Arappu Powder Jar",
+      "src": "http://localhost:5173/assets/images/hair/hair_1219.jpeg"
+    },
+    {
+      "name": "Vana Arasi Sikkakai Powder(PO)",
+      "src": "http://localhost:5173/assets/images/hair/hair_1218.jpg"
+    },
+    {
+      "name": "NEELY AVURI POWDER (PO) NR",
+      "src": "http://localhost:5173/assets/images/hair/hair_1212.jpg"
+    },
+    {
+      "name": "Amla Hair Oil",
+      "src": "http://localhost:5173/assets/images/hair/hair_1210.jpg"
+    },
+    {
+      "name": "Herbal Hair Colour",
+      "src": "http://localhost:5173/assets/images/hair/hair_1209.png"
+    },
+    {
+      "name": "Herbal Shikakai Powder",
+      "src": "http://localhost:5173/assets/images/hair/hair_1208.png"
+    },
+    {
+      "name": "Rice Kanji Shampoo",
+      "src": "http://localhost:5173/assets/images/hair/hair_1207.png"
+    }
+  ],
+  "#skin": [
+    {
+      "name": "Cucumber gel (GC)",
+      "src": "https://vedanmart.com/images/Skin/CucumberGel.png"
+    },
+    {
+      "name": "Chemparuthi poo powder",
+      "src": "https://vedanmart.com/images/Body/HIBISCUS%20FLOWER%20POWDER.jpeg"
+    },
+    {
+      "name": "Cucumber Soap",
+      "src": "https://vedanmart.com/images/Body/CUCUMBER%20SOAP.jpeg"
+    },
+    {
+      "name": "kadukkai powder",
+      "src": "https://vedanmart.com/images/herbal/1.jpeg"
+    },
+    {
+      "name": "Multhani Metti",
+      "src": "https://vedanmart.com/images/Skin/multhanimetti.jpeg"
+    },
+    {
+      "name": "Paasiparuppu Maavu",
+      "src": "https://vedanmart.com/images/Skin/Pasirarupu.jpg"
+    },
+    {
+      "name": "Orange Peal Powder(PO)",
+      "src": "https://vedanmart.com/images/Skin/ORANGE%20POWDER(PO).jpg"
+    },
+    {
+      "name": "Orange Peel Powder Jar",
+      "src": "https://vedanmart.com/images/Skin/ORANGE%20POWDER%20JAR.jpg"
+    },
+    {
+      "name": "Kasthuri Manjal Jar",
+      "src": "https://vedanmart.com/images/Body%20Gallery/KASTHURI%20MANJAL.jpeg"
+    },
+    {
+      "name": "Avarampoo Pusu Manjal Jar",
+      "src": "https://vedanmart.com/images/Skin/Avarampoo%20pusu%20manjal%20jar.jpg"
+    },
+    {
+      "name": "Aloe Vera Facepack Powder Jar (For Men)",
+      "src": "https://vedanmart.com/images/Skin/Aloe%20vera%20face%20jar.png"
+    },
+    {
+      "name": "Multhani Metti Jar",
+      "src": "https://vedanmart.com/images/Skin/Multhani%20Metti%20jar.jpg"
+    },
+    {
+      "name": "Mahil Rose Gel",
+      "src": "https://vedanmart.com/images/Skin/Mahil%20Rose%20gel.jpg"
+    },
+    {
+      "name": "50 Gm Ramcare KADUKKAI POWDERJAR",
+      "src": "https://vedanmart.com/images/Skin/Kadukkai%20Powder%20jar.jpg"
+    },
+    {
+      "name": "Wild Turmeric",
+      "src": "https://vedanmart.com/images/Skin/wild%20turmeric.jpg"
+    },
+    {
+      "name": "Red Wine Gel(JAR)",
+      "src": "https://vedanmart.com/images/Skin/Redwine%20gel.jpg"
+    },
+    {
+      "name": "Redsandal Powder Jar",
+      "src": "https://vedanmart.com/images/Skin/Redsandal%20power%20jar.jpg"
+    },
+    {
+      "name": "Rose Water",
+      "src": "https://vedanmart.com/images/Skin/Rose%20water.jpg"
+    },
+    {
+      "name": "Gram Flour",
+      "src": "https://vedanmart.com/images/Skin/Gram%20flour.jpg"
+    },
+    {
+      "name": "Aloe Vera Gel",
+      "src": "https://vedanmart.com/images/Skin/Aloe%20vera%20gel.jpg"
+    },
+    {
+      "name": "Facepack Powder(Jar)",
+      "src": "https://vedanmart.com/images/Skin/Facepack%20powder%20Jar.jpg"
+    }
+  ],
+  "#health-wellness": [
+    {
+      "name": "Sprouted Multigrain Health Mix",
+      "src": "https://vedanmart.com/images/Health%20%26%20Wellness/MULTIGRAIN%20MIX.png"
+    },
+    {
+      "name": "Siruthaniya Health Mix",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/Millet%20Nutritional%20Mix.jpg"
+    },
+    {
+      "name": "Keelanelli Powder",
+      "src": "https://vedanmart.com/images/herbal/4.jpeg"
+    },
+    {
+      "name": "Kandankathiri Powder(PO)",
+      "src": "https://vedanmart.com/images/Food/kandankathiri%20powder.jpeg"
+    },
+    {
+      "name": "Thaneervittan Kizhangu Powder",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/Thanveevittan%20kizhangu%20powder.jpeg"
+    },
+    {
+      "name": "Neermulli Powder",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/Neermulli%20powder.jpeg"
+    },
+    {
+      "name": "Poonaikali Powder",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/Poonaikali%20power.jpeg"
+    },
+    {
+      "name": "Nilavembu Powder",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/Nilavembu%20powder%20jar.jpg"
+    },
+    {
+      "name": "Avaram Poo Powder",
+      "src": "https://vedanmart.com/images/herbal/11.jpeg"
+    },
+    {
+      "name": "Tribala Powder(PO)",
+      "src": "https://vedanmart.com/images/herbal/10.jpeg"
+    },
+    {
+      "name": "Thoothuvalai Powder",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/Thothuvalai%20powder.jpeg"
+    },
+    {
+      "name": "Aalam Pattai Powder",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/aalam%20pattai%20powder.jpeg"
+    },
+    {
+      "name": "Beetroot Powder",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/beetroot%20powder.jpeg"
+    },
+    {
+      "name": "Veliparuthi Powder",
+      "src": "https://vedanmart.com/images/herbal/7.jpeg"
+    },
+    {
+      "name": "Avaram Leaf Powder",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/Avaram%20leaf%20powder.jpeg"
+    },
+    {
+      "name": "Karunai Lehyam",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/karunai%20leheyam.jpeg"
+    },
+    {
+      "name": "Sowbakiya Sundi Lehyam",
+      "src": "https://vedanmart.com/images/Health%20%26%20Wellness/Sobwbalaiya%20lehyam.jfif"
+    },
+    {
+      "name": "Thuthuvalai Lehyam",
+      "src": "https://vedanmart.com/images/Health%20%26%20Wellness/Thuthuvalai%20Lehyam.jfif"
+    },
+    {
+      "name": "Thadhuviruthi Powder",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/Thathu%20Viruthi%20powder.jpg"
+    },
+    {
+      "name": "Kadukkai Powder (Po)",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/kadukkai%20Powder%20(Po).png"
+    },
+    {
+      "name": "Poolankilangu Powder(PO)",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/Poolan%20Kilangu%20Powder.jpg"
+    },
+    {
+      "name": "Adathodai Powder Jar",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/Adhatoda%20POWDER%20JAR.jpg"
+    },
+    {
+      "name": "Adathodai Powder(PO)",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/Adhatoda%20POWDER(PO).jpg"
+    },
+    {
+      "name": "Amla Powder Jar",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/Amla%20PowderJAR.jpg"
+    },
+    {
+      "name": "Amman Raw Rice Powder(PO)",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/AMMAAN%20Raw%20rice%20POWDER(PO).jpg"
+    },
+    {
+      "name": "Amukara Kizhangu Powder Jar",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/Ashwagandha%20Powder%20JAR.jpg"
+    },
+    {
+      "name": "Amukara Kizhangu Powder (PO)",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/Ashwagandha%20Powder%20(PO).jpg"
+    },
+    {
+      "name": "Arugambul Powder Jar",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/Arugambul%20Powder%20Jar.jpg"
+    },
+    {
+      "name": "Arugambul Powder (Po)",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/Arugambul%20Powder%20(Po).jpg"
+    },
+    {
+      "name": "Aavarampoo Powder Jar",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/AVARAM%20FLOWER%20POWDER%20JAR.jpg"
+    },
+    {
+      "name": "Athimathuram Powder Jar",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/Athimathuram%20Powder%20Jar.jpg"
+    },
+    {
+      "name": "Athimathuram Powder (PO)",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/Athimathuram%20Powder%20(PO).jpg"
+    },
+    {
+      "name": "Boomisarkarai Kizhingu Powder (PO)",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/BHOOMI%20SUGAR%20POWDER%20(PO).jpg"
+    },
+    {
+      "name": "Yelathi Choornam",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/ELADHI%20CHURNAM.jpg"
+    },
+    {
+      "name": "Guava Leaf Powder(PO)",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/Guava%20Leaf%20Powder%20(PO).jpg"
+    },
+    {
+      "name": "Hibiscus Flower Powder",
+      "src": "https://vedanmart.com/images/Body/HIBISCUS%20FLOWER%20POWDER.jpeg"
+    },
+    {
+      "name": "Jadhikai Powder (PO)",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/Jaathikkai%20Powder.jpg"
+    },
+    {
+      "name": "Kabasurakkudineer Suranam(PO)",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/KABASURAKKUDINEER%20SURANAM.jpg"
+    },
+    {
+      "name": "Kaba Surakkudineer Suranam",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/KABA%20SURAKKUDINEER%20SURANAM.jpg"
+    },
+    {
+      "name": "Mookiratai Powder(PO)",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/MOOKIRATAI%20POWDER.jpg"
+    },
+    {
+      "name": "Mutakkatran Powder Jar",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/MUTAKKATRAN%20POWDER%20JAR.jpg"
+    },
+    {
+      "name": "Naaval Vithai Powder (JAR)",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/Jamun%20Seed%20Powder%20(JAR).jpg"
+    },
+    {
+      "name": "Naaval Vithai Powder(PO)",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/Jamun%20Seed%20Powder.jpg"
+    },
+    {
+      "name": "Nilavembu Kudineer",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/NILAVEMBU%20KUDINEER.jpg"
+    },
+    {
+      "name": "Vasambu Powder Jar",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/VASAMBU%20POWDER%20JAR.jpg"
+    },
+    {
+      "name": "Vallarai Powder Jar",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/Vallarai%20Powder%20Jar.jpg"
+    },
+    {
+      "name": "Vallarai Powder (PO)",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/Vallarai%20Powder.jpg"
+    },
+    {
+      "name": "Tribala Powder Jar",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/TRIBALAPODI%20JAR.jpg"
+    },
+    {
+      "name": "Thuthuvalai Powder Jar",
+      "src": "https://vedanmart.com/images/Health%20%26%20Wellness/thudhu.jpg"
+    },
+    {
+      "name": "Thuthuvalai Powder (PO)",
+      "src": "https://vedanmart.com/images/Health%20%26%20Wellness/THUTHUVALAI%20POWDER.jpg"
+    },
+    {
+      "name": "Sirukurinjan Powder Jar",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/SIRUKURINJAN%20POWDER.jpg"
+    },
+    {
+      "name": "Sirukurinjan Powder(PO)",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/SIRUKURINJAN%20POWDER.jpg"
+    },
+    {
+      "name": "Thulasi Powder Jar",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/THULASI%20POWDER%20JAR.jpg"
+    },
+    {
+      "name": "Thulasi Powder(PO)",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/THULASI%20POWDER.jpg"
+    },
+    {
+      "name": "Orithal Thamarai Powder Jar",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/ORITHAL%20THAMARAI%20POWDER%20JAR.jpg"
+    },
+    {
+      "name": "Orithal Thamarai Powder(PO)",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/ORITHAL%20THAMARAI%20POWDER.jpg"
+    },
+    {
+      "name": "Perunerunjil Powder Jar",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/PERUNERUNJIL%20POWDER.jpg"
+    },
+    {
+      "name": "Perunerunjil Powder(PO)",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/PERUNERUNJIL%20POWDER.jpg"
+    },
+    {
+      "name": "Sukku Powder Jar",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/SUKKU%20POWDER%20JAR.jpg"
+    },
+    {
+      "name": "Fenugreek Powder Jar",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/Fenugreek%20Powder%20JAR.jpg"
+    },
+    {
+      "name": "Siruthaniya Health Mix",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/SIRUTHANIYA%20HEALTH%20MIX.jpg"
+    },
+    {
+      "name": "Nilavembu Powder Jar",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/Nilavembu%20powder%20jar.jpg"
+    },
+    {
+      "name": "Poduthalai Powder Jar",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/PODUTHALAI%20POWDER%20JAR.jpg"
+    },
+    {
+      "name": "Thantrikkai Powder Jar",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/THANTRIKKAI%20POWDER%20JAR.jpg"
+    },
+    {
+      "name": "Vilvaleaf Powder Jar",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/Vilvaleaf%20Powder%20Jar.jpg"
+    },
+    {
+      "name": "Madhumega Sooranam Jar",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/Mathumega%20Suranam%20Jar.jpg"
+    },
+    {
+      "name": "Aadathodai Kudineer Choornam",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/ADATHODAI%20KUDINEER%20CHURNAM.jpg"
+    },
+    {
+      "name": "Thalisathi Choornam",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/Thalisadi%20Churnam.jpg"
+    },
+    {
+      "name": "Karuppu Kavuni Health Mix (Jar)",
+      "src": "https://vedanmart.com/images/health%20and%20wellness%20gallery/KARUPPU%20KAVUNI%20HEALTH%20MIX.jpeg"
+    },
+    {
+      "name": "Abc Malt (JAR)",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/Abc%20Malt.jpg"
+    },
+    {
+      "name": "Mutakkatran Powder (PO)",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/Mutakkatran%20Powder.jpg"
+    },
+    {
+      "name": "Masikakkai Powder (PO)",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/Masikakkai%20Powder.jpg"
+    },
+    {
+      "name": "Nithyakalyani Powder (Po)",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/Nithyakalyani%20Powder.jpg"
+    },
+    {
+      "name": "Kandathippili Powder (Po)",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/Kandthippili%20powder.jpg"
+    },
+    {
+      "name": "Mathulai Powder (Po)",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/Mathulai%20Powder.jpg"
+    },
+    {
+      "name": "Karuveppilai Powder (Po)",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/veppilai%20powder.jpeg"
+    },
+    {
+      "name": "Karisalangkanni Powder (Po)",
+      "src": "https://vedanmart.com/images/Health%20%26%20Wellness/KarisalangkanniPowder.jpg"
+    },
+    {
+      "name": "KUPPAIMENI POWDER(PO)",
+      "src": "https://vedanmart.com/images/Health%20%26%20Wellness/Kuppaimeni%20powder(PO).jpg"
+    },
+    {
+      "name": "Thiripala Powder (Po)",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/Thribala%20Powder.jpg"
+    },
+    {
+      "name": "Mooligai Neer Aavi Powder (PO)",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/Herbal%20Steam%20Powder.jpg"
+    },
+    {
+      "name": "Sirupeelai Powder (Po)",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/Sirupeelai%20Powder.jpg"
+    },
+    {
+      "name": "Thuthi Leaf Powder (Po)",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/Thuthi%20Leaf%20Powder.jpg"
+    },
+    {
+      "name": "Amla Powder (PO)",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/Amla%20Powder.jpg"
+    },
+    {
+      "name": "Ammaan Pacharisi Powder (Po)",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/Ammaan%20Pacharisi%20Powder.jpg"
+    },
+    {
+      "name": "Nochi Ilai Powder (Po)",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/NOCHI%20ILAI%20POWDER.jpg"
+    },
+    {
+      "name": "Karunjeraga Powder (Po)",
+      "src": "https://vedanmart.com/images/Health%20%26%20Wellness/KarunjiragaPowder.jpg"
+    },
+    {
+      "name": "Naayuruvi Powder (Po)",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/Naayuruvi%20Powder.jpg"
+    },
+    {
+      "name": "Chittarathai Powder (Po) Nr",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/CHITTARATHAI%20POWDER.jpg"
+    },
+    {
+      "name": "Thumbai Leaf Powder (Po)",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/Thumbai%20Leaf%20Powder.jpg"
+    },
+    {
+      "name": "Thaamarai Poo Powder (Po)",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/Thaamarai%20Poo%20Powder.jpg"
+    },
+    {
+      "name": "Neem Leaf Powder",
+      "src": "https://vedanmart.com/images/Body/NEEM%20LEAVES%20POWDER.jpeg"
+    },
+    {
+      "name": "Kandakathiri Powder",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/kandakathiri%20powder.jpg"
+    },
+    {
+      "name": "Seenthilkodi Powder (Po)",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/Seenthilkodi%20Powder.jpg"
+    },
+    {
+      "name": "Fenugreek Powder (PO)",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/Fenugreek%20Powder.jpg"
+    },
+    {
+      "name": "Lavangapattai Powder (Po)",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/Lavangapattai%20Powder.jpg"
+    },
+    {
+      "name": "Koraikilangu Powder (Po)",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/Koraikilangu%20Powder.jpg"
+    },
+    {
+      "name": "Trikaduku Suranam (Po)",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/Trikaduku%20Suranam.jpg"
+    },
+    {
+      "name": "Sirunerunjil Powder (Po)",
+      "src": "https://vedanmart.com/images/Health%20%26%20Wellness/SirunerunjilPowder.jpg"
+    },
+    {
+      "name": "Manathakkali Powder (Po)",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/Manathakkali%20Powder.jpg"
+    },
+    {
+      "name": "Nilapanaikizhingu Powder (Po)",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/Nila%20Panaikilangu%20Powder.jpg"
+    },
+    {
+      "name": "Vilva Leaf Powder (Po)",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/Vilva%20Leaf%20Powder.jpg"
+    },
+    {
+      "name": "Thippili Rasayanam",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/THIPPILI%20RASAYANAM.jpg"
+    },
+    {
+      "name": "Vallarai Lehyam",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/VALLARAI%20LEHYAM.jpg"
+    },
+    {
+      "name": "Thathuviruthi Lehyam",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/THATHUVIRUTHI%20LEHYAM.jpg"
+    },
+    {
+      "name": "Pirandai Powder (Po)",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/PIRANDAI%20POWDER.jpg"
+    },
+    {
+      "name": "Thandrikai Powder (Po)",
+      "src": "https://vedanmart.com/images/Health%20%26%20Wellness/THANTRIKKAI%20POWDER.jpg"
+    },
+    {
+      "name": "Karpuravalli Powder (Po)",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/Karpuravalli%20powder.jpg"
+    },
+    {
+      "name": "Musumusukkai Powder (Po)",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/Musumusukkai%20powder.jpg"
+    },
+    {
+      "name": "Marudhontri Powder (Po)",
+      "src": "https://vedanmart.com/images/Health%20%26%20Wellness/Marudhontripowder.jpg"
+    },
+    {
+      "name": "Thottal Surungi Powder",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/Thottal%20surungi%20powder.jpg"
+    },
+    {
+      "name": "Poondhikai Powder (Po)",
+      "src": "https://vedanmart.com/images/Health%20%26%20Wellness/Poonthikaai.jpg"
+    },
+    {
+      "name": "Nilaavarai Powder (Po)",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/Nilaavarai%20powder.jpg"
+    },
+    {
+      "name": "Thippili Powder (Po)",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/THIPILI%20POWDER.jpeg"
+    },
+    {
+      "name": "Neem Flower Powder",
+      "src": "https://vedanmart.com/images/Health%20&%20Wellness/Neem%20powder.jpg"
+    },
+    {
+      "name": "Vadhasura Kudineer Churnam",
+      "src": "https://vedanmart.com/images/Beverages/VADHASURA%20KUDINEER%20CHURNAM.jpg"
+    }
+  ]
+}

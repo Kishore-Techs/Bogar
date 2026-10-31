@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+:root {
+  --color-cream: #F8F5EE;
+  --color-antique-gold: #D4B675;
+  --color-deep-brown: #1B140F;
+  --color-muted-gold: #8B6A3F;
+}
+body {
+  margin: 0;
+  padding: 40px 20px;
+  background-color: var(--color-cream);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+.bogar-video-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+.bogar-video-section__eyebrow {
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-muted-gold);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.bogar-video-section__title {
+  font-family: Georgia, serif;
+  font-size: 2.2rem;
+  color: var(--color-deep-brown);
+  margin: 0 0 0.75rem 0;
+}
+.bogar-video-section__ornament {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 240px;
+  margin: 0 auto 2.5rem;
+}
+.bogar-video-section__ornament-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(212, 182, 117, 0.7), transparent);
+}
+.bogar-video-section__ornament-symbol {
+  color: var(--color-antique-gold);
+}
+.bogar-video-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.75rem;
+  width: 100%;
+}
+.bogar-video-card {
+  flex: 0 1 330px;
+  width: 100%;
+  max-width: 340px;
+  aspect-ratio: 9 / 16;
+  max-height: 560px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  background-color: #0d0907;
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.45s ease, border-color 0.45s ease, opacity 0.45s ease;
+  box-shadow: 0 10px 28px rgba(27, 20, 15, 0.14);
+  border: 1px solid rgba(212, 182, 117, 0.28);
+}
+.bogar-video-card--active {
+  transform: scale(1.04);
+  z-index: 5;
+  border: 2px solid var(--color-antique-gold);
+  box-shadow: 0 22px 55px rgba(27, 20, 15, 0.28), 0 0 30px rgba(212, 182, 117, 0.4);
+  opacity: 1;
+}
+.bogar-video-card--inactive {
+  transform: scale(0.97);
+  opacity: 0.88;
+}
+.bogar-video-card--inactive:hover {
+  transform: scale(0.99);
+  opacity: 0.98;
+  border-color: rgba(212, 182, 117, 0.5);
+}
+.bogar-video-card__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+.bogar-video-card__overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(to top, rgba(14, 10, 7, 0.85) 0%, rgba(14, 10, 7, 0.3) 35%, transparent 65%, rgba(14, 10, 7, 0.35) 100%);
+}
+.bogar-video-card__top {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  right: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+.bogar-video-card__badge {
+  background: rgba(14, 10, 7, 0.65);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(212, 182, 117, 0.35);
+  border-radius: 9999px;
+  padding: 4px 12px;
+  color: #F8F5EE;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.bogar-video-card__badge--active {
+  border-color: var(--color-antique-gold);
+  color: var(--color-antique-gold);
+  background: rgba(14, 10, 7, 0.8);
+}
+.bogar-video-card__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-antique-gold);
+  box-shadow: 0 0 8px var(--color-antique-gold);
+  animation: pulseDot 1.4s infinite;
+}
+@keyframes pulseDot {
+  0% { transform: scale(0.9); opacity: 0.7; }
+  50% { transform: scale(1.3); opacity: 1; }
+  100% { transform: scale(0.9); opacity: 0.7; }
+}
+.bogar-video-card__footer {
+  position: absolute;
+  bottom: 14px;
+  left: 14px;
+  right: 14px;
+  background: rgba(22, 16, 11, 0.75);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(212, 182, 117, 0.3);
+  border-radius: 14px;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  z-index: 2;
+}
+.bogar-video-card__name {
+  margin: 0;
+  color: #FFFFFF;
+  font-family: Georgia, serif;
+  font-size: 0.98rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+.bogar-video-card__subtitle {
+  margin: 2px 0 0 0;
+  color: rgba(234, 216, 177, 0.85);
+  font-size: 0.74rem;
+  letter-spacing: 0.02em;
+}
+.bogar-video-card__play-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--color-antique-gold);
+  color: var(--color-deep-brown);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.72rem;
+  flex-shrink: 0;
+  margin-left: 8px;
+}
+</style>
+</head>
+<body>
+  <section class="bogar-video-section">
+    <p class="bogar-video-section__eyebrow">DIVINE ESSENCE & TRADITION</p>
+    <h2 class="bogar-video-section__title">Sacred Vision of Bogar Siddhar</h2>
+    <div class="bogar-video-section__ornament">
+      <span class="bogar-video-section__ornament-line"></span>
+      <span class="bogar-video-section__ornament-symbol">✦</span>
+      <span class="bogar-video-section__ornament-line"></span>
+    </div>
+
+    <div class="bogar-video-row">
+      <!-- Card 1 (Active) -->
+      <div class="bogar-video-card bogar-video-card--active">
+        <video class="bogar-video-card__video" src="http://localhost:5173/assets/videos/gemini_generated_video_7b190859.mp4" autoplay muted loop playsinline></video>
+        <div class="bogar-video-card__overlay"></div>
+        <div class="bogar-video-card__top">
+          <span class="bogar-video-card__badge bogar-video-card__badge--active">
+            <span class="bogar-video-card__dot"></span>
+            PLAYING
+          </span>
+        </div>
+        <div class="bogar-video-card__footer">
+          <div>
+            <h4 class="bogar-video-card__name">Sacred Sanctum</h4>
+            <p class="bogar-video-card__subtitle">Deep Cave Meditation</p>
+          </div>
+          <div class="bogar-video-card__play-icon">▶</div>
+        </div>
+      </div>
+
+      <!-- Card 2 (Inactive) -->
+      <div class="bogar-video-card bogar-video-card--inactive">
+        <video class="bogar-video-card__video" src="http://localhost:5173/assets/videos/gemini_generated_video_caa071c0.mp4" muted loop playsinline></video>
+        <div class="bogar-video-card__overlay"></div>
+        <div class="bogar-video-card__top">
+          <span class="bogar-video-card__badge">VIDEO 2</span>
+        </div>
+        <div class="bogar-video-card__footer">
+          <div>
+            <h4 class="bogar-video-card__name">Palm-Leaf Wisdom</h4>
+            <p class="bogar-video-card__subtitle">Siddhar Inscriptions</p>
+          </div>
+          <div class="bogar-video-card__play-icon">▶</div>
+        </div>
+      </div>
+
+      <!-- Card 3 (Inactive) -->
+      <div class="bogar-video-card bogar-video-card--inactive">
+        <video class="bogar-video-card__video" src="http://localhost:5173/assets/videos/gemini_generated_video_3a65de49.mp4" muted loop playsinline></video>
+        <div class="bogar-video-card__overlay"></div>
+        <div class="bogar-video-card__top">
+          <span class="bogar-video-card__badge">VIDEO 3</span>
+        </div>
+        <div class="bogar-video-card__footer">
+          <div>
+            <h4 class="bogar-video-card__name">Navapashanam</h4>
+            <p class="bogar-video-card__subtitle">Sacred Alchemy</p>
+          </div>
+          <div class="bogar-video-card__play-icon">▶</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

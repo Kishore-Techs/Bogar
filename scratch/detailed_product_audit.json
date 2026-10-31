@@ -1,0 +1,209 @@
+{
+  "Food": {
+    "affected": [],
+    "correct_count": 0,
+    "affected_count": 0
+  },
+  "Pooja": {
+    "affected": [],
+    "correct_count": 0,
+    "affected_count": 0
+  },
+  "Tea": {
+    "affected": [],
+    "correct_count": 0,
+    "affected_count": 0
+  },
+  "Hair": {
+    "affected": [],
+    "correct_count": 0,
+    "affected_count": 0
+  },
+  "Skin": {
+    "affected": [],
+    "correct_count": 0,
+    "affected_count": 0
+  },
+  "Health": {
+    "affected": [],
+    "correct_count": 0,
+    "affected_count": 0
+  },
+  "Bogar": {
+    "affected": [
+      {
+        "id": "daily-pooja",
+        "name": "Daily Pooja",
+        "img": "/assets/images/card-poojas.jpg",
+        "aspect": 1.34,
+        "var": 3555.4,
+        "w": 1200,
+        "h": 896
+      },
+      {
+        "id": "special-bogar-pooja",
+        "name": "Special Pooja",
+        "img": "/assets/images/special-pooja.jpg",
+        "aspect": 1.79,
+        "var": 6355.3,
+        "w": 1376,
+        "h": 768
+      },
+      {
+        "id": "festival-sacred-pooja",
+        "name": "Festival Pooja",
+        "img": "/assets/images/about-heritage.jpg",
+        "aspect": 1.34,
+        "var": 18274.6,
+        "w": 1200,
+        "h": 896
+      },
+      {
+        "id": "bogar-tea-powder",
+        "name": "Tea Powder / Tea Thool",
+        "img": "/assets/images/tea-powder.jpg",
+        "aspect": 1.34,
+        "var": 7209.6,
+        "w": 1200,
+        "h": 896
+      },
+      {
+        "id": "traditional-tea",
+        "name": "Traditional Tea",
+        "img": "/assets/images/traditional-tea.jpg",
+        "aspect": 1.34,
+        "var": 7557.8,
+        "w": 1200,
+        "h": 896
+      },
+      {
+        "id": "herbal-tea",
+        "name": "Herbal Tea",
+        "img": "/assets/images/herbal-tea.jpg",
+        "aspect": 1.34,
+        "var": 18149.7,
+        "w": 1200,
+        "h": 896
+      },
+      {
+        "id": "sacred-offerings",
+        "name": "Sacred Offerings",
+        "img": "/assets/images/sacred-offerings.jpg",
+        "aspect": 1.34,
+        "var": 4949.0,
+        "w": 1200,
+        "h": 896
+      },
+      {
+        "id": "traditional-heritage-food",
+        "name": "Traditional Heritage Food",
+        "img": "/assets/images/traditional-food.jpg",
+        "aspect": 1.34,
+        "var": 2982.6,
+        "w": 1200,
+        "h": 896
+      },
+      {
+        "id": "sacred-forest-honey",
+        "name": "Pure Wild Forest Honey",
+        "img": "/assets/images/sacred-honey.jpg",
+        "aspect": 1.34,
+        "var": 13070.3,
+        "w": 1200,
+        "h": 896
+      },
+      {
+        "id": "buddhist-monk-robes",
+        "name": "Traditional Buddhist Robes",
+        "img": "/assets/images/thuni-robes.jpg",
+        "aspect": 1.34,
+        "var": 13933.2,
+        "w": 1200,
+        "h": 896
+      },
+      {
+        "id": "meditation-shawl",
+        "name": "Meditation Shawls",
+        "img": "/assets/images/thuni-shawl.jpg",
+        "aspect": 1.34,
+        "var": 13629.4,
+        "w": 1200,
+        "h": 896
+      },
+      {
+        "id": "traditional-temple-cloth",
+        "name": "Traditional Temple Cloth",
+        "img": "/assets/images/thuni-temple-cloth.jpg",
+        "aspect": 1.34,
+        "var": 9505.8,
+        "w": 1200,
+        "h": 896
+      },
+      {
+        "id": "sacred-devotee-angavastram",
+        "name": "Sacred Devotee Angavastram",
+        "img": "/assets/images/thuni-angavastram.jpg",
+        "aspect": 1.34,
+        "var": 17257.8,
+        "w": 1200,
+        "h": 896
+      },
+      {
+        "id": "buddha-inspired-chain",
+        "name": "Buddha-Inspired Chain",
+        "img": "/assets/images/chain-buddha-chain.jpg",
+        "aspect": 1.85,
+        "var": 10749.5,
+        "w": 293,
+        "h": 158
+      },
+      {
+        "id": "buddha-inspired-pendant",
+        "name": "Buddha-Inspired Pendant",
+        "img": "/assets/images/chain-buddha-pendant.jpg",
+        "aspect": 1.75,
+        "var": 9984.4,
+        "w": 277,
+        "h": 158
+      },
+      {
+        "id": "tibet-om-mani-padme-hum-mantra-amulet",
+        "name": "Tibet Om Mani Padme Hum Mantra Amulet",
+        "img": "/assets/images/chain-tibet-mantra-amulet.jpg",
+        "aspect": 1.86,
+        "var": 9622.8,
+        "w": 294,
+        "h": 158
+      },
+      {
+        "id": "traditional-tamil-rudraksha-bracelet",
+        "name": "Traditional Tamil Rudraksha Bracelet",
+        "img": "/assets/images/chain-tamil-rudraksha-bracelet.jpg",
+        "aspect": 1.88,
+        "var": 21666.3,
+        "w": 293,
+        "h": 156
+      },
+      {
+        "id": "traditional-tamil-temple-bracelet",
+        "name": "Traditional Tamil Temple Bracelet",
+        "img": "/assets/images/chain-tamil-temple-bracelet.jpg",
+        "aspect": 1.78,
+        "var": 15703.6,
+        "w": 277,
+        "h": 156
+      },
+      {
+        "id": "traditional-tamil-sandalwood-mala",
+        "name": "Traditional Tamil Sandalwood Mala",
+        "img": "/assets/images/chain-tamil-sandalwood-mala.jpg",
+        "aspect": 1.88,
+        "var": 19351.1,
+        "w": 294,
+        "h": 156
+      }
+    ],
+    "correct_count": 0,
+    "affected_count": 19
+  }
+}

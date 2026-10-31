@@ -1,0 +1,1740 @@
+[
+  {
+    "file": "about-heritage.jpg",
+    "path": "/assets\\images\\about-heritage.jpg",
+    "aspect": 1.339,
+    "size": [
+      1200,
+      896
+    ],
+    "var_side": 24129.0,
+    "var_all": 24129.0
+  },
+  {
+    "file": "auth-bg.jpg",
+    "path": "/assets\\images\\auth-bg.jpg",
+    "aspect": 2.627,
+    "size": [
+      1920,
+      731
+    ],
+    "var_side": 4152.9,
+    "var_all": 4152.9
+  },
+  {
+    "file": "bogar-murugan-heritage.jpg",
+    "path": "/assets\\images\\bogar-murugan-heritage.jpg",
+    "aspect": 1.778,
+    "size": [
+      1024,
+      576
+    ],
+    "var_side": 2418.7,
+    "var_all": 7967.9
+  },
+  {
+    "file": "card-chains.jpg",
+    "path": "/assets\\images\\card-chains.jpg",
+    "aspect": 1.792,
+    "size": [
+      1376,
+      768
+    ],
+    "var_side": 829.0,
+    "var_all": 3018.4
+  },
+  {
+    "file": "card-hair.jpg",
+    "path": "/assets\\images\\card-hair.jpg",
+    "aspect": 1.339,
+    "size": [
+      1200,
+      896
+    ],
+    "var_side": 4883.3,
+    "var_all": 4883.3
+  },
+  {
+    "file": "card-poojas.jpg",
+    "path": "/assets\\images\\card-poojas.jpg",
+    "aspect": 1.339,
+    "size": [
+      1200,
+      896
+    ],
+    "var_side": 4407.8,
+    "var_all": 7870.1
+  },
+  {
+    "file": "card-tea-food.jpg",
+    "path": "/assets\\images\\card-tea-food.jpg",
+    "aspect": 1.339,
+    "size": [
+      1200,
+      896
+    ],
+    "var_side": 9548.7,
+    "var_all": 9548.7
+  },
+  {
+    "file": "card-thuni.jpg",
+    "path": "/assets\\images\\card-thuni.jpg",
+    "aspect": 1.339,
+    "size": [
+      1200,
+      896
+    ],
+    "var_side": 14782.4,
+    "var_all": 28842.3
+  },
+  {
+    "file": "chain-buddha-chain.jpg",
+    "path": "/assets\\images\\chain-buddha-chain.jpg",
+    "aspect": 1.854,
+    "size": [
+      293,
+      158
+    ],
+    "var_side": 10380.2,
+    "var_all": 10380.2
+  },
+  {
+    "file": "chain-buddha-pendant.jpg",
+    "path": "/assets\\images\\chain-buddha-pendant.jpg",
+    "aspect": 1.753,
+    "size": [
+      277,
+      158
+    ],
+    "var_side": 9597.1,
+    "var_all": 9597.1
+  },
+  {
+    "file": "chain-prayer-beads.jpg",
+    "path": "/assets\\images\\chain-prayer-beads.jpg",
+    "aspect": 1.339,
+    "size": [
+      1200,
+      896
+    ],
+    "var_side": 1796.5,
+    "var_all": 3666.8
+  },
+  {
+    "file": "chain-sandalwood-mala.jpg",
+    "path": "/assets\\images\\chain-sandalwood-mala.jpg",
+    "aspect": 1.335,
+    "size": [
+      673,
+      504
+    ],
+    "var_side": 2371.7,
+    "var_all": 8621.0
+  },
+  {
+    "file": "chain-tamil-rudraksha-bracelet.jpg",
+    "path": "/assets\\images\\chain-tamil-rudraksha-bracelet.jpg",
+    "aspect": 1.878,
+    "size": [
+      293,
+      156
+    ],
+    "var_side": 16506.4,
+    "var_all": 16506.4
+  },
+  {
+    "file": "chain-tamil-sandalwood-mala.jpg",
+    "path": "/assets\\images\\chain-tamil-sandalwood-mala.jpg",
+    "aspect": 1.885,
+    "size": [
+      294,
+      156
+    ],
+    "var_side": 12822.3,
+    "var_all": 12822.3
+  },
+  {
+    "file": "chain-tamil-temple-bracelet.jpg",
+    "path": "/assets\\images\\chain-tamil-temple-bracelet.jpg",
+    "aspect": 1.776,
+    "size": [
+      277,
+      156
+    ],
+    "var_side": 8062.6,
+    "var_all": 8062.6
+  },
+  {
+    "file": "chain-tibet-mantra-amulet.jpg",
+    "path": "/assets\\images\\chain-tibet-mantra-amulet.jpg",
+    "aspect": 1.861,
+    "size": [
+      294,
+      158
+    ],
+    "var_side": 5808.6,
+    "var_all": 5808.6
+  },
+  {
+    "file": "herbal-tea.jpg",
+    "path": "/assets\\images\\herbal-tea.jpg",
+    "aspect": 1.339,
+    "size": [
+      1200,
+      896
+    ],
+    "var_side": 23273.1,
+    "var_all": 23273.1
+  },
+  {
+    "file": "hero-bogar.jpg",
+    "path": "/assets\\images\\hero-bogar.jpg",
+    "aspect": 1.792,
+    "size": [
+      1376,
+      768
+    ],
+    "var_side": 5190.9,
+    "var_all": 9235.5
+  },
+  {
+    "file": "hero-slide-2.jpg",
+    "path": "/assets\\images\\hero-slide-2.jpg",
+    "aspect": 1.792,
+    "size": [
+      1376,
+      768
+    ],
+    "var_side": 3654.9,
+    "var_all": 3654.9
+  },
+  {
+    "file": "hero-slide-3.jpg",
+    "path": "/assets\\images\\hero-slide-3.jpg",
+    "aspect": 1.792,
+    "size": [
+      1376,
+      768
+    ],
+    "var_side": 829.0,
+    "var_all": 3018.4
+  },
+  {
+    "file": "sacred-honey.jpg",
+    "path": "/assets\\images\\sacred-honey.jpg",
+    "aspect": 1.339,
+    "size": [
+      1200,
+      896
+    ],
+    "var_side": 10328.3,
+    "var_all": 22670.2
+  },
+  {
+    "file": "sacred-offerings.jpg",
+    "path": "/assets\\images\\sacred-offerings.jpg",
+    "aspect": 1.339,
+    "size": [
+      1200,
+      896
+    ],
+    "var_side": 4884.4,
+    "var_all": 6645.5
+  },
+  {
+    "file": "special-pooja.jpg",
+    "path": "/assets\\images\\special-pooja.jpg",
+    "aspect": 1.792,
+    "size": [
+      1376,
+      768
+    ],
+    "var_side": 9316.9,
+    "var_all": 9316.9
+  },
+  {
+    "file": "tea-powder.jpg",
+    "path": "/assets\\images\\tea-powder.jpg",
+    "aspect": 1.339,
+    "size": [
+      1200,
+      896
+    ],
+    "var_side": 10416.4,
+    "var_all": 10416.4
+  },
+  {
+    "file": "test_card4.jpg",
+    "path": "/assets\\images\\test_card4.jpg",
+    "aspect": 0.692,
+    "size": [
+      225,
+      325
+    ],
+    "var_side": 14771.8,
+    "var_all": 14771.8
+  },
+  {
+    "file": "thuni-angavastram.jpg",
+    "path": "/assets\\images\\thuni-angavastram.jpg",
+    "aspect": 1.339,
+    "size": [
+      1200,
+      896
+    ],
+    "var_side": 7897.2,
+    "var_all": 11933.3
+  },
+  {
+    "file": "thuni-robes.jpg",
+    "path": "/assets\\images\\thuni-robes.jpg",
+    "aspect": 1.339,
+    "size": [
+      1200,
+      896
+    ],
+    "var_side": 18346.7,
+    "var_all": 18346.7
+  },
+  {
+    "file": "thuni-shawl.jpg",
+    "path": "/assets\\images\\thuni-shawl.jpg",
+    "aspect": 1.339,
+    "size": [
+      1200,
+      896
+    ],
+    "var_side": 15331.9,
+    "var_all": 15331.9
+  },
+  {
+    "file": "thuni-temple-cloth.jpg",
+    "path": "/assets\\images\\thuni-temple-cloth.jpg",
+    "aspect": 1.339,
+    "size": [
+      1200,
+      896
+    ],
+    "var_side": 7041.3,
+    "var_all": 10897.0
+  },
+  {
+    "file": "tibetan-mantra-amulet.jpg",
+    "path": "/assets\\images\\tibetan-mantra-amulet.jpg",
+    "aspect": 0.75,
+    "size": [
+      675,
+      900
+    ],
+    "var_side": 1620.5,
+    "var_all": 1620.5
+  },
+  {
+    "file": "traditional-food.jpg",
+    "path": "/assets\\images\\traditional-food.jpg",
+    "aspect": 1.339,
+    "size": [
+      1200,
+      896
+    ],
+    "var_side": 1364.7,
+    "var_all": 3975.7
+  },
+  {
+    "file": "traditional-tamil-bracelet.jpg",
+    "path": "/assets\\images\\traditional-tamil-bracelet.jpg",
+    "aspect": 1.5,
+    "size": [
+      1200,
+      800
+    ],
+    "var_side": 432.0,
+    "var_all": 432.0
+  },
+  {
+    "file": "traditional-tea.jpg",
+    "path": "/assets\\images\\traditional-tea.jpg",
+    "aspect": 1.339,
+    "size": [
+      1200,
+      896
+    ],
+    "var_side": 15304.2,
+    "var_all": 15304.2
+  },
+  {
+    "file": "food_1041.jpg",
+    "path": "/assets\\images\\food\\food_1041.jpg",
+    "aspect": 0.653,
+    "size": [
+      576,
+      882
+    ],
+    "var_side": 3035.6,
+    "var_all": 3035.6
+  },
+  {
+    "file": "food_1042.jpg",
+    "path": "/assets\\images\\food\\food_1042.jpg",
+    "aspect": 1.103,
+    "size": [
+      236,
+      214
+    ],
+    "var_side": 3700.0,
+    "var_all": 3900.0
+  },
+  {
+    "file": "food_1044.jpg",
+    "path": "/assets\\images\\food\\food_1044.jpg",
+    "aspect": 1.0,
+    "size": [
+      1599,
+      1599
+    ],
+    "var_side": 3148.5,
+    "var_all": 3148.5
+  },
+  {
+    "file": "food_1055.jpg",
+    "path": "/assets\\images\\food\\food_1055.jpg",
+    "aspect": 0.75,
+    "size": [
+      1027,
+      1369
+    ],
+    "var_side": 1263.6,
+    "var_all": 1263.6
+  },
+  {
+    "file": "food_1056.jpg",
+    "path": "/assets\\images\\food\\food_1056.jpg",
+    "aspect": 1.01,
+    "size": [
+      1547,
+      1532
+    ],
+    "var_side": 2949.6,
+    "var_all": 5178.6
+  },
+  {
+    "file": "food_1058.jpg",
+    "path": "/assets\\images\\food\\food_1058.jpg",
+    "aspect": 1.121,
+    "size": [
+      1280,
+      1142
+    ],
+    "var_side": 10722.4,
+    "var_all": 10722.4
+  },
+  {
+    "file": "food_1060.jpg",
+    "path": "/assets\\images\\food\\food_1060.jpg",
+    "aspect": 0.75,
+    "size": [
+      1027,
+      1369
+    ],
+    "var_side": 134.0,
+    "var_all": 134.0
+  },
+  {
+    "file": "food_1062.jpg",
+    "path": "/assets\\images\\food\\food_1062.jpg",
+    "aspect": 0.722,
+    "size": [
+      1339,
+      1855
+    ],
+    "var_side": 106.3,
+    "var_all": 430.9
+  },
+  {
+    "file": "food_1068.jpg",
+    "path": "/assets\\images\\food\\food_1068.jpg",
+    "aspect": 1.063,
+    "size": [
+      1280,
+      1204
+    ],
+    "var_side": 6945.6,
+    "var_all": 6945.6
+  },
+  {
+    "file": "food_1072.jpg",
+    "path": "/assets\\images\\food\\food_1072.jpg",
+    "aspect": 1.038,
+    "size": [
+      1600,
+      1542
+    ],
+    "var_side": 6600.3,
+    "var_all": 6600.3
+  },
+  {
+    "file": "food_1074.jpg",
+    "path": "/assets\\images\\food\\food_1074.jpg",
+    "aspect": 1.064,
+    "size": [
+      1600,
+      1504
+    ],
+    "var_side": 2853.4,
+    "var_all": 2853.4
+  },
+  {
+    "file": "food_1076.jpg",
+    "path": "/assets\\images\\food\\food_1076.jpg",
+    "aspect": 1.038,
+    "size": [
+      1599,
+      1541
+    ],
+    "var_side": 5008.6,
+    "var_all": 5008.6
+  },
+  {
+    "file": "food_1081.png",
+    "path": "/assets\\images\\food\\food_1081.png",
+    "aspect": 1.0,
+    "size": [
+      1024,
+      1024
+    ],
+    "var_side": 98.9,
+    "var_all": 231.8
+  },
+  {
+    "file": "food_1083.jpg",
+    "path": "/assets\\images\\food\\food_1083.jpg",
+    "aspect": 0.903,
+    "size": [
+      1600,
+      1771
+    ],
+    "var_side": 446.9,
+    "var_all": 446.9
+  },
+  {
+    "file": "food_1108.png",
+    "path": "/assets\\images\\food\\food_1108.png",
+    "aspect": 1.0,
+    "size": [
+      1024,
+      1024
+    ],
+    "var_side": 136.5,
+    "var_all": 136.5
+  },
+  {
+    "file": "food_1118.jpg",
+    "path": "/assets\\images\\food\\food_1118.jpg",
+    "aspect": 1.009,
+    "size": [
+      1280,
+      1269
+    ],
+    "var_side": 9009.1,
+    "var_all": 9009.1
+  },
+  {
+    "file": "food_1119.jpg",
+    "path": "/assets\\images\\food\\food_1119.jpg",
+    "aspect": 1.0,
+    "size": [
+      200,
+      200
+    ],
+    "var_side": 479.7,
+    "var_all": 618.2
+  },
+  {
+    "file": "food_1121.jpg",
+    "path": "/assets\\images\\food\\food_1121.jpg",
+    "aspect": 1.022,
+    "size": [
+      1570,
+      1536
+    ],
+    "var_side": 4084.8,
+    "var_all": 4084.8
+  },
+  {
+    "file": "food_1122.jpg",
+    "path": "/assets\\images\\food\\food_1122.jpg",
+    "aspect": 1.094,
+    "size": [
+      1600,
+      1463
+    ],
+    "var_side": 4498.6,
+    "var_all": 6186.3
+  },
+  {
+    "file": "food_1124.jpg",
+    "path": "/assets\\images\\food\\food_1124.jpg",
+    "aspect": 0.931,
+    "size": [
+      1489,
+      1600
+    ],
+    "var_side": 6078.0,
+    "var_all": 6078.0
+  },
+  {
+    "file": "food_1126.jpg",
+    "path": "/assets\\images\\food\\food_1126.jpg",
+    "aspect": 1.195,
+    "size": [
+      1600,
+      1339
+    ],
+    "var_side": 7361.5,
+    "var_all": 7361.5
+  },
+  {
+    "file": "food_1128.jpg",
+    "path": "/assets\\images\\food\\food_1128.jpg",
+    "aspect": 1.072,
+    "size": [
+      1600,
+      1492
+    ],
+    "var_side": 319.0,
+    "var_all": 902.0
+  },
+  {
+    "file": "food_1129.jpg",
+    "path": "/assets\\images\\food\\food_1129.jpg",
+    "aspect": 0.902,
+    "size": [
+      1386,
+      1536
+    ],
+    "var_side": 14995.9,
+    "var_all": 14995.9
+  },
+  {
+    "file": "food_1132.jpg",
+    "path": "/assets\\images\\food\\food_1132.jpg",
+    "aspect": 0.896,
+    "size": [
+      1434,
+      1600
+    ],
+    "var_side": 3779.9,
+    "var_all": 3779.9
+  },
+  {
+    "file": "food_1133.jpg",
+    "path": "/assets\\images\\food\\food_1133.jpg",
+    "aspect": 0.977,
+    "size": [
+      1251,
+      1280
+    ],
+    "var_side": 433.5,
+    "var_all": 433.5
+  },
+  {
+    "file": "food_1135.jpg",
+    "path": "/assets\\images\\food\\food_1135.jpg",
+    "aspect": 1.217,
+    "size": [
+      1599,
+      1314
+    ],
+    "var_side": 4178.1,
+    "var_all": 4178.1
+  },
+  {
+    "file": "food_1139.jpg",
+    "path": "/assets\\images\\food\\food_1139.jpg",
+    "aspect": 1.055,
+    "size": [
+      1600,
+      1517
+    ],
+    "var_side": 1538.6,
+    "var_all": 1538.6
+  },
+  {
+    "file": "food_1141.jpg",
+    "path": "/assets\\images\\food\\food_1141.jpg",
+    "aspect": 1.036,
+    "size": [
+      1600,
+      1544
+    ],
+    "var_side": 3365.1,
+    "var_all": 3365.1
+  },
+  {
+    "file": "food_1273.jpeg",
+    "path": "/assets\\images\\food\\food_1273.jpeg",
+    "aspect": 1.501,
+    "size": [
+      1600,
+      1066
+    ],
+    "var_side": 192.7,
+    "var_all": 192.7
+  },
+  {
+    "file": "food_1287.jpeg",
+    "path": "/assets\\images\\food\\food_1287.jpeg",
+    "aspect": 1.501,
+    "size": [
+      1600,
+      1066
+    ],
+    "var_side": 212.9,
+    "var_all": 324.7
+  },
+  {
+    "file": "food_1290.jpeg",
+    "path": "/assets\\images\\food\\food_1290.jpeg",
+    "aspect": 0.75,
+    "size": [
+      1200,
+      1600
+    ],
+    "var_side": 7955.9,
+    "var_all": 7955.9
+  },
+  {
+    "file": "food_1305.webp",
+    "path": "/assets\\images\\food\\food_1305.webp",
+    "aspect": 1.0,
+    "size": [
+      2160,
+      2160
+    ],
+    "var_side": 712.3,
+    "var_all": 712.3
+  },
+  {
+    "file": "hair_1207.png",
+    "path": "/assets\\images\\hair\\hair_1207.png",
+    "aspect": 1.0,
+    "size": [
+      1024,
+      1024
+    ],
+    "var_side": 44.2,
+    "var_all": 3085.2
+  },
+  {
+    "file": "hair_1209.png",
+    "path": "/assets\\images\\hair\\hair_1209.png",
+    "aspect": 1.0,
+    "size": [
+      1024,
+      1024
+    ],
+    "var_side": 10487.3,
+    "var_all": 10781.3
+  },
+  {
+    "file": "hair_1210.jpg",
+    "path": "/assets\\images\\hair\\hair_1210.jpg",
+    "aspect": 1.0,
+    "size": [
+      1600,
+      1600
+    ],
+    "var_side": 7921.0,
+    "var_all": 7921.0
+  },
+  {
+    "file": "hair_1219.jpeg",
+    "path": "/assets\\images\\hair\\hair_1219.jpeg",
+    "aspect": 1.0,
+    "size": [
+      1024,
+      1024
+    ],
+    "var_side": 161.7,
+    "var_all": 342.5
+  },
+  {
+    "file": "hair_1223.jpg",
+    "path": "/assets\\images\\hair\\hair_1223.jpg",
+    "aspect": 0.797,
+    "size": [
+      1110,
+      1393
+    ],
+    "var_side": 0.0,
+    "var_all": 206.9
+  },
+  {
+    "file": "hair_1224.jpg",
+    "path": "/assets\\images\\hair\\hair_1224.jpg",
+    "aspect": 0.824,
+    "size": [
+      1265,
+      1535
+    ],
+    "var_side": 0.0,
+    "var_all": 219.2
+  },
+  {
+    "file": "hair_1233.jpg",
+    "path": "/assets\\images\\hair\\hair_1233.jpg",
+    "aspect": 1.0,
+    "size": [
+      1080,
+      1080
+    ],
+    "var_side": 15337.0,
+    "var_all": 15337.0
+  },
+  {
+    "file": "hair_1238.jpg",
+    "path": "/assets\\images\\hair\\hair_1238.jpg",
+    "aspect": 0.805,
+    "size": [
+      975,
+      1211
+    ],
+    "var_side": 0.0,
+    "var_all": 1298.2
+  },
+  {
+    "file": "hair_1248.jpg",
+    "path": "/assets\\images\\hair\\hair_1248.jpg",
+    "aspect": 1.0,
+    "size": [
+      1600,
+      1600
+    ],
+    "var_side": 0.0,
+    "var_all": 407.3
+  },
+  {
+    "file": "hair_1250.jpg",
+    "path": "/assets\\images\\hair\\hair_1250.jpg",
+    "aspect": 1.0,
+    "size": [
+      1600,
+      1600
+    ],
+    "var_side": 0.0,
+    "var_all": 3238.9
+  },
+  {
+    "file": "hair_1267.jpg",
+    "path": "/assets\\images\\hair\\hair_1267.jpg",
+    "aspect": 0.865,
+    "size": [
+      1353,
+      1564
+    ],
+    "var_side": 0.2,
+    "var_all": 3768.1
+  },
+  {
+    "file": "hair_1296.jpeg",
+    "path": "/assets\\images\\hair\\hair_1296.jpeg",
+    "aspect": 0.855,
+    "size": [
+      805,
+      942
+    ],
+    "var_side": 1234.3,
+    "var_all": 1234.3
+  },
+  {
+    "file": "hw_1024.jpg",
+    "path": "/assets\\images\\health-wellness\\hw_1024.jpg",
+    "aspect": 0.885,
+    "size": [
+      486,
+      549
+    ],
+    "var_side": 262.8,
+    "var_all": 262.8
+  },
+  {
+    "file": "hw_1029.jpg",
+    "path": "/assets\\images\\health-wellness\\hw_1029.jpg",
+    "aspect": 1.045,
+    "size": [
+      1600,
+      1531
+    ],
+    "var_side": 261.3,
+    "var_all": 261.3
+  },
+  {
+    "file": "hw_1030.jpg",
+    "path": "/assets\\images\\health-wellness\\hw_1030.jpg",
+    "aspect": 0.856,
+    "size": [
+      1600,
+      1870
+    ],
+    "var_side": 149.0,
+    "var_all": 178.7
+  },
+  {
+    "file": "hw_1031.jpg",
+    "path": "/assets\\images\\health-wellness\\hw_1031.jpg",
+    "aspect": 0.903,
+    "size": [
+      586,
+      649
+    ],
+    "var_side": 128.0,
+    "var_all": 964.4
+  },
+  {
+    "file": "hw_1033.jpg",
+    "path": "/assets\\images\\health-wellness\\hw_1033.jpg",
+    "aspect": 0.959,
+    "size": [
+      885,
+      923
+    ],
+    "var_side": 118.5,
+    "var_all": 320.0
+  },
+  {
+    "file": "hw_1036.jpg",
+    "path": "/assets\\images\\health-wellness\\hw_1036.jpg",
+    "aspect": 0.956,
+    "size": [
+      885,
+      926
+    ],
+    "var_side": 310.2,
+    "var_all": 351.4
+  },
+  {
+    "file": "hw_1038.jpg",
+    "path": "/assets\\images\\health-wellness\\hw_1038.jpg",
+    "aspect": 0.964,
+    "size": [
+      885,
+      918
+    ],
+    "var_side": 129.1,
+    "var_all": 237.8
+  },
+  {
+    "file": "hw_1040.jpg",
+    "path": "/assets\\images\\health-wellness\\hw_1040.jpg",
+    "aspect": 0.935,
+    "size": [
+      1600,
+      1712
+    ],
+    "var_side": 462.6,
+    "var_all": 462.6
+  },
+  {
+    "file": "hw_1043.jpg",
+    "path": "/assets\\images\\health-wellness\\hw_1043.jpg",
+    "aspect": 0.919,
+    "size": [
+      885,
+      963
+    ],
+    "var_side": 110.8,
+    "var_all": 708.7
+  },
+  {
+    "file": "hw_1045.jpg",
+    "path": "/assets\\images\\health-wellness\\hw_1045.jpg",
+    "aspect": 0.885,
+    "size": [
+      700,
+      791
+    ],
+    "var_side": 164.5,
+    "var_all": 334.7
+  },
+  {
+    "file": "hw_1047.jpg",
+    "path": "/assets\\images\\health-wellness\\hw_1047.jpg",
+    "aspect": 0.777,
+    "size": [
+      912,
+      1173
+    ],
+    "var_side": 621.3,
+    "var_all": 621.3
+  },
+  {
+    "file": "hw_1049.jpg",
+    "path": "/assets\\images\\health-wellness\\hw_1049.jpg",
+    "aspect": 0.837,
+    "size": [
+      609,
+      728
+    ],
+    "var_side": 82.6,
+    "var_all": 400.7
+  },
+  {
+    "file": "hw_1075.jpeg",
+    "path": "/assets\\images\\health-wellness\\hw_1075.jpeg",
+    "aspect": 1.0,
+    "size": [
+      1024,
+      1024
+    ],
+    "var_side": 1206.9,
+    "var_all": 1206.9
+  },
+  {
+    "file": "hw_1091.jpg",
+    "path": "/assets\\images\\health-wellness\\hw_1091.jpg",
+    "aspect": 0.985,
+    "size": [
+      1568,
+      1592
+    ],
+    "var_side": 27.5,
+    "var_all": 938.9
+  },
+  {
+    "file": "hw_1097.jpg",
+    "path": "/assets\\images\\health-wellness\\hw_1097.jpg",
+    "aspect": 1.003,
+    "size": [
+      1600,
+      1596
+    ],
+    "var_side": 4.4,
+    "var_all": 785.3
+  },
+  {
+    "file": "hw_1098.jpg",
+    "path": "/assets\\images\\health-wellness\\hw_1098.jpg",
+    "aspect": 0.924,
+    "size": [
+      623,
+      674
+    ],
+    "var_side": 120.3,
+    "var_all": 134.1
+  },
+  {
+    "file": "hw_1100.jpg",
+    "path": "/assets\\images\\health-wellness\\hw_1100.jpg",
+    "aspect": 0.925,
+    "size": [
+      1600,
+      1729
+    ],
+    "var_side": 289.4,
+    "var_all": 522.6
+  },
+  {
+    "file": "hw_1103.jpeg",
+    "path": "/assets\\images\\health-wellness\\hw_1103.jpeg",
+    "aspect": 0.75,
+    "size": [
+      1200,
+      1600
+    ],
+    "var_side": 876.3,
+    "var_all": 876.3
+  },
+  {
+    "file": "hw_1105.jpg",
+    "path": "/assets\\images\\health-wellness\\hw_1105.jpg",
+    "aspect": 0.887,
+    "size": [
+      1600,
+      1804
+    ],
+    "var_side": 137.0,
+    "var_all": 301.2
+  },
+  {
+    "file": "hw_1111.jpg",
+    "path": "/assets\\images\\health-wellness\\hw_1111.jpg",
+    "aspect": 1.193,
+    "size": [
+      940,
+      788
+    ],
+    "var_side": 1330.5,
+    "var_all": 1330.5
+  },
+  {
+    "file": "hw_1115.jpg",
+    "path": "/assets\\images\\health-wellness\\hw_1115.jpg",
+    "aspect": 1.04,
+    "size": [
+      890,
+      856
+    ],
+    "var_side": 2248.8,
+    "var_all": 2248.8
+  },
+  {
+    "file": "hw_1117.jpeg",
+    "path": "/assets\\images\\health-wellness\\hw_1117.jpeg",
+    "aspect": 0.558,
+    "size": [
+      768,
+      1376
+    ],
+    "var_side": 358.5,
+    "var_all": 358.5
+  },
+  {
+    "file": "hw_1125.jpg",
+    "path": "/assets\\images\\health-wellness\\hw_1125.jpg",
+    "aspect": 0.941,
+    "size": [
+      1600,
+      1700
+    ],
+    "var_side": 483.5,
+    "var_all": 483.5
+  },
+  {
+    "file": "hw_1127.jpg",
+    "path": "/assets\\images\\health-wellness\\hw_1127.jpg",
+    "aspect": 1.017,
+    "size": [
+      1600,
+      1574
+    ],
+    "var_side": 461.1,
+    "var_all": 461.1
+  },
+  {
+    "file": "hw_1130.jpg",
+    "path": "/assets\\images\\health-wellness\\hw_1130.jpg",
+    "aspect": 0.935,
+    "size": [
+      1600,
+      1712
+    ],
+    "var_side": 462.6,
+    "var_all": 462.6
+  },
+  {
+    "file": "hw_1131.jpg",
+    "path": "/assets\\images\\health-wellness\\hw_1131.jpg",
+    "aspect": 0.93,
+    "size": [
+      1600,
+      1720
+    ],
+    "var_side": 482.4,
+    "var_all": 482.4
+  },
+  {
+    "file": "hw_1140.jpg",
+    "path": "/assets\\images\\health-wellness\\hw_1140.jpg",
+    "aspect": 1.078,
+    "size": [
+      1600,
+      1484
+    ],
+    "var_side": 6969.2,
+    "var_all": 7333.1
+  },
+  {
+    "file": "hw_1149.jpg",
+    "path": "/assets\\images\\health-wellness\\hw_1149.jpg",
+    "aspect": 1.019,
+    "size": [
+      1600,
+      1570
+    ],
+    "var_side": 504.6,
+    "var_all": 5801.8
+  },
+  {
+    "file": "hw_1152.jpg",
+    "path": "/assets\\images\\health-wellness\\hw_1152.jpg",
+    "aspect": 1.013,
+    "size": [
+      1600,
+      1580
+    ],
+    "var_side": 619.3,
+    "var_all": 619.3
+  },
+  {
+    "file": "hw_1160.jpg",
+    "path": "/assets\\images\\health-wellness\\hw_1160.jpg",
+    "aspect": 0.898,
+    "size": [
+      1574,
+      1753
+    ],
+    "var_side": 755.8,
+    "var_all": 755.8
+  },
+  {
+    "file": "hw_1162.jpg",
+    "path": "/assets\\images\\health-wellness\\hw_1162.jpg",
+    "aspect": 0.945,
+    "size": [
+      1451,
+      1536
+    ],
+    "var_side": 3036.3,
+    "var_all": 3036.3
+  },
+  {
+    "file": "hw_1164.jpg",
+    "path": "/assets\\images\\health-wellness\\hw_1164.jpg",
+    "aspect": 0.944,
+    "size": [
+      1511,
+      1600
+    ],
+    "var_side": 2093.7,
+    "var_all": 2093.7
+  },
+  {
+    "file": "hw_1165.jpg",
+    "path": "/assets\\images\\health-wellness\\hw_1165.jpg",
+    "aspect": 1.079,
+    "size": [
+      1600,
+      1483
+    ],
+    "var_side": 3722.1,
+    "var_all": 3722.1
+  },
+  {
+    "file": "hw_1167.jpg",
+    "path": "/assets\\images\\health-wellness\\hw_1167.jpg",
+    "aspect": 1.012,
+    "size": [
+      1555,
+      1536
+    ],
+    "var_side": 8478.0,
+    "var_all": 8478.0
+  },
+  {
+    "file": "hw_1168.jpg",
+    "path": "/assets\\images\\health-wellness\\hw_1168.jpg",
+    "aspect": 1.045,
+    "size": [
+      923,
+      883
+    ],
+    "var_side": 463.3,
+    "var_all": 463.3
+  },
+  {
+    "file": "hw_1169.jpg",
+    "path": "/assets\\images\\health-wellness\\hw_1169.jpg",
+    "aspect": 0.822,
+    "size": [
+      854,
+      1039
+    ],
+    "var_side": 1.0,
+    "var_all": 480.4
+  },
+  {
+    "file": "hw_1171.jpg",
+    "path": "/assets\\images\\health-wellness\\hw_1171.jpg",
+    "aspect": 1.0,
+    "size": [
+      1330,
+      1330
+    ],
+    "var_side": 0.0,
+    "var_all": 18876.4
+  },
+  {
+    "file": "hw_1173.jpg",
+    "path": "/assets\\images\\health-wellness\\hw_1173.jpg",
+    "aspect": 0.905,
+    "size": [
+      1531,
+      1691
+    ],
+    "var_side": 242.9,
+    "var_all": 242.9
+  },
+  {
+    "file": "hw_1176.jpeg",
+    "path": "/assets\\images\\health-wellness\\hw_1176.jpeg",
+    "aspect": 0.558,
+    "size": [
+      768,
+      1376
+    ],
+    "var_side": 213.2,
+    "var_all": 213.2
+  },
+  {
+    "file": "hw_1184.jpg",
+    "path": "/assets\\images\\health-wellness\\hw_1184.jpg",
+    "aspect": 0.758,
+    "size": [
+      529,
+      698
+    ],
+    "var_side": 144.1,
+    "var_all": 144.1
+  },
+  {
+    "file": "hw_1187.jpg",
+    "path": "/assets\\images\\health-wellness\\hw_1187.jpg",
+    "aspect": 0.979,
+    "size": [
+      1566,
+      1600
+    ],
+    "var_side": 10771.1,
+    "var_all": 10771.1
+  },
+  {
+    "file": "hw_1189.jpg",
+    "path": "/assets\\images\\health-wellness\\hw_1189.jpg",
+    "aspect": 0.983,
+    "size": [
+      1167,
+      1187
+    ],
+    "var_side": 4204.7,
+    "var_all": 4204.7
+  },
+  {
+    "file": "hw_1197.jpg",
+    "path": "/assets\\images\\health-wellness\\hw_1197.jpg",
+    "aspect": 0.911,
+    "size": [
+      1458,
+      1600
+    ],
+    "var_side": 10090.0,
+    "var_all": 10090.0
+  },
+  {
+    "file": "hw_1199.jpg",
+    "path": "/assets\\images\\health-wellness\\hw_1199.jpg",
+    "aspect": 0.975,
+    "size": [
+      854,
+      876
+    ],
+    "var_side": 3199.8,
+    "var_all": 3983.5
+  },
+  {
+    "file": "hw_1200.jpg",
+    "path": "/assets\\images\\health-wellness\\hw_1200.jpg",
+    "aspect": 0.931,
+    "size": [
+      1353,
+      1454
+    ],
+    "var_side": 276.0,
+    "var_all": 276.0
+  },
+  {
+    "file": "hw_1201.jpg",
+    "path": "/assets\\images\\health-wellness\\hw_1201.jpg",
+    "aspect": 1.051,
+    "size": [
+      1280,
+      1218
+    ],
+    "var_side": 4995.8,
+    "var_all": 4995.8
+  },
+  {
+    "file": "hw_1203.jpg",
+    "path": "/assets\\images\\health-wellness\\hw_1203.jpg",
+    "aspect": 1.032,
+    "size": [
+      1500,
+      1454
+    ],
+    "var_side": 11453.6,
+    "var_all": 11453.6
+  },
+  {
+    "file": "hw_1206.jpg",
+    "path": "/assets\\images\\health-wellness\\hw_1206.jpg",
+    "aspect": 0.973,
+    "size": [
+      877,
+      901
+    ],
+    "var_side": 7964.1,
+    "var_all": 7964.1
+  },
+  {
+    "file": "hw_1272.png",
+    "path": "/assets\\images\\health-wellness\\hw_1272.png",
+    "aspect": 1.0,
+    "size": [
+      1024,
+      1024
+    ],
+    "var_side": 506.7,
+    "var_all": 1663.4
+  },
+  {
+    "file": "hw_1274.jpeg",
+    "path": "/assets\\images\\health-wellness\\hw_1274.jpeg",
+    "aspect": 1.333,
+    "size": [
+      1600,
+      1200
+    ],
+    "var_side": 10058.7,
+    "var_all": 10058.7
+  },
+  {
+    "file": "hw_1275.jpeg",
+    "path": "/assets\\images\\health-wellness\\hw_1275.jpeg",
+    "aspect": 0.832,
+    "size": [
+      922,
+      1108
+    ],
+    "var_side": 731.8,
+    "var_all": 731.8
+  },
+  {
+    "file": "hw_1276.jpeg",
+    "path": "/assets\\images\\health-wellness\\hw_1276.jpeg",
+    "aspect": 1.501,
+    "size": [
+      1600,
+      1066
+    ],
+    "var_side": 71.1,
+    "var_all": 429.6
+  },
+  {
+    "file": "hw_1277.jpeg",
+    "path": "/assets\\images\\health-wellness\\hw_1277.jpeg",
+    "aspect": 0.75,
+    "size": [
+      1200,
+      1600
+    ],
+    "var_side": 3779.2,
+    "var_all": 3779.2
+  },
+  {
+    "file": "hw_1278.jpeg",
+    "path": "/assets\\images\\health-wellness\\hw_1278.jpeg",
+    "aspect": 0.883,
+    "size": [
+      857,
+      971
+    ],
+    "var_side": 4607.7,
+    "var_all": 4607.7
+  },
+  {
+    "file": "hw_1284.jpeg",
+    "path": "/assets\\images\\health-wellness\\hw_1284.jpeg",
+    "aspect": 0.75,
+    "size": [
+      1200,
+      1600
+    ],
+    "var_side": 1086.2,
+    "var_all": 1086.2
+  },
+  {
+    "file": "hw_1293.jpeg",
+    "path": "/assets\\images\\health-wellness\\hw_1293.jpeg",
+    "aspect": 1.501,
+    "size": [
+      1600,
+      1066
+    ],
+    "var_side": 119.9,
+    "var_all": 221.7
+  },
+  {
+    "file": "hw_1297.jpeg",
+    "path": "/assets\\images\\health-wellness\\hw_1297.jpeg",
+    "aspect": 0.874,
+    "size": [
+      915,
+      1047
+    ],
+    "var_side": 259.8,
+    "var_all": 259.8
+  },
+  {
+    "file": "hw_1298.jpeg",
+    "path": "/assets\\images\\health-wellness\\hw_1298.jpeg",
+    "aspect": 0.76,
+    "size": [
+      872,
+      1147
+    ],
+    "var_side": 2404.3,
+    "var_all": 2404.3
+  },
+  {
+    "file": "hw_1299.jpeg",
+    "path": "/assets\\images\\health-wellness\\hw_1299.jpeg",
+    "aspect": 0.775,
+    "size": [
+      742,
+      958
+    ],
+    "var_side": 1087.2,
+    "var_all": 1087.2
+  },
+  {
+    "file": "hw_1300.jpeg",
+    "path": "/assets\\images\\health-wellness\\hw_1300.jpeg",
+    "aspect": 0.795,
+    "size": [
+      785,
+      988
+    ],
+    "var_side": 1262.5,
+    "var_all": 1262.5
+  },
+  {
+    "file": "hw_1301.jpeg",
+    "path": "/assets\\images\\health-wellness\\hw_1301.jpeg",
+    "aspect": 1.501,
+    "size": [
+      1600,
+      1066
+    ],
+    "var_side": 55.6,
+    "var_all": 233.2
+  },
+  {
+    "file": "pooja_1144.jpg",
+    "path": "/assets\\images\\poojas\\pooja_1144.jpg",
+    "aspect": 0.748,
+    "size": [
+      1600,
+      2140
+    ],
+    "var_side": 125.3,
+    "var_all": 1283.4
+  },
+  {
+    "file": "pooja_1148.jpg",
+    "path": "/assets\\images\\poojas\\pooja_1148.jpg",
+    "aspect": 0.886,
+    "size": [
+      1393,
+      1573
+    ],
+    "var_side": 136.9,
+    "var_all": 136.9
+  },
+  {
+    "file": "pooja_1264.jpg",
+    "path": "/assets\\images\\poojas\\pooja_1264.jpg",
+    "aspect": 0.75,
+    "size": [
+      780,
+      1040
+    ],
+    "var_side": 241.7,
+    "var_all": 256.8
+  },
+  {
+    "file": "skin_1235.jpg",
+    "path": "/assets\\images\\skin\\skin_1235.jpg",
+    "aspect": 1.113,
+    "size": [
+      1600,
+      1438
+    ],
+    "var_side": 8363.9,
+    "var_all": 8363.9
+  },
+  {
+    "file": "skin_1239.jpg",
+    "path": "/assets\\images\\skin\\skin_1239.jpg",
+    "aspect": 1.0,
+    "size": [
+      1330,
+      1330
+    ],
+    "var_side": 22468.5,
+    "var_all": 22468.5
+  },
+  {
+    "file": "skin_1240.jpg",
+    "path": "/assets\\images\\skin\\skin_1240.jpg",
+    "aspect": 0.946,
+    "size": [
+      778,
+      822
+    ],
+    "var_side": 3296.1,
+    "var_all": 3296.1
+  },
+  {
+    "file": "skin_1241.jpg",
+    "path": "/assets\\images\\skin\\skin_1241.jpg",
+    "aspect": 1.031,
+    "size": [
+      937,
+      909
+    ],
+    "var_side": 3155.9,
+    "var_all": 3155.9
+  },
+  {
+    "file": "skin_1245.jpg",
+    "path": "/assets\\images\\skin\\skin_1245.jpg",
+    "aspect": 1.075,
+    "size": [
+      1227,
+      1141
+    ],
+    "var_side": 6.6,
+    "var_all": 1268.6
+  },
+  {
+    "file": "skin_1256.png",
+    "path": "/assets\\images\\skin\\skin_1256.png",
+    "aspect": 1.0,
+    "size": [
+      1024,
+      1024
+    ],
+    "var_side": 214.3,
+    "var_all": 214.3
+  },
+  {
+    "file": "skin_1258.jpg",
+    "path": "/assets\\images\\skin\\skin_1258.jpg",
+    "aspect": 0.994,
+    "size": [
+      791,
+      796
+    ],
+    "var_side": 4925.6,
+    "var_all": 7343.5
+  },
+  {
+    "file": "skin_1260.jpg",
+    "path": "/assets\\images\\skin\\skin_1260.jpg",
+    "aspect": 0.941,
+    "size": [
+      1506,
+      1600
+    ],
+    "var_side": 7715.0,
+    "var_all": 7715.0
+  },
+  {
+    "file": "skin_1281.jpeg",
+    "path": "/assets\\images\\skin\\skin_1281.jpeg",
+    "aspect": 0.761,
+    "size": [
+      1218,
+      1600
+    ],
+    "var_side": 131.1,
+    "var_all": 713.8
+  },
+  {
+    "file": "skin_1304.jpeg",
+    "path": "/assets\\images\\skin\\skin_1304.jpeg",
+    "aspect": 0.558,
+    "size": [
+      768,
+      1376
+    ],
+    "var_side": 213.2,
+    "var_all": 213.2
+  },
+  {
+    "file": "tea_1012.jpeg",
+    "path": "/assets\\images\\tea\\tea_1012.jpeg",
+    "aspect": 1.0,
+    "size": [
+      1024,
+      1024
+    ],
+    "var_side": 973.4,
+    "var_all": 1015.0
+  },
+  {
+    "file": "tea_1013.jpg",
+    "path": "/assets\\images\\tea\\tea_1013.jpg",
+    "aspect": 1.202,
+    "size": [
+      1600,
+      1331
+    ],
+    "var_side": 240.8,
+    "var_all": 240.8
+  },
+  {
+    "file": "tea_1014.jpg",
+    "path": "/assets\\images\\tea\\tea_1014.jpg",
+    "aspect": 1.0,
+    "size": [
+      1024,
+      1024
+    ],
+    "var_side": 6773.2,
+    "var_all": 6773.2
+  },
+  {
+    "file": "tea_1017.jpg",
+    "path": "/assets\\images\\tea\\tea_1017.jpg",
+    "aspect": 1.323,
+    "size": [
+      840,
+      635
+    ],
+    "var_side": 451.4,
+    "var_all": 451.4
+  },
+  {
+    "file": "tea_1021.jpg",
+    "path": "/assets\\images\\tea\\tea_1021.jpg",
+    "aspect": 0.827,
+    "size": [
+      1528,
+      1848
+    ],
+    "var_side": 218.0,
+    "var_all": 312.3
+  },
+  {
+    "file": "tea_1022.jpg",
+    "path": "/assets\\images\\tea\\tea_1022.jpg",
+    "aspect": 1.0,
+    "size": [
+      1024,
+      1024
+    ],
+    "var_side": 3887.6,
+    "var_all": 3887.6
+  },
+  {
+    "file": "tea_1025.jpg",
+    "path": "/assets\\images\\tea\\tea_1025.jpg",
+    "aspect": 1.0,
+    "size": [
+      200,
+      200
+    ],
+    "var_side": 641.1,
+    "var_all": 641.1
+  }
+]

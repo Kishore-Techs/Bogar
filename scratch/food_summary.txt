@@ -1,0 +1,220 @@
+Total: 68
+1. ID: 1053 | Name: Amutham Nattu Charkkarai | Price: Rs.95.00 | Public: True
+   Image: https://vedanmart.com/images/Food/AMUTHAM%20NATTU%20CHARKKARAI.jpg
+   Desc: Adhiyaman brown sugar powder, like other brown sugars, offers several benefits, primarily due to the
+2. ID: 1305 | Name: KADALAI MITTAI JAR | Price: Rs.10.00 | Public: True
+   Image: https://vedanmart.com/images/Food/KADALAI%20MITTAI.webp
+   Desc: 
+3. ID: 1290 | Name: Vallarai Sambar Powder | Price: Rs.30.00 | Public: True
+   Image: https://vedanmart.com/images/Health%20&%20Wellness/vallarai%20sambar%20powder.jpeg
+   Desc: A smart daily health upgrade combining shade-dried Vallarai leaves with traditionally roasted_x000D_
+4. ID: 1288 | Name: Mudakathan Soup Powder | Price: Rs.30.00 | Public: True
+   Image: https://vedanmart.com/images/herbal/3.jpeg
+   Desc: Derived from the balloon vine plant (Mudakku-Athan), this instant herbal soup mix effectively_x000D_
+5. ID: 1287 | Name: Vallarai Sadha Podi | Price: Rs.50.00 | Public: True
+   Image: https://vedanmart.com/images/herbal/2.jpeg
+   Desc: Celebrated in ancient Tamil literature for wisdom and focus, Vallarai (Centella asiatica)_x000D_
+nou
+6. ID: 1286 | Name: Veppilai Powder | Price: Rs.30.00 | Public: True
+   Image: https://vedanmart.com/images/Baby/Vaishnavi.jpeg
+   Desc: Ground from pure shade-dried neem leaves, this potent powder provides antibacterial and blood-purify
+7. ID: 1285 | Name: Karuveppilai Sadha Podi | Price: Rs.50.00 | Public: True
+   Image: https://vedanmart.com/images/Baby/Vaishnavi.jpeg
+   Desc: A savory spice blend made from dark curry leaves, lentils, pepper, and cumin. Packed with_x000D_
+nat
+8. ID: 1282 | Name: Karupatti Halwa | Price: Rs.135.00 | Public: True
+   Image: https://vedanmart.com/images/Food/KARUPATTI%20HALWA.jpeg
+   Desc: Slow-cooked with pure, unrefined palm jaggery instead of white sugar, this rich South Indian _x000D_
+9. ID: 1280 | Name: Mann Kattiya Toor Dal | Price: Rs.105.00 | Public: True
+   Image: https://vedanmart.com/images/Health%20&%20Wellness/Mann%20kattiya%20Toor%20Dal.jpeg
+   Desc: Cured in mineral-dense red soil and sun-dried, this traditional unpolished dal retains its natural_x
+10. ID: 1279 | Name: Vallarai Mixture | Price: Rs.105.00 | Public: True
+   Image: https://vedanmart.com/images/herbal/6.jpeg
+   Desc: Enjoy guilt-free snacking with this crispy herbal mixture infused with nutrient-rich Vallarai leaves
+11. ID: 1273 | Name: Pirandai Powder Jar | Price: Rs.30.00 | Public: True
+   Image: https://vedanmart.com/images/herbal/9.jpeg
+   Desc: Known in Siddha literature as Vajravalli, this pure Pirandai powder is rich in bio-available_x000D_
+
+12. ID: 1253 | Name: Ooty Varkey | Price: Rs.65.00 | Public: True
+   Image: https://vedanmart.com/images/Food/Ooty%20Varkey.jpg
+   Desc: Ooty Varkey is a traditional, crispy, and flaky baked snack from the beautiful hills of Ooty in the 
+13. ID: 1141 | Name: Banana Stem Pickle Jar | Price: Rs.50.00 | Public: True
+   Image: https://vedanmart.com/images/Food/Banana%20stem%20pickel%20jar.jpg
+   Desc: Healthy side dish that can be eaten with idly dosa, chapati, or rice.Incorporating vaalaithandu pick
+14. ID: 1139 | Name: Banana Blossom Pickle | Price: Rs.55.00 | Public: True
+   Image: https://vedanmart.com/images/Food/Banana%20blossom%20pickel.jpg
+   Desc: A rare delicacy crafted for modern tables.
+
+Experience the richness of tradition with Dharani Herbal
+15. ID: 1137 | Name: Pirandai Pickle | Price: Rs.55.00 | Public: True
+   Image: https://vedanmart.com/images/Food/PIRANDAI%20PICKLE.jpeg
+   Desc: Pirandai pickle is a healthy side dish that can be eaten with idly dosa, chapati, or rice.Traditiona
+16. ID: 1135 | Name: Pulithokku | Price: Rs.55.00 | Public: True
+   Image: https://vedanmart.com/images/Food/PULITHOKKU.jpg
+   Desc: Pulithokku is the favorite dish for everyone.it can be eaten with hot rice.it can be a flavorful way
+17. ID: 1133 | Name: Sundakkai Thokku | Price: Rs.55.00 | Public: True
+   Image: https://vedanmart.com/images/Food/SUNDAIKKAI%20THOKKU.jpg
+   Desc: Turkey berry thokku, also known as sundakkai thokku, is a popular South Indian dish made from turkey
+18. ID: 1132 | Name: Lemon Pickle (Jar) | Price: Rs.45.00 | Public: True
+   Image: https://vedanmart.com/images/Food/lemonpickel.jpg
+   Desc: Lemon pickle is a healthy side dish that can be eaten with idly dosa, chapati, or rice. it may even 
+19. ID: 1129 | Name: Curry Leaf Gravy (Jar) | Price: Rs.55.00 | Public: True
+   Image: https://vedanmart.com/images/Food/CURRYLEAF%20Gravy%20JAR.jpg
+   Desc: Curry leaves thokku is a healthy side dish, it can be served with hot rice, idly, dosa, or chapati.
+20. ID: 1128 | Name: Jathikkai Pickle | Price: Rs.55.00 | Public: True
+   Image: https://vedanmart.com/images/Food/Jathikkai%20Pickle.jpg
+   Desc: Jathikkai pickle is prepared healthily, it can be eaten with idly, dosa, chapati, or rice.jathikkai 
+21. ID: 1126 | Name: Vallarai Idly Powder Jar | Price: Rs.55.00 | Public: True
+   Image: https://vedanmart.com/images/Food/VALLARAI%20IDLY%20POWDER%20JAR.jpg
+   Desc: Vallarai idly powder is an easy and convenient way to include this nutritious herb in your diet. It 
+22. ID: 1124 | Name: Pirandai Idly Powder Jar | Price: Rs.55.00 | Public: True
+   Image: https://vedanmart.com/images/Food/PIRANDAI%20IDLY%20POWDER%20JAR.jpg
+   Desc: Pirandai idly powder is typically made by roasting Pirandai with other ingredients like lentils, spi
+23. ID: 1122 | Name: Mudakkatran Sadha Podi Jar | Price: Rs.50.00 | Public: True
+   Image: https://vedanmart.com/images/Food/MUTTAKATRAN%20SADA%20POWDER%20JAR.jpg
+   Desc: The powder is typically consumed by mixing it with warm water, ghee, or honey. It can also be incorp
+24. ID: 1121 | Name: Murungai Keerai Sadha Podi Jar | Price: Rs.50.00 | Public: True
+   Image: https://vedanmart.com/images/Food/Drumstick%20Leaf%20Rice%20Powder%20Jar.jpg
+   Desc: Constipation, anemia, eye problems, throat infections, and skin allergies such as psoriasis can be t
+25. ID: 1119 | Name: Pirandai Sadha Podi Jar | Price: Rs.50.00 | Public: True
+   Image: https://vedanmart.com/images/Food/PIRANDAI%20SADA%20POWDER%20JAR.jpg
+   Desc: Pirandai Sadha Powder, a traditional South Indian mix, is made from the Pirandai plant (also known a
+26. ID: 1118 | Name: Kollu Sadha Podi  | Price: Rs.50.00 | Public: True
+   Image: https://vedanmart.com/images/Food/Horse%20Gram%20Rice%20Powder%20(JAR).jpg
+   Desc: It helps to cure constipation, kidney stones, digestion-related problems and helps to reduce weight.
+27. ID: 1116 | Name: Amutham Nattu Charkkarai | Price: Rs.58.00 | Public: True
+   Image: https://vedanmart.com/images/Food/AMUTHAM%20NATTU%20CHAKKARAI%20(Sukku+Elakai).jpg
+   Desc: "Nattu Chakkarai Sukku + Elachi Mixed" is a traditional South Indian blend that offers a harmonious 
+28. ID: 1114 | Name: Wild Honey Jar(NR) | Price: Rs.75.00 | Public: True
+   Image: https://vedanmart.com/images/Food/WILD%20HONEY%20JAR(NR).jpg
+   Desc: Vedan honey is a natural, golden sweetener produced by bees from the nectar of flowers. Known for it
+29. ID: 1112 | Name: Wild Honey Jar(NR) | Price: Rs.150.00 | Public: True
+   Image: https://vedanmart.com/images/Food/WILD%20HONEYJAR(NR).jpg
+   Desc: Honey is a natural, sweet, and viscous substance produced by bees from flower nectar. Beyond its use
+30. ID: 1110 | Name: Wild Honey Jar(NR) | Price: Rs.295.00 | Public: True
+   Image: https://vedanmart.com/images/Food/WILD%20HONEYJAR(NR).jpg
+   Desc: Honey is a natural, sweet, and viscous substance produced by bees from flower nectar. Beyond its use
+31. ID: 1108 | Name: Foxtail Millet (Thinai Rice) | Price: Rs.63.00 | Public: True
+   Image: https://vedanmart.com/images/Food/Foxtail%20Millet%20(thinai%20rice).png
+   Desc: Foxtail millet is one nutritious millet, it can be eaten as idli, dosa, porridge, and also sweet and
+32. ID: 1106 | Name: Karuppu Kavuni Rice | Price: Rs.155.00 | Public: True
+   Image: https://vedanmart.com/images/Food/KARUPPU%20KAVUNI%20RICE.png
+   Desc: It can treat constipation, aids weight loss, removes bad cholesterol, prevents diabetes.
+33. ID: 1104 | Name: Samai Rice | Price: Rs.80.00 | Public: True
+   Image: https://vedanmart.com/images/Food/SAMAI%20RICE.png
+   Desc: In addition to being one of the healthiest meals, little millet can also be made sweet and savory.
+34. ID: 1102 | Name: Varagu Rice | Price: Rs.70.00 | Public: True
+   Image: https://vedanmart.com/images/Food/VARAGU%20RICE.png
+   Desc: Varagu or Kodo millet is highly nutritious, and it can replace rice as part of a balanced diet.
+35. ID: 1101 | Name: Mappillai Samba Rice | Price: Rs.65.00 | Public: True
+   Image: https://vedanmart.com/images/Food/MAPPILLAI%20SAMBA%20RICE.png
+   Desc: Mapilai Samba or Bridegroom’s rice can be taken as plain rice, idiyappam, dosa, idli, porridge, and 
+36. ID: 1099 | Name: Millet Nutritional Mix (PO) | Price: Rs.110.00 | Public: True
+   Image: https://vedanmart.com/images/Food/Millet%20Nutritional%20Mix%20(PO).jpg
+   Desc: Mahil health mix powder is made for all ages and has a high nutritional value
+37. ID: 1092 | Name: Little Millet - Indian Pennywort (Vallarai Pongal)Mix 250G | Price: Rs.90.00 | Public: True
+   Image: https://vedanmart.com/images/Food/LITTLE%20MILLET%20-%20INDIAN%20PENNYWORT.jpg
+   Desc: Mahil Little millet-Vallarai Pongal mix is healthy dietary food. It is not only healthy but also goo
+38. ID: 1090 | Name: Kodo - Moringa Millet Pongal Mix 250G | Price: Rs.85.00 | Public: True
+   Image: https://vedanmart.com/images/Food/KODO%20-%20MORINGA%20MILLET%20PONGAL%20MIX.jpg
+   Desc: Mahil Kodo millet-Moringa Pongal mix is healthy dietary food. It is not only healthy but also good f
+39. ID: 1089 | Name: Athiyaman Country Sugar (PO) | Price: Rs.50.00 | Public: True
+   Image: https://vedanmart.com/images/Food/Athiyaman%20Country%20Sugar%20(PO).png
+   Desc: Sugar is a major component of our food. Adhiyaman country sugar is 100% natural. This product is fre
+40. ID: 1087 | Name: Kambu Maavu(PO) | Price: Rs.45.00 | Public: True
+   Image: https://vedanmart.com/images/Food/KAMBU%20MAAVU(PO).png
+   Desc: Makil Kambu Maavu is premium pearl millet flour from Makil, finely ground for versatile South Indian
+41. ID: 1085 | Name: Kambu Puttu Maavu(PO) | Price: Rs.65.00 | Public: True
+   Image: https://vedanmart.com/images/Food/KAMBU%20PUTTU%20MAAVU(PO).png
+   Desc: Makil KAMBU PUTTU MAAVU is a premium pearl millet flour from Makil, perfectly processed for authenti
+42. ID: 1083 | Name: Kambu Dosa Mix (PO) | Price: Rs.70.00 | Public: True
+   Image: https://vedanmart.com/images/Food/KAMBU%20DOSA%20MIX(PO).jpg
+   Desc: Mahil Mudakatraan Kambu Dosa Mix is the healthiest and tastiest breakfast you can have.
+43. ID: 1081 | Name: Beetroot Malt(JAR) | Price: Rs.250.00 | Public: True
+   Image: https://vedanmart.com/images/Food/BEETROOT%20MALT(JAR).png
+   Desc: Beetroot Malt is the best option to drink.
+ 
+ Preparation: Take a spoonful of "Mahil Beetroot Malt" 
+44. ID: 1080 | Name: Beetroot Malt(JAR) | Price: Rs.100.00 | Public: True
+   Image: https://vedanmart.com/images/Food/BEETROOT%20MALT1(JAR).jpg
+   Desc: Beetroot Malt is a highly nutritious beverage mix that uniquely combines the health benefits of beet
+45. ID: 1078 | Name: Carrot Malt(JAR) | Price: Rs.120.00 | Public: True
+   Image: https://vedanmart.com/images/Food/CARROT%20MALT(JAR).jpg
+   Desc: Carrot Malt is a nutritious beverage mix that combines the wholesome benefits of carrots with the no
+46. ID: 1076 | Name: Ginger Garlic Pickle Jar | Price: Rs.55.00 | Public: True
+   Image: https://vedanmart.com/images/Food/GINGER%20GARLIC%20PICKLE%20JAR.jpg
+   Desc: Mahil Ginger Garlic pickle is a healthy side dish; it can be eaten with idly, dosa, chapati, or rice
+47. ID: 1074 | Name: Ginger Garlic Pickle Jar | Price: Rs.105.00 | Public: True
+   Image: https://vedanmart.com/images/Food/GINGER%20GARLIC%20PICKLE%20JAR1.jpg
+   Desc: Mahil Ginger Garlic pickle is a healthy side dish, it can be eaten with idly, dosa, chapati, or rice
+48. ID: 1072 | Name: Narthankai Pickle | Price: Rs.50.00 | Public: True
+   Image: https://vedanmart.com/images/Food/NARTHANKAI%20PICKLE.jpg
+   Desc: Mahil citron lime pickle(narthankkai) is a healthy side dish; it can be eaten with idly, dosa, chapa
+49. ID: 1068 | Name: Kadukkai Chicken Biriyani Powder Jar | Price: Rs.55.00 | Public: True
+   Image: https://vedanmart.com/images/Food/KADUKKAI%20CHICKEN%20BRIYANI%20POWDER%20JAR(NR).jpg
+   Desc: Inknut (Kadukkai in Tamil) has various health benefits. It treats constipation, indigestion, piles, 
+50. ID: 1066 | Name: Chilli Powder | Price: Rs.28.00 | Public: True
+   Image: https://vedanmart.com/images/Food/CHILLI%20POWDER.png
+   Desc: Chili is a spice used to season and color food, Mahil dry chili contains only 100% dry chili.
+51. ID: 1065 | Name: Kulambu Milagai Thool(PO) | Price: Rs.30.00 | Public: True
+   Image: https://vedanmart.com/images/Food/KULAMBU%20MILAGAI%20THOOL(PO).png
+   Desc: Kuzhambu Milagai powder is a popular ingredient used in a south Indian dish, it will be very tasty a
+52. ID: 1063 | Name: Manjal Powder | Price: Rs.21.00 | Public: True
+   Image: https://vedanmart.com/images/Food/KULAMBU%20MANJAL%20POWDER.png
+   Desc: Mahil Turmeric powder is not only added as a flavor but also has many uses for health.
+53. ID: 1062 | Name: Malli Powder | Price: Rs.20.00 | Public: True
+   Image: https://vedanmart.com/images/Food/MALLI%20POWDER%20(PO).jpg
+   Desc: This spice is an important ingredient in Indian kitchens since it not only enhances food flavor, but
+54. ID: 1060 | Name: Murungaikeerai Soup (PO) | Price: Rs.30.00 | Public: True
+   Image: https://vedanmart.com/images/Food/MURUNGAIKEERAI%20SOUP%20(PO).jpg
+   Desc: Makil Murungaikeerai Soup is a nutritious herbal soup mix made with premium moringa leaves, packed w
+55. ID: 1058 | Name: Mutakkatran Idly Power Jar | Price: Rs.55.00 | Public: True
+   Image: https://vedanmart.com/images/Food/MUTAKKATRAN%20IDLY%20POWDER%20JAR.jpg
+   Desc: Mahil Mudakatraan idly powder can be eaten with idly, dosa or chapati.
+56. ID: 1056 | Name: Murungai Llai Idly Podi Jar | Price: Rs.55.00 | Public: True
+   Image: https://vedanmart.com/images/Food/Drumstick%20Leaf%20Idli%20Powder%20JAR.jpg
+   Desc: Mahil Drumstick leaves(murungai) idly powder can be eaten with idly, dosa or chapati.
+57. ID: 1055 | Name: Neem Flower Rasam Powder | Price: Rs.25.00 | Public: True
+   Image: https://vedanmart.com/images/Food/Neem%20Flower%20Rasam%20Powder.jpg
+   Desc: Makil Neem Flower Rasam Powder is a premium spice blend from Makil, featuring dried neem flowers (ve
+58. ID: 1051 | Name: Adhiyaman Country Jaggery | Price: Rs.70.00 | Public: True
+   Image: https://vedanmart.com/images/Food/Adhiyaman%20Country%20Jaggery.png
+   Desc: Jaggery helps to improve digestion and boost immunity. Adhiyaman sugarcane jaggery is purely handmad
+59. ID: 1050 | Name: Ragi Dosai Mix | Price: Rs.75.00 | Public: True
+   Image: https://vedanmart.com/images/Food/RAGI%20DOSAI%20MIX.png
+   Desc: Mahil Moringa Ragi dosa mix is a healthy choice. It can treat anemia, lower blood sugar levels, redu
+60. ID: 1048 | Name: Kambu Rice | Price: Rs.40.00 | Public: True
+   Image: https://vedanmart.com/images/Food/KAMBU%20RICE.jpg
+   Desc: Kambu, also known as pearl is a nutritious grain that offers a wide range of health benefits, making
+61. ID: 1046 | Name: Kuthiraivaali Rice | Price: Rs.80.00 | Public: True
+   Image: https://vedanmart.com/images/Food/KUTHIRAIVAALI%20RICE(PO).jpg
+   Desc: Kuthiraivaali rice, also known as Barnyard Millet, is a small, gluten-free grain with a host of heal
+62. ID: 1044 | Name: Wheat Flour  | Price: Rs.48.00 | Public: True
+   Image: https://vedanmart.com/images/Food/WHEAT%20MAAVU%20POWDER.jpg
+   Desc: Wheat flour, especially whole wheat flour, is a fundamental food ingredient with a range of health b
+63. ID: 1042 | Name: Paruppu Dosai Mix | Price: Rs.120.00 | Public: True
+   Image: https://vedanmart.com/images/Food/PARUPPU%20DOSAI%20MIX.jpg
+   Desc: MAKIL PARUPPU DOSAI MIX is a premium instant mix from the Makil brand, crafted with a blend of lenti
+64. ID: 1041 | Name: Sivappu Kavuni Rice | Price: Rs.53.00 | Public: True
+   Image: https://vedanmart.com/images/Food/SIVAPPU%20KAVUNI%20RICE.jpg
+   Desc: Sivappu Kavuni Rice is a traditional heritage variety known for its deep 
+ 
+ reddish color and rich 
+65. ID: 1039 | Name: Nattu Samba Brown Rice | Price: Rs.60.00 | Public: True
+   Image: https://vedanmart.com/images/Food/NATTU%20SAMBA%20BROWN%20RICE.png
+   Desc: Naatu Samba Rice is an indigenous rice variety valued for its robust 
+ 
+ nutrition and earthy flavor
+66. ID: 1037 | Name: Kadukkai Baji Bonda Mix(PO) | Price: Rs.100.00 | Public: True
+   Image: https://vedanmart.com/images/Food/KADUKKAI%20BAJI%20BONDA%20MIX.png
+   Desc: Kadukkai Bajji/Bonda Mix Powder is a convenient, ready-to-use blend 
+ 
+ crafted with carefully selec
+67. ID: 1035 | Name: Ragi Powder(PO) | Price: Rs.40.00 | Public: True
+   Image: https://vedanmart.com/images/Food/RAGI%20POWDER.png
+   Desc: Vedam Ragi Powder
+ 
+ Vedam Ragi Powder is made from carefully selected quality ragi grains and finel
+68. ID: 1032 | Name: Ponni (Brown Rice) | Price: Rs.53.00 | Public: True
+   Image: https://vedanmart.com/images/Food/PONNI.png
+   Desc: Makil Ponni Brown Rice is made from premium quality ponni rice with its natural bran layer preserved

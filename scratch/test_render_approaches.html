@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  body {
+    background: #F8F5EE;
+    font-family: sans-serif;
+    padding: 20px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 380px);
+    gap: 20px;
+  }
+  .card {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  }
+  .label {
+    padding: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  /* APPROACH A: Exact edge background color in container */
+  .media-a {
+    position: relative;
+    height: 220px;
+    width: 380px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .media-a img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+  /* APPROACH B: Blurred background image layer */
+  .media-b {
+    position: relative;
+    height: 220px;
+    width: 380px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .media-b .bg-layer {
+    position: absolute;
+    inset: -20px;
+    width: calc(100% + 40px);
+    height: calc(100% + 40px);
+    object-fit: cover;
+    filter: blur(25px);
+    transform: scale(1.1);
+    opacity: 0.95;
+    z-index: 1;
+  }
+  .media-b .fg-img {
+    position: relative;
+    z-index: 2;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+  /* APPROACH C: Edge-color + CSS Clamp */
+  .media-c {
+    position: relative;
+    height: 220px;
+    width: 380px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .media-c img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+</style>
+</head>
+<body>
+  <h2>Comparison of Approaches</h2>
+  <h3>Approach A: Exact Edge Color as container bg</h3>
+  <div class="grid">
+    <div class="card">
+      <div class="label">Pooja 1264 (Grey bg) - Approach A</div>
+      <div class="media-a" style="background-color: rgb(185, 180, 180);">
+        <img src="/assets/images/poojas/pooja_1264.jpg" />
+      </div>
+    </div>
+    <div class="card">
+      <div class="label">Pooja 1150 (Light grey bg) - Approach A</div>
+      <div class="media-a" style="background-color: rgb(228, 228, 228);">
+        <img src="/assets/images/poojas/pooja_1150.jpg" />
+      </div>
+    </div>
+    <div class="card">
+      <div class="label">Pooja 1294 (Studio bg) - Approach A</div>
+      <div class="media-a" style="background-color: rgb(240, 240, 243);">
+        <img src="/assets/images/poojas/pooja_1294.jpeg" />
+      </div>
+    </div>
+  </div>
+
+  <h3 style="margin-top: 30px;">Approach B: Blurred Ambient Background Layer</h3>
+  <div class="grid">
+    <div class="card">
+      <div class="label">Pooja 1264 (Grey bg) - Approach B</div>
+      <div class="media-b">
+        <img class="bg-layer" src="/assets/images/poojas/pooja_1264.jpg" />
+        <img class="fg-img" src="/assets/images/poojas/pooja_1264.jpg" />
+      </div>
+    </div>
+    <div class="card">
+      <div class="label">Pooja 1150 (Light grey bg) - Approach B</div>
+      <div class="media-b">
+        <img class="bg-layer" src="/assets/images/poojas/pooja_1150.jpg" />
+        <img class="fg-img" src="/assets/images/poojas/pooja_1150.jpg" />
+      </div>
+    </div>
+    <div class="card">
+      <div class="label">Pooja 1294 (Studio bg) - Approach B</div>
+      <div class="media-b">
+        <img class="bg-layer" src="/assets/images/poojas/pooja_1294.jpeg" />
+        <img class="fg-img" src="/assets/images/poojas/pooja_1294.jpeg" />
+      </div>
+    </div>
+  </div>
+</body>
+</html>

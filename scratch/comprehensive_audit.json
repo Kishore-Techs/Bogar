@@ -1,0 +1,5158 @@
+{
+  "poojas": [
+    {
+      "id": 1294,
+      "name": "108 Homa Dravyangal",
+      "image": "https://vedanmart.com/images/Poojas%20Gallery/108%20Homa%20Draviyangal.jpeg",
+      "fallbackImage": "/assets/images/poojas/pooja_1294.jpeg",
+      "local_file": "public\\assets/images/poojas/pooja_1294.jpeg",
+      "analysis": {
+        "path": "public\\assets/images/poojas/pooja_1294.jpeg",
+        "size": [
+          1024,
+          1024
+        ],
+        "aspect": 1.0,
+        "var_lr": 99.8,
+        "var_tb": 48.3,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1265,
+      "name": "Deepa Oil",
+      "image": "https://vedanmart.com/images/Poojas/DEEPA%20OIL.jpg",
+      "fallbackImage": "/assets/images/poojas/pooja_1265.jpg",
+      "local_file": "public\\assets/images/poojas/pooja_1265.jpg",
+      "analysis": {
+        "path": "public\\assets/images/poojas/pooja_1265.jpg",
+        "size": [
+          1330,
+          1330
+        ],
+        "aspect": 1.0,
+        "var_lr": 0.0,
+        "var_tb": 0.0,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1264,
+      "name": "Herbal Dhoopa Powder (PO)",
+      "image": "https://vedanmart.com/images/Poojas/Herbal%20Incense%20Powder%20(PO).jpg",
+      "fallbackImage": "/assets/images/poojas/pooja_1264.jpg",
+      "local_file": "public\\assets/images/poojas/pooja_1264.jpg",
+      "analysis": {
+        "path": "public\\assets/images/poojas/pooja_1264.jpg",
+        "size": [
+          780,
+          1040
+        ],
+        "aspect": 0.75,
+        "var_lr": 226.0,
+        "var_tb": 252.9,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1150,
+      "name": "27 Types of Homa Offerings",
+      "image": "https://vedanmart.com/images/Poojas/27%20Types%20of%20Homa%20Offerings.jpg",
+      "fallbackImage": "/assets/images/poojas/pooja_1150.jpg",
+      "local_file": "public\\assets/images/poojas/pooja_1150.jpg",
+      "analysis": {
+        "path": "public\\assets/images/poojas/pooja_1150.jpg",
+        "size": [
+          618,
+          680
+        ],
+        "aspect": 0.909,
+        "var_lr": 53.5,
+        "var_tb": 108.6,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1148,
+      "name": "Thirumanjal Powder (PO)",
+      "image": "https://vedanmart.com/images/Poojas/THIRUMANJANA%20POWDER%20(PO).jpg",
+      "fallbackImage": "/assets/images/poojas/pooja_1148.jpg",
+      "local_file": "public\\assets/images/poojas/pooja_1148.jpg",
+      "analysis": {
+        "path": "public\\assets/images/poojas/pooja_1148.jpg",
+        "size": [
+          1393,
+          1573
+        ],
+        "aspect": 0.886,
+        "var_lr": 153.5,
+        "var_tb": 34.5,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1146,
+      "name": "Thalampoo Kunkumam",
+      "image": "https://vedanmart.com/images/Poojas/Screw%20Pine%20Kumkum.png",
+      "fallbackImage": "/assets/images/poojas/pooja_1146.png",
+      "local_file": "public\\assets/images/poojas/pooja_1146.png",
+      "analysis": {
+        "path": "public\\assets/images/poojas/pooja_1146.png",
+        "size": [
+          1024,
+          1024
+        ],
+        "aspect": 1.0,
+        "var_lr": 92.8,
+        "var_tb": 44.3,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1144,
+      "name": "54 Vagai Homa Thiraviyangal",
+      "image": "https://vedanmart.com/images/Poojas/54VAGAI%20HOMA%20THIRAVIYANGAL.jpg",
+      "fallbackImage": "/assets/images/poojas/pooja_1144.jpg",
+      "local_file": "public\\assets/images/poojas/pooja_1144.jpg",
+      "analysis": {
+        "path": "public\\assets/images/poojas/pooja_1144.jpg",
+        "size": [
+          1600,
+          2140
+        ],
+        "aspect": 0.748,
+        "var_lr": 109.8,
+        "var_tb": 1178.6,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    }
+  ],
+  "tea": [
+    {
+      "id": 1027,
+      "name": "Aavaram Flower Tea",
+      "image": "https://vedanmart.com/images/Beverages/Aavaram%20Flower%20Tea.png",
+      "fallbackImage": "/assets/images/tea/tea_1027.png",
+      "local_file": "public\\assets/images/tea/tea_1027.png",
+      "analysis": {
+        "path": "public\\assets/images/tea/tea_1027.png",
+        "size": [
+          1024,
+          1024
+        ],
+        "aspect": 1.0,
+        "var_lr": 1.1,
+        "var_tb": 1.3,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1025,
+      "name": "Black Tea(G)",
+      "image": "https://vedanmart.com/images/Beverages/BLACK%20TEA.jpg",
+      "fallbackImage": "/assets/images/tea/tea_1025.jpg",
+      "local_file": "public\\assets/images/tea/tea_1025.jpg",
+      "analysis": {
+        "path": "public\\assets/images/tea/tea_1025.jpg",
+        "size": [
+          200,
+          200
+        ],
+        "aspect": 1.0,
+        "var_lr": 649.4,
+        "var_tb": 33.4,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1023,
+      "name": "Guava Leaf Tea",
+      "image": "https://vedanmart.com/images/Beverages/Guava%20Leaf%20Tea.jpg",
+      "fallbackImage": "/assets/images/tea/tea_1023.jpg",
+      "local_file": "public\\assets/images/tea/tea_1023.jpg",
+      "analysis": {
+        "path": "public\\assets/images/tea/tea_1023.jpg",
+        "size": [
+          1600,
+          1600
+        ],
+        "aspect": 1.0,
+        "var_lr": 0.0,
+        "var_tb": 0.0,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1022,
+      "name": "Herbal Tea Powder",
+      "image": "https://vedanmart.com/images/Beverages/Herbal%20Tea%20Powder.jpg",
+      "fallbackImage": "/assets/images/tea/tea_1022.jpg",
+      "local_file": "public\\assets/images/tea/tea_1022.jpg",
+      "analysis": {
+        "path": "public\\assets/images/tea/tea_1022.jpg",
+        "size": [
+          1024,
+          1024
+        ],
+        "aspect": 1.0,
+        "var_lr": 3876.9,
+        "var_tb": 130.6,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1021,
+      "name": "Sukku Powder (Po)",
+      "image": "https://vedanmart.com/images/Beverages/SUKKU%20POWDER%20PO.jpg",
+      "fallbackImage": "/assets/images/tea/tea_1021.jpg",
+      "local_file": "public\\assets/images/tea/tea_1021.jpg",
+      "analysis": {
+        "path": "public\\assets/images/tea/tea_1021.jpg",
+        "size": [
+          1528,
+          1848
+        ],
+        "aspect": 0.827,
+        "var_lr": 166.6,
+        "var_tb": 244.7,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1020,
+      "name": "Green Tea (Jar)",
+      "image": "https://vedanmart.com/images/Beverages/GREEN%20TEA%20JAR.jpg",
+      "fallbackImage": "/assets/images/tea/tea_1020.jpg",
+      "local_file": "public\\assets/images/tea/tea_1020.jpg",
+      "analysis": {
+        "path": "public\\assets/images/tea/tea_1020.jpg",
+        "size": [
+          200,
+          200
+        ],
+        "aspect": 1.0,
+        "var_lr": 33.5,
+        "var_tb": 18.3,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1019,
+      "name": "Nannari Sherbet",
+      "image": "https://vedanmart.com/images/Beverages/Nannari%20Sherbet.jpg",
+      "fallbackImage": "/assets/images/tea/tea_1019.jpg",
+      "local_file": "public\\assets/images/tea/tea_1019.jpg",
+      "analysis": {
+        "path": "public\\assets/images/tea/tea_1019.jpg",
+        "size": [
+          1500,
+          1500
+        ],
+        "aspect": 1.0,
+        "var_lr": 0.0,
+        "var_tb": 0.0,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1017,
+      "name": "Green Tea",
+      "image": "https://vedanmart.com/images/Beverages/GREEN%20TEA.jpg",
+      "fallbackImage": "/assets/images/tea/tea_1017.jpg",
+      "local_file": "public\\assets/images/tea/tea_1017.jpg",
+      "analysis": {
+        "path": "public\\assets/images/tea/tea_1017.jpg",
+        "size": [
+          840,
+          635
+        ],
+        "aspect": 1.323,
+        "var_lr": 457.4,
+        "var_tb": 51.7,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1016,
+      "name": "Vilvam Sherbet",
+      "image": "https://vedanmart.com/images/Beverages/Vilvam%20Sherbet.jpg",
+      "fallbackImage": "/assets/images/tea/tea_1016.jpg",
+      "local_file": "public\\assets/images/tea/tea_1016.jpg",
+      "analysis": {
+        "path": "public\\assets/images/tea/tea_1016.jpg",
+        "size": [
+          1500,
+          1500
+        ],
+        "aspect": 1.0,
+        "var_lr": 0.0,
+        "var_tb": 4.1,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1015,
+      "name": "Dry Ginger Coffee",
+      "image": "https://vedanmart.com/images/Beverages/Dry%20Ginger%20Coffee.jpg",
+      "fallbackImage": "/assets/images/tea/tea_1015.jpg",
+      "local_file": "public\\assets/images/tea/tea_1015.jpg",
+      "analysis": {
+        "path": "public\\assets/images/tea/tea_1015.jpg",
+        "size": [
+          1600,
+          1356
+        ],
+        "aspect": 1.18,
+        "var_lr": 0.0,
+        "var_tb": 0.0,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1014,
+      "name": "Thirikadugu Tea",
+      "image": "https://vedanmart.com/images/Beverages/Thirikadugu%20Tea.jpg",
+      "fallbackImage": "/assets/images/tea/tea_1014.jpg",
+      "local_file": "public\\assets/images/tea/tea_1014.jpg",
+      "analysis": {
+        "path": "public\\assets/images/tea/tea_1014.jpg",
+        "size": [
+          1024,
+          1024
+        ],
+        "aspect": 1.0,
+        "var_lr": 6380.7,
+        "var_tb": 2822.5,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1013,
+      "name": "TULSI TEA (G)",
+      "image": "https://vedanmart.com/images/Beverages/TULSI%20TEA.jpg",
+      "fallbackImage": "/assets/images/tea/tea_1013.jpg",
+      "local_file": "public\\assets/images/tea/tea_1013.jpg",
+      "analysis": {
+        "path": "public\\assets/images/tea/tea_1013.jpg",
+        "size": [
+          1600,
+          1331
+        ],
+        "aspect": 1.202,
+        "var_lr": 229.8,
+        "var_tb": 205.1,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1012,
+      "name": "Hibiscus Tea Powder",
+      "image": "https://vedanmart.com/images/Beverages/hibiscus%20tea.jpeg",
+      "fallbackImage": "/assets/images/tea/tea_1012.jpeg",
+      "local_file": "public\\assets/images/tea/tea_1012.jpeg",
+      "analysis": {
+        "path": "public\\assets/images/tea/tea_1012.jpeg",
+        "size": [
+          1024,
+          1024
+        ],
+        "aspect": 1.0,
+        "var_lr": 957.5,
+        "var_tb": 932.7,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    }
+  ],
+  "thuni": [
+    {
+      "id": "buddhist-monk-robes",
+      "name": "Traditional Buddhist Robes",
+      "image": "/assets/images/thuni-robes.jpg",
+      "fallbackImage": null,
+      "local_file": "public\\assets/images/thuni-robes.jpg",
+      "analysis": {
+        "path": "public\\assets/images/thuni-robes.jpg",
+        "size": [
+          1200,
+          896
+        ],
+        "aspect": 1.339,
+        "var_lr": 16648.2,
+        "var_tb": 13439.8,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": "meditation-shawl",
+      "name": "Meditation Shawls",
+      "image": "/assets/images/thuni-shawl.jpg",
+      "fallbackImage": null,
+      "local_file": "public\\assets/images/thuni-shawl.jpg",
+      "analysis": {
+        "path": "public\\assets/images/thuni-shawl.jpg",
+        "size": [
+          1200,
+          896
+        ],
+        "aspect": 1.339,
+        "var_lr": 14802.4,
+        "var_tb": 14024.2,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": "traditional-temple-cloth",
+      "name": "Traditional Temple Cloth",
+      "image": "/assets/images/thuni-temple-cloth.jpg",
+      "fallbackImage": null,
+      "local_file": "public\\assets/images/thuni-temple-cloth.jpg",
+      "analysis": {
+        "path": "public\\assets/images/thuni-temple-cloth.jpg",
+        "size": [
+          1200,
+          896
+        ],
+        "aspect": 1.339,
+        "var_lr": 7182.3,
+        "var_tb": 8523.3,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": "sacred-devotee-angavastram",
+      "name": "Sacred Devotee Angavastram",
+      "image": "/assets/images/thuni-angavastram.jpg",
+      "fallbackImage": null,
+      "local_file": "public\\assets/images/thuni-angavastram.jpg",
+      "analysis": {
+        "path": "public\\assets/images/thuni-angavastram.jpg",
+        "size": [
+          1200,
+          896
+        ],
+        "aspect": 1.339,
+        "var_lr": 5545.5,
+        "var_tb": 10959.7,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    }
+  ],
+  "chains": [
+    {
+      "id": "buddha-inspired-chain",
+      "name": "Buddha-Inspired Chain",
+      "image": "/assets/images/chain-buddha-chain.jpg",
+      "fallbackImage": null,
+      "local_file": "public\\assets/images/chain-buddha-chain.jpg",
+      "analysis": {
+        "path": "public\\assets/images/chain-buddha-chain.jpg",
+        "size": [
+          293,
+          158
+        ],
+        "aspect": 1.854,
+        "var_lr": 11314.8,
+        "var_tb": 4824.1,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": "buddha-inspired-pendant",
+      "name": "Buddha-Inspired Pendant",
+      "image": "/assets/images/chain-buddha-pendant.jpg",
+      "fallbackImage": null,
+      "local_file": "public\\assets/images/chain-buddha-pendant.jpg",
+      "analysis": {
+        "path": "public\\assets/images/chain-buddha-pendant.jpg",
+        "size": [
+          277,
+          158
+        ],
+        "aspect": 1.753,
+        "var_lr": 9568.3,
+        "var_tb": 4973.5,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": false
+      }
+    },
+    {
+      "id": "tibet-om-mani-padme-hum-mantra-amulet",
+      "name": "Tibet Om Mani Padme Hum Mantra Amulet",
+      "image": "/assets/images/chain-tibet-mantra-amulet.jpg",
+      "fallbackImage": null,
+      "local_file": "public\\assets/images/chain-tibet-mantra-amulet.jpg",
+      "analysis": {
+        "path": "public\\assets/images/chain-tibet-mantra-amulet.jpg",
+        "size": [
+          294,
+          158
+        ],
+        "aspect": 1.861,
+        "var_lr": 7031.0,
+        "var_tb": 4077.3,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": "traditional-tamil-rudraksha-bracelet",
+      "name": "Traditional Tamil Rudraksha Bracelet",
+      "image": "/assets/images/chain-tamil-rudraksha-bracelet.jpg",
+      "fallbackImage": null,
+      "local_file": "public\\assets/images/chain-tamil-rudraksha-bracelet.jpg",
+      "analysis": {
+        "path": "public\\assets/images/chain-tamil-rudraksha-bracelet.jpg",
+        "size": [
+          293,
+          156
+        ],
+        "aspect": 1.878,
+        "var_lr": 15415.7,
+        "var_tb": 8036.2,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": "traditional-tamil-temple-bracelet",
+      "name": "Traditional Tamil Temple Bracelet",
+      "image": "/assets/images/chain-tamil-temple-bracelet.jpg",
+      "fallbackImage": null,
+      "local_file": "public\\assets/images/chain-tamil-temple-bracelet.jpg",
+      "analysis": {
+        "path": "public\\assets/images/chain-tamil-temple-bracelet.jpg",
+        "size": [
+          277,
+          156
+        ],
+        "aspect": 1.776,
+        "var_lr": 6692.1,
+        "var_tb": 6814.1,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": false
+      }
+    },
+    {
+      "id": "traditional-tamil-sandalwood-mala",
+      "name": "Traditional Tamil Sandalwood Mala",
+      "image": "/assets/images/chain-tamil-sandalwood-mala.jpg",
+      "fallbackImage": null,
+      "local_file": "public\\assets/images/chain-tamil-sandalwood-mala.jpg",
+      "analysis": {
+        "path": "public\\assets/images/chain-tamil-sandalwood-mala.jpg",
+        "size": [
+          294,
+          156
+        ],
+        "aspect": 1.885,
+        "var_lr": 13794.1,
+        "var_tb": 5901.2,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    }
+  ],
+  "food": [
+    {
+      "id": 1053,
+      "name": "Amutham Nattu Charkkarai",
+      "image": "https://vedanmart.com/images/Food/AMUTHAM%20NATTU%20CHARKKARAI.jpg",
+      "fallbackImage": "/assets/images/food/food_1053.jpg",
+      "local_file": "public\\assets/images/food/food_1053.jpg",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1053.jpg",
+        "size": [
+          1600,
+          1600
+        ],
+        "aspect": 1.0,
+        "var_lr": 0.0,
+        "var_tb": 0.0,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1305,
+      "name": "KADALAI MITTAI JAR",
+      "image": "https://vedanmart.com/images/Food/KADALAI%20MITTAI.webp",
+      "fallbackImage": "/assets/images/food/food_1305.webp",
+      "local_file": "public\\assets/images/food/food_1305.webp",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1305.webp",
+        "size": [
+          2160,
+          2160
+        ],
+        "aspect": 1.0,
+        "var_lr": 761.0,
+        "var_tb": 24.3,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1290,
+      "name": "Vallarai Sambar Powder",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/vallarai%20sambar%20powder.jpeg",
+      "fallbackImage": "/assets/images/food/food_1290.jpeg",
+      "local_file": "public\\assets/images/food/food_1290.jpeg",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1290.jpeg",
+        "size": [
+          1200,
+          1600
+        ],
+        "aspect": 0.75,
+        "var_lr": 7988.3,
+        "var_tb": 199.4,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1288,
+      "name": "Mudakathan Soup Powder",
+      "image": "https://vedanmart.com/images/herbal/3.jpeg",
+      "fallbackImage": "/assets/images/food/food_1288.jpeg",
+      "local_file": "public\\assets/images/food/food_1288.jpeg",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1288.jpeg",
+        "size": [
+          1172,
+          1600
+        ],
+        "aspect": 0.733,
+        "var_lr": 38.0,
+        "var_tb": 17.7,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1287,
+      "name": "Vallarai Sadha Podi",
+      "image": "https://vedanmart.com/images/herbal/2.jpeg",
+      "fallbackImage": "/assets/images/food/food_1287.jpeg",
+      "local_file": "public\\assets/images/food/food_1287.jpeg",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1287.jpeg",
+        "size": [
+          1600,
+          1066
+        ],
+        "aspect": 1.501,
+        "var_lr": 314.1,
+        "var_tb": 338.0,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1286,
+      "name": "Veppilai Powder",
+      "image": "https://vedanmart.com/images/Baby/Vaishnavi.jpeg",
+      "fallbackImage": "/assets/images/food/food_1286.jpeg",
+      "local_file": "public\\assets/images/food/food_1286.jpeg",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1286.jpeg",
+        "size": [
+          554,
+          554
+        ],
+        "aspect": 1.0,
+        "var_lr": 0.0,
+        "var_tb": 0.0,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1285,
+      "name": "Karuveppilai Sadha Podi",
+      "image": "https://vedanmart.com/images/Baby/Vaishnavi.jpeg",
+      "fallbackImage": "/assets/images/food/food_1285.jpeg",
+      "local_file": "public\\assets/images/food/food_1285.jpeg",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1285.jpeg",
+        "size": [
+          554,
+          554
+        ],
+        "aspect": 1.0,
+        "var_lr": 0.0,
+        "var_tb": 0.0,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1282,
+      "name": "Karupatti Halwa",
+      "image": "https://vedanmart.com/images/Food/KARUPATTI%20HALWA.jpeg",
+      "fallbackImage": "/assets/images/food/food_1282.jpeg",
+      "local_file": "public\\assets/images/food/food_1282.jpeg",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1282.jpeg",
+        "size": [
+          1024,
+          1024
+        ],
+        "aspect": 1.0,
+        "var_lr": 4.3,
+        "var_tb": 63.1,
+        "is_white_lr": true,
+        "is_white_tb": false,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1280,
+      "name": "Mann Kattiya Toor Dal",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/Mann%20kattiya%20Toor%20Dal.jpeg",
+      "fallbackImage": "/assets/images/food/food_1280.jpeg",
+      "local_file": "public\\assets/images/food/food_1280.jpeg",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1280.jpeg",
+        "size": [
+          1024,
+          1024
+        ],
+        "aspect": 1.0,
+        "var_lr": 10.8,
+        "var_tb": 31.5,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1279,
+      "name": "Vallarai Mixture",
+      "image": "https://vedanmart.com/images/herbal/6.jpeg",
+      "fallbackImage": "/assets/images/food/food_1279.jpeg",
+      "local_file": "public\\assets/images/food/food_1279.jpeg",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1279.jpeg",
+        "size": [
+          1600,
+          1600
+        ],
+        "aspect": 1.0,
+        "var_lr": 79.3,
+        "var_tb": 1.6,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1273,
+      "name": "Pirandai Powder Jar",
+      "image": "https://vedanmart.com/images/herbal/9.jpeg",
+      "fallbackImage": "/assets/images/food/food_1273.jpeg",
+      "local_file": "public\\assets/images/food/food_1273.jpeg",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1273.jpeg",
+        "size": [
+          1600,
+          1066
+        ],
+        "aspect": 1.501,
+        "var_lr": 280.4,
+        "var_tb": 186.2,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1253,
+      "name": "Ooty Varkey",
+      "image": "https://vedanmart.com/images/Food/Ooty%20Varkey.jpg",
+      "fallbackImage": "/assets/images/food/food_1253.jpg",
+      "local_file": "public\\assets/images/food/food_1253.jpg",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1253.jpg",
+        "size": [
+          1600,
+          1600
+        ],
+        "aspect": 1.0,
+        "var_lr": 0.0,
+        "var_tb": 0.0,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1141,
+      "name": "Banana Stem Pickle Jar",
+      "image": "https://vedanmart.com/images/Food/Banana%20stem%20pickel%20jar.jpg",
+      "fallbackImage": "/assets/images/food/food_1141.jpg",
+      "local_file": "public\\assets/images/food/food_1141.jpg",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1141.jpg",
+        "size": [
+          1600,
+          1544
+        ],
+        "aspect": 1.036,
+        "var_lr": 2738.5,
+        "var_tb": 348.4,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1139,
+      "name": "Banana Blossom Pickle",
+      "image": "https://vedanmart.com/images/Food/Banana%20blossom%20pickel.jpg",
+      "fallbackImage": "/assets/images/food/food_1139.jpg",
+      "local_file": "public\\assets/images/food/food_1139.jpg",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1139.jpg",
+        "size": [
+          1600,
+          1517
+        ],
+        "aspect": 1.055,
+        "var_lr": 1569.6,
+        "var_tb": 331.3,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1137,
+      "name": "Pirandai Pickle",
+      "image": "https://vedanmart.com/images/Food/PIRANDAI%20PICKLE.jpeg",
+      "fallbackImage": "/assets/images/food/food_1137.jpeg",
+      "local_file": "public\\assets/images/food/food_1137.jpeg",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1137.jpeg",
+        "size": [
+          1024,
+          1024
+        ],
+        "aspect": 1.0,
+        "var_lr": 17.4,
+        "var_tb": 18.8,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1135,
+      "name": "Pulithokku",
+      "image": "https://vedanmart.com/images/Food/PULITHOKKU.jpg",
+      "fallbackImage": "/assets/images/food/food_1135.jpg",
+      "local_file": "public\\assets/images/food/food_1135.jpg",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1135.jpg",
+        "size": [
+          1599,
+          1314
+        ],
+        "aspect": 1.217,
+        "var_lr": 3344.7,
+        "var_tb": 2532.6,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1133,
+      "name": "Sundakkai Thokku",
+      "image": "https://vedanmart.com/images/Food/SUNDAIKKAI%20THOKKU.jpg",
+      "fallbackImage": "/assets/images/food/food_1133.jpg",
+      "local_file": "public\\assets/images/food/food_1133.jpg",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1133.jpg",
+        "size": [
+          1251,
+          1280
+        ],
+        "aspect": 0.977,
+        "var_lr": 413.7,
+        "var_tb": 341.4,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1132,
+      "name": "Lemon Pickle (Jar)",
+      "image": "https://vedanmart.com/images/Food/lemonpickel.jpg",
+      "fallbackImage": "/assets/images/food/food_1132.jpg",
+      "local_file": "public\\assets/images/food/food_1132.jpg",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1132.jpg",
+        "size": [
+          1434,
+          1600
+        ],
+        "aspect": 0.896,
+        "var_lr": 5078.9,
+        "var_tb": 2867.7,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1129,
+      "name": "Curry Leaf Gravy (Jar)",
+      "image": "https://vedanmart.com/images/Food/CURRYLEAF%20Gravy%20JAR.jpg",
+      "fallbackImage": "/assets/images/food/food_1129.jpg",
+      "local_file": "public\\assets/images/food/food_1129.jpg",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1129.jpg",
+        "size": [
+          1386,
+          1536
+        ],
+        "aspect": 0.902,
+        "var_lr": 15652.0,
+        "var_tb": 45.4,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1128,
+      "name": "Jathikkai Pickle",
+      "image": "https://vedanmart.com/images/Food/Jathikkai%20Pickle.jpg",
+      "fallbackImage": "/assets/images/food/food_1128.jpg",
+      "local_file": "public\\assets/images/food/food_1128.jpg",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1128.jpg",
+        "size": [
+          1600,
+          1492
+        ],
+        "aspect": 1.072,
+        "var_lr": 345.4,
+        "var_tb": 926.8,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1126,
+      "name": "Vallarai Idly Powder Jar",
+      "image": "https://vedanmart.com/images/Food/VALLARAI%20IDLY%20POWDER%20JAR.jpg",
+      "fallbackImage": "/assets/images/food/food_1126.jpg",
+      "local_file": "public\\assets/images/food/food_1126.jpg",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1126.jpg",
+        "size": [
+          1600,
+          1339
+        ],
+        "aspect": 1.195,
+        "var_lr": 7550.2,
+        "var_tb": 5033.0,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1124,
+      "name": "Pirandai Idly Powder Jar",
+      "image": "https://vedanmart.com/images/Food/PIRANDAI%20IDLY%20POWDER%20JAR.jpg",
+      "fallbackImage": "/assets/images/food/food_1124.jpg",
+      "local_file": "public\\assets/images/food/food_1124.jpg",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1124.jpg",
+        "size": [
+          1489,
+          1600
+        ],
+        "aspect": 0.931,
+        "var_lr": 5392.9,
+        "var_tb": 664.9,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1122,
+      "name": "Mudakkatran Sadha Podi Jar",
+      "image": "https://vedanmart.com/images/Food/MUTTAKATRAN%20SADA%20POWDER%20JAR.jpg",
+      "fallbackImage": "/assets/images/food/food_1122.jpg",
+      "local_file": "public\\assets/images/food/food_1122.jpg",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1122.jpg",
+        "size": [
+          1600,
+          1463
+        ],
+        "aspect": 1.094,
+        "var_lr": 4372.6,
+        "var_tb": 6069.8,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1121,
+      "name": "Murungai Keerai Sadha Podi Jar",
+      "image": "https://vedanmart.com/images/Food/Drumstick%20Leaf%20Rice%20Powder%20Jar.jpg",
+      "fallbackImage": "/assets/images/food/food_1121.jpg",
+      "local_file": "public\\assets/images/food/food_1121.jpg",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1121.jpg",
+        "size": [
+          1570,
+          1536
+        ],
+        "aspect": 1.022,
+        "var_lr": 4191.2,
+        "var_tb": 408.9,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1119,
+      "name": "Pirandai Sadha Podi Jar",
+      "image": "https://vedanmart.com/images/Food/PIRANDAI%20SADA%20POWDER%20JAR.jpg",
+      "fallbackImage": "/assets/images/food/food_1119.jpg",
+      "local_file": "public\\assets/images/food/food_1119.jpg",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1119.jpg",
+        "size": [
+          200,
+          200
+        ],
+        "aspect": 1.0,
+        "var_lr": 421.9,
+        "var_tb": 595.0,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1118,
+      "name": "Kollu Sadha Podi",
+      "image": "https://vedanmart.com/images/Food/Horse%20Gram%20Rice%20Powder%20(JAR).jpg",
+      "fallbackImage": "/assets/images/food/food_1118.jpg",
+      "local_file": "public\\assets/images/food/food_1118.jpg",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1118.jpg",
+        "size": [
+          1280,
+          1269
+        ],
+        "aspect": 1.009,
+        "var_lr": 9092.8,
+        "var_tb": 76.6,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1116,
+      "name": "Amutham Nattu Charkkarai",
+      "image": "https://vedanmart.com/images/Food/AMUTHAM%20NATTU%20CHAKKARAI%20(Sukku+Elakai).jpg",
+      "fallbackImage": "/assets/images/food/food_1116.jpg",
+      "local_file": "public\\assets/images/food/food_1116.jpg",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1116.jpg",
+        "size": [
+          1600,
+          1600
+        ],
+        "aspect": 1.0,
+        "var_lr": 0.0,
+        "var_tb": 9.7,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1114,
+      "name": "Wild Honey Jar(NR)",
+      "image": "https://vedanmart.com/images/Food/WILD%20HONEY%20JAR(NR).jpg",
+      "fallbackImage": "/assets/images/food/food_1114.jpg",
+      "local_file": "public\\assets/images/food/food_1114.jpg",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1114.jpg",
+        "size": [
+          375,
+          666
+        ],
+        "aspect": 0.563,
+        "var_lr": 0.0,
+        "var_tb": 0.0,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1112,
+      "name": "Wild Honey Jar(NR)",
+      "image": "https://vedanmart.com/images/Food/WILD%20HONEYJAR(NR).jpg",
+      "fallbackImage": "/assets/images/food/food_1112.jpg",
+      "local_file": "public\\assets/images/food/food_1112.jpg",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1112.jpg",
+        "size": [
+          375,
+          666
+        ],
+        "aspect": 0.563,
+        "var_lr": 0.0,
+        "var_tb": 0.0,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1110,
+      "name": "Wild Honey Jar(NR)",
+      "image": "https://vedanmart.com/images/Food/WILD%20HONEYJAR(NR).jpg",
+      "fallbackImage": "/assets/images/food/food_1110.jpg",
+      "local_file": "public\\assets/images/food/food_1110.jpg",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1110.jpg",
+        "size": [
+          375,
+          666
+        ],
+        "aspect": 0.563,
+        "var_lr": 0.0,
+        "var_tb": 0.0,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1108,
+      "name": "Foxtail Millet (Thinai Rice)",
+      "image": "https://vedanmart.com/images/Food/Foxtail%20Millet%20(thinai%20rice).png",
+      "fallbackImage": "/assets/images/food/food_1108.png",
+      "local_file": "public\\assets/images/food/food_1108.png",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1108.png",
+        "size": [
+          1024,
+          1024
+        ],
+        "aspect": 1.0,
+        "var_lr": 138.2,
+        "var_tb": 39.7,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1106,
+      "name": "Karuppu Kavuni Rice",
+      "image": "https://vedanmart.com/images/Food/KARUPPU%20KAVUNI%20RICE.png",
+      "fallbackImage": "/assets/images/food/food_1106.png",
+      "local_file": "public\\assets/images/food/food_1106.png",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1106.png",
+        "size": [
+          1024,
+          1024
+        ],
+        "aspect": 1.0,
+        "var_lr": 47.8,
+        "var_tb": 58.5,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1104,
+      "name": "Samai Rice",
+      "image": "https://vedanmart.com/images/Food/SAMAI%20RICE.png",
+      "fallbackImage": "/assets/images/food/food_1104.png",
+      "local_file": "public\\assets/images/food/food_1104.png",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1104.png",
+        "size": [
+          1024,
+          1024
+        ],
+        "aspect": 1.0,
+        "var_lr": 1.2,
+        "var_tb": 1.7,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1102,
+      "name": "Varagu Rice",
+      "image": "https://vedanmart.com/images/Food/VARAGU%20RICE.png",
+      "fallbackImage": "/assets/images/food/food_1102.png",
+      "local_file": "public\\assets/images/food/food_1102.png",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1102.png",
+        "size": [
+          1024,
+          1024
+        ],
+        "aspect": 1.0,
+        "var_lr": 51.0,
+        "var_tb": 19.1,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1101,
+      "name": "Mappillai Samba Rice",
+      "image": "https://vedanmart.com/images/Food/MAPPILLAI%20SAMBA%20RICE.png",
+      "fallbackImage": "/assets/images/food/food_1101.png",
+      "local_file": "public\\assets/images/food/food_1101.png",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1101.png",
+        "size": [
+          1024,
+          1024
+        ],
+        "aspect": 1.0,
+        "var_lr": 114.5,
+        "var_tb": 12.1,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1099,
+      "name": "Millet Nutritional Mix (PO)",
+      "image": "https://vedanmart.com/images/Food/Millet%20Nutritional%20Mix%20(PO).jpg",
+      "fallbackImage": "/assets/images/food/food_1099.jpg",
+      "local_file": "public\\assets/images/food/food_1099.jpg",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1099.jpg",
+        "size": [
+          1330,
+          1330
+        ],
+        "aspect": 1.0,
+        "var_lr": 0.0,
+        "var_tb": 0.0,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1092,
+      "name": "Little Millet - Indian Pennywort (Vallarai Pongal)Mix 250G",
+      "image": "https://vedanmart.com/images/Food/LITTLE%20MILLET%20-%20INDIAN%20PENNYWORT.jpg",
+      "fallbackImage": "/assets/images/food/food_1092.jpg",
+      "local_file": "public\\assets/images/food/food_1092.jpg",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1092.jpg",
+        "size": [
+          1600,
+          1600
+        ],
+        "aspect": 1.0,
+        "var_lr": 991.5,
+        "var_tb": 198.2,
+        "is_white_lr": true,
+        "is_white_tb": false,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1090,
+      "name": "Kodo - Moringa Millet Pongal Mix 250G",
+      "image": "https://vedanmart.com/images/Food/KODO%20-%20MORINGA%20MILLET%20PONGAL%20MIX.jpg",
+      "fallbackImage": "/assets/images/food/food_1090.jpg",
+      "local_file": "public\\assets/images/food/food_1090.jpg",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1090.jpg",
+        "size": [
+          1600,
+          1600
+        ],
+        "aspect": 1.0,
+        "var_lr": 0.0,
+        "var_tb": 0.0,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1089,
+      "name": "Athiyaman Country Sugar (PO)",
+      "image": "https://vedanmart.com/images/Food/Athiyaman%20Country%20Sugar%20(PO).png",
+      "fallbackImage": "/assets/images/food/food_1089.png",
+      "local_file": "public\\assets/images/food/food_1089.png",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1089.png",
+        "size": [
+          1024,
+          1024
+        ],
+        "aspect": 1.0,
+        "var_lr": 3.3,
+        "var_tb": 1.8,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1087,
+      "name": "Kambu Maavu(PO)",
+      "image": "https://vedanmart.com/images/Food/KAMBU%20MAAVU(PO).png",
+      "fallbackImage": "/assets/images/food/food_1087.png",
+      "local_file": "public\\assets/images/food/food_1087.png",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1087.png",
+        "size": [
+          768,
+          1365
+        ],
+        "aspect": 0.563,
+        "var_lr": 36.5,
+        "var_tb": 94.3,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1085,
+      "name": "Kambu Puttu Maavu(PO)",
+      "image": "https://vedanmart.com/images/Food/KAMBU%20PUTTU%20MAAVU(PO).png",
+      "fallbackImage": "/assets/images/food/food_1085.png",
+      "local_file": "public\\assets/images/food/food_1085.png",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1085.png",
+        "size": [
+          768,
+          1365
+        ],
+        "aspect": 0.563,
+        "var_lr": 75.8,
+        "var_tb": 55.6,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1083,
+      "name": "Kambu Dosa Mix (PO)",
+      "image": "https://vedanmart.com/images/Food/KAMBU%20DOSA%20MIX(PO).jpg",
+      "fallbackImage": "/assets/images/food/food_1083.jpg",
+      "local_file": "public\\assets/images/food/food_1083.jpg",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1083.jpg",
+        "size": [
+          1600,
+          1771
+        ],
+        "aspect": 0.903,
+        "var_lr": 443.9,
+        "var_tb": 97.7,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1081,
+      "name": "Beetroot Malt(JAR)",
+      "image": "https://vedanmart.com/images/Food/BEETROOT%20MALT(JAR).png",
+      "fallbackImage": "/assets/images/food/food_1081.png",
+      "local_file": "public\\assets/images/food/food_1081.png",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1081.png",
+        "size": [
+          1024,
+          1024
+        ],
+        "aspect": 1.0,
+        "var_lr": 94.4,
+        "var_tb": 234.3,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1080,
+      "name": "Beetroot Malt(JAR)",
+      "image": "https://vedanmart.com/images/Food/BEETROOT%20MALT1(JAR).jpg",
+      "fallbackImage": "/assets/images/food/food_1080.jpg",
+      "local_file": "public\\assets/images/food/food_1080.jpg",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1080.jpg",
+        "size": [
+          679,
+          679
+        ],
+        "aspect": 1.0,
+        "var_lr": 2.3,
+        "var_tb": 0.5,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1078,
+      "name": "Carrot Malt(JAR)",
+      "image": "https://vedanmart.com/images/Food/CARROT%20MALT(JAR).jpg",
+      "fallbackImage": "/assets/images/food/food_1078.jpg",
+      "local_file": "public\\assets/images/food/food_1078.jpg",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1078.jpg",
+        "size": [
+          679,
+          679
+        ],
+        "aspect": 1.0,
+        "var_lr": 0.0,
+        "var_tb": 0.0,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1076,
+      "name": "Ginger Garlic Pickle Jar",
+      "image": "https://vedanmart.com/images/Food/GINGER%20GARLIC%20PICKLE%20JAR.jpg",
+      "fallbackImage": "/assets/images/food/food_1076.jpg",
+      "local_file": "public\\assets/images/food/food_1076.jpg",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1076.jpg",
+        "size": [
+          1599,
+          1541
+        ],
+        "aspect": 1.038,
+        "var_lr": 4828.7,
+        "var_tb": 2070.4,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1074,
+      "name": "Ginger Garlic Pickle Jar",
+      "image": "https://vedanmart.com/images/Food/GINGER%20GARLIC%20PICKLE%20JAR1.jpg",
+      "fallbackImage": "/assets/images/food/food_1074.jpg",
+      "local_file": "public\\assets/images/food/food_1074.jpg",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1074.jpg",
+        "size": [
+          1600,
+          1504
+        ],
+        "aspect": 1.064,
+        "var_lr": 2721.8,
+        "var_tb": 2033.8,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1072,
+      "name": "Narthankai Pickle",
+      "image": "https://vedanmart.com/images/Food/NARTHANKAI%20PICKLE.jpg",
+      "fallbackImage": "/assets/images/food/food_1072.jpg",
+      "local_file": "public\\assets/images/food/food_1072.jpg",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1072.jpg",
+        "size": [
+          1600,
+          1542
+        ],
+        "aspect": 1.038,
+        "var_lr": 4688.1,
+        "var_tb": 138.6,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1068,
+      "name": "Kadukkai Chicken Biriyani Powder Jar",
+      "image": "https://vedanmart.com/images/Food/KADUKKAI%20CHICKEN%20BRIYANI%20POWDER%20JAR(NR).jpg",
+      "fallbackImage": "/assets/images/food/food_1068.jpg",
+      "local_file": "public\\assets/images/food/food_1068.jpg",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1068.jpg",
+        "size": [
+          1280,
+          1204
+        ],
+        "aspect": 1.063,
+        "var_lr": 6147.3,
+        "var_tb": 5693.6,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1066,
+      "name": "Chilli Powder",
+      "image": "https://vedanmart.com/images/Food/CHILLI%20POWDER.png",
+      "fallbackImage": "/assets/images/food/food_1066.png",
+      "local_file": "public\\assets/images/food/food_1066.png",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1066.png",
+        "size": [
+          1024,
+          1024
+        ],
+        "aspect": 1.0,
+        "var_lr": 26.1,
+        "var_tb": 66.3,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1065,
+      "name": "Kulambu Milagai Thool(PO)",
+      "image": "https://vedanmart.com/images/Food/KULAMBU%20MILAGAI%20THOOL(PO).png",
+      "fallbackImage": "/assets/images/food/food_1065.png",
+      "local_file": "public\\assets/images/food/food_1065.png",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1065.png",
+        "size": [
+          1024,
+          1024
+        ],
+        "aspect": 1.0,
+        "var_lr": 49.1,
+        "var_tb": 16.3,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1063,
+      "name": "Manjal Powder",
+      "image": "https://vedanmart.com/images/Food/KULAMBU%20MANJAL%20POWDER.png",
+      "fallbackImage": "/assets/images/food/food_1063.png",
+      "local_file": "public\\assets/images/food/food_1063.png",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1063.png",
+        "size": [
+          1024,
+          1024
+        ],
+        "aspect": 1.0,
+        "var_lr": 20.1,
+        "var_tb": 26.4,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1062,
+      "name": "Malli Powder",
+      "image": "https://vedanmart.com/images/Food/MALLI%20POWDER%20(PO).jpg",
+      "fallbackImage": "/assets/images/food/food_1062.jpg",
+      "local_file": "public\\assets/images/food/food_1062.jpg",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1062.jpg",
+        "size": [
+          1339,
+          1855
+        ],
+        "aspect": 0.722,
+        "var_lr": 106.9,
+        "var_tb": 354.9,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1060,
+      "name": "Murungaikeerai Soup (PO)",
+      "image": "https://vedanmart.com/images/Food/MURUNGAIKEERAI%20SOUP%20(PO).jpg",
+      "fallbackImage": "/assets/images/food/food_1060.jpg",
+      "local_file": "public\\assets/images/food/food_1060.jpg",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1060.jpg",
+        "size": [
+          1027,
+          1369
+        ],
+        "aspect": 0.75,
+        "var_lr": 132.9,
+        "var_tb": 68.7,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1058,
+      "name": "Mutakkatran Idly Power Jar",
+      "image": "https://vedanmart.com/images/Food/MUTAKKATRAN%20IDLY%20POWDER%20JAR.jpg",
+      "fallbackImage": "/assets/images/food/food_1058.jpg",
+      "local_file": "public\\assets/images/food/food_1058.jpg",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1058.jpg",
+        "size": [
+          1280,
+          1142
+        ],
+        "aspect": 1.121,
+        "var_lr": 10702.6,
+        "var_tb": 293.1,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1056,
+      "name": "Murungai Llai Idly Podi Jar",
+      "image": "https://vedanmart.com/images/Food/Drumstick%20Leaf%20Idli%20Powder%20JAR.jpg",
+      "fallbackImage": "/assets/images/food/food_1056.jpg",
+      "local_file": "public\\assets/images/food/food_1056.jpg",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1056.jpg",
+        "size": [
+          1547,
+          1532
+        ],
+        "aspect": 1.01,
+        "var_lr": 4180.8,
+        "var_tb": 5003.1,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1055,
+      "name": "Neem Flower Rasam Powder",
+      "image": "https://vedanmart.com/images/Food/Neem%20Flower%20Rasam%20Powder.jpg",
+      "fallbackImage": "/assets/images/food/food_1055.jpg",
+      "local_file": "public\\assets/images/food/food_1055.jpg",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1055.jpg",
+        "size": [
+          1027,
+          1369
+        ],
+        "aspect": 0.75,
+        "var_lr": 1253.8,
+        "var_tb": 126.7,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1051,
+      "name": "Adhiyaman Country Jaggery",
+      "image": "https://vedanmart.com/images/Food/Adhiyaman%20Country%20Jaggery.png",
+      "fallbackImage": "/assets/images/food/food_1051.png",
+      "local_file": "public\\assets/images/food/food_1051.png",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1051.png",
+        "size": [
+          1024,
+          1024
+        ],
+        "aspect": 1.0,
+        "var_lr": 42.5,
+        "var_tb": 145.4,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1050,
+      "name": "Ragi Dosai Mix",
+      "image": "https://vedanmart.com/images/Food/RAGI%20DOSAI%20MIX.png",
+      "fallbackImage": "/assets/images/food/food_1050.png",
+      "local_file": "public\\assets/images/food/food_1050.png",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1050.png",
+        "size": [
+          1024,
+          1024
+        ],
+        "aspect": 1.0,
+        "var_lr": 33.9,
+        "var_tb": 100.8,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1048,
+      "name": "Kambu Rice",
+      "image": "https://vedanmart.com/images/Food/KAMBU%20RICE.jpg",
+      "fallbackImage": "/assets/images/food/food_1048.jpg",
+      "local_file": "public\\assets/images/food/food_1048.jpg",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1048.jpg",
+        "size": [
+          1600,
+          1484
+        ],
+        "aspect": 1.078,
+        "var_lr": 11.7,
+        "var_tb": 2.3,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1046,
+      "name": "Kuthiraivaali Rice",
+      "image": "https://vedanmart.com/images/Food/KUTHIRAIVAALI%20RICE(PO).jpg",
+      "fallbackImage": "/assets/images/food/food_1046.jpg",
+      "local_file": "public\\assets/images/food/food_1046.jpg",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1046.jpg",
+        "size": [
+          1600,
+          1760
+        ],
+        "aspect": 0.909,
+        "var_lr": 46.5,
+        "var_tb": 39.2,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1044,
+      "name": "Wheat Flour",
+      "image": "https://vedanmart.com/images/Food/WHEAT%20MAAVU%20POWDER.jpg",
+      "fallbackImage": "/assets/images/food/food_1044.jpg",
+      "local_file": "public\\assets/images/food/food_1044.jpg",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1044.jpg",
+        "size": [
+          1599,
+          1599
+        ],
+        "aspect": 1.0,
+        "var_lr": 2757.4,
+        "var_tb": 1245.8,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1042,
+      "name": "Paruppu Dosai Mix",
+      "image": "https://vedanmart.com/images/Food/PARUPPU%20DOSAI%20MIX.jpg",
+      "fallbackImage": "/assets/images/food/food_1042.jpg",
+      "local_file": "public\\assets/images/food/food_1042.jpg",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1042.jpg",
+        "size": [
+          236,
+          214
+        ],
+        "aspect": 1.103,
+        "var_lr": 3337.8,
+        "var_tb": 4771.2,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1041,
+      "name": "Sivappu Kavuni Rice",
+      "image": "https://vedanmart.com/images/Food/SIVAPPU%20KAVUNI%20RICE.jpg",
+      "fallbackImage": "/assets/images/food/food_1041.jpg",
+      "local_file": "public\\assets/images/food/food_1041.jpg",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1041.jpg",
+        "size": [
+          576,
+          882
+        ],
+        "aspect": 0.653,
+        "var_lr": 2998.6,
+        "var_tb": 776.7,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1039,
+      "name": "Nattu Samba Brown Rice",
+      "image": "https://vedanmart.com/images/Food/NATTU%20SAMBA%20BROWN%20RICE.png",
+      "fallbackImage": "/assets/images/food/food_1039.png",
+      "local_file": "public\\assets/images/food/food_1039.png",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1039.png",
+        "size": [
+          1024,
+          1024
+        ],
+        "aspect": 1.0,
+        "var_lr": 43.6,
+        "var_tb": 38.6,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1037,
+      "name": "Kadukkai Baji Bonda Mix(PO)",
+      "image": "https://vedanmart.com/images/Food/KADUKKAI%20BAJI%20BONDA%20MIX.png",
+      "fallbackImage": "/assets/images/food/food_1037.png",
+      "local_file": "public\\assets/images/food/food_1037.png",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1037.png",
+        "size": [
+          433,
+          577
+        ],
+        "aspect": 0.75,
+        "var_lr": 0.0,
+        "var_tb": 0.0,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1035,
+      "name": "Ragi Powder(PO)",
+      "image": "https://vedanmart.com/images/Food/RAGI%20POWDER.png",
+      "fallbackImage": "/assets/images/food/food_1035.png",
+      "local_file": "public\\assets/images/food/food_1035.png",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1035.png",
+        "size": [
+          1024,
+          1024
+        ],
+        "aspect": 1.0,
+        "var_lr": 50.4,
+        "var_tb": 14.9,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1032,
+      "name": "Ponni (Brown Rice)",
+      "image": "https://vedanmart.com/images/Food/PONNI.png",
+      "fallbackImage": "/assets/images/food/food_1032.png",
+      "local_file": "public\\assets/images/food/food_1032.png",
+      "analysis": {
+        "path": "public\\assets/images/food/food_1032.png",
+        "size": [
+          1024,
+          1024
+        ],
+        "aspect": 1.0,
+        "var_lr": 54.7,
+        "var_tb": 24.6,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    }
+  ],
+  "hair": [
+    {
+      "id": 1255,
+      "name": "Chemparuthi Herbal Shampoo",
+      "image": "/assets/images/hair/hair_1255.jpg",
+      "fallbackImage": "https://vedanmart.com/images//hair/Hibiscus%20Shampoo.jpg",
+      "local_file": "public\\assets/images/hair/hair_1255.jpg",
+      "analysis": {
+        "path": "public\\assets/images/hair/hair_1255.jpg",
+        "size": [
+          1600,
+          1600
+        ],
+        "aspect": 1.0,
+        "var_lr": 0.0,
+        "var_tb": 14.9,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1248,
+      "name": "Avarampoo Baby Shampoo",
+      "image": "/assets/images/hair/hair_1248.jpg",
+      "fallbackImage": "https://vedanmart.com/images/hair/AVARAMPOO%20BABY%20SHAMPOO.jpg",
+      "local_file": "public\\assets/images/hair/hair_1248.jpg",
+      "analysis": {
+        "path": "public\\assets/images/hair/hair_1248.jpg",
+        "size": [
+          1600,
+          1600
+        ],
+        "aspect": 1.0,
+        "var_lr": 0.0,
+        "var_tb": 426.6,
+        "is_white_lr": true,
+        "is_white_tb": false,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1246,
+      "name": "Arappu Shampoo",
+      "image": "/assets/images/hair/hair_1246.jpg",
+      "fallbackImage": "https://vedanmart.com/images/hair/ARAPPU%20SHAMPOO.jpg",
+      "local_file": "public\\assets/images/hair/hair_1246.jpg",
+      "analysis": {
+        "path": "public\\assets/images/hair/hair_1246.jpg",
+        "size": [
+          1080,
+          1080
+        ],
+        "aspect": 1.0,
+        "var_lr": 0.0,
+        "var_tb": 0.0,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1229,
+      "name": "Vettiver Shampoo",
+      "image": "/assets/images/hair/hair_1229.jpg",
+      "fallbackImage": "https://vedanmart.com/images/hair/VETTIVER%20SHAMPOO.jpg",
+      "local_file": "public\\assets/images/hair/hair_1229.jpg",
+      "analysis": {
+        "path": "public\\assets/images/hair/hair_1229.jpg",
+        "size": [
+          1080,
+          1080
+        ],
+        "aspect": 1.0,
+        "var_lr": 0.0,
+        "var_tb": 0.0,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1226,
+      "name": "Karisalankanni Shampoo",
+      "image": "/assets/images/hair/hair_1226.jpg",
+      "fallbackImage": "https://vedanmart.com/images/hair/Karisalankanni%20Shampoo.jpg",
+      "local_file": "public\\assets/images/hair/hair_1226.jpg",
+      "analysis": {
+        "path": "public\\assets/images/hair/hair_1226.jpg",
+        "size": [
+          1233,
+          1436
+        ],
+        "aspect": 0.859,
+        "var_lr": 0.0,
+        "var_tb": 103.6,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1224,
+      "name": "Dr. Amla Shampoo",
+      "image": "/assets/images/hair/hair_1224.jpg",
+      "fallbackImage": "https://vedanmart.com/images/hair/AMLA%20SHAMPOO.jpg",
+      "local_file": "public\\assets/images/hair/hair_1224.jpg",
+      "analysis": {
+        "path": "public\\assets/images/hair/hair_1224.jpg",
+        "size": [
+          1265,
+          1535
+        ],
+        "aspect": 0.824,
+        "var_lr": 0.0,
+        "var_tb": 226.4,
+        "is_white_lr": true,
+        "is_white_tb": false,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1223,
+      "name": "Onion Shampoo",
+      "image": "/assets/images/hair/hair_1223.jpg",
+      "fallbackImage": "https://vedanmart.com/images/hair/ONION%20SHAMPOO.jpg",
+      "local_file": "public\\assets/images/hair/hair_1223.jpg",
+      "analysis": {
+        "path": "public\\assets/images/hair/hair_1223.jpg",
+        "size": [
+          1110,
+          1393
+        ],
+        "aspect": 0.797,
+        "var_lr": 0.0,
+        "var_tb": 202.5,
+        "is_white_lr": true,
+        "is_white_tb": false,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1222,
+      "name": "Shikakkai Shampoo",
+      "image": "/assets/images/hair/hair_1222.jpg",
+      "fallbackImage": "https://vedanmart.com/images/hair/SHIKAKAI%20SHAMPOO.jpg",
+      "local_file": "public\\assets/images/hair/hair_1222.jpg",
+      "analysis": {
+        "path": "public\\assets/images/hair/hair_1222.jpg",
+        "size": [
+          1500,
+          1500
+        ],
+        "aspect": 1.0,
+        "var_lr": 0.0,
+        "var_tb": 0.0,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1296,
+      "name": "Poduthalai Powder",
+      "image": "/assets/images/hair/hair_1296.jpeg",
+      "fallbackImage": "https://vedanmart.com/images/hair/Poduthalai%20Powder.jpeg",
+      "local_file": "public\\assets/images/hair/hair_1296.jpeg",
+      "analysis": {
+        "path": "public\\assets/images/hair/hair_1296.jpeg",
+        "size": [
+          805,
+          942
+        ],
+        "aspect": 0.855,
+        "var_lr": 1444.5,
+        "var_tb": 857.3,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1292,
+      "name": "Herbal Arappu Powder",
+      "image": "/assets/images/hair/hair_1292.jpeg",
+      "fallbackImage": "https://vedanmart.com/images/Baby/Vaishnavi.jpeg",
+      "local_file": "public\\assets/images/hair/hair_1292.jpeg",
+      "analysis": {
+        "path": "public\\assets/images/hair/hair_1292.jpeg",
+        "size": [
+          554,
+          554
+        ],
+        "aspect": 1.0,
+        "var_lr": 0.0,
+        "var_tb": 0.0,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1267,
+      "name": "Karisalankanni Hair Oil",
+      "image": "/assets/images/hair/hair_1267.jpg",
+      "fallbackImage": "https://vedanmart.com/images/hair/karisalankanni%20oil.jpg",
+      "local_file": "public\\assets/images/hair/hair_1267.jpg",
+      "analysis": {
+        "path": "public\\assets/images/hair/hair_1267.jpg",
+        "size": [
+          1353,
+          1564
+        ],
+        "aspect": 0.865,
+        "var_lr": 0.1,
+        "var_tb": 3320.6,
+        "is_white_lr": true,
+        "is_white_tb": false,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1266,
+      "name": "Avarampoo Hair Wash Powder (NR)",
+      "image": "/assets/images/hair/hair_1266.jpg",
+      "fallbackImage": "https://vedanmart.com/images/hair/AVARMPOO%20HAIR%20WASH%20POWDER%20(NR).jpg",
+      "local_file": "public\\assets/images/hair/hair_1266.jpg",
+      "analysis": {
+        "path": "public\\assets/images/hair/hair_1266.jpg",
+        "size": [
+          1600,
+          1600
+        ],
+        "aspect": 1.0,
+        "var_lr": 16.6,
+        "var_tb": 60.1,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1250,
+      "name": "Aloe vera Shampoo",
+      "image": "/assets/images/hair/hair_1250.jpg",
+      "fallbackImage": "https://vedanmart.com/images/hair/Aloe%20vera%20shampoo.jpg",
+      "local_file": "public\\assets/images/hair/hair_1250.jpg",
+      "analysis": {
+        "path": "public\\assets/images/hair/hair_1250.jpg",
+        "size": [
+          1600,
+          1600
+        ],
+        "aspect": 1.0,
+        "var_lr": 0.0,
+        "var_tb": 3402.9,
+        "is_white_lr": true,
+        "is_white_tb": false,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1238,
+      "name": "Hibiscus Herbal Hair Oil",
+      "image": "/assets/images/hair/hair_1238.jpg",
+      "fallbackImage": "https://vedanmart.com/images/hair/Hibiscus%20Oil.jpg",
+      "local_file": "public\\assets/images/hair/hair_1238.jpg",
+      "analysis": {
+        "path": "public\\assets/images/hair/hair_1238.jpg",
+        "size": [
+          975,
+          1211
+        ],
+        "aspect": 0.805,
+        "var_lr": 0.0,
+        "var_tb": 1293.0,
+        "is_white_lr": true,
+        "is_white_tb": false,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1233,
+      "name": "Hibiscus Hair Wash Powder",
+      "image": "/assets/images/hair/hair_1233.jpg",
+      "fallbackImage": "https://vedanmart.com/images/hair/HIBISCUS%20HAIRWASH%20POWDER.jpg",
+      "local_file": "public\\assets/images/hair/hair_1233.jpg",
+      "analysis": {
+        "path": "public\\assets/images/hair/hair_1233.jpg",
+        "size": [
+          1080,
+          1080
+        ],
+        "aspect": 1.0,
+        "var_lr": 15590.0,
+        "var_tb": 11476.6,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1221,
+      "name": "Green Arappu Powder 250G",
+      "image": "/assets/images/hair/hair_1221.jpeg",
+      "fallbackImage": "https://vedanmart.com/images/Body/GREEN%20ARAPPU%20POWDER%20(2).jpeg",
+      "local_file": "public\\assets/images/hair/hair_1221.jpeg",
+      "analysis": {
+        "path": "public\\assets/images/hair/hair_1221.jpeg",
+        "size": [
+          1024,
+          1024
+        ],
+        "aspect": 1.0,
+        "var_lr": 0.4,
+        "var_tb": 0.7,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1219,
+      "name": "Green Arappu Powder Jar",
+      "image": "/assets/images/hair/hair_1219.jpeg",
+      "fallbackImage": "https://vedanmart.com/images/Body/VEDAN%20GREEN%20ARAPPU%20POWDER.jpeg",
+      "local_file": "public\\assets/images/hair/hair_1219.jpeg",
+      "analysis": {
+        "path": "public\\assets/images/hair/hair_1219.jpeg",
+        "size": [
+          1024,
+          1024
+        ],
+        "aspect": 1.0,
+        "var_lr": 168.6,
+        "var_tb": 323.1,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1218,
+      "name": "Vana Arasi Sikkakai Powder(PO)",
+      "image": "/assets/images/hair/hair_1218.jpg",
+      "fallbackImage": "https://vedanmart.com/images/hair/VANA%20ARASI%20SHIKAKKAI%20POWDER%20(PO).jpg",
+      "local_file": "public\\assets/images/hair/hair_1218.jpg",
+      "analysis": {
+        "path": "public\\assets/images/hair/hair_1218.jpg",
+        "size": [
+          1600,
+          1168
+        ],
+        "aspect": 1.37,
+        "var_lr": 55.2,
+        "var_tb": 40.3,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1212,
+      "name": "NEELY AVURI POWDER (PO) NR",
+      "image": "/assets/images/hair/hair_1212.jpg",
+      "fallbackImage": "https://vedanmart.com/images/hair/NEELY%20AVURI%20POWDER%20(PO)%20NR.jpg",
+      "local_file": "public\\assets/images/hair/hair_1212.jpg",
+      "analysis": {
+        "path": "public\\assets/images/hair/hair_1212.jpg",
+        "size": [
+          1600,
+          2212
+        ],
+        "aspect": 0.723,
+        "var_lr": 46.6,
+        "var_tb": 38.5,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1210,
+      "name": "Amla Hair Oil",
+      "image": "/assets/images/hair/hair_1210.jpg",
+      "fallbackImage": "https://vedanmart.com/images/hair/AMLA%20HAIROIL.jpg",
+      "local_file": "public\\assets/images/hair/hair_1210.jpg",
+      "analysis": {
+        "path": "public\\assets/images/hair/hair_1210.jpg",
+        "size": [
+          1600,
+          1600
+        ],
+        "aspect": 1.0,
+        "var_lr": 3484.1,
+        "var_tb": 0.3,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1209,
+      "name": "Herbal Hair Colour",
+      "image": "/assets/images/hair/hair_1209.png",
+      "fallbackImage": "https://vedanmart.com/images/hair/HERBAL%20HAIR%20COLOUR.png",
+      "local_file": "public\\assets/images/hair/hair_1209.png",
+      "analysis": {
+        "path": "public\\assets/images/hair/hair_1209.png",
+        "size": [
+          1024,
+          1024
+        ],
+        "aspect": 1.0,
+        "var_lr": 11752.4,
+        "var_tb": 11889.2,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1208,
+      "name": "Herbal Shikakai Powder",
+      "image": "/assets/images/hair/hair_1208.png",
+      "fallbackImage": "https://vedanmart.com/images/hair/HERBAL%20SHIKAKAI%20POWDER.png",
+      "local_file": "public\\assets/images/hair/hair_1208.png",
+      "analysis": {
+        "path": "public\\assets/images/hair/hair_1208.png",
+        "size": [
+          1024,
+          1024
+        ],
+        "aspect": 1.0,
+        "var_lr": 103.9,
+        "var_tb": 34.0,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1207,
+      "name": "Rice Kanji Shampoo",
+      "image": "/assets/images/hair/hair_1207.png",
+      "fallbackImage": "https://vedanmart.com/images/hair/RICE%20KANJI%20SHAMPOO.png",
+      "local_file": "public\\assets/images/hair/hair_1207.png",
+      "analysis": {
+        "path": "public\\assets/images/hair/hair_1207.png",
+        "size": [
+          1024,
+          1024
+        ],
+        "aspect": 1.0,
+        "var_lr": 54.3,
+        "var_tb": 3896.2,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    }
+  ],
+  "skin": [
+    {
+      "id": 1263,
+      "name": "Cucumber gel (GC)",
+      "image": "https://vedanmart.com/images/Skin/CucumberGel.png",
+      "fallbackImage": "/assets/images/skin/skin_1263.png",
+      "local_file": "public\\assets/images/skin/skin_1263.png",
+      "analysis": {
+        "path": "public\\assets/images/skin/skin_1263.png",
+        "size": [
+          1024,
+          1024
+        ],
+        "aspect": 1.0,
+        "var_lr": 25.6,
+        "var_tb": 19.2,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1304,
+      "name": "Chemparuthi poo powder",
+      "image": "https://vedanmart.com/images/Body/HIBISCUS%20FLOWER%20POWDER.jpeg",
+      "fallbackImage": "/assets/images/skin/skin_1304.jpeg",
+      "local_file": "public\\assets/images/skin/skin_1304.jpeg",
+      "analysis": {
+        "path": "public\\assets/images/skin/skin_1304.jpeg",
+        "size": [
+          768,
+          1376
+        ],
+        "aspect": 0.558,
+        "var_lr": 206.4,
+        "var_tb": 2.1,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1291,
+      "name": "Cucumber Soap",
+      "image": "https://vedanmart.com/images/Body/CUCUMBER%20SOAP.jpeg",
+      "fallbackImage": "/assets/images/skin/skin_1291.jpeg",
+      "local_file": "public\\assets/images/skin/skin_1291.jpeg",
+      "analysis": {
+        "path": "public\\assets/images/skin/skin_1291.jpeg",
+        "size": [
+          768,
+          1376
+        ],
+        "aspect": 0.558,
+        "var_lr": 40.4,
+        "var_tb": 8.3,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1281,
+      "name": "kadukkai powder",
+      "image": "https://vedanmart.com/images/herbal/1.jpeg",
+      "fallbackImage": "/assets/images/skin/skin_1281.jpeg",
+      "local_file": "public\\assets/images/skin/skin_1281.jpeg",
+      "analysis": {
+        "path": "public\\assets/images/skin/skin_1281.jpeg",
+        "size": [
+          1218,
+          1600
+        ],
+        "aspect": 0.761,
+        "var_lr": 165.0,
+        "var_tb": 898.8,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1269,
+      "name": "Multhani Metti",
+      "image": "https://vedanmart.com/images/Skin/multhanimetti.jpeg",
+      "fallbackImage": "/assets/images/skin/skin_1269.jpeg",
+      "local_file": "public\\assets/images/skin/skin_1269.jpeg",
+      "analysis": {
+        "path": "public\\assets/images/skin/skin_1269.jpeg",
+        "size": [
+          782,
+          694
+        ],
+        "aspect": 1.127,
+        "var_lr": 2.2,
+        "var_tb": 1.7,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1262,
+      "name": "Paasiparuppu Maavu",
+      "image": "https://vedanmart.com/images/Skin/Pasirarupu.jpg",
+      "fallbackImage": "/assets/images/skin/skin_1262.jpg",
+      "local_file": "public\\assets/images/skin/skin_1262.jpg",
+      "analysis": {
+        "path": "public\\assets/images/skin/skin_1262.jpg",
+        "size": [
+          1600,
+          1740
+        ],
+        "aspect": 0.92,
+        "var_lr": 36.3,
+        "var_tb": 0.5,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1261,
+      "name": "Orange Peal Powder(PO)",
+      "image": "https://vedanmart.com/images/Skin/ORANGE%20POWDER(PO).jpg",
+      "fallbackImage": "/assets/images/skin/skin_1261.jpg",
+      "local_file": "public\\assets/images/skin/skin_1261.jpg",
+      "analysis": {
+        "path": "public\\assets/images/skin/skin_1261.jpg",
+        "size": [
+          1267,
+          1386
+        ],
+        "aspect": 0.914,
+        "var_lr": 0.6,
+        "var_tb": 0.0,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1260,
+      "name": "Orange Peel Powder Jar",
+      "image": "https://vedanmart.com/images/Skin/ORANGE%20POWDER%20JAR.jpg",
+      "fallbackImage": "/assets/images/skin/skin_1260.jpg",
+      "local_file": "public\\assets/images/skin/skin_1260.jpg",
+      "analysis": {
+        "path": "public\\assets/images/skin/skin_1260.jpg",
+        "size": [
+          1506,
+          1600
+        ],
+        "aspect": 0.941,
+        "var_lr": 7125.4,
+        "var_tb": 4035.2,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1259,
+      "name": "Kasthuri Manjal Jar",
+      "image": "https://vedanmart.com/images/Body%20Gallery/KASTHURI%20MANJAL.jpeg",
+      "fallbackImage": "/assets/images/skin/skin_1259.jpeg",
+      "local_file": "public\\assets/images/skin/skin_1259.jpeg",
+      "analysis": {
+        "path": "public\\assets/images/skin/skin_1259.jpeg",
+        "size": [
+          1500,
+          1500
+        ],
+        "aspect": 1.0,
+        "var_lr": 1.5,
+        "var_tb": 0.0,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1258,
+      "name": "Avarampoo Pusu Manjal Jar",
+      "image": "https://vedanmart.com/images/Skin/Avarampoo%20pusu%20manjal%20jar.jpg",
+      "fallbackImage": "/assets/images/skin/skin_1258.jpg",
+      "local_file": "public\\assets/images/skin/skin_1258.jpg",
+      "analysis": {
+        "path": "public\\assets/images/skin/skin_1258.jpg",
+        "size": [
+          791,
+          796
+        ],
+        "aspect": 0.994,
+        "var_lr": 5289.0,
+        "var_tb": 6289.7,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1256,
+      "name": "Aloe Vera Facepack Powder Jar (For Men)",
+      "image": "https://vedanmart.com/images/Skin/Aloe%20vera%20face%20jar.png",
+      "fallbackImage": "/assets/images/skin/skin_1256.png",
+      "local_file": "public\\assets/images/skin/skin_1256.png",
+      "analysis": {
+        "path": "public\\assets/images/skin/skin_1256.png",
+        "size": [
+          1024,
+          1024
+        ],
+        "aspect": 1.0,
+        "var_lr": 216.5,
+        "var_tb": 138.0,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1249,
+      "name": "Multhani Metti  Jar",
+      "image": "https://vedanmart.com/images/Skin/Multhani%20Metti%20jar.jpg",
+      "fallbackImage": "/assets/images/skin/skin_1249.jpg",
+      "local_file": "public\\assets/images/skin/skin_1249.jpg",
+      "analysis": {
+        "path": "public\\assets/images/skin/skin_1249.jpg",
+        "size": [
+          1500,
+          1500
+        ],
+        "aspect": 1.0,
+        "var_lr": 2.8,
+        "var_tb": 0.0,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1247,
+      "name": "Mahil Rose Gel",
+      "image": "https://vedanmart.com/images/Skin/Mahil%20Rose%20gel.jpg",
+      "fallbackImage": "/assets/images/skin/skin_1247.jpg",
+      "local_file": "public\\assets/images/skin/skin_1247.jpg",
+      "analysis": {
+        "path": "public\\assets/images/skin/skin_1247.jpg",
+        "size": [
+          1600,
+          1600
+        ],
+        "aspect": 1.0,
+        "var_lr": 82.0,
+        "var_tb": 12.3,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1245,
+      "name": "50 Gm Ramcare KADUKKAI POWDERJAR",
+      "image": "https://vedanmart.com/images/Skin/Kadukkai%20Powder%20jar.jpg",
+      "fallbackImage": "/assets/images/skin/skin_1245.jpg",
+      "local_file": "public\\assets/images/skin/skin_1245.jpg",
+      "analysis": {
+        "path": "public\\assets/images/skin/skin_1245.jpg",
+        "size": [
+          1227,
+          1141
+        ],
+        "aspect": 1.075,
+        "var_lr": 6.8,
+        "var_tb": 1375.2,
+        "is_white_lr": true,
+        "is_white_tb": false,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1243,
+      "name": "Wild Turmeric",
+      "image": "https://vedanmart.com/images/Skin/wild%20turmeric.jpg",
+      "fallbackImage": "/assets/images/skin/skin_1243.jpg",
+      "local_file": "public\\assets/images/skin/skin_1243.jpg",
+      "analysis": {
+        "path": "public\\assets/images/skin/skin_1243.jpg",
+        "size": [
+          1500,
+          1500
+        ],
+        "aspect": 1.0,
+        "var_lr": 1.5,
+        "var_tb": 0.0,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1241,
+      "name": "Red Wine Gel(JAR)",
+      "image": "https://vedanmart.com/images/Skin/Redwine%20gel.jpg",
+      "fallbackImage": "/assets/images/skin/skin_1241.jpg",
+      "local_file": "public\\assets/images/skin/skin_1241.jpg",
+      "analysis": {
+        "path": "public\\assets/images/skin/skin_1241.jpg",
+        "size": [
+          937,
+          909
+        ],
+        "aspect": 1.031,
+        "var_lr": 2626.9,
+        "var_tb": 2049.6,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1240,
+      "name": "Redsandal Powder Jar",
+      "image": "https://vedanmart.com/images/Skin/Redsandal%20power%20jar.jpg",
+      "fallbackImage": "/assets/images/skin/skin_1240.jpg",
+      "local_file": "public\\assets/images/skin/skin_1240.jpg",
+      "analysis": {
+        "path": "public\\assets/images/skin/skin_1240.jpg",
+        "size": [
+          778,
+          822
+        ],
+        "aspect": 0.946,
+        "var_lr": 3545.3,
+        "var_tb": 762.2,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1239,
+      "name": "Rose Water",
+      "image": "https://vedanmart.com/images/Skin/Rose%20water.jpg",
+      "fallbackImage": "/assets/images/skin/skin_1239.jpg",
+      "local_file": "public\\assets/images/skin/skin_1239.jpg",
+      "analysis": {
+        "path": "public\\assets/images/skin/skin_1239.jpg",
+        "size": [
+          1330,
+          1330
+        ],
+        "aspect": 1.0,
+        "var_lr": 24646.9,
+        "var_tb": 21150.6,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1235,
+      "name": "Gram Flour",
+      "image": "https://vedanmart.com/images/Skin/Gram%20flour.jpg",
+      "fallbackImage": "/assets/images/skin/skin_1235.jpg",
+      "local_file": "public\\assets/images/skin/skin_1235.jpg",
+      "analysis": {
+        "path": "public\\assets/images/skin/skin_1235.jpg",
+        "size": [
+          1600,
+          1438
+        ],
+        "aspect": 1.113,
+        "var_lr": 8266.4,
+        "var_tb": 4924.2,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1232,
+      "name": "Aloe Vera Gel",
+      "image": "https://vedanmart.com/images/Skin/Aloe%20vera%20gel.jpg",
+      "fallbackImage": "/assets/images/skin/skin_1232.jpg",
+      "local_file": "public\\assets/images/skin/skin_1232.jpg",
+      "analysis": {
+        "path": "public\\assets/images/skin/skin_1232.jpg",
+        "size": [
+          1330,
+          1330
+        ],
+        "aspect": 1.0,
+        "var_lr": 0.0,
+        "var_tb": 0.0,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1011,
+      "name": "Facepack Powder(Jar)",
+      "image": "https://vedanmart.com/images/Skin/Facepack%20powder%20Jar.jpg",
+      "fallbackImage": "/assets/images/skin/skin_1011.jpg",
+      "local_file": "public\\assets/images/skin/skin_1011.jpg",
+      "analysis": {
+        "path": "public\\assets/images/skin/skin_1011.jpg",
+        "size": [
+          1500,
+          1500
+        ],
+        "aspect": 1.0,
+        "var_lr": 1.3,
+        "var_tb": 13.2,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    }
+  ],
+  "health_wellness": [
+    {
+      "id": 1272,
+      "name": "Sprouted Multigrain Health Mix",
+      "image": "https://vedanmart.com/images/Health%20%26%20Wellness/MULTIGRAIN%20MIX.png",
+      "fallbackImage": "/assets/images/health-wellness/hw_1272.png",
+      "local_file": "public\\assets/images/health-wellness/hw_1272.png",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1272.png",
+        "size": [
+          1024,
+          1024
+        ],
+        "aspect": 1.0,
+        "var_lr": 635.6,
+        "var_tb": 1860.4,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1136,
+      "name": "Siruthaniya Health Mix",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/Millet%20Nutritional%20Mix.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1136.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1136.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1136.jpg",
+        "size": [
+          1500,
+          1500
+        ],
+        "aspect": 1.0,
+        "var_lr": 0.1,
+        "var_tb": 0.0,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1301,
+      "name": "Keelanelli Powder",
+      "image": "https://vedanmart.com/images/herbal/4.jpeg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1301.jpeg",
+      "local_file": "public\\assets/images/health-wellness/hw_1301.jpeg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1301.jpeg",
+        "size": [
+          1600,
+          1066
+        ],
+        "aspect": 1.501,
+        "var_lr": 58.2,
+        "var_tb": 244.4,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1300,
+      "name": "Kandankathiri Powder(PO)",
+      "image": "https://vedanmart.com/images/Food/kandankathiri%20powder.jpeg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1300.jpeg",
+      "local_file": "public\\assets/images/health-wellness/hw_1300.jpeg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1300.jpeg",
+        "size": [
+          785,
+          988
+        ],
+        "aspect": 0.795,
+        "var_lr": 1393.0,
+        "var_tb": 263.5,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1299,
+      "name": "Thaneervittan Kizhangu Powder",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/Thanveevittan%20kizhangu%20powder.jpeg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1299.jpeg",
+      "local_file": "public\\assets/images/health-wellness/hw_1299.jpeg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1299.jpeg",
+        "size": [
+          742,
+          958
+        ],
+        "aspect": 0.775,
+        "var_lr": 1223.3,
+        "var_tb": 851.6,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1298,
+      "name": "Neermulli Powder",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/Neermulli%20powder.jpeg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1298.jpeg",
+      "local_file": "public\\assets/images/health-wellness/hw_1298.jpeg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1298.jpeg",
+        "size": [
+          872,
+          1147
+        ],
+        "aspect": 0.76,
+        "var_lr": 2245.8,
+        "var_tb": 403.3,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1297,
+      "name": "Poonaikali Powder",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/Poonaikali%20power.jpeg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1297.jpeg",
+      "local_file": "public\\assets/images/health-wellness/hw_1297.jpeg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1297.jpeg",
+        "size": [
+          915,
+          1047
+        ],
+        "aspect": 0.874,
+        "var_lr": 326.8,
+        "var_tb": 122.1,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1295,
+      "name": "Nilavembu Powder",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/Nilavembu%20powder%20jar.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1295.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1295.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1295.jpg",
+        "size": [
+          1600,
+          1180
+        ],
+        "aspect": 1.356,
+        "var_lr": 114.2,
+        "var_tb": 60.4,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1293,
+      "name": "Avaram Poo Powder",
+      "image": "https://vedanmart.com/images/herbal/11.jpeg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1293.jpeg",
+      "local_file": "public\\assets/images/health-wellness/hw_1293.jpeg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1293.jpeg",
+        "size": [
+          1600,
+          1066
+        ],
+        "aspect": 1.501,
+        "var_lr": 176.6,
+        "var_tb": 209.5,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1289,
+      "name": "Tribala Powder(PO)",
+      "image": "https://vedanmart.com/images/herbal/10.jpeg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1289.jpeg",
+      "local_file": "public\\assets/images/health-wellness/hw_1289.jpeg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1289.jpeg",
+        "size": [
+          840,
+          1261
+        ],
+        "aspect": 0.666,
+        "var_lr": 102.5,
+        "var_tb": 13.7,
+        "is_white_lr": false,
+        "is_white_tb": true,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1284,
+      "name": "Thoothuvalai Powder",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/Thothuvalai%20powder.jpeg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1284.jpeg",
+      "local_file": "public\\assets/images/health-wellness/hw_1284.jpeg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1284.jpeg",
+        "size": [
+          1200,
+          1600
+        ],
+        "aspect": 0.75,
+        "var_lr": 1119.0,
+        "var_tb": 63.2,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1278,
+      "name": "Aalam Pattai Powder",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/aalam%20pattai%20powder.jpeg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1278.jpeg",
+      "local_file": "public\\assets/images/health-wellness/hw_1278.jpeg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1278.jpeg",
+        "size": [
+          857,
+          971
+        ],
+        "aspect": 0.883,
+        "var_lr": 4494.1,
+        "var_tb": 3594.3,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1277,
+      "name": "Beetroot Powder",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/beetroot%20powder.jpeg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1277.jpeg",
+      "local_file": "public\\assets/images/health-wellness/hw_1277.jpeg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1277.jpeg",
+        "size": [
+          1200,
+          1600
+        ],
+        "aspect": 0.75,
+        "var_lr": 3898.6,
+        "var_tb": 174.4,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1276,
+      "name": "Veliparuthi Powder",
+      "image": "https://vedanmart.com/images/herbal/7.jpeg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1276.jpeg",
+      "local_file": "public\\assets/images/health-wellness/hw_1276.jpeg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1276.jpeg",
+        "size": [
+          1600,
+          1066
+        ],
+        "aspect": 1.501,
+        "var_lr": 74.7,
+        "var_tb": 421.2,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1275,
+      "name": "Avaram Leaf Powder",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/Avaram%20leaf%20powder.jpeg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1275.jpeg",
+      "local_file": "public\\assets/images/health-wellness/hw_1275.jpeg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1275.jpeg",
+        "size": [
+          922,
+          1108
+        ],
+        "aspect": 0.832,
+        "var_lr": 827.8,
+        "var_tb": 483.1,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1274,
+      "name": "Karunai Lehyam",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/karunai%20leheyam.jpeg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1274.jpeg",
+      "local_file": "public\\assets/images/health-wellness/hw_1274.jpeg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1274.jpeg",
+        "size": [
+          1600,
+          1200
+        ],
+        "aspect": 1.333,
+        "var_lr": 10303.5,
+        "var_tb": 307.9,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1271,
+      "name": "Sowbakiya Sundi Lehyam",
+      "image": "https://vedanmart.com/images/Health%20%26%20Wellness/Sobwbalaiya%20lehyam.jfif",
+      "fallbackImage": "/assets/images/health-wellness/hw_1271.jfif",
+      "local_file": "public\\assets/images/health-wellness/hw_1271.jfif",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1271.jfif",
+        "size": [
+          198,
+          252
+        ],
+        "aspect": 0.786,
+        "var_lr": 8535.5,
+        "var_tb": 332.9,
+        "is_white_lr": true,
+        "is_white_tb": false,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1270,
+      "name": "Thuthuvalai Lehyam",
+      "image": "https://vedanmart.com/images/Health%20%26%20Wellness/Thuthuvalai%20Lehyam.jfif",
+      "fallbackImage": "/assets/images/health-wellness/hw_1270.jfif",
+      "local_file": "public\\assets/images/health-wellness/hw_1270.jfif",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1270.jfif",
+        "size": [
+          912,
+          1150
+        ],
+        "aspect": 0.793,
+        "var_lr": 19.3,
+        "var_tb": 28.1,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1206,
+      "name": "Thadhuviruthi Powder",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/Thathu%20Viruthi%20powder.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1206.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1206.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1206.jpg",
+        "size": [
+          877,
+          901
+        ],
+        "aspect": 0.973,
+        "var_lr": 7230.9,
+        "var_tb": 3917.8,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1205,
+      "name": "Kadukkai Powder (Po)",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/kadukkai%20Powder%20(Po).png",
+      "fallbackImage": "/assets/images/health-wellness/hw_1205.png",
+      "local_file": "public\\assets/images/health-wellness/hw_1205.png",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1205.png",
+        "size": [
+          1024,
+          1024
+        ],
+        "aspect": 1.0,
+        "var_lr": 124.5,
+        "var_tb": 27.2,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1204,
+      "name": "Poolankilangu Powder(PO)",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/Poolan%20Kilangu%20Powder.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1204.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1204.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1204.jpg",
+        "size": [
+          1585,
+          1711
+        ],
+        "aspect": 0.926,
+        "var_lr": 0.0,
+        "var_tb": 2.1,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1203,
+      "name": "Adathodai Powder Jar",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/Adhatoda%20POWDER%20JAR.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1203.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1203.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1203.jpg",
+        "size": [
+          1500,
+          1454
+        ],
+        "aspect": 1.032,
+        "var_lr": 11283.1,
+        "var_tb": 1782.3,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1202,
+      "name": "Adathodai Powder(PO)",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/Adhatoda%20POWDER(PO).jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1202.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1202.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1202.jpg",
+        "size": [
+          404,
+          518
+        ],
+        "aspect": 0.78,
+        "var_lr": 2.5,
+        "var_tb": 0.3,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1201,
+      "name": "Amla Powder Jar",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/Amla%20PowderJAR.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1201.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1201.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1201.jpg",
+        "size": [
+          1280,
+          1218
+        ],
+        "aspect": 1.051,
+        "var_lr": 5092.1,
+        "var_tb": 1736.6,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1200,
+      "name": "Amman Raw Rice Powder(PO)",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/AMMAAN%20Raw%20rice%20POWDER(PO).jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1200.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1200.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1200.jpg",
+        "size": [
+          1353,
+          1454
+        ],
+        "aspect": 0.931,
+        "var_lr": 280.0,
+        "var_tb": 51.3,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1199,
+      "name": "Amukara Kizhangu Powder Jar",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/Ashwagandha%20Powder%20JAR.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1199.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1199.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1199.jpg",
+        "size": [
+          854,
+          876
+        ],
+        "aspect": 0.975,
+        "var_lr": 3388.6,
+        "var_tb": 4433.3,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1198,
+      "name": "Amukara Kizhangu Powder (PO)",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/Ashwagandha%20Powder%20(PO).jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1198.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1198.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1198.jpg",
+        "size": [
+          617,
+          737
+        ],
+        "aspect": 0.837,
+        "var_lr": 159.9,
+        "var_tb": 4.7,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1197,
+      "name": "Arugambul Powder Jar",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/Arugambul%20Powder%20Jar.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1197.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1197.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1197.jpg",
+        "size": [
+          1458,
+          1600
+        ],
+        "aspect": 0.911,
+        "var_lr": 8501.9,
+        "var_tb": 4212.6,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1196,
+      "name": "Arugambul Powder (Po)",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/Arugambul%20Powder%20(Po).jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1196.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1196.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1196.jpg",
+        "size": [
+          490,
+          602
+        ],
+        "aspect": 0.814,
+        "var_lr": 52.4,
+        "var_tb": 1.4,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1189,
+      "name": "Aavarampoo Powder Jar",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/AVARAM%20FLOWER%20POWDER%20JAR.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1189.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1189.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1189.jpg",
+        "size": [
+          1167,
+          1187
+        ],
+        "aspect": 0.983,
+        "var_lr": 3747.4,
+        "var_tb": 1039.8,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1187,
+      "name": "Athimathuram Powder Jar",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/Athimathuram%20Powder%20Jar.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1187.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1187.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1187.jpg",
+        "size": [
+          1566,
+          1600
+        ],
+        "aspect": 0.979,
+        "var_lr": 10266.0,
+        "var_tb": 2224.7,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1184,
+      "name": "Athimathuram Powder (PO)",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/Athimathuram%20Powder%20(PO).jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1184.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1184.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1184.jpg",
+        "size": [
+          529,
+          698
+        ],
+        "aspect": 0.758,
+        "var_lr": 160.7,
+        "var_tb": 5.5,
+        "is_white_lr": false,
+        "is_white_tb": true,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1182,
+      "name": "Boomisarkarai Kizhingu Powder (PO)",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/BHOOMI%20SUGAR%20POWDER%20(PO).jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1182.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1182.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1182.jpg",
+        "size": [
+          1331,
+          1468
+        ],
+        "aspect": 0.907,
+        "var_lr": 79.7,
+        "var_tb": 10.7,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1180,
+      "name": "Yelathi Choornam",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/ELADHI%20CHURNAM.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1180.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1180.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1180.jpg",
+        "size": [
+          912,
+          1150
+        ],
+        "aspect": 0.793,
+        "var_lr": 21.3,
+        "var_tb": 30.7,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1178,
+      "name": "Guava Leaf Powder(PO)",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/Guava%20Leaf%20Powder%20(PO).jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1178.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1178.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1178.jpg",
+        "size": [
+          1600,
+          1676
+        ],
+        "aspect": 0.955,
+        "var_lr": 0.0,
+        "var_tb": 0.0,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1176,
+      "name": "Hibiscus Flower Powder",
+      "image": "https://vedanmart.com/images/Body/HIBISCUS%20FLOWER%20POWDER.jpeg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1176.jpeg",
+      "local_file": "public\\assets/images/health-wellness/hw_1176.jpeg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1176.jpeg",
+        "size": [
+          768,
+          1376
+        ],
+        "aspect": 0.558,
+        "var_lr": 206.4,
+        "var_tb": 2.1,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1175,
+      "name": "Jadhikai Powder (PO)",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/Jaathikkai%20Powder.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1175.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1175.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1175.jpg",
+        "size": [
+          1122,
+          1438
+        ],
+        "aspect": 0.78,
+        "var_lr": 7.0,
+        "var_tb": 0.7,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1173,
+      "name": "Kabasurakkudineer Suranam(PO)",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/KABASURAKKUDINEER%20SURANAM.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1173.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1173.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1173.jpg",
+        "size": [
+          1531,
+          1691
+        ],
+        "aspect": 0.905,
+        "var_lr": 255.7,
+        "var_tb": 182.5,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1171,
+      "name": "Kaba Surakkudineer Suranam",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/KABA%20SURAKKUDINEER%20SURANAM.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1171.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1171.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1171.jpg",
+        "size": [
+          1330,
+          1330
+        ],
+        "aspect": 1.0,
+        "var_lr": 0.0,
+        "var_tb": 20341.0,
+        "is_white_lr": true,
+        "is_white_tb": false,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1169,
+      "name": "Mookiratai Powder(PO)",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/MOOKIRATAI%20POWDER.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1169.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1169.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1169.jpg",
+        "size": [
+          854,
+          1039
+        ],
+        "aspect": 0.822,
+        "var_lr": 104.4,
+        "var_tb": 446.4,
+        "is_white_lr": true,
+        "is_white_tb": false,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1168,
+      "name": "Mutakkatran Powder Jar",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/MUTAKKATRAN%20POWDER%20JAR.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1168.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1168.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1168.jpg",
+        "size": [
+          923,
+          883
+        ],
+        "aspect": 1.045,
+        "var_lr": 438.7,
+        "var_tb": 216.0,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1167,
+      "name": "Naaval Vithai Powder (JAR)",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/Jamun%20Seed%20Powder%20(JAR).jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1167.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1167.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1167.jpg",
+        "size": [
+          1555,
+          1536
+        ],
+        "aspect": 1.012,
+        "var_lr": 6746.3,
+        "var_tb": 6331.8,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1166,
+      "name": "Naaval Vithai Powder(PO)",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/Jamun%20Seed%20Powder.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1166.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1166.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1166.jpg",
+        "size": [
+          1570,
+          1707
+        ],
+        "aspect": 0.92,
+        "var_lr": 0.0,
+        "var_tb": 0.0,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1165,
+      "name": "Nilavembu Kudineer",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/NILAVEMBU%20KUDINEER.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1165.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1165.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1165.jpg",
+        "size": [
+          1600,
+          1483
+        ],
+        "aspect": 1.079,
+        "var_lr": 3917.9,
+        "var_tb": 1011.2,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1164,
+      "name": "Vasambu Powder Jar",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/VASAMBU%20POWDER%20JAR.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1164.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1164.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1164.jpg",
+        "size": [
+          1511,
+          1600
+        ],
+        "aspect": 0.944,
+        "var_lr": 1866.9,
+        "var_tb": 372.2,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1162,
+      "name": "Vallarai Powder Jar",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/Vallarai%20Powder%20Jar.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1162.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1162.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1162.jpg",
+        "size": [
+          1451,
+          1536
+        ],
+        "aspect": 0.945,
+        "var_lr": 3551.4,
+        "var_tb": 2405.7,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1161,
+      "name": "Vallarai Powder (PO)",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/Vallarai%20Powder.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1161.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1161.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1161.jpg",
+        "size": [
+          1600,
+          1063
+        ],
+        "aspect": 1.505,
+        "var_lr": 0.0,
+        "var_tb": 0.7,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1160,
+      "name": "Tribala Powder Jar",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/TRIBALAPODI%20JAR.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1160.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1160.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1160.jpg",
+        "size": [
+          1574,
+          1753
+        ],
+        "aspect": 0.898,
+        "var_lr": 524.1,
+        "var_tb": 389.2,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1159,
+      "name": "Thuthuvalai Powder Jar",
+      "image": "https://vedanmart.com/images/Health%20%26%20Wellness/thudhu.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1159.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1159.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1159.jpg",
+        "size": [
+          1600,
+          1146
+        ],
+        "aspect": 1.396,
+        "var_lr": 39.7,
+        "var_tb": 30.7,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1157,
+      "name": "Thuthuvalai Powder (PO)",
+      "image": "https://vedanmart.com/images/Health%20%26%20Wellness/THUTHUVALAI%20POWDER.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1157.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1157.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1157.jpg",
+        "size": [
+          840,
+          1010
+        ],
+        "aspect": 0.832,
+        "var_lr": 1.2,
+        "var_tb": 5.6,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1155,
+      "name": "Sirukurinjan Powder Jar",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/SIRUKURINJAN%20POWDER.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1155.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1155.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1155.jpg",
+        "size": [
+          840,
+          593
+        ],
+        "aspect": 1.417,
+        "var_lr": 0.4,
+        "var_tb": 2.2,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1153,
+      "name": "Sirukurinjan Powder(PO)",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/SIRUKURINJAN%20POWDER.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1153.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1153.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1153.jpg",
+        "size": [
+          840,
+          593
+        ],
+        "aspect": 1.417,
+        "var_lr": 0.4,
+        "var_tb": 2.2,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1152,
+      "name": "Thulasi Powder Jar",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/THULASI%20POWDER%20JAR.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1152.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1152.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1152.jpg",
+        "size": [
+          1600,
+          1580
+        ],
+        "aspect": 1.013,
+        "var_lr": 641.7,
+        "var_tb": 390.1,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1151,
+      "name": "Thulasi Powder(PO)",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/THULASI%20POWDER.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1151.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1151.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1151.jpg",
+        "size": [
+          1600,
+          1318
+        ],
+        "aspect": 1.214,
+        "var_lr": 0.8,
+        "var_tb": 0.7,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1149,
+      "name": "Orithal Thamarai Powder Jar",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/ORITHAL%20THAMARAI%20POWDER%20JAR.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1149.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1149.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1149.jpg",
+        "size": [
+          1600,
+          1570
+        ],
+        "aspect": 1.019,
+        "var_lr": 571.5,
+        "var_tb": 5763.5,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1147,
+      "name": "Orithal Thamarai Powder(PO)",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/ORITHAL%20THAMARAI%20POWDER.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1147.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1147.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1147.jpg",
+        "size": [
+          1550,
+          1684
+        ],
+        "aspect": 0.92,
+        "var_lr": 7.9,
+        "var_tb": 0.0,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1145,
+      "name": "Perunerunjil Powder Jar",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/PERUNERUNJIL%20POWDER.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1145.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1145.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1145.jpg",
+        "size": [
+          1600,
+          1063
+        ],
+        "aspect": 1.505,
+        "var_lr": 0.3,
+        "var_tb": 0.0,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1143,
+      "name": "Perunerunjil Powder(PO)",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/PERUNERUNJIL%20POWDER.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1143.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1143.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1143.jpg",
+        "size": [
+          1600,
+          1063
+        ],
+        "aspect": 1.505,
+        "var_lr": 0.3,
+        "var_tb": 0.0,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1142,
+      "name": "Sukku Powder Jar",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/SUKKU%20POWDER%20JAR.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1142.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1142.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1142.jpg",
+        "size": [
+          1600,
+          1155
+        ],
+        "aspect": 1.385,
+        "var_lr": 39.1,
+        "var_tb": 13.7,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1140,
+      "name": "Fenugreek Powder Jar",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/Fenugreek%20Powder%20JAR.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1140.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1140.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1140.jpg",
+        "size": [
+          1600,
+          1484
+        ],
+        "aspect": 1.078,
+        "var_lr": 5710.7,
+        "var_tb": 6443.0,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1138,
+      "name": "Siruthaniya Health Mix",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/SIRUTHANIYA%20HEALTH%20MIX.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1138.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1138.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1138.jpg",
+        "size": [
+          1500,
+          1500
+        ],
+        "aspect": 1.0,
+        "var_lr": 0.1,
+        "var_tb": 0.0,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1134,
+      "name": "Nilavembu Powder Jar",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/Nilavembu%20powder%20jar.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1134.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1134.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1134.jpg",
+        "size": [
+          1600,
+          1180
+        ],
+        "aspect": 1.356,
+        "var_lr": 114.2,
+        "var_tb": 60.4,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1131,
+      "name": "Poduthalai Powder Jar",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/PODUTHALAI%20POWDER%20JAR.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1131.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1131.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1131.jpg",
+        "size": [
+          1600,
+          1720
+        ],
+        "aspect": 0.93,
+        "var_lr": 450.9,
+        "var_tb": 276.5,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1130,
+      "name": "Thantrikkai Powder Jar",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/THANTRIKKAI%20POWDER%20JAR.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1130.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1130.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1130.jpg",
+        "size": [
+          1600,
+          1712
+        ],
+        "aspect": 0.935,
+        "var_lr": 520.3,
+        "var_tb": 303.7,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1127,
+      "name": "Vilvaleaf Powder Jar",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/Vilvaleaf%20Powder%20Jar.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1127.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1127.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1127.jpg",
+        "size": [
+          1600,
+          1574
+        ],
+        "aspect": 1.017,
+        "var_lr": 401.1,
+        "var_tb": 379.0,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1125,
+      "name": "Madhumega Sooranam Jar",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/Mathumega%20Suranam%20Jar.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1125.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1125.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1125.jpg",
+        "size": [
+          1600,
+          1700
+        ],
+        "aspect": 0.941,
+        "var_lr": 541.3,
+        "var_tb": 177.5,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1123,
+      "name": "Aadathodai Kudineer Choornam",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/ADATHODAI%20KUDINEER%20CHURNAM.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1123.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1123.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1123.jpg",
+        "size": [
+          912,
+          1150
+        ],
+        "aspect": 0.793,
+        "var_lr": 21.6,
+        "var_tb": 34.2,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1120,
+      "name": "Thalisathi Choornam",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/Thalisadi%20Churnam.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1120.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1120.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1120.jpg",
+        "size": [
+          912,
+          1150
+        ],
+        "aspect": 0.793,
+        "var_lr": 17.9,
+        "var_tb": 23.6,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1117,
+      "name": "Karuppu Kavuni Health Mix (Jar)",
+      "image": "https://vedanmart.com/images/health%20and%20wellness%20gallery/KARUPPU%20KAVUNI%20HEALTH%20MIX.jpeg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1117.jpeg",
+      "local_file": "public\\assets/images/health-wellness/hw_1117.jpeg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1117.jpeg",
+        "size": [
+          768,
+          1376
+        ],
+        "aspect": 0.558,
+        "var_lr": 373.7,
+        "var_tb": 31.4,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1115,
+      "name": "Abc Malt (JAR)",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/Abc%20Malt.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1115.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1115.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1115.jpg",
+        "size": [
+          890,
+          856
+        ],
+        "aspect": 1.04,
+        "var_lr": 2814.1,
+        "var_tb": 782.6,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1113,
+      "name": "Mutakkatran Powder (PO)",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/Mutakkatran%20Powder.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1113.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1113.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1113.jpg",
+        "size": [
+          1600,
+          1628
+        ],
+        "aspect": 0.983,
+        "var_lr": 75.2,
+        "var_tb": 2.5,
+        "is_white_lr": false,
+        "is_white_tb": true,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1111,
+      "name": "Masikakkai Powder (PO)",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/Masikakkai%20Powder.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1111.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1111.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1111.jpg",
+        "size": [
+          940,
+          788
+        ],
+        "aspect": 1.193,
+        "var_lr": 2479.9,
+        "var_tb": 1.8,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1109,
+      "name": "Nithyakalyani Powder (Po)",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/Nithyakalyani%20Powder.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1109.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1109.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1109.jpg",
+        "size": [
+          1600,
+          1746
+        ],
+        "aspect": 0.916,
+        "var_lr": 4.5,
+        "var_tb": 105.5,
+        "is_white_lr": true,
+        "is_white_tb": false,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1107,
+      "name": "Kandathippili Powder (Po)",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/Kandthippili%20powder.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1107.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1107.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1107.jpg",
+        "size": [
+          1578,
+          1812
+        ],
+        "aspect": 0.871,
+        "var_lr": 22.7,
+        "var_tb": 177.3,
+        "is_white_lr": true,
+        "is_white_tb": false,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1105,
+      "name": "Mathulai Powder (Po)",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/Mathulai%20Powder.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1105.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1105.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1105.jpg",
+        "size": [
+          1600,
+          1804
+        ],
+        "aspect": 0.887,
+        "var_lr": 185.6,
+        "var_tb": 400.6,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1103,
+      "name": "Karuveppilai Powder (Po)",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/veppilai%20powder.jpeg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1103.jpeg",
+      "local_file": "public\\assets/images/health-wellness/hw_1103.jpeg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1103.jpeg",
+        "size": [
+          1200,
+          1600
+        ],
+        "aspect": 0.75,
+        "var_lr": 949.5,
+        "var_tb": 126.8,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1100,
+      "name": "Karisalangkanni Powder (Po)",
+      "image": "https://vedanmart.com/images/Health%20%26%20Wellness/KarisalangkanniPowder.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1100.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1100.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1100.jpg",
+        "size": [
+          1600,
+          1729
+        ],
+        "aspect": 0.925,
+        "var_lr": 433.1,
+        "var_tb": 1140.9,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1098,
+      "name": "KUPPAIMENI POWDER(PO)",
+      "image": "https://vedanmart.com/images/Health%20%26%20Wellness/Kuppaimeni%20powder(PO).jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1098.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1098.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1098.jpg",
+        "size": [
+          623,
+          674
+        ],
+        "aspect": 0.924,
+        "var_lr": 130.3,
+        "var_tb": 111.3,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1097,
+      "name": "Thiripala Powder (Po)",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/Thribala%20Powder.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1097.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1097.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1097.jpg",
+        "size": [
+          1600,
+          1596
+        ],
+        "aspect": 1.003,
+        "var_lr": 2.1,
+        "var_tb": 1095.9,
+        "is_white_lr": true,
+        "is_white_tb": false,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1096,
+      "name": "Mooligai Neer Aavi Powder (PO)",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/Herbal%20Steam%20Powder.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1096.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1096.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1096.jpg",
+        "size": [
+          1600,
+          1719
+        ],
+        "aspect": 0.931,
+        "var_lr": 0.4,
+        "var_tb": 80.6,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1095,
+      "name": "Sirupeelai Powder (Po)",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/Sirupeelai%20Powder.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1095.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1095.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1095.jpg",
+        "size": [
+          1490,
+          1562
+        ],
+        "aspect": 0.954,
+        "var_lr": 18.8,
+        "var_tb": 66.2,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1094,
+      "name": "Thuthi Leaf Powder (Po)",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/Thuthi%20Leaf%20Powder.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1094.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1094.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1094.jpg",
+        "size": [
+          1517,
+          1652
+        ],
+        "aspect": 0.918,
+        "var_lr": 4.9,
+        "var_tb": 26.8,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1093,
+      "name": "Amla Powder (PO)",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/Amla%20Powder.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1093.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1093.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1093.jpg",
+        "size": [
+          1600,
+          1799
+        ],
+        "aspect": 0.889,
+        "var_lr": 14.0,
+        "var_tb": 89.2,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1091,
+      "name": "Ammaan Pacharisi Powder (Po)",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/Ammaan%20Pacharisi%20Powder.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1091.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1091.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1091.jpg",
+        "size": [
+          1568,
+          1592
+        ],
+        "aspect": 0.985,
+        "var_lr": 24.3,
+        "var_tb": 893.7,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1088,
+      "name": "Nochi Ilai Powder (Po)",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/NOCHI%20ILAI%20POWDER.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1088.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1088.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1088.jpg",
+        "size": [
+          1600,
+          1346
+        ],
+        "aspect": 1.189,
+        "var_lr": 4.9,
+        "var_tb": 149.7,
+        "is_white_lr": true,
+        "is_white_tb": false,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1086,
+      "name": "Karunjeraga Powder (Po)",
+      "image": "https://vedanmart.com/images/Health%20%26%20Wellness/KarunjiragaPowder.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1086.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1086.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1086.jpg",
+        "size": [
+          1600,
+          1603
+        ],
+        "aspect": 0.998,
+        "var_lr": 0.1,
+        "var_tb": 0.2,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1084,
+      "name": "Naayuruvi Powder (Po)",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/Naayuruvi%20Powder.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1084.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1084.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1084.jpg",
+        "size": [
+          1357,
+          1485
+        ],
+        "aspect": 0.914,
+        "var_lr": 120.4,
+        "var_tb": 45.7,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1082,
+      "name": "Chittarathai Powder (Po) Nr",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/CHITTARATHAI%20POWDER.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1082.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1082.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1082.jpg",
+        "size": [
+          1569,
+          1784
+        ],
+        "aspect": 0.879,
+        "var_lr": 33.2,
+        "var_tb": 93.5,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1079,
+      "name": "Thumbai Leaf Powder (Po)",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/Thumbai%20Leaf%20Powder.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1079.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1079.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1079.jpg",
+        "size": [
+          1413,
+          1688
+        ],
+        "aspect": 0.837,
+        "var_lr": 14.7,
+        "var_tb": 8.1,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1077,
+      "name": "Thaamarai Poo Powder (Po)",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/Thaamarai%20Poo%20Powder.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1077.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1077.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1077.jpg",
+        "size": [
+          1419,
+          1330
+        ],
+        "aspect": 1.067,
+        "var_lr": 3.6,
+        "var_tb": 29.5,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1075,
+      "name": "Neem Leaf Powder",
+      "image": "https://vedanmart.com/images/Body/NEEM%20LEAVES%20POWDER.jpeg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1075.jpeg",
+      "local_file": "public\\assets/images/health-wellness/hw_1075.jpeg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1075.jpeg",
+        "size": [
+          1024,
+          1024
+        ],
+        "aspect": 1.0,
+        "var_lr": 1236.5,
+        "var_tb": 1104.1,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1073,
+      "name": "Kandakathiri Powder",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/kandakathiri%20powder.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1073.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1073.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1073.jpg",
+        "size": [
+          1436,
+          1644
+        ],
+        "aspect": 0.873,
+        "var_lr": 1.6,
+        "var_tb": 28.5,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1071,
+      "name": "Seenthilkodi Powder (Po)",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/Seenthilkodi%20Powder.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1071.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1071.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1071.jpg",
+        "size": [
+          1600,
+          1614
+        ],
+        "aspect": 0.991,
+        "var_lr": 0.1,
+        "var_tb": 1.3,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1069,
+      "name": "Fenugreek Powder (PO)",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/Fenugreek%20Powder.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1069.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1069.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1069.jpg",
+        "size": [
+          1413,
+          1341
+        ],
+        "aspect": 1.054,
+        "var_lr": 0.7,
+        "var_tb": 5.0,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1067,
+      "name": "Lavangapattai Powder (Po)",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/Lavangapattai%20Powder.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1067.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1067.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1067.jpg",
+        "size": [
+          1600,
+          1448
+        ],
+        "aspect": 1.105,
+        "var_lr": 0.8,
+        "var_tb": 2.8,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1064,
+      "name": "Koraikilangu Powder (Po)",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/Koraikilangu%20Powder.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1064.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1064.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1064.jpg",
+        "size": [
+          1600,
+          1555
+        ],
+        "aspect": 1.029,
+        "var_lr": 0.0,
+        "var_tb": 0.7,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1061,
+      "name": "Trikaduku Suranam (Po)",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/Trikaduku%20Suranam.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1061.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1061.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1061.jpg",
+        "size": [
+          1583,
+          1514
+        ],
+        "aspect": 1.046,
+        "var_lr": 0.0,
+        "var_tb": 173.2,
+        "is_white_lr": true,
+        "is_white_tb": false,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1059,
+      "name": "Sirunerunjil Powder (Po)",
+      "image": "https://vedanmart.com/images/Health%20%26%20Wellness/SirunerunjilPowder.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1059.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1059.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1059.jpg",
+        "size": [
+          1600,
+          1503
+        ],
+        "aspect": 1.065,
+        "var_lr": 0.1,
+        "var_tb": 1.4,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1057,
+      "name": "Manathakkali Powder (Po)",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/Manathakkali%20Powder.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1057.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1057.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1057.jpg",
+        "size": [
+          1480,
+          1633
+        ],
+        "aspect": 0.906,
+        "var_lr": 0.7,
+        "var_tb": 2.6,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1054,
+      "name": "Nilapanaikizhingu Powder (Po)",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/Nila%20Panaikilangu%20Powder.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1054.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1054.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1054.jpg",
+        "size": [
+          1394,
+          1499
+        ],
+        "aspect": 0.93,
+        "var_lr": 16.6,
+        "var_tb": 9.9,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1052,
+      "name": "Vilva Leaf Powder (Po)",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/Vilva%20Leaf%20Powder.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1052.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1052.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1052.jpg",
+        "size": [
+          1600,
+          1319
+        ],
+        "aspect": 1.213,
+        "var_lr": 0.5,
+        "var_tb": 5.8,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    },
+    {
+      "id": 1049,
+      "name": "Thippili Rasayanam",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/THIPPILI%20RASAYANAM.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1049.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1049.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1049.jpg",
+        "size": [
+          609,
+          728
+        ],
+        "aspect": 0.837,
+        "var_lr": 80.9,
+        "var_tb": 377.0,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1047,
+      "name": "Vallarai Lehyam",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/VALLARAI%20LEHYAM.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1047.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1047.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1047.jpg",
+        "size": [
+          912,
+          1173
+        ],
+        "aspect": 0.777,
+        "var_lr": 612.1,
+        "var_tb": 12.3,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1045,
+      "name": "Thathuviruthi Lehyam",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/THATHUVIRUTHI%20LEHYAM.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1045.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1045.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1045.jpg",
+        "size": [
+          700,
+          791
+        ],
+        "aspect": 0.885,
+        "var_lr": 191.7,
+        "var_tb": 352.2,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1043,
+      "name": "Pirandai Powder (Po)",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/PIRANDAI%20POWDER.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1043.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1043.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1043.jpg",
+        "size": [
+          885,
+          963
+        ],
+        "aspect": 0.919,
+        "var_lr": 106.5,
+        "var_tb": 1051.5,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1040,
+      "name": "Thandrikai Powder (Po)",
+      "image": "https://vedanmart.com/images/Health%20%26%20Wellness/THANTRIKKAI%20POWDER.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1040.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1040.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1040.jpg",
+        "size": [
+          1600,
+          1712
+        ],
+        "aspect": 0.935,
+        "var_lr": 520.3,
+        "var_tb": 303.7,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1038,
+      "name": "Karpuravalli Powder (Po)",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/Karpuravalli%20powder.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1038.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1038.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1038.jpg",
+        "size": [
+          885,
+          918
+        ],
+        "aspect": 0.964,
+        "var_lr": 109.8,
+        "var_tb": 243.9,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1036,
+      "name": "Musumusukkai Powder (Po)",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/Musumusukkai%20powder.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1036.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1036.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1036.jpg",
+        "size": [
+          885,
+          926
+        ],
+        "aspect": 0.956,
+        "var_lr": 122.8,
+        "var_tb": 273.5,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1033,
+      "name": "Marudhontri Powder (Po)",
+      "image": "https://vedanmart.com/images/Health%20%26%20Wellness/Marudhontripowder.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1033.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1033.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1033.jpg",
+        "size": [
+          885,
+          923
+        ],
+        "aspect": 0.959,
+        "var_lr": 136.0,
+        "var_tb": 376.3,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1031,
+      "name": "Thottal Surungi Powder",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/Thottal%20surungi%20powder.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1031.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1031.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1031.jpg",
+        "size": [
+          586,
+          649
+        ],
+        "aspect": 0.903,
+        "var_lr": 126.3,
+        "var_tb": 298.9,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1030,
+      "name": "Poondhikai Powder (Po)",
+      "image": "https://vedanmart.com/images/Health%20%26%20Wellness/Poonthikaai.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1030.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1030.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1030.jpg",
+        "size": [
+          1600,
+          1870
+        ],
+        "aspect": 0.856,
+        "var_lr": 176.5,
+        "var_tb": 257.0,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1029,
+      "name": "Nilaavarai Powder (Po)",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/Nilaavarai%20powder.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1029.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1029.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1029.jpg",
+        "size": [
+          1600,
+          1531
+        ],
+        "aspect": 1.045,
+        "var_lr": 301.0,
+        "var_tb": 231.4,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1028,
+      "name": "Thippili Powder (Po)",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/THIPILI%20POWDER.jpeg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1028.jpeg",
+      "local_file": "public\\assets/images/health-wellness/hw_1028.jpeg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1028.jpeg",
+        "size": [
+          768,
+          1376
+        ],
+        "aspect": 0.558,
+        "var_lr": 111.4,
+        "var_tb": 5.1,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1024,
+      "name": "Neem Flower Powder",
+      "image": "https://vedanmart.com/images/Health%20&%20Wellness/Neem%20powder.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1024.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1024.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1024.jpg",
+        "size": [
+          486,
+          549
+        ],
+        "aspect": 0.885,
+        "var_lr": 261.9,
+        "var_tb": 247.5,
+        "is_white_lr": false,
+        "is_white_tb": false,
+        "is_affected": true
+      }
+    },
+    {
+      "id": 1018,
+      "name": "Vadhasura Kudineer Churnam",
+      "image": "https://vedanmart.com/images/Beverages/VADHASURA%20KUDINEER%20CHURNAM.jpg",
+      "fallbackImage": "/assets/images/health-wellness/hw_1018.jpg",
+      "local_file": "public\\assets/images/health-wellness/hw_1018.jpg",
+      "analysis": {
+        "path": "public\\assets/images/health-wellness/hw_1018.jpg",
+        "size": [
+          1600,
+          1645
+        ],
+        "aspect": 0.973,
+        "var_lr": 27.7,
+        "var_tb": 3.8,
+        "is_white_lr": true,
+        "is_white_tb": true,
+        "is_affected": false
+      }
+    }
+  ]
+}

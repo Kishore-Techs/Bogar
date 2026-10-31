@@ -1,0 +1,277 @@
+{
+  "#food": [],
+  "#poojas": [],
+  "#tea-food": [],
+  "#thuni": [
+    {
+      "name": "Traditional Buddhist Robes",
+      "src": "http://localhost:5173/assets/images/thuni-robes.jpg",
+      "local_path": "public\\assets/images/thuni-robes.jpg",
+      "aspect": 1.3392857142857142,
+      "max_var": 16648.19501133787,
+      "is_affected": true
+    },
+    {
+      "name": "Meditation Shawls",
+      "src": "http://localhost:5173/assets/images/thuni-shawl.jpg",
+      "local_path": "public\\assets/images/thuni-shawl.jpg",
+      "aspect": 1.3392857142857142,
+      "max_var": 14802.367346938774,
+      "is_affected": true
+    },
+    {
+      "name": "Traditional Temple Cloth",
+      "src": "http://localhost:5173/assets/images/thuni-temple-cloth.jpg",
+      "local_path": "public\\assets/images/thuni-temple-cloth.jpg",
+      "aspect": 1.3392857142857142,
+      "max_var": 7182.2675736961455,
+      "is_affected": true
+    },
+    {
+      "name": "Sacred Devotee Angavastram",
+      "src": "http://localhost:5173/assets/images/thuni-angavastram.jpg",
+      "local_path": "public\\assets/images/thuni-angavastram.jpg",
+      "aspect": 1.3392857142857142,
+      "max_var": 5545.519274376417,
+      "is_affected": true
+    }
+  ],
+  "#chains": [
+    {
+      "name": "Buddha-Inspired Chain",
+      "src": "http://localhost:5173/assets/images/chain-buddha-chain.jpg",
+      "local_path": "public\\assets/images/chain-buddha-chain.jpg",
+      "aspect": 1.8544303797468353,
+      "max_var": 11314.75236294896,
+      "is_affected": false
+    },
+    {
+      "name": "Buddha-Inspired Pendant",
+      "src": "http://localhost:5173/assets/images/chain-buddha-pendant.jpg",
+      "local_path": "public\\assets/images/chain-buddha-pendant.jpg",
+      "aspect": 1.7531645569620253,
+      "max_var": 9568.306238185254,
+      "is_affected": false
+    },
+    {
+      "name": "Tibet Om Mani Padme Hum Mantra Amulet",
+      "src": "http://localhost:5173/assets/images/chain-tibet-mantra-amulet.jpg",
+      "local_path": "public\\assets/images/chain-tibet-mantra-amulet.jpg",
+      "aspect": 1.860759493670886,
+      "max_var": 7031.043478260868,
+      "is_affected": false
+    },
+    {
+      "name": "Traditional Tamil Rudraksha Bracelet",
+      "src": "http://localhost:5173/assets/images/chain-tamil-rudraksha-bracelet.jpg",
+      "local_path": "public\\assets/images/chain-tamil-rudraksha-bracelet.jpg",
+      "aspect": 1.8782051282051282,
+      "max_var": 15415.708884688092,
+      "is_affected": false
+    },
+    {
+      "name": "Traditional Tamil Temple Bracelet",
+      "src": "http://localhost:5173/assets/images/chain-tamil-temple-bracelet.jpg",
+      "local_path": "public\\assets/images/chain-tamil-temple-bracelet.jpg",
+      "aspect": 1.7756410256410255,
+      "max_var": 6692.147448015122,
+      "is_affected": false
+    },
+    {
+      "name": "Traditional Tamil Sandalwood Mala",
+      "src": "http://localhost:5173/assets/images/chain-tamil-sandalwood-mala.jpg",
+      "local_path": "public\\assets/images/chain-tamil-sandalwood-mala.jpg",
+      "aspect": 1.8846153846153846,
+      "max_var": 13794.09451795841,
+      "is_affected": false
+    }
+  ],
+  "#hair": [
+    {
+      "name": "Chemparuthi Herbal Shampoo",
+      "src": "http://localhost:5173/assets/images/hair/hair_1255.jpg",
+      "local_path": "public\\assets/images/hair/hair_1255.jpg",
+      "aspect": 1.0,
+      "max_var": 0.0,
+      "is_affected": false
+    },
+    {
+      "name": "Avarampoo Baby Shampoo",
+      "src": "http://localhost:5173/assets/images/hair/hair_1248.jpg",
+      "local_path": "public\\assets/images/hair/hair_1248.jpg",
+      "aspect": 1.0,
+      "max_var": 0.0,
+      "is_affected": false
+    },
+    {
+      "name": "Arappu Shampoo",
+      "src": "http://localhost:5173/assets/images/hair/hair_1246.jpg",
+      "local_path": "public\\assets/images/hair/hair_1246.jpg",
+      "aspect": 1.0,
+      "max_var": 0.0,
+      "is_affected": false
+    },
+    {
+      "name": "Vettiver Shampoo",
+      "src": "http://localhost:5173/assets/images/hair/hair_1229.jpg",
+      "local_path": "public\\assets/images/hair/hair_1229.jpg",
+      "aspect": 1.0,
+      "max_var": 0.0,
+      "is_affected": false
+    },
+    {
+      "name": "Karisalankanni Shampoo",
+      "src": "http://localhost:5173/assets/images/hair/hair_1226.jpg",
+      "local_path": "public\\assets/images/hair/hair_1226.jpg",
+      "aspect": 0.8586350974930362,
+      "max_var": 0.0,
+      "is_affected": false
+    },
+    {
+      "name": "Dr. Amla Shampoo",
+      "src": "http://localhost:5173/assets/images/hair/hair_1224.jpg",
+      "local_path": "public\\assets/images/hair/hair_1224.jpg",
+      "aspect": 0.8241042345276873,
+      "max_var": 0.0,
+      "is_affected": false
+    },
+    {
+      "name": "Onion Shampoo",
+      "src": "http://localhost:5173/assets/images/hair/hair_1223.jpg",
+      "local_path": "public\\assets/images/hair/hair_1223.jpg",
+      "aspect": 0.7968413496051687,
+      "max_var": 0.0,
+      "is_affected": false
+    },
+    {
+      "name": "Shikakkai Shampoo",
+      "src": "http://localhost:5173/assets/images/hair/hair_1222.jpg",
+      "local_path": "public\\assets/images/hair/hair_1222.jpg",
+      "aspect": 1.0,
+      "max_var": 0.0,
+      "is_affected": false
+    },
+    {
+      "name": "Poduthalai Powder",
+      "src": "http://localhost:5173/assets/images/hair/hair_1296.jpeg",
+      "local_path": "public\\assets/images/hair/hair_1296.jpeg",
+      "aspect": 0.8545647558386412,
+      "max_var": 1444.503401360544,
+      "is_affected": true
+    },
+    {
+      "name": "Herbal Arappu Powder",
+      "src": "http://localhost:5173/assets/images/hair/hair_1292.jpeg",
+      "local_path": "public\\assets/images/hair/hair_1292.jpeg",
+      "aspect": 1.0,
+      "max_var": 0.0,
+      "is_affected": false
+    },
+    {
+      "name": "Karisalankanni Hair Oil",
+      "src": "http://localhost:5173/assets/images/hair/hair_1267.jpg",
+      "local_path": "public\\assets/images/hair/hair_1267.jpg",
+      "aspect": 0.8650895140664961,
+      "max_var": 0.13605442176870747,
+      "is_affected": false
+    },
+    {
+      "name": "Avarampoo Hair Wash Powder (NR)",
+      "src": "http://localhost:5173/assets/images/hair/hair_1266.jpg",
+      "local_path": "public\\assets/images/hair/hair_1266.jpg",
+      "aspect": 1.0,
+      "max_var": 16.5775,
+      "is_affected": false
+    },
+    {
+      "name": "Aloe vera Shampoo",
+      "src": "http://localhost:5173/assets/images/hair/hair_1250.jpg",
+      "local_path": "public\\assets/images/hair/hair_1250.jpg",
+      "aspect": 1.0,
+      "max_var": 0.0,
+      "is_affected": false
+    },
+    {
+      "name": "Hibiscus Herbal Hair Oil",
+      "src": "http://localhost:5173/assets/images/hair/hair_1238.jpg",
+      "local_path": "public\\assets/images/hair/hair_1238.jpg",
+      "aspect": 0.8051197357555739,
+      "max_var": 0.0,
+      "is_affected": false
+    },
+    {
+      "name": "Hibiscus Hair Wash Powder",
+      "src": "http://localhost:5173/assets/images/hair/hair_1233.jpg",
+      "local_path": "public\\assets/images/hair/hair_1233.jpg",
+      "aspect": 1.0,
+      "max_var": 15590.0425,
+      "is_affected": true
+    },
+    {
+      "name": "Green Arappu Powder 250G",
+      "src": "http://localhost:5173/assets/images/hair/hair_1221.jpeg",
+      "local_path": "public\\assets/images/hair/hair_1221.jpeg",
+      "aspect": 1.0,
+      "max_var": 0.4217687074829932,
+      "is_affected": false
+    },
+    {
+      "name": "Green Arappu Powder Jar",
+      "src": "http://localhost:5173/assets/images/hair/hair_1219.jpeg",
+      "local_path": "public\\assets/images/hair/hair_1219.jpeg",
+      "aspect": 1.0,
+      "max_var": 168.6077097505669,
+      "is_affected": true
+    },
+    {
+      "name": "Vana Arasi Sikkakai Powder(PO)",
+      "src": "http://localhost:5173/assets/images/hair/hair_1218.jpg",
+      "local_path": "public\\assets/images/hair/hair_1218.jpg",
+      "aspect": 1.36986301369863,
+      "max_var": 55.192743764172334,
+      "is_affected": false
+    },
+    {
+      "name": "NEELY AVURI POWDER (PO) NR",
+      "src": "http://localhost:5173/assets/images/hair/hair_1212.jpg",
+      "local_path": "public\\assets/images/hair/hair_1212.jpg",
+      "aspect": 0.7233273056057866,
+      "max_var": 46.56689342403628,
+      "is_affected": false
+    },
+    {
+      "name": "Amla Hair Oil",
+      "src": "http://localhost:5173/assets/images/hair/hair_1210.jpg",
+      "local_path": "public\\assets/images/hair/hair_1210.jpg",
+      "aspect": 1.0,
+      "max_var": 3484.085,
+      "is_affected": true
+    },
+    {
+      "name": "Herbal Hair Colour",
+      "src": "http://localhost:5173/assets/images/hair/hair_1209.png",
+      "local_path": "public\\assets/images/hair/hair_1209.png",
+      "aspect": 1.0,
+      "max_var": 11752.43537414966,
+      "is_affected": true
+    },
+    {
+      "name": "Herbal Shikakai Powder",
+      "src": "http://localhost:5173/assets/images/hair/hair_1208.png",
+      "local_path": "public\\assets/images/hair/hair_1208.png",
+      "aspect": 1.0,
+      "max_var": 103.85941043083899,
+      "is_affected": true
+    },
+    {
+      "name": "Rice Kanji Shampoo",
+      "src": "http://localhost:5173/assets/images/hair/hair_1207.png",
+      "local_path": "public\\assets/images/hair/hair_1207.png",
+      "aspect": 1.0,
+      "max_var": 54.3265306122449,
+      "is_affected": false
+    }
+  ],
+  "#skin": [],
+  "#health-wellness": []
+}
