@@ -23,8 +23,11 @@ export default function Footer({ onNavigate, onBookPooja, onKnowMore, isAuthPage
         {/* Column 1: Brand & About */}
         <div className="bogar-footer__col bogar-footer__col--brand">
           <div className="bogar-footer__brand">
-            <LotusLogo size={32} color="#D4B675" />
-            <span className="bogar-footer__title">BOGAR</span>
+            <img
+              src="/assets/images/bogar-brand-logo.png"
+              alt="BOGAR - Tradition • Heritage • Wisdom"
+              className="bogar-footer__brand-logo"
+            />
           </div>
           <p className="bogar-footer__tagline">{BOGAR_CONFIG.tagline}</p>
           <p className="bogar-footer__about-text">

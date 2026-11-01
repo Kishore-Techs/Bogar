@@ -42,11 +42,12 @@ export default function Navbar({ activePage, onNavigate, onOpenBooking }) {
   const totalRecords = (bookings?.length || 0) + (orders?.length || 0);
 
   const isAuthPage = activePage === 'login' || activePage === 'signup';
+  const isSolidNavbar = isAuthPage || activePage !== 'home' || isScrolled;
 
   return (
     <>
       <header
-        className={`bogar-navbar ${isAuthPage ? 'bogar-navbar--auth' : isScrolled ? 'bogar-navbar--scrolled' : 'bogar-navbar--transparent'}`}
+        className={`bogar-navbar ${isAuthPage ? 'bogar-navbar--auth' : isSolidNavbar ? 'bogar-navbar--scrolled' : 'bogar-navbar--transparent'}`}
       >
         <div className="bogar-navbar__container">
           {/* Brand Logo & Name */}
@@ -56,8 +57,11 @@ export default function Navbar({ activePage, onNavigate, onOpenBooking }) {
             onClick={() => handleLinkClick('home')}
             aria-label="Bogar Home"
           >
-            <LotusLogo size={32} color="#D4B675" className="bogar-navbar__lotus" />
-            <span className="bogar-navbar__title">BOGAR</span>
+            <img
+              src="/assets/images/bogar-brand-logo.png"
+              alt="BOGAR - Tradition • Heritage • Wisdom"
+              className="bogar-navbar__brand-logo"
+            />
           </button>
 
           {/* Desktop Nav Links */}
@@ -145,9 +149,12 @@ export default function Navbar({ activePage, onNavigate, onOpenBooking }) {
       {/* Mobile Menu Drawer */}
       <div className={`bogar-mobile-menu ${mobileMenuOpen ? 'bogar-mobile-menu--open' : ''}`}>
         <div className="bogar-mobile-menu__header">
-          <div className="bogar-navbar__brand">
-            <LotusLogo size={28} color="#D4B675" />
-            <span className="bogar-navbar__title">BOGAR</span>
+          <div className="bogar-mobile-menu__brand">
+            <img
+              src="/assets/images/bogar-brand-logo.png"
+              alt="BOGAR - Tradition • Heritage • Wisdom"
+              className="bogar-mobile-menu__brand-logo"
+            />
           </div>
           <button
             type="button"

@@ -272,7 +272,11 @@ export default function LoginView({ onNavigate, onLoginSuccess }) {
         {/* Card Header */}
         <div className="bogar-auth-card__header">
           <div className="bogar-auth-card__logo-wrap">
-            <LotusLogo size={32} color="#D4B675" />
+            <img
+              src="/assets/images/bogar-brand-logo.png"
+              alt="BOGAR - Tradition • Heritage • Wisdom"
+              className="bogar-auth-brand-logo"
+            />
           </div>
           <h1 className="bogar-auth-card__title">
             {step === 'details' ? 'Login / Sign Up' : 'Verify OTP'}

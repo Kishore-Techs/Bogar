@@ -237,8 +237,73 @@ img {
 .bogar-navbar__brand {
   display: flex;
   align-items: center;
-  gap: 0.65rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
   text-decoration: none;
+}
+
+.bogar-navbar__brand-logo {
+  height: 48px;
+  width: auto;
+  max-width: 175px;
+  object-fit: contain;
+  display: block;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.45));
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.bogar-navbar__brand:hover .bogar-navbar__brand-logo {
+  transform: scale(1.03);
+  filter: drop-shadow(0 4px 14px rgba(212, 182, 117, 0.45));
+}
+
+.bogar-mobile-menu__brand-logo {
+  height: 44px;
+  width: auto;
+  max-width: 160px;
+  object-fit: contain;
+  display: block;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.bogar-footer__brand-logo {
+  height: 58px;
+  width: auto;
+  max-width: 210px;
+  object-fit: contain;
+  display: block;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  margin-bottom: 0.85rem;
+}
+
+.bogar-auth-brand-logo {
+  height: 56px;
+  width: auto;
+  max-width: 200px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.bogar-lotus-img {
+  object-fit: contain;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .bogar-navbar__lotus {
@@ -388,21 +453,33 @@ img {
 .bogar-mobile-menu {
   position: fixed;
   top: 0;
-  right: -320px;
-  width: 300px;
+  right: -100%;
+  width: 100%;
+  max-width: 100vw;
   height: 100vh;
+  height: 100dvh;
   background-color: var(--color-deep-brown);
   border-left: 1px solid rgba(212, 182, 117, 0.2);
   z-index: 1020;
   display: flex;
   flex-direction: column;
-  padding: 2rem 1.75rem;
+  padding: 1.5rem 1.5rem 2.5rem 1.5rem;
   transition: right 0.35s cubic-bezier(0.16, 1, 0.3, 1);
   box-shadow: -10px 0 30px rgba(0, 0, 0, 0.6);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  box-sizing: border-box;
+}
+
+@media (min-width: 600px) {
+  .bogar-mobile-menu {
+    max-width: 360px;
+    right: -380px;
+  }
 }
 
 .bogar-mobile-menu--open {
-  right: 0;
+  right: 0 !important;
 }
 
 .bogar-mobile-menu__header {
@@ -471,6 +548,7 @@ img {
 .bogar-mobile-menu__footer {
   margin-top: auto;
   padding-top: 1.5rem;
+  padding-bottom: 2.5rem;
   border-top: 1px solid rgba(212, 182, 117, 0.15);
 }
 
@@ -3021,6 +3099,11 @@ img {
     padding: 0 1.25rem;
   }
 
+  .bogar-navbar__brand-logo {
+    height: 40px;
+    max-width: 145px;
+  }
+
   .bogar-navbar__nav,
   .bogar-navbar__cta-wrapper {
     display: none;
@@ -3512,12 +3595,198 @@ img {
   margin-bottom: 1.8rem;
 }
 
+/* Cart Standalone & Single Item Dispatch Layout */
+.bogar-cart-content-wrapper {
+  width: 100%;
+}
+
+.bogar-cart-items-column--standalone {
+  max-width: 850px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.bogar-single-dispatch-container {
+  max-width: 680px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.bogar-cart-summary-card--single-view {
+  width: 100%;
+  position: static !important;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.06);
+}
+
+.bogar-selected-item-card {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  background: #FAF7F2;
+  border: 1px solid rgba(212, 182, 117, 0.4);
+  border-radius: 12px;
+  padding: 0.85rem 1.1rem;
+  margin-bottom: 1.25rem;
+}
+
+.bogar-selected-item-media {
+  width: 75px;
+  height: 80px;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 1px solid rgba(212, 182, 117, 0.25);
+}
+
+.bogar-selected-item-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.bogar-selected-item-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.bogar-selected-item-title {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1B140F;
+  margin: 2px 0 4px 0;
+}
+
+.bogar-selected-item-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.82rem;
+  color: #6C5A4B;
+}
+
+.bogar-selected-item-highlight {
+  color: #8C6D2D;
+  font-weight: 700;
+}
+
 /* Cart 2-Column Layout */
 .bogar-cart-layout {
   display: grid;
   grid-template-columns: 1fr 380px;
   gap: 2rem;
   align-items: start;
+}
+
+.bogar-cart-layout--items-only {
+  grid-template-columns: 1fr;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.bogar-cart-card--clickable {
+  cursor: pointer;
+  border: 1.5px solid rgba(212, 182, 117, 0.4);
+  position: relative;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.bogar-cart-card--clickable:hover {
+  border-color: #D4B675;
+  box-shadow: 0 10px 28px rgba(180, 140, 60, 0.16);
+  transform: translateY(-2px);
+}
+
+.bogar-cart-btn-proceed-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: linear-gradient(135deg, #D4B675 0%, #B89648 100%);
+  color: #1B140F;
+  border: none;
+  border-radius: 9999px;
+  padding: 6px 14px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(184, 150, 72, 0.25);
+  transition: all 0.2s ease;
+}
+
+.bogar-cart-btn-proceed-item:hover {
+  background: linear-gradient(135deg, #E2CA94 0%, #C9A758 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 5px 12px rgba(184, 150, 72, 0.35);
+}
+
+.bogar-cart-bottom-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background: #FFFFFF;
+  border: 1.5px solid rgba(212, 182, 117, 0.45);
+  border-radius: 16px;
+  padding: 1.25rem 1.5rem;
+  margin-top: 1.5rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+.bogar-cart-bottom-cta__info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.bogar-cart-bottom-cta__items {
+  font-size: 0.85rem;
+  color: var(--color-warm-brown, #7C6A5B);
+  font-weight: 600;
+}
+
+.bogar-cart-bottom-cta__price {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #8C6D2D;
+}
+
+.bogar-cart-bottom-cta__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0.85rem 1.75rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.bogar-cart-summary-nav {
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px dashed rgba(212, 182, 117, 0.3);
+}
+
+.bogar-cart-back-to-items-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(212, 182, 117, 0.15);
+  border: 1px solid rgba(212, 182, 117, 0.35);
+  border-radius: 9999px;
+  padding: 6px 14px;
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: #6A4E1B;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.bogar-cart-back-to-items-btn:hover {
+  background: rgba(212, 182, 117, 0.28);
+  color: #3E2C0F;
 }
 
 .bogar-cart-items-header {
@@ -4025,6 +4294,48 @@ img {
   transition: all 0.2s ease;
 }
 
+.bogar-btn-order-action--track {
+  background: linear-gradient(135deg, rgba(46, 125, 50, 0.12) 0%, rgba(212, 182, 117, 0.18) 100%);
+  color: #1F5F25;
+  border: 1px solid rgba(46, 125, 50, 0.35);
+  font-weight: 700;
+  box-shadow: 0 2px 8px rgba(46, 125, 50, 0.12);
+}
+
+.bogar-btn-order-action--track:hover {
+  background: linear-gradient(135deg, rgba(46, 125, 50, 0.22) 0%, rgba(212, 182, 117, 0.28) 100%);
+  color: #144419;
+  border-color: #2E7D32;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(46, 125, 50, 0.2);
+}
+
+.bogar-live-pulse-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #2E7D32;
+  box-shadow: 0 0 0 0 rgba(46, 125, 50, 0.7);
+  animation: liveDotPulse 1.6s infinite;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+@keyframes liveDotPulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(46, 125, 50, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 7px rgba(46, 125, 50, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(46, 125, 50, 0);
+  }
+}
+
 .bogar-btn-order-action--view {
   background: rgba(212, 182, 117, 0.15);
   color: #7A5B1E;
@@ -4214,6 +4525,26 @@ img {
   .bogar-cart-layout {
     grid-template-columns: 1fr;
   }
+  .bogar-cart-layout--checkout-open .bogar-cart-items-column {
+    display: none;
+  }
+  .bogar-cart-layout--checkout-open .bogar-cart-summary-column {
+    display: block;
+    width: 100%;
+  }
+  .bogar-cart-bottom-cta {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+  .bogar-cart-bottom-cta__info {
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  .bogar-cart-bottom-cta__btn {
+    width: 100%;
+    justify-content: center;
+  }
   .bogar-product-modal-body {
     flex-direction: column;
     align-items: center;
@@ -4222,6 +4553,40 @@ img {
   .bogar-product-modal-media {
     width: 160px;
     height: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bogar-cart-page {
+    padding-top: 5.5rem !important;
+  }
+
+  .bogar-cart-header {
+    text-align: center;
+    margin-bottom: 1.75rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bogar-cart-back-btn {
+    position: static !important;
+    align-self: flex-start;
+    margin-bottom: 0.85rem;
+  }
+
+  .bogar-cart-title {
+    font-size: clamp(1.45rem, 6vw, 1.85rem);
+  }
+
+  .bogar-cart-subtitle {
+    font-size: 0.85rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .bogar-cart-container {
+    padding: 0 1rem;
   }
 }
 
@@ -4486,6 +4851,147 @@ img {
   transform: translateY(-1px);
 }
 
+/* ==========================================================================
+   PAYMENT GATEWAY & METHOD SELECTOR STYLES (Dharani Herbals API)
+   ========================================================================== */
+
+.bogar-payment-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 0.35rem;
+}
+
+.bogar-payment-option {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  padding: 0.95rem 1.15rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1.5px solid rgba(212, 182, 117, 0.28);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.bogar-payment-option:hover {
+  border-color: var(--color-antique-gold, #D4B675);
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.bogar-payment-option--active {
+  border-color: var(--color-antique-gold, #D4B675) !important;
+  background: rgba(212, 182, 117, 0.1) !important;
+  box-shadow: 0 4px 14px rgba(212, 182, 117, 0.15);
+}
+
+.bogar-payment-radio {
+  margin-top: 0.25rem;
+  accent-color: #B8860B;
+  cursor: pointer;
+}
+
+.bogar-payment-option__info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  flex: 1;
+}
+
+.bogar-payment-option__title-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-deep-brown, #1B140F);
+  font-size: 0.92rem;
+}
+
+.bogar-payment-badge {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 2px 6px;
+  border-radius: 6px;
+  background: rgba(46, 125, 50, 0.15);
+  color: #2E7D32;
+  border: 1px solid rgba(46, 125, 50, 0.3);
+}
+
+.bogar-payment-option__desc {
+  font-size: 0.78rem;
+  color: var(--color-warm-brown, #6B5B4E);
+  line-height: 1.35;
+}
+
+/* Payment Gateway Modal Styles */
+.bogar-payment-modal-body {
+  padding: 1.5rem 1.75rem 2rem 1.75rem;
+}
+
+.bogar-payment-gateway-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+}
+
+.bogar-payment-amount-box {
+  background: rgba(212, 182, 117, 0.08);
+  border: 1px solid rgba(212, 182, 117, 0.25);
+  border-radius: 12px;
+  padding: 1.25rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.bogar-payment-amount-box__label {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(248, 245, 238, 0.7);
+}
+
+.bogar-payment-amount-box__val {
+  font-size: 2rem;
+  font-family: var(--font-heading, serif);
+  color: var(--color-antique-gold, #D4B675);
+}
+
+.bogar-payment-amount-box__txn {
+  font-size: 0.75rem;
+  font-family: monospace;
+  color: rgba(248, 245, 238, 0.55);
+}
+
+.bogar-payment-methods-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.bogar-payment-badge-pill {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-size: 0.8rem;
+  padding: 0.5rem 0.85rem;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(212, 182, 117, 0.15);
+  color: var(--color-cream, #FAF7F2);
+}
+
+.bogar-payment-note {
+  font-size: 0.82rem;
+  line-height: 1.45;
+  color: rgba(248, 245, 238, 0.75);
+  background: rgba(212, 182, 117, 0.05);
+  padding: 0.75rem 0.95rem;
+  border-radius: 8px;
+  border-left: 3px solid var(--color-antique-gold, #D4B675);
+}
+
 /* Print Styles */
 @media print {
   body * {
@@ -4503,5 +5009,349 @@ img {
     background: #FFFFFF !important;
     color: #000000 !important;
   }
+}
+
+/* ==========================================================================
+   LIVE ORDER TRACKING MODAL
+   ========================================================================== */
+
+.bogar-modal-card--tracking {
+  max-width: 580px;
+  border-radius: 20px;
+}
+
+.bogar-tracking-modal-body {
+  padding: 1.5rem;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.bogar-tracking-status-banner {
+  background: #FAF7F2;
+  border: 1px solid rgba(212, 182, 117, 0.4);
+  border-radius: 14px;
+  padding: 1.15rem 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.bogar-tracking-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(46, 125, 50, 0.12);
+  color: #2E7D32;
+  border: 1px solid rgba(46, 125, 50, 0.3);
+  padding: 3px 10px;
+  border-radius: 9999px;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin-bottom: 6px;
+}
+
+.bogar-tracking-headline {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1B140F;
+  margin: 0 0 4px 0;
+}
+
+.bogar-tracking-sub {
+  font-size: 0.8rem;
+  color: #6C5A4B;
+}
+
+.bogar-tracking-eta-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #FFFFFF;
+  border: 1px solid rgba(212, 182, 117, 0.35);
+  border-radius: 12px;
+  padding: 0.65rem 0.9rem;
+  flex-shrink: 0;
+}
+
+.bogar-tracking-eta-label {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #7C6A5B;
+  text-transform: uppercase;
+}
+
+.bogar-tracking-eta-val {
+  font-size: 0.88rem;
+  color: #8C6D2D;
+  font-weight: 700;
+}
+
+/* Product Snippet Bar */
+.bogar-tracking-product-bar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: #FFFFFF;
+  border: 1px solid rgba(212, 182, 117, 0.3);
+  border-radius: 12px;
+  padding: 0.85rem 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.bogar-tracking-product-media {
+  width: 65px;
+  height: 70px;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 1px solid rgba(212, 182, 117, 0.25);
+}
+
+.bogar-tracking-product-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.bogar-tracking-product-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.bogar-tracking-product-title {
+  font-family: var(--font-heading);
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: #1B140F;
+  margin: 0 0 3px 0;
+}
+
+.bogar-tracking-product-meta {
+  font-size: 0.8rem;
+  color: #6C5A4B;
+  margin-bottom: 4px;
+}
+
+.bogar-tracking-product-addr {
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+  font-size: 0.78rem;
+  color: #4A3A2C;
+  line-height: 1.35;
+}
+
+/* Visual Route & Progress Bar */
+.bogar-tracking-progress-container {
+  background: #FAF7F2;
+  border: 1px solid rgba(212, 182, 117, 0.3);
+  border-radius: 12px;
+  padding: 1rem 1.25rem 0.85rem;
+  margin-bottom: 1.5rem;
+}
+
+.bogar-tracking-progress-bar {
+  height: 6px;
+  background: rgba(212, 182, 117, 0.25);
+  border-radius: 9999px;
+  position: relative;
+  margin: 1.25rem 0 0.75rem;
+}
+
+.bogar-tracking-progress-fill {
+  width: 62%;
+  height: 100%;
+  background: linear-gradient(90deg, #D4B675 0%, #2E7D32 100%);
+  border-radius: 9999px;
+  position: relative;
+}
+
+.bogar-tracking-truck-pin {
+  position: absolute;
+  right: -14px;
+  top: -12px;
+  width: 30px;
+  height: 30px;
+  background: #2E7D32;
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: truckBounce 1.8s infinite ease-in-out;
+}
+
+@keyframes truckBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+
+.bogar-tracking-progress-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #7C6A5B;
+  margin-top: 0.5rem;
+}
+
+.bogar-tracking-current-node {
+  color: #2E7D32 !important;
+  font-weight: 700;
+}
+
+/* Timeline Stepper */
+.bogar-tracking-timeline {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-left: 0.5rem;
+}
+
+.bogar-tracking-timeline::before {
+  content: '';
+  position: absolute;
+  top: 14px;
+  bottom: 14px;
+  left: 15px;
+  width: 2px;
+  background: rgba(212, 182, 117, 0.3);
+  z-index: 0;
+}
+
+.bogar-tracking-step {
+  display: flex;
+  gap: 1.15rem;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 1.35rem;
+}
+
+.bogar-tracking-step:last-child {
+  padding-bottom: 0;
+}
+
+.bogar-tracking-step__icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: #FFFFFF;
+  border: 2px solid rgba(212, 182, 117, 0.4);
+}
+
+.bogar-tracking-step__icon--done {
+  background: #2E7D32;
+  color: #FFFFFF;
+  border-color: #2E7D32;
+}
+
+.bogar-tracking-step__icon--active {
+  background: #D4B675;
+  color: #1B140F;
+  border-color: #8C6D2D;
+  box-shadow: 0 0 0 4px rgba(212, 182, 117, 0.35);
+  animation: activeStepPulse 1.8s infinite;
+}
+
+@keyframes activeStepPulse {
+  0% { box-shadow: 0 0 0 0 rgba(212, 182, 117, 0.6); }
+  70% { box-shadow: 0 0 0 8px rgba(212, 182, 117, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(212, 182, 117, 0); }
+}
+
+.bogar-tracking-step__icon--pending {
+  background: #FAF7F2;
+  color: #A89B8D;
+  border-color: #D1C4B5;
+}
+
+.bogar-tracking-step__content {
+  flex: 1;
+}
+
+.bogar-tracking-step__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 3px;
+  flex-wrap: wrap;
+}
+
+.bogar-tracking-step__header strong {
+  font-size: 0.88rem;
+  color: #1B140F;
+}
+
+.bogar-tracking-step__time {
+  font-size: 0.74rem;
+  color: #7C6A5B;
+  font-weight: 500;
+}
+
+.bogar-tracking-step__badge {
+  background: rgba(46, 125, 50, 0.12);
+  color: #2E7D32;
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 9999px;
+  border: 1px solid rgba(46, 125, 50, 0.25);
+}
+
+.bogar-tracking-step__content p {
+  font-size: 0.8rem;
+  color: #6C5A4B;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.bogar-tracking-step__beacon {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(46, 125, 50, 0.08);
+  border: 1px solid rgba(46, 125, 50, 0.2);
+  border-radius: 6px;
+  padding: 4px 8px;
+  margin-top: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #1F5F25;
+}
+
+.bogar-tracking-cancelled-box {
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  background: #FFF5F5;
+  border: 1px solid rgba(220, 53, 69, 0.2);
+  border-radius: 14px;
+}
+
+.bogar-tracking-cancelled-box h4 {
+  font-family: var(--font-heading);
+  color: #E63946;
+  font-size: 1.15rem;
+  margin: 0.75rem 0 0.35rem 0;
+}
+
+.bogar-tracking-cancelled-box p {
+  color: #6C5A4B;
+  font-size: 0.86rem;
+  margin: 0;
 }
 

@@ -284,7 +284,7 @@ export function BogarProvider({ children }) {
   };
 
   // Create Product Order (Buy Now or Cart)
-  const createProductOrder = ({ product, quantity = 1, phone, email }) => {
+  const createProductOrder = ({ product, quantity = 1, phone, email, devoteeName, deliveryAddress, paymentMethod = 'Online Payment Gateway', transactionId }) => {
     const orderId = 'BOGAR-ORD-' + Math.floor(100000 + Math.random() * 900000);
     const newOrder = {
       orderId,
@@ -294,6 +294,11 @@ export function BogarProvider({ children }) {
       orderDate: new Date().toISOString().split('T')[0],
       phone: phone || currentUser?.phone || '',
       email: email || currentUser?.email || '',
+      devoteeName: devoteeName || currentUser?.name || currentUser?.fullName || 'Devotee',
+      deliveryAddress: deliveryAddress || currentUser?.address || '',
+      paymentMethod,
+      transactionId: transactionId || ('TXN_' + Date.now().toString(36).toUpperCase()),
+      paymentStatus: paymentMethod === 'Cash on Delivery' ? 'Pending' : 'Paid',
       status: 'Confirmed',
     };
 
@@ -311,7 +316,7 @@ export function BogarProvider({ children }) {
     return { success: true };
   };
 
-  const checkoutCart = ({ phone, email }) => {
+  const checkoutCart = ({ phone, email, devoteeName, deliveryAddress, paymentMethod = 'Online Payment Gateway', transactionId }) => {
     if (cart.length === 0) return { success: false, error: 'Your cart is empty.' };
 
     const newOrders = cart.map((item, idx) => ({
@@ -322,6 +327,11 @@ export function BogarProvider({ children }) {
       orderDate: new Date().toISOString().split('T')[0],
       phone: phone || currentUser?.phone || '',
       email: email || currentUser?.email || '',
+      devoteeName: devoteeName || currentUser?.name || currentUser?.fullName || 'Devotee',
+      deliveryAddress: deliveryAddress || currentUser?.address || '',
+      paymentMethod,
+      transactionId: transactionId || ('TXN_' + (Date.now() + idx).toString(36).toUpperCase()),
+      paymentStatus: paymentMethod === 'Cash on Delivery' ? 'Pending' : 'Paid',
       status: 'Confirmed',
     }));
 
