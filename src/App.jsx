@@ -47,31 +47,53 @@ function App() {
   const [selectedPoojaForModal, setSelectedPoojaForModal] = useState('Special Bogar Pooja');
   const [toastNotification, setToastNotification] = useState(null);
 
-  // Sync state with URL hash
+  // Sync state with URL hash & ensure DEFAULT on initial load is always 'home'
   useEffect(() => {
+    const validPages = [
+      'home',
+      'poojas',
+      'tea-food',
+      'thuni',
+      'chains',
+      'login',
+      'signup',
+      'cart',
+      'book-pooja',
+      'pooja-ticket',
+      'product-orders',
+      'my-records',
+      'view-all',
+      'food',
+      'hair',
+      'health-wellness',
+      'skin',
+      'baby',
+    ];
+
+    // On initial app open / load: Always default to 'home'
+    // If URL has #cart, #my-records, or stale hash from previous visit, clear it so user lands on Homepage
+    const initialHash = window.location.hash.replace('#', '');
+    if (!initialHash || initialHash === 'cart' || initialHash === 'my-records' || initialHash === 'home') {
+      setActivePage('home');
+      if (window.location.hash) {
+        try {
+          window.history.replaceState(null, '', window.location.pathname + window.location.search);
+        } catch (_) {}
+      }
+    } else if (initialHash === 'beverages') {
+      setActivePage('tea-food');
+    } else if (validPages.includes(initialHash)) {
+      setActivePage(initialHash);
+    } else {
+      setActivePage('home');
+    }
+
     const handleHashChange = () => {
       const hash = window.location.hash.replace('#', '');
-      const validPages = [
-        'home',
-        'poojas',
-        'tea-food',
-        'thuni',
-        'chains',
-        'login',
-        'signup',
-        'cart',
-        'book-pooja',
-        'pooja-ticket',
-        'product-orders',
-        'my-records',
-        'view-all',
-        'food',
-        'hair',
-        'health-wellness',
-        'skin',
-        'baby',
-      ];
-      if (hash === 'beverages') {
+      if (!hash || hash === 'home') {
+        setActivePage('home');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (hash === 'beverages') {
         setActivePage('tea-food');
         window.scrollTo({ top: 0, behavior: 'smooth' });
       } else if (validPages.includes(hash)) {
@@ -82,7 +104,6 @@ function App() {
       }
     };
 
-    handleHashChange();
     window.addEventListener('hashchange', handleHashChange);
     return () => window.removeEventListener('hashchange', handleHashChange);
   }, []);
@@ -100,7 +121,11 @@ function App() {
   const handleNavigate = (pageId) => {
     setActivePage(pageId);
     if (pageId === 'home') {
-      window.history.pushState(null, '', ' ');
+      try {
+        window.history.replaceState(null, '', window.location.pathname + window.location.search);
+      } catch (_) {
+        window.location.hash = '';
+      }
       window.scrollTo({ top: 0, behavior: 'smooth' });
     } else {
       window.location.hash = pageId;
