@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useBogar } from '../context/BogarContext';
-import { authService, MOCK_TESTING_OTP } from '../services/authService';
+import { authService } from '../services/authService';
 import LotusLogo from './LotusLogo';
 import { User, Phone, ArrowLeft, RotateCw, CheckCircle2, ShieldCheck } from 'lucide-react';
 
@@ -130,15 +130,6 @@ export default function LoginView({ onNavigate, onLoginSuccess }) {
     } finally {
       setIsLoading(false);
     }
-  };
-
-  // Quick auto-fill helper for convenience
-  const handleAutoFillOtp = (codeToFill) => {
-    const code = String(codeToFill || serverOtp || MOCK_TESTING_OTP).slice(0, 6);
-    const newOtp = code.split('').concat(Array(6).fill('')).slice(0, 6);
-    setOtp(newOtp);
-    setError('');
-    otpInputRefs.current[5]?.focus();
   };
 
   // STEP 2: Handle OTP input changes
@@ -315,7 +306,7 @@ export default function LoginView({ onNavigate, onLoginSuccess }) {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   className="bogar-auth-input"
-                  autoComplete="name"
+                  autoComplete="off"
                   autoFocus
                 />
               </div>
@@ -338,7 +329,7 @@ export default function LoginView({ onNavigate, onLoginSuccess }) {
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
                   className="bogar-auth-input"
-                  autoComplete="tel"
+                  autoComplete="off"
                 />
               </div>
             </div>
@@ -397,39 +388,11 @@ export default function LoginView({ onNavigate, onLoginSuccess }) {
                     onKeyDown={(e) => handleOtpKeyDown(idx, e)}
                     className={`bogar-auth-otp-box ${digit ? 'bogar-auth-otp-box--filled' : ''}`}
                     aria-label={`Digit ${idx + 1}`}
+                    autoComplete="off"
                   />
                 ))}
               </div>
             </div>
-
-            {/* OTP Hint / Dev Testing Helper */}
-            {serverOtp ? (
-              <div className="bogar-auth-test-badge">
-                <span>
-                  Code: <strong>{serverOtp}</strong>
-                </span>
-                <button
-                  type="button"
-                  className="bogar-auth-autofill-btn"
-                  onClick={() => handleAutoFillOtp(serverOtp)}
-                  title="Click to auto-fill code"
-                >
-                  Auto-fill
-                </button>
-              </div>
-            ) : (
-              <div className="bogar-auth-test-badge">
-                <span>Enter 6-digit code sent via SMS</span>
-                <button
-                  type="button"
-                  className="bogar-auth-autofill-btn"
-                  onClick={() => handleAutoFillOtp(MOCK_TESTING_OTP)}
-                  title="Auto-fill default testing OTP"
-                >
-                  Use {MOCK_TESTING_OTP}
-                </button>
-              </div>
-            )}
 
             {/* Verify OTP Button */}
             <button

@@ -27,10 +27,13 @@ import {
   MapPin,
   Clock,
   Navigation,
+  AlertCircle,
+  RefreshCw,
 } from 'lucide-react';
 import LotusLogo from './LotusLogo';
 import { getInitialImageBg } from '../config/imageBgHelper';
 import { paymentService } from '../services/paymentService';
+import { crmService, DEFAULT_SHIPPING_RATES } from '../services/crmService';
 
 export default function CartView({ onNavigate, onOrderSuccess, initialTab = 'cart' }) {
   const {
@@ -43,6 +46,7 @@ export default function CartView({ onNavigate, onOrderSuccess, initialTab = 'car
     setPendingAction,
     orders,
     cancelOrder,
+    removeOrder,
     addToCart,
   } = useBogar();
 
@@ -51,11 +55,22 @@ export default function CartView({ onNavigate, onOrderSuccess, initialTab = 'car
   const [email, setEmail] = useState(currentUser?.email || '');
   const [devoteeName, setDevoteeName] = useState(currentUser?.name || currentUser?.fullName || '');
   const [deliveryAddress, setDeliveryAddress] = useState(currentUser?.address || '');
+  const [city, setCity] = useState(currentUser?.city || '');
+  const [pincode, setPincode] = useState(currentUser?.pincode || '');
+  const [shippingRates, setShippingRates] = useState([]);
   const [isProcessing, setIsProcessing] = useState(false);
   const [cancelNotice, setCancelNotice] = useState('');
   const [paymentMethod, setPaymentMethod] = useState('gateway'); // 'gateway' | 'cod'
   const [gatewayModalData, setGatewayModalData] = useState(null);
+  const [gatewayStatus, setGatewayStatus] = useState('ready'); // 'ready' | 'paying' | 'confirm_cancel' | 'cancelled' | 'opened' | 'checking' | 'verify_prompt' | 'success' | 'failed'
+  const [gatewayStatusMessage, setGatewayStatusMessage] = useState('');
+  const [cancelCountdown, setCancelCountdown] = useState(5);
   const [gatewayError, setGatewayError] = useState('');
+  const [desktopNotice, setDesktopNotice] = useState('');
+  const [copiedVpa, setCopiedVpa] = useState(false);
+  const [selectedUpiApp, setSelectedUpiApp] = useState('');
+  const [selectedUpiType, setSelectedUpiType] = useState('gpay');
+  const [copiedLink, setCopiedLink] = useState(false);
   const [selectedCartItemId, setSelectedCartItemId] = useState(null); // ID of specific item opened for dispatch
 
   // Find the specific active item selected by devotee
@@ -67,6 +82,29 @@ export default function CartView({ onNavigate, onOrderSuccess, initialTab = 'car
   const activeItemPrice = activeCartItem ? parseFloat(activeCartItem.product.price) || 0 : 0;
   const activeItemQuantity = activeCartItem ? activeCartItem.quantity : 1;
   const activeItemTotal = activeItemPrice * activeItemQuantity;
+
+  // Fetch live shipping charges from CRM API
+  React.useEffect(() => {
+    crmService.fetchShippingCharges().then((rates) => {
+      if (rates && rates.length > 0) {
+        setShippingRates(rates);
+      }
+    });
+  }, []);
+
+  // Live Shipping Charge Calculation based on user's location (pincode, city, address) and Subtotal
+  const shippingCalculation = useMemo(() => {
+    return crmService.calculateShipping({
+      subtotal: activeItemTotal,
+      pincode,
+      city,
+      address: deliveryAddress,
+      rates: shippingRates,
+    });
+  }, [activeItemTotal, pincode, city, deliveryAddress, shippingRates]);
+
+  const currentShippingCharge = shippingCalculation.shippingAmount;
+  const finalOrderTotal = activeItemTotal + currentShippingCharge;
 
   // Sync with current user profile if available
   React.useEffect(() => {
@@ -83,6 +121,12 @@ export default function CartView({ onNavigate, onOrderSuccess, initialTab = 'car
       if (!deliveryAddress && currentUser.address) {
         setDeliveryAddress(currentUser.address || '');
       }
+      if (!city && currentUser.city) {
+        setCity(currentUser.city || '');
+      }
+      if (!pincode && currentUser.pincode) {
+        setPincode(currentUser.pincode || '');
+      }
     }
   }, [currentUser]);
 
@@ -98,9 +142,22 @@ export default function CartView({ onNavigate, onOrderSuccess, initialTab = 'car
       cancelOrder(orderId);
       setCancelNotice(`Order ${orderId} has been successfully cancelled.`);
       if (selectedOrderForDetails && selectedOrderForDetails.orderId === orderId) {
-        setSelectedOrderForDetails((prev) => (prev ? { ...prev, status: 'Cancelled' } : null));
+        setSelectedOrderForDetails((prev) => (prev ? { ...prev, status: 'Cancelled', paymentStatus: 'Cancelled' } : null));
       }
       setTimeout(() => setCancelNotice(''), 4500);
+    }
+  };
+
+  const handleRemoveOrder = (orderId) => {
+    if (window.confirm(`Remove order ${orderId} from your records?`)) {
+      if (removeOrder) {
+        removeOrder(orderId);
+      }
+      setCancelNotice(`Order ${orderId} has been removed from My Orders.`);
+      if (selectedOrderForDetails && selectedOrderForDetails.orderId === orderId) {
+        setSelectedOrderForDetails(null);
+      }
+      setTimeout(() => setCancelNotice(''), 3500);
     }
   };
 
@@ -128,16 +185,16 @@ export default function CartView({ onNavigate, onOrderSuccess, initialTab = 'car
     }
   };
 
-  // Filter ONLY current user's actual purchased orders
+  // Filter ONLY current logged-in user's real orders
   const userOrders = useMemo(() => {
     if (!orders || orders.length === 0) return [];
+    const userPhone = (currentUser?.phone || currentUser?.mobile || phone || '').replace(/\D/g, '').slice(-10);
     const userEmail = (currentUser?.email || email || '').toLowerCase().trim();
-    const userPhone = (currentUser?.phone || phone || '').trim();
-    if (!userEmail && !userPhone) return [];
+    if (!userPhone && !userEmail) return [];
     return orders.filter((o) => {
+      const oPhone = (o.phone || '').replace(/\D/g, '').slice(-10);
       const oEmail = (o.email || '').toLowerCase().trim();
-      const oPhone = (o.phone || '').trim();
-      return (userEmail && oEmail === userEmail) || (userPhone && oPhone === userPhone);
+      return (userPhone && oPhone === userPhone) || (userEmail && oEmail === userEmail);
     });
   }, [orders, currentUser, email, phone]);
 
@@ -162,29 +219,64 @@ export default function CartView({ onNavigate, onOrderSuccess, initialTab = 'car
     const domName = formEl?.elements?.['cart-devotee-name']?.value || '';
     const domPhone = formEl?.elements?.['cart-phone']?.value || '';
     const domAddress = formEl?.elements?.['cart-address']?.value || '';
+    const domCity = formEl?.elements?.['cart-city']?.value || '';
+    const domPincode = formEl?.elements?.['cart-pincode']?.value || '';
+
     const checkoutName = domName || devoteeName || currentUser?.name || currentUser?.fullName || '';
     const checkoutPhone = domPhone || phone || currentUser?.phone || '';
     const checkoutAddress = domAddress || deliveryAddress || currentUser?.address || '';
+    const checkoutCity = domCity || city || currentUser?.city || '';
+    const checkoutPincode = domPincode || pincode || currentUser?.pincode || '';
+    const checkoutState = crmService.detectStateFromLocation({
+      pincode: checkoutPincode,
+      city: checkoutCity,
+      address: checkoutAddress,
+    });
     const checkoutEmail = email || currentUser?.email || '';
 
-    if (!currentUser && !checkoutPhone) {
-      setPendingAction({ type: 'cart_checkout' });
-      onNavigate('login');
+    if (!checkoutName.trim()) {
+      alert('Please enter your name.');
+      return;
+    }
+
+    if (!checkoutPhone.trim() || checkoutPhone.replace(/\D/g, '').length !== 10) {
+      alert('Please enter a valid 10-digit contact mobile number.');
       return;
     }
 
     if (!checkoutAddress.trim()) {
-      alert('Please enter your delivery address.');
+      alert('Please enter your street / door no and area delivery address.');
       return;
     }
+
+    if (!checkoutCity.trim()) {
+      alert('Please enter your City / Town.');
+      return;
+    }
+
+    if (!checkoutPincode.trim() || checkoutPincode.replace(/\D/g, '').length !== 6) {
+      alert('Please enter a valid 6-digit Pincode.');
+      return;
+    }
+
+    // Calculate exact shipping charge based on user's location and subtotal
+    const calc = crmService.calculateShipping({
+      subtotal: activeItemTotal,
+      pincode: checkoutPincode,
+      city: checkoutCity,
+      address: checkoutAddress,
+      rates: shippingRates,
+    });
+    const orderShipping = calc.shippingAmount;
+    const orderPayableTotal = activeItemTotal + orderShipping;
 
     setGatewayError('');
     setIsProcessing(true);
 
     if (paymentMethod === 'gateway') {
-      // Connect to Dharani Herbals / Vandanmart Payment Gateway API for this item
+      // Connect to Dharani Herbals / Vandanmart Payment Gateway API for this item including shipping
       const payRes = await paymentService.createPaymentOrder({
-        amount: activeItemTotal,
+        amount: orderPayableTotal,
         customerName: checkoutName,
         customerPhone: checkoutPhone,
         customerEmail: checkoutEmail,
@@ -197,15 +289,24 @@ export default function CartView({ onNavigate, onOrderSuccess, initialTab = 'car
         setGatewayModalData({
           redirectUrl: payRes.redirectUrl,
           merchantTxnId: payRes.merchantTxnId,
-          amount: activeItemTotal,
+          gid: payRes.gid,
+          amount: orderPayableTotal,
+          subtotal: activeItemTotal,
+          shippingCharges: orderShipping,
           customerName: checkoutName,
           customerPhone: checkoutPhone,
           customerEmail: checkoutEmail,
           deliveryAddress: checkoutAddress,
+          streetAddress: checkoutAddress,
+          city: checkoutCity,
+          state: checkoutState,
+          pincode: checkoutPincode,
           gateway: payRes.gateway,
           targetProduct: activeCartItem.product,
           targetQuantity: activeCartItem.quantity,
         });
+        setGatewayStatus('paying');
+        setGatewayStatusMessage('');
       } else {
         setGatewayError(payRes.message || 'Payment Gateway temporary error. You can also select Cash on Delivery.');
       }
@@ -214,10 +315,17 @@ export default function CartView({ onNavigate, onOrderSuccess, initialTab = 'car
       const res = createProductOrder({
         product: activeCartItem.product,
         quantity: activeCartItem.quantity,
+        subtotal: activeItemTotal,
+        shippingCharges: orderShipping,
+        totalAmount: orderPayableTotal,
         phone: checkoutPhone,
         email: checkoutEmail,
         devoteeName: checkoutName,
         deliveryAddress: checkoutAddress,
+        streetAddress: checkoutAddress,
+        city: checkoutCity,
+        state: checkoutState,
+        pincode: checkoutPincode,
         paymentMethod: 'Cash on Delivery',
         transactionId: 'COD-' + Date.now().toString(36).toUpperCase(),
       });
@@ -228,6 +336,8 @@ export default function CartView({ onNavigate, onOrderSuccess, initialTab = 'car
         if (checkoutPhone) setPhone(checkoutPhone);
         if (checkoutName) setDevoteeName(checkoutName);
         if (checkoutAddress) setDeliveryAddress(checkoutAddress);
+        if (checkoutCity) setCity(checkoutCity);
+        if (checkoutPincode) setPincode(checkoutPincode);
         setSelectedCartItemId(null);
         setActiveTab('orders');
         if (res.order) {
@@ -240,6 +350,297 @@ export default function CartView({ onNavigate, onOrderSuccess, initialTab = 'car
     }
   };
 
+  // Background polling for payment status when gateway is active
+  React.useEffect(() => {
+    if (!gatewayModalData || (gatewayStatus !== 'opened' && gatewayStatus !== 'paying' && gatewayStatus !== 'ready')) return;
+
+    let isMounted = true;
+    const interval = setInterval(async () => {
+      if (!isMounted) return;
+      try {
+        const res = await paymentService.checkPaymentStatus({
+          gid: gatewayModalData.gid,
+          merchantTxnId: gatewayModalData.merchantTxnId,
+          customerPhone: gatewayModalData.customerPhone,
+        });
+
+        if (res.paymentStatus === 'success') {
+          clearInterval(interval);
+          setGatewayStatus('success');
+          setGatewayStatusMessage('Payment verified successfully from Dharani Herbals Gateway!');
+        } else if (res.paymentStatus === 'failed') {
+          clearInterval(interval);
+          handleConfirmCancel();
+        }
+      } catch (err) {
+        console.warn('Polling status error:', err);
+      }
+    }, 3000);
+
+    return () => {
+      isMounted = false;
+      clearInterval(interval);
+    };
+  }, [gatewayModalData, gatewayStatus]);
+
+  // Listen for message events from payment iframe (if supported by gateway)
+  React.useEffect(() => {
+    if (!gatewayModalData || (gatewayStatus !== 'paying' && gatewayStatus !== 'ready')) return;
+
+    const handleWindowMessage = (event) => {
+      try {
+        const data = event.data;
+        if (!data) return;
+        if (typeof data === 'string') {
+          if (data.includes('PAYMENT_SUCCESS') || data.toLowerCase().includes('success')) {
+            setGatewayStatus('success');
+          } else if (data.includes('CUSTOMER_CANCELLED') || data.toLowerCase().includes('cancel') || data.toLowerCase().includes('failed')) {
+            handleConfirmCancel();
+          }
+        } else if (typeof data === 'object') {
+          if (data.status === 'success' || data.event === 'payment.success') {
+            setGatewayStatus('success');
+          } else if (data.status === 'failed' || data.status === 'cancelled' || data.event === 'payment.cancelled') {
+            handleConfirmCancel();
+          }
+        }
+      } catch (e) {}
+    };
+
+    window.addEventListener('message', handleWindowMessage);
+    return () => window.removeEventListener('message', handleWindowMessage);
+  }, [gatewayModalData, gatewayStatus]);
+
+  // 5-second auto-redirect countdown for Payment Cancelled screen (Reference Image 2)
+  React.useEffect(() => {
+    if (gatewayStatus !== 'cancelled') return;
+
+    setCancelCountdown(5);
+    const interval = setInterval(() => {
+      setCancelCountdown((prev) => {
+        if (prev <= 1) {
+          clearInterval(interval);
+          setGatewayModalData(null);
+          setGatewayStatus('ready');
+          setActiveTab('orders'); // Show My Orders live with cancelled order!
+          return 0;
+        }
+        return prev - 1;
+      });
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, [gatewayStatus]);
+
+  // When gateway status turns to success, automatically finalize order after 2.2s
+  React.useEffect(() => {
+    if (gatewayStatus === 'success' && gatewayModalData) {
+      const timer = setTimeout(() => {
+        handleGatewaySuccess();
+      }, 2200);
+      return () => clearTimeout(timer);
+    }
+  }, [gatewayStatus, gatewayModalData]);
+
+  const upiQrUri = useMemo(() => {
+    if (!gatewayModalData) return '';
+    const amountStr = gatewayModalData.amount.toFixed(2);
+    const txnId = gatewayModalData.merchantTxnId || ('BOGAR' + Date.now());
+    return `upi://pay?pa=apoonkodipay@kotakpay&pn=${encodeURIComponent('Dharani Herbals')}&mc=5499&tr=${txnId}&am=${amountStr}&cu=INR&tn=${encodeURIComponent('Bogar Sacred Order')}`;
+  }, [gatewayModalData]);
+
+  const getUpiUriForApp = (appType) => {
+    if (!gatewayModalData) return '';
+    const amountStr = gatewayModalData.amount.toFixed(2);
+    const txnId = gatewayModalData.merchantTxnId || ('BOGAR' + Date.now());
+    const payeeVpa = 'apoonkodipay@kotakpay';
+    const payeeName = 'Dharani Herbals';
+    const note = 'Bogar Sacred Order';
+
+    const isAndroid = /Android/i.test(navigator.userAgent);
+
+    if (isAndroid) {
+      if (appType === 'gpay') {
+        return `intent://pay?pa=${payeeVpa}&pn=${encodeURIComponent(payeeName)}&mc=5499&tr=${txnId}&am=${amountStr}&cu=INR&tn=${encodeURIComponent(note)}#Intent;scheme=upi;package=com.google.android.apps.nbu.paisa.user;end;`;
+      }
+      if (appType === 'phonepe') {
+        return `intent://pay?pa=${payeeVpa}&pn=${encodeURIComponent(payeeName)}&mc=5499&tr=${txnId}&am=${amountStr}&cu=INR&tn=${encodeURIComponent(note)}#Intent;scheme=upi;package=com.phonepe.app;end;`;
+      }
+      if (appType === 'paytm') {
+        return `intent://pay?pa=${payeeVpa}&pn=${encodeURIComponent(payeeName)}&mc=5499&tr=${txnId}&am=${amountStr}&cu=INR&tn=${encodeURIComponent(note)}#Intent;scheme=upi;package=net.one97.paytm;end;`;
+      }
+      return `upi://pay?pa=${payeeVpa}&pn=${encodeURIComponent(payeeName)}&mc=5499&tr=${txnId}&am=${amountStr}&cu=INR&tn=${encodeURIComponent(note)}`;
+    }
+
+    // Standard NPCI UPI URI
+    return `upi://pay?pa=${payeeVpa}&pn=${encodeURIComponent(payeeName)}&mc=5499&tr=${txnId}&am=${amountStr}&cu=INR&tn=${encodeURIComponent(note)}`;
+  };
+
+  const handleLaunchUpiApp = (appType) => {
+    if (!gatewayModalData) return;
+    const amountStr = gatewayModalData.amount.toFixed(2);
+    const appDisplayName = appType === 'gpay' ? 'Google Pay' : appType === 'phonepe' ? 'PhonePe' : appType === 'paytm' ? 'Paytm' : 'UPI App';
+    setSelectedUpiApp(appDisplayName);
+    setSelectedUpiType(appType);
+    setGatewayStatus('upi_waiting');
+    setGatewayStatusMessage(`Paying ₹${amountStr} via ${appDisplayName}...`);
+
+    const payeeVpa = 'apoonkodipay@kotakpay';
+    try {
+      navigator.clipboard?.writeText(payeeVpa);
+      setCopiedVpa(true);
+    } catch (e) {}
+
+    // Check if on Desktop / Windows PC
+    const isDesktopPc =
+      /Windows|Win32|Win64|Macintosh|MacIntel|Linux x86_64/i.test(navigator.userAgent) ||
+      (typeof navigator.platform === 'string' && /Win|Mac/i.test(navigator.platform)) ||
+      (window.navigator?.userAgentData?.platform === 'Windows') ||
+      (window.navigator?.userAgentData?.platform === 'macOS');
+
+    if (isDesktopPc) {
+      // On desktop, do not trigger native mobile app scheme to prevent browser unregistered scheme error
+      return;
+    }
+
+    // On real Android / iOS mobile: directly launch the native UPI app!
+    const targetUri = getUpiUriForApp(appType);
+    window.location.href = targetUri;
+  };
+
+  const handleRequestCancel = () => {
+    setGatewayStatus('confirm_cancel');
+  };
+
+  const handleConfirmCancel = () => {
+    if (gatewayModalData) {
+      const targetProd = gatewayModalData.targetProduct || activeCartItem?.product;
+      const targetQty = gatewayModalData.targetQuantity || activeCartItem?.quantity || 1;
+
+      if (gatewayModalData.customerPhone) setPhone(gatewayModalData.customerPhone);
+      if (gatewayModalData.customerEmail) setEmail(gatewayModalData.customerEmail);
+      if (gatewayModalData.customerName) setDevoteeName(gatewayModalData.customerName);
+      if (gatewayModalData.deliveryAddress) setDeliveryAddress(gatewayModalData.deliveryAddress);
+      if (gatewayModalData.city) setCity(gatewayModalData.city);
+      if (gatewayModalData.pincode) setPincode(gatewayModalData.pincode);
+
+      // Create a live record in My Orders with status 'Cancelled'
+      createProductOrder({
+        product: targetProd,
+        quantity: targetQty,
+        subtotal: gatewayModalData.subtotal,
+        shippingCharges: gatewayModalData.shippingCharges,
+        totalAmount: gatewayModalData.amount,
+        phone: gatewayModalData.customerPhone,
+        email: gatewayModalData.customerEmail,
+        devoteeName: gatewayModalData.customerName,
+        deliveryAddress: gatewayModalData.deliveryAddress,
+        streetAddress: gatewayModalData.streetAddress || gatewayModalData.deliveryAddress,
+        city: gatewayModalData.city,
+        state: gatewayModalData.state,
+        pincode: gatewayModalData.pincode,
+        paymentMethod: 'Online Payment Gateway',
+        transactionId: gatewayModalData.merchantTxnId,
+        status: 'Cancelled',
+        paymentStatus: 'Cancelled',
+      });
+    }
+
+    setGatewayStatus('cancelled');
+    setGatewayStatusMessage('Payment cancelled by customer.');
+  };
+
+  const handleReturnToPayment = () => {
+    setGatewayStatus('ready');
+  };
+
+  const handleReturnToBogar = () => {
+    setGatewayModalData(null);
+    setGatewayStatus('ready');
+    setActiveTab('orders'); // Show My Orders live!
+  };
+
+  const handleManualCheckStatus = async () => {
+    if (!gatewayModalData) return;
+    setGatewayStatus('checking');
+    try {
+      const res = await paymentService.checkPaymentStatus({
+        gid: gatewayModalData.gid,
+        merchantTxnId: gatewayModalData.merchantTxnId,
+        customerPhone: gatewayModalData.customerPhone,
+      });
+
+      if (res.paymentStatus === 'success') {
+        setGatewayStatus('success');
+        setGatewayStatusMessage('Payment verified successfully from Dharani Herbals Gateway!');
+      } else if (res.paymentStatus === 'failed') {
+        setGatewayStatus('cancelled');
+        setGatewayStatusMessage('Payment was cancelled or failed.');
+      } else {
+        setGatewayStatus('verify_prompt');
+      }
+    } catch {
+      setGatewayStatus('verify_prompt');
+    }
+  };
+
+  const handleUserMarkPaid = () => {
+    setGatewayStatus('success');
+    setGatewayStatusMessage('Payment confirmed by devotee.');
+  };
+
+  const handleUserMarkFailed = () => {
+    setGatewayStatus('cancelled');
+    setGatewayStatusMessage('Payment cancelled.');
+  };
+
+  const handleSwitchToCodFromGateway = () => {
+    if (!gatewayModalData) return;
+    const targetProd = gatewayModalData.targetProduct || activeCartItem?.product;
+    const targetQty = gatewayModalData.targetQuantity || activeCartItem?.quantity || 1;
+
+    const res = createProductOrder({
+      product: targetProd,
+      quantity: targetQty,
+      subtotal: gatewayModalData.subtotal,
+      shippingCharges: gatewayModalData.shippingCharges,
+      totalAmount: gatewayModalData.amount,
+      phone: gatewayModalData.customerPhone,
+      email: gatewayModalData.customerEmail,
+      devoteeName: gatewayModalData.customerName,
+      deliveryAddress: gatewayModalData.deliveryAddress,
+      streetAddress: gatewayModalData.streetAddress || gatewayModalData.deliveryAddress,
+      city: gatewayModalData.city,
+      state: gatewayModalData.state,
+      pincode: gatewayModalData.pincode,
+      paymentMethod: 'Cash on Delivery',
+      transactionId: 'COD-' + Date.now().toString(36).toUpperCase(),
+    });
+
+    if (targetProd?.id) {
+      removeFromCart(targetProd.id);
+    }
+
+    setGatewayModalData(null);
+    setGatewayStatus('ready');
+
+    if (res.success) {
+      setSelectedCartItemId(null);
+      setActiveTab('orders');
+      if (res.order) {
+        setSelectedOrderForDetails(res.order);
+      }
+      if (onOrderSuccess) {
+        onOrderSuccess(res.order);
+      }
+    }
+  };
+
+  const handleRetryGateway = () => {
+    setGatewayStatus('ready');
+    setGatewayStatusMessage('');
+  };
+
   const handleGatewaySuccess = () => {
     if (!gatewayModalData) return;
     const targetProd = gatewayModalData.targetProduct || activeCartItem?.product;
@@ -248,12 +649,21 @@ export default function CartView({ onNavigate, onOrderSuccess, initialTab = 'car
     const res = createProductOrder({
       product: targetProd,
       quantity: targetQty,
+      subtotal: gatewayModalData.subtotal,
+      shippingCharges: gatewayModalData.shippingCharges,
+      totalAmount: gatewayModalData.amount,
       phone: gatewayModalData.customerPhone,
       email: gatewayModalData.customerEmail,
       devoteeName: gatewayModalData.customerName,
       deliveryAddress: gatewayModalData.deliveryAddress,
+      streetAddress: gatewayModalData.streetAddress || gatewayModalData.deliveryAddress,
+      city: gatewayModalData.city,
+      state: gatewayModalData.state,
+      pincode: gatewayModalData.pincode,
       paymentMethod: 'PayGlocal / Online Gateway (Paid)',
       transactionId: gatewayModalData.merchantTxnId,
+      status: 'Confirmed',
+      paymentStatus: 'Paid',
     });
 
     if (targetProd?.id) {
@@ -261,9 +671,11 @@ export default function CartView({ onNavigate, onOrderSuccess, initialTab = 'car
     }
 
     setGatewayModalData(null);
+    setGatewayStatus('ready');
 
     if (res.success) {
       if (gatewayModalData.customerPhone) setPhone(gatewayModalData.customerPhone);
+      if (gatewayModalData.customerEmail) setEmail(gatewayModalData.customerEmail);
       if (gatewayModalData.customerName) setDevoteeName(gatewayModalData.customerName);
       if (gatewayModalData.deliveryAddress) setDeliveryAddress(gatewayModalData.deliveryAddress);
       setSelectedCartItemId(null);
@@ -617,21 +1029,29 @@ export default function CartView({ onNavigate, onOrderSuccess, initialTab = 'car
                           <span>₹{activeItemTotal.toFixed(2)}</span>
                         </div>
                         <div className="bogar-summary-row">
-                          <span>Temple Dispatch & Delivery</span>
-                          <span className="bogar-summary-highlight">Included</span>
+                          <span>Shipping Charges ({shippingCalculation.stateName})</span>
+                          <span
+                            className={shippingCalculation.isFree ? 'bogar-summary-highlight' : ''}
+                            style={{
+                              fontWeight: '700',
+                              color: shippingCalculation.isFree ? '#10B981' : '#D4B675',
+                            }}
+                          >
+                            {shippingCalculation.isFree ? 'FREE' : `₹${currentShippingCharge.toFixed(2)}`}
+                          </span>
                         </div>
                         <div className="bogar-summary-divider" />
                         <div className="bogar-summary-row bogar-summary-row--total">
                           <strong>Total Amount</strong>
                           <strong className="bogar-summary-total-amt">
-                            ₹{activeItemTotal.toFixed(2)}
+                            ₹{finalOrderTotal.toFixed(2)}
                           </strong>
                         </div>
                       </div>
 
                       <form onSubmit={handleCheckout} className="bogar-cart-summary__form">
                         <div className="bogar-form-group">
-                          <label htmlFor="cart-devotee-name">Name</label>
+                          <label htmlFor="cart-devotee-name">Devotee Name</label>
                           <input
                             id="cart-devotee-name"
                             name="cart-devotee-name"
@@ -660,19 +1080,85 @@ export default function CartView({ onNavigate, onOrderSuccess, initialTab = 'car
                         </div>
 
                         <div className="bogar-form-group">
-                          <label htmlFor="cart-address">Delivery Address</label>
-                          <textarea
+                          <label htmlFor="cart-address">Street / Door No & Area</label>
+                          <input
                             id="cart-address"
                             name="cart-address"
+                            type="text"
                             required
-                            rows={3}
-                            placeholder="Door No, Street Name, Area, City, Pincode"
+                            placeholder="Door No, Street Name, Area / Landmark"
                             value={deliveryAddress}
                             onChange={(e) => setDeliveryAddress(e.target.value)}
-                            className="bogar-form-input bogar-form-textarea"
-                            style={{ minHeight: '80px', resize: 'vertical' }}
+                            className="bogar-form-input"
                           />
                         </div>
+
+                        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px' }}>
+                          <div className="bogar-form-group">
+                            <label htmlFor="cart-city">City / Town</label>
+                            <input
+                              id="cart-city"
+                              name="cart-city"
+                              type="text"
+                              required
+                              placeholder="City / Town"
+                              value={city}
+                              onChange={(e) => setCity(e.target.value)}
+                              className="bogar-form-input"
+                            />
+                          </div>
+                          <div className="bogar-form-group">
+                            <label htmlFor="cart-pincode">Pincode</label>
+                            <input
+                              id="cart-pincode"
+                              name="cart-pincode"
+                              type="text"
+                              required
+                              pattern="[0-9]{6}"
+                              placeholder="6-digit Pincode"
+                              value={pincode}
+                              onChange={(e) => setPincode(e.target.value)}
+                              className="bogar-form-input"
+                            />
+                          </div>
+                        </div>
+
+                        {/* Auto-detected Shipping Charge based on user's location */}
+                        <div style={{
+                          margin: '0.75rem 0 1rem 0',
+                          padding: '10px 14px',
+                          background: 'rgba(212, 182, 117, 0.08)',
+                          border: '1px solid rgba(212, 182, 117, 0.25)',
+                          borderRadius: '8px',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'space-between',
+                          gap: '10px',
+                        }}>
+                          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#E5D5B8', fontSize: '0.85rem' }}>
+                            <MapPin size={16} color="#D4B675" style={{ flexShrink: 0 }} />
+                            <span>
+                              {pincode || city ? (
+                                <>Delivery to: <strong style={{ color: '#F5EEDB' }}>{shippingCalculation.stateName}</strong></>
+                              ) : (
+                                <span style={{ color: '#9CA3AF' }}>Enter Pincode / City to compute shipping</span>
+                              )}
+                            </span>
+                          </div>
+                          <span style={{
+                            fontWeight: '700',
+                            fontSize: '0.88rem',
+                            color: shippingCalculation.isFree ? '#10B981' : '#D4B675',
+                            whiteSpace: 'nowrap',
+                          }}>
+                            {shippingCalculation.isFree ? '🎉 FREE Delivery' : `+ ₹${currentShippingCharge.toFixed(2)} Shipping`}
+                          </span>
+                        </div>
+                        {shippingCalculation.freeAbove > activeItemTotal && !shippingCalculation.isFree && (
+                          <div style={{ fontSize: '0.78rem', color: '#9CA3AF', marginTop: '-0.5rem', marginBottom: '1rem', paddingLeft: '4px' }}>
+                            💡 Add ₹{(shippingCalculation.freeAbove - activeItemTotal).toFixed(2)} more for FREE shipping in {shippingCalculation.stateName}!
+                          </div>
+                        )}
 
                         {/* Payment Method Selector */}
                         <div className="bogar-form-group">
@@ -746,7 +1232,7 @@ export default function CartView({ onNavigate, onOrderSuccess, initialTab = 'car
                               <span>
                                 {isProcessing
                                   ? 'Connecting to Payment Gateway...'
-                                  : `Proceed to Payment Gateway • ₹${activeItemTotal.toFixed(2)}`}
+                                  : `Proceed to Payment Gateway • ₹${finalOrderTotal.toFixed(2)}`}
                               </span>
                             </>
                           ) : (
@@ -755,7 +1241,7 @@ export default function CartView({ onNavigate, onOrderSuccess, initialTab = 'car
                               <span>
                                 {isProcessing
                                   ? 'Processing Order...'
-                                  : `Place Order (Cash on Delivery) • ₹${activeItemTotal.toFixed(2)}`}
+                                  : `Place Order (Cash on Delivery) • ₹${finalOrderTotal.toFixed(2)}`}
                               </span>
                             </>
                           )}
@@ -925,16 +1411,27 @@ export default function CartView({ onNavigate, onOrderSuccess, initialTab = 'car
                             <span>View Details</span>
                           </button>
 
-                          <button
-                            type="button"
-                            className={`bogar-btn-order-action ${order.status === 'Cancelled' ? 'bogar-btn-order-action--cancelled' : 'bogar-btn-order-action--cancel'}`}
-                            onClick={() => handleCancelOrder(order.orderId)}
-                            disabled={order.status === 'Cancelled'}
-                            aria-label={`Cancel Order for ${order.orderId}`}
-                          >
-                            <XCircle size={15} />
-                            <span>{order.status === 'Cancelled' ? 'Cancelled' : 'Cancel Order'}</span>
-                          </button>
+                          {order.status === 'Cancelled' ? (
+                            <button
+                              type="button"
+                              className="bogar-btn-order-action bogar-btn-order-action--remove"
+                              onClick={() => handleRemoveOrder(order.orderId)}
+                              aria-label={`Remove Order ${order.orderId}`}
+                            >
+                              <Trash2 size={15} />
+                              <span>Remove</span>
+                            </button>
+                          ) : (
+                            <button
+                              type="button"
+                              className="bogar-btn-order-action bogar-btn-order-action--cancel"
+                              onClick={() => handleCancelOrder(order.orderId)}
+                              aria-label={`Cancel Order for ${order.orderId}`}
+                            >
+                              <XCircle size={15} />
+                              <span>Cancel Order</span>
+                            </button>
+                          )}
                         </div>
                       </div>
                     );
@@ -1099,9 +1596,21 @@ export default function CartView({ onNavigate, onOrderSuccess, initialTab = 'car
               <div className="bogar-order-modal-receipt-header">
                 <div className="bogar-order-badge-row">
                   <span className="bogar-order-pill">OFFICIAL DEVOTEE RECEIPT</span>
-                  <div className="bogar-order-status-badge">
-                    <CheckCircle2 size={14} />
-                    <span>{selectedOrderForDetails.status || 'Confirmed'}</span>
+                  <div
+                    className={`bogar-order-status-badge ${selectedOrderForDetails.status === 'Cancelled' ? 'bogar-order-status-badge--cancelled' : ''}`}
+                    style={selectedOrderForDetails.status === 'Cancelled' ? { background: 'rgba(239, 68, 68, 0.15)', borderColor: '#EF4444', color: '#EF4444' } : {}}
+                  >
+                    {selectedOrderForDetails.status === 'Cancelled' ? (
+                      <>
+                        <XCircle size={14} color="#EF4444" />
+                        <span>Cancelled</span>
+                      </>
+                    ) : (
+                      <>
+                        <CheckCircle2 size={14} />
+                        <span>{selectedOrderForDetails.status || 'Confirmed'}</span>
+                      </>
+                    )}
                   </div>
                 </div>
               </div>
@@ -1182,9 +1691,61 @@ export default function CartView({ onNavigate, onOrderSuccess, initialTab = 'car
                   </div>
                 )}
 
+                {selectedOrderForDetails.subtotal !== undefined && (
+                  <div className="bogar-order-row">
+                    <span className="bogar-order-row__label">Product Subtotal:</span>
+                    <strong className="bogar-order-row__val">
+                      ₹{parseFloat(selectedOrderForDetails.subtotal).toFixed(2)}
+                    </strong>
+                  </div>
+                )}
+
+                {selectedOrderForDetails.shippingCharges !== undefined && (
+                  <div className="bogar-order-row">
+                    <span className="bogar-order-row__label">Shipping Charges:</span>
+                    <strong className="bogar-order-row__val" style={{ color: parseFloat(selectedOrderForDetails.shippingCharges) === 0 ? '#10B981' : '#D4B675' }}>
+                      {parseFloat(selectedOrderForDetails.shippingCharges) === 0
+                        ? 'FREE'
+                        : `₹${parseFloat(selectedOrderForDetails.shippingCharges).toFixed(2)}`}
+                    </strong>
+                  </div>
+                )}
+
+                <div className="bogar-order-row" style={{ borderTop: '1px dashed rgba(212, 182, 117, 0.3)', paddingTop: '6px' }}>
+                  <span className="bogar-order-row__label" style={{ fontWeight: '700' }}>Total Amount:</span>
+                  <strong className="bogar-order-row__val bogar-order-row__val--highlight" style={{ fontSize: '1.05rem' }}>
+                    ₹{parseFloat(selectedOrderForDetails.totalAmount || selectedOrderForDetails.subtotal || 0).toFixed(2)}
+                  </strong>
+                </div>
+
+                <div className="bogar-order-row">
+                  <span className="bogar-order-row__label">Payment Status:</span>
+                  <strong
+                    className="bogar-order-row__val"
+                    style={{
+                      color: selectedOrderForDetails.status === 'Cancelled' || selectedOrderForDetails.paymentStatus === 'Cancelled' || selectedOrderForDetails.paymentStatus === 'failed'
+                        ? '#EF4444'
+                        : selectedOrderForDetails.paymentStatus === 'Paid' || selectedOrderForDetails.paymentStatus === 'success'
+                        ? '#10B981'
+                        : '#F59E0B',
+                      fontWeight: '700',
+                    }}
+                  >
+                    {selectedOrderForDetails.status === 'Cancelled' || selectedOrderForDetails.paymentStatus === 'Cancelled' || selectedOrderForDetails.paymentStatus === 'failed'
+                      ? 'Cancelled / Failed'
+                      : (selectedOrderForDetails.paymentStatus || 'Pending')}
+                  </strong>
+                </div>
+
                 <div className="bogar-order-row">
                   <span className="bogar-order-row__label">Dispatch Status:</span>
-                  <strong className="bogar-order-row__val bogar-order-row__val--confirmed">
+                  <strong
+                    className={`bogar-order-row__val ${selectedOrderForDetails.status === 'Cancelled' ? 'bogar-order-row__val--cancelled' : 'bogar-order-row__val--confirmed'}`}
+                    style={{
+                      color: selectedOrderForDetails.status === 'Cancelled' ? '#EF4444' : '#10B981',
+                      fontWeight: '700',
+                    }}
+                  >
                     {selectedOrderForDetails.status || 'Confirmed'}
                   </strong>
                 </div>
@@ -1477,98 +2038,215 @@ export default function CartView({ onNavigate, onOrderSuccess, initialTab = 'car
       {gatewayModalData && (
         <div
           className="bogar-modal-backdrop"
-          onClick={() => setGatewayModalData(null)}
+          onClick={() => {
+            if (gatewayStatus === 'cancelled') {
+              handleReturnToBogar();
+            } else if (gatewayStatus === 'confirm_cancel') {
+              handleReturnToPayment();
+            } else {
+              handleRequestCancel();
+            }
+          }}
           role="dialog"
           aria-modal="true"
         >
           <div
-            className="bogar-modal-card bogar-modal-card--payment"
+            className={`bogar-modal-card ${gatewayStatus === 'cancelled' || gatewayStatus === 'confirm_cancel' ? '' : 'bogar-modal-card--gateway-direct'}`}
             onClick={(e) => e.stopPropagation()}
-            style={{ maxWidth: '520px' }}
+            style={{
+              maxWidth: gatewayStatus === 'cancelled' || gatewayStatus === 'confirm_cancel' ? '450px' : '560px',
+              width: '100%',
+              padding: 0,
+              background: gatewayStatus === 'cancelled' || gatewayStatus === 'confirm_cancel' ? 'transparent' : '#1B140F',
+              boxShadow: gatewayStatus === 'cancelled' || gatewayStatus === 'confirm_cancel' ? 'none' : '0 12px 40px rgba(0,0,0,0.6)',
+              borderRadius: '16px',
+              overflow: 'hidden',
+            }}
           >
-            <div className="bogar-modal-card__header">
-              <div className="bogar-modal-card__brand">
-                <LotusLogo size={28} color="#D4B675" />
-                <div>
-                  <h3 className="bogar-modal-card__title">
-                    Dharani Herbals Payment Gateway
-                  </h3>
-                  <p className="bogar-modal-card__tagline">
-                    SECURE 256-BIT ENCRYPTED TRANSACTION
-                  </p>
+            {/* 1. STATE: PAYING / READY - DIRECT DEFAULT PAYMENT GATEWAY (PAYGLOCAL / DHARANI HERBALS IFRAME) */}
+            {(gatewayStatus === 'ready' || gatewayStatus === 'paying' || gatewayStatus === 'opened' || gatewayStatus === 'checking') && (
+              <div style={{ display: 'flex', flexDirection: 'column', width: '100%', height: '100%' }}>
+                <div className="bogar-gateway-top-bar">
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                    <LotusLogo size={24} color="#D4B675" />
+                    <div>
+                      <div style={{ color: '#FAF7F2', fontWeight: '700', fontSize: '0.92rem', lineHeight: '1.2' }}>
+                        Dharani Herbals Payment Gateway
+                      </div>
+                      <div style={{ color: '#D4B675', fontSize: '0.78rem', fontWeight: '600' }}>
+                        ₹{gatewayModalData.amount.toFixed(2)} • Txn: {gatewayModalData.merchantTxnId}
+                      </div>
+                    </div>
+                  </div>
+
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    <button
+                      type="button"
+                      className="bogar-gateway-top-bar__cancel-btn"
+                      onClick={handleRequestCancel}
+                    >
+                      <X size={15} />
+                      <span>Cancel Payment</span>
+                    </button>
+                  </div>
+                </div>
+
+                <div className="bogar-gateway-iframe-wrapper">
+                  <iframe
+                    src={gatewayModalData.redirectUrl}
+                    title="Dharani Herbals Payment Gateway"
+                    className="bogar-gateway-iframe"
+                    allow="payment *; clipboard-write *"
+                    sandbox="allow-scripts allow-forms allow-same-origin allow-popups"
+                  />
                 </div>
               </div>
-              <button
-                type="button"
-                className="bogar-modal-card__close"
-                onClick={() => setGatewayModalData(null)}
-                aria-label="Close"
-              >
-                <X size={20} />
-              </button>
-            </div>
+            )}
 
-            <div className="bogar-modal-card__body bogar-payment-modal-body">
+            <div
+              className={gatewayStatus === 'cancelled' || gatewayStatus === 'confirm_cancel' ? '' : 'bogar-modal-card__body bogar-payment-modal-body'}
+              style={{
+                display: (gatewayStatus === 'ready' || gatewayStatus === 'paying' || gatewayStatus === 'opened' || gatewayStatus === 'checking') ? 'none' : 'block',
+              }}
+            >
               <div className="bogar-payment-gateway-summary">
-                <div className="bogar-payment-amount-box">
-                  <span className="bogar-payment-amount-box__label">Amount Payable</span>
-                  <strong className="bogar-payment-amount-box__val">
-                    ₹{gatewayModalData.amount.toFixed(2)}
-                  </strong>
-                  <span className="bogar-payment-amount-box__txn">
-                    Merchant Txn ID: {gatewayModalData.merchantTxnId}
-                  </span>
-                </div>
+                {/* 2. STATE: CONFIRM CANCEL (JUST CONFIRM CANCEL, ZERO SURVEY QUESTIONS) */}
+                {gatewayStatus === 'confirm_cancel' && (
+                  <div className="bogar-cancelled-card" style={{ maxWidth: '420px' }}>
+                    <div className="bogar-cancelled-icon" style={{ background: '#FF9800' }}>
+                      !
+                    </div>
+                    <h2 className="bogar-cancelled-title" style={{ fontSize: '1.45rem', marginBottom: '8px' }}>
+                      Confirm Cancellation
+                    </h2>
+                    <p className="bogar-cancelled-desc" style={{ marginBottom: '24px' }}>
+                      Are you sure you want to cancel the payment?
+                    </p>
 
-                <div className="bogar-payment-methods-grid">
-                  <div className="bogar-payment-badge-pill">
-                    <ShieldCheck size={14} color="#D4B675" />
-                    <span>UPI: GPay, PhonePe, Paytm, BHIM</span>
-                  </div>
-                  <div className="bogar-payment-badge-pill">
-                    <CreditCard size={14} color="#D4B675" />
-                    <span>Cards: Visa, RuPay, MasterCard</span>
-                  </div>
-                  <div className="bogar-payment-badge-pill">
-                    <CheckCircle2 size={14} color="#D4B675" />
-                    <span>Net Banking (All Indian Banks)</span>
-                  </div>
-                </div>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                      <button
+                        type="button"
+                        className="bogar-cancelled-btn"
+                        style={{ background: '#E63946', boxShadow: '0 4px 12px rgba(230, 57, 70, 0.35)' }}
+                        onClick={handleConfirmCancel}
+                      >
+                        Confirm Cancel
+                      </button>
 
-                <p className="bogar-payment-note">
-                  Live payment gateway link generated by <strong>api.codingboss.in/vandanmart/</strong>. Click below to proceed to the secure payment gateway.
-                </p>
-
-                {gatewayModalData.redirectUrl && (
-                  <a
-                    href={gatewayModalData.redirectUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bogar-btn-book bogar-btn-book--full"
-                    style={{
-                      textDecoration: 'none',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      gap: '0.6rem',
-                    }}
-                    onClick={() => {
-                      handleGatewaySuccess();
-                    }}
-                  >
-                    <ExternalLink size={17} />
-                    <span>Open Payment Gateway (Pay ₹{gatewayModalData.amount.toFixed(2)})</span>
-                  </a>
+                      <button
+                        type="button"
+                        style={{
+                          background: '#F8F9FA',
+                          border: '1px solid #D1D5DB',
+                          color: '#374151',
+                          padding: '12px 18px',
+                          borderRadius: '10px',
+                          fontWeight: '600',
+                          fontSize: '0.95rem',
+                          cursor: 'pointer',
+                        }}
+                        onClick={handleReturnToPayment}
+                      >
+                        Return to Payment
+                      </button>
+                    </div>
+                  </div>
                 )}
 
-                <button
-                  type="button"
-                  className="bogar-btn-secondary"
-                  style={{ width: '100%', justifyContent: 'center', marginTop: '0.75rem' }}
-                  onClick={() => setGatewayModalData(null)}
-                >
-                  <span>Cancel / Change Payment Method</span>
-                </button>
+                {/* 4. STATE: PAYMENT CANCELLED (EXACT REPLICA OF REFERENCE IMAGE 2, RETURNS ONLY TO BOGAR) */}
+                {gatewayStatus === 'cancelled' && (
+                  <div className="bogar-cancelled-card">
+                    <div className="bogar-cancelled-icon">!</div>
+                    <h2 className="bogar-cancelled-title">Payment Cancelled</h2>
+                    <p className="bogar-cancelled-desc">
+                      You have cancelled the transaction. No charges were made.
+                    </p>
+
+                    <div className="bogar-cancelled-details">
+                      <div className="bogar-cancelled-row">
+                        <span className="bogar-cancelled-row__label">Amount</span>
+                        <span className="bogar-cancelled-row__val">₹ {gatewayModalData.amount.toFixed(2)}</span>
+                      </div>
+                      <div className="bogar-cancelled-row">
+                        <span className="bogar-cancelled-row__label">Transaction ID</span>
+                        <span className="bogar-cancelled-row__val">{gatewayModalData.merchantTxnId}</span>
+                      </div>
+                      {gatewayModalData.gid && (
+                        <div className="bogar-cancelled-row">
+                          <span className="bogar-cancelled-row__label">Gateway ID</span>
+                          <span className="bogar-cancelled-row__val">{gatewayModalData.gid}</span>
+                        </div>
+                      )}
+                      <div className="bogar-cancelled-row">
+                        <span className="bogar-cancelled-row__label">Status</span>
+                        <span className="bogar-cancelled-row__val bogar-cancelled-status">CUSTOMER_CANCELLED</span>
+                      </div>
+                    </div>
+
+                    <button
+                      type="button"
+                      className="bogar-cancelled-btn"
+                      onClick={handleReturnToBogar}
+                    >
+                      Return to Bogar Website
+                    </button>
+
+                    <div className="bogar-cancelled-timer">
+                      Redirecting you automatically in {cancelCountdown} seconds...
+                    </div>
+
+                    <div style={{ marginTop: '16px', display: 'flex', justifyContent: 'center' }}>
+                      <button
+                        type="button"
+                        style={{
+                          background: 'transparent',
+                          border: '1px solid #D4B675',
+                          color: '#8B6A3F',
+                          borderRadius: '8px',
+                          padding: '7px 16px',
+                          fontSize: '0.82rem',
+                          cursor: 'pointer',
+                          fontWeight: '600',
+                          display: 'inline-flex',
+                          alignItems: 'center',
+                          gap: '6px',
+                        }}
+                        onClick={handleSwitchToCodFromGateway}
+                      >
+                        <Truck size={14} />
+                        <span>Place Order via Cash on Delivery</span>
+                      </button>
+                    </div>
+                  </div>
+                )}
+
+                {/* 5. STATE: PAYMENT SUCCESS */}
+                {gatewayStatus === 'success' && (
+                  <div className="bogar-gateway-status-panel bogar-gateway-status-panel--success">
+                    <div className="bogar-gateway-pulse-icon bogar-gateway-pulse-icon--success">
+                      <CheckCircle2 size={38} />
+                    </div>
+                    <h4 className="bogar-gateway-status-title bogar-gateway-status-title--success">
+                      Payment Success!
+                    </h4>
+                    <p className="bogar-gateway-status-desc">
+                      Your payment of <strong>₹{gatewayModalData.amount.toFixed(2)}</strong> has been verified. Creating your verified order now...
+                    </p>
+                    <span style={{ fontSize: '0.75rem', color: '#2E7D32', fontFamily: 'monospace' }}>
+                      Txn ID: {gatewayModalData.merchantTxnId}
+                    </span>
+
+                    <div className="bogar-gateway-btn-row">
+                      <button
+                        type="button"
+                        className="bogar-btn-book bogar-btn-book--full"
+                        onClick={handleGatewaySuccess}
+                      >
+                        <span>View Confirmed Order →</span>
+                      </button>
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
           </div>

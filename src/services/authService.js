@@ -1,23 +1,20 @@
 /**
  * BOGAR Authentication & OTP Service
  *
- * Integrated with Dharani Herbals / Vandanmart API:
+ * Integrated strictly with Dharani Herbals / Vandanmart API:
  * Base URL: https://api.codingboss.in/vandanmart/
  *
  * Endpoints:
- * - POST /user-login/        -> Request OTP for mobile & name (dispatches SMS, returns OTP & user status)
- * - POST /verify-otp/        -> Verify 6-digit OTP code & complete authentication
+ * - POST /user-login/        -> Request OTP for mobile & name (dispatches real SMS via CRM)
+ * - POST /verify-otp/        -> Verify real 6-digit OTP code & complete authentication
  * - POST /resend-otp/        -> Resend fresh OTP to mobile number
  */
 
 export const API_BASE_URL = 'https://api.codingboss.in/vandanmart';
 
-// Fallback constant for manual offline testing
-export const MOCK_TESTING_OTP = '123456';
-
 export const authService = {
   /**
-   * Request OTP for the entered Name and 10-digit Phone Number
+   * Request OTP for the entered Name and 10-digit Phone Number from real CRM API
    */
   async requestOtp({ name, phone }) {
     const cleanPhone = (phone || '').trim();
@@ -69,19 +66,15 @@ export const authService = {
         message: data?.message || 'Unable to send OTP. Please check your mobile number.',
       };
     } catch (err) {
-      console.warn('Network error requesting OTP via API, using test fallback:', err);
       return {
-        success: true,
-        message: `OTP sent to ${phoneDigits} (Local simulation)`,
-        otp: MOCK_TESTING_OTP,
-        isNewUser: true,
-        isFallback: true,
+        success: false,
+        message: 'Network error. Please check your internet connection and try again.',
       };
     }
   },
 
   /**
-   * Verify the 6-digit OTP code
+   * Verify the 6-digit OTP code against real CRM API
    */
   async verifyOtp({ name, phone, otp, userId }) {
     const cleanOtp = String(otp || '').trim().replace(/\D/g, '');
@@ -144,51 +137,20 @@ export const authService = {
         };
       }
 
-      // If user provided mock testing OTP in offline/development
-      if (cleanOtp === MOCK_TESTING_OTP) {
-        return {
-          success: true,
-          message: 'Authentication successful (Testing Code)',
-          user: {
-            id: userId || Date.now(),
-            name: cleanName,
-            fullName: cleanName,
-            phone: phoneDigits,
-            email: `${phoneDigits}@bogar.temple`,
-            role: 'customer',
-          },
-        };
-      }
-
       return {
         success: false,
         message: data?.message || 'Invalid OTP. Please check the code and try again.',
       };
     } catch (err) {
-      console.warn('Network error during verifyOtp, checking fallback:', err);
-      if (cleanOtp === MOCK_TESTING_OTP) {
-        return {
-          success: true,
-          message: 'Authentication successful (Testing Mode)',
-          user: {
-            id: userId || Date.now(),
-            name: cleanName,
-            fullName: cleanName,
-            phone: phoneDigits,
-            email: `${phoneDigits}@bogar.temple`,
-            role: 'customer',
-          },
-        };
-      }
       return {
         success: false,
-        message: 'Network error. Please check your internet connection and try again.',
+        message: 'Network error during verification. Please try again.',
       };
     }
   },
 
   /**
-   * Resend fresh OTP
+   * Resend fresh OTP via real CRM API
    */
   async resendOtp({ name, phone, userId }) {
     const cleanPhone = (phone || '').trim();
@@ -246,11 +208,9 @@ export const authService = {
         message: data?.message || altData?.message || 'Failed to resend OTP. Please try again.',
       };
     } catch (err) {
-      console.warn('Network error during resendOtp:', err);
       return {
-        success: true,
-        message: `A fresh OTP has been generated for ${phoneDigits}.`,
-        otp: MOCK_TESTING_OTP,
+        success: false,
+        message: 'Network error. Please try again.',
       };
     }
   },

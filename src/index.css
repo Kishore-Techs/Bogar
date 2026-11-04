@@ -4650,6 +4650,22 @@ img {
   opacity: 0.8;
 }
 
+.bogar-btn-order-action--remove {
+  background: rgba(220, 53, 69, 0.12);
+  color: #E63946;
+  border: 1px solid rgba(220, 53, 69, 0.4);
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.bogar-btn-order-action--remove:hover {
+  background: #E63946;
+  color: #FFFFFF;
+  border-color: #E63946;
+  transform: translateY(-1px);
+}
+
 .bogar-order-status-badge--cancelled {
   background: rgba(220, 53, 69, 0.18) !important;
   color: #FF5A5F !important;
@@ -5355,3 +5371,400 @@ img {
   margin: 0;
 }
 
+
+/* ==========================================================================
+   Payment Gateway Live Status (Success / Failed / In-Progress States)
+   ========================================================================== */
+.bogar-gateway-status-panel {
+  text-align: center;
+  padding: 1.75rem 1.25rem;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.85rem;
+  margin-bottom: 1rem;
+  animation: fadeIn 0.3s ease;
+}
+
+.bogar-gateway-status-panel--waiting {
+  background: rgba(212, 182, 117, 0.08);
+  border: 1px solid rgba(212, 182, 117, 0.3);
+}
+
+.bogar-gateway-status-panel--success {
+  background: rgba(46, 125, 50, 0.08);
+  border: 1.5px solid rgba(46, 125, 50, 0.35);
+}
+
+.bogar-gateway-status-panel--failed {
+  background: rgba(220, 53, 69, 0.08);
+  border: 1.5px solid rgba(220, 53, 69, 0.35);
+}
+
+.bogar-gateway-pulse-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.bogar-gateway-pulse-icon--waiting {
+  background: rgba(212, 182, 117, 0.15);
+  color: var(--color-antique-gold, #D4B675);
+}
+
+.bogar-gateway-pulse-icon--waiting::after {
+  content: '';
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  border: 2px dashed rgba(212, 182, 117, 0.5);
+  animation: spin 6s linear infinite;
+}
+
+.bogar-gateway-pulse-icon--success {
+  background: rgba(46, 125, 50, 0.15);
+  color: #2E7D32;
+  box-shadow: 0 0 20px rgba(46, 125, 50, 0.3);
+}
+
+.bogar-gateway-pulse-icon--failed {
+  background: rgba(220, 53, 69, 0.15);
+  color: #E63946;
+  box-shadow: 0 0 20px rgba(220, 53, 69, 0.25);
+}
+
+.bogar-gateway-status-title {
+  font-family: var(--font-heading, serif);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.bogar-gateway-status-title--waiting {
+  color: var(--color-antique-gold, #D4B675);
+}
+
+.bogar-gateway-status-title--success {
+  color: #2E7D32;
+}
+
+.bogar-gateway-status-title--failed {
+  color: #E63946;
+}
+
+.bogar-gateway-status-desc {
+  font-size: 0.85rem;
+  line-height: 1.45;
+  color: rgba(248, 245, 238, 0.82);
+  margin: 0;
+  max-width: 380px;
+}
+
+.bogar-gateway-btn-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* ==========================================================================
+   Bogar Payment Cancelled & Gateway Frame (Exact Match to Reference Image 2)
+   ========================================================================== */
+.bogar-cancelled-card {
+  background: #FFFFFF;
+  border-radius: 20px;
+  padding: 35px 25px;
+  text-align: center;
+  max-width: 440px;
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 0.3s ease;
+}
+
+.bogar-cancelled-icon {
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  background: #FF9800;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 18px auto;
+  font-size: 42px;
+  font-weight: 700;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 6px 18px rgba(255, 152, 0, 0.35);
+}
+
+.bogar-cancelled-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin: 0 0 10px 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.bogar-cancelled-desc {
+  font-size: 0.92rem;
+  color: #7f8c8d;
+  line-height: 1.5;
+  margin: 0 0 20px 0;
+}
+
+.bogar-cancelled-details {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 16px 18px;
+  text-align: left;
+  margin-bottom: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid #edf2f7;
+}
+
+.bogar-cancelled-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.88rem;
+}
+
+.bogar-cancelled-row__label {
+  color: #888888;
+  font-weight: 500;
+}
+
+.bogar-cancelled-row__val {
+  color: #333333;
+  font-weight: 700;
+  text-align: right;
+  word-break: break-all;
+  font-family: monospace;
+}
+
+.bogar-cancelled-status {
+  color: #FF9800 !important;
+  font-weight: 800 !important;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif !important;
+}
+
+.bogar-cancelled-btn {
+  width: 100%;
+  background: #FF9800;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 10px;
+  padding: 14px 20px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.15s ease;
+  box-shadow: 0 4px 12px rgba(255, 152, 0, 0.3);
+}
+
+.bogar-cancelled-btn:hover {
+  background: #f57c00;
+  transform: translateY(-1px);
+}
+
+.bogar-cancelled-timer {
+  margin-top: 12px;
+  font-size: 0.82rem;
+  color: #999999;
+}
+
+.bogar-modal-card--gateway-direct {
+  width: 100%;
+  max-width: 540px;
+  background: #1B140F;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(212, 182, 117, 0.3);
+}
+
+.bogar-gateway-iframe-wrapper {
+  width: 100%;
+  height: 620px;
+  max-height: 80vh;
+  border-radius: 0 0 16px 16px;
+  overflow: hidden;
+  background: #FFFFFF;
+  position: relative;
+}
+
+.bogar-gateway-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+.bogar-gateway-top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1.25rem;
+  background: #1B140F;
+  border-bottom: 1px solid rgba(212, 182, 117, 0.25);
+  border-radius: 12px 12px 0 0;
+}
+
+.bogar-gateway-top-bar__cancel-btn {
+  background: rgba(230, 57, 70, 0.15);
+  color: #E63946;
+  border: 1px solid rgba(230, 57, 70, 0.4);
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+}
+
+.bogar-gateway-top-bar__cancel-btn:hover {
+  background: #E63946;
+  color: #FFFFFF;
+}
+
+/* ==========================================================================
+   UPI Direct App Launchers & Dynamic QR Code Styles
+   ========================================================================== */
+.bogar-upi-apps-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  width: 100%;
+}
+
+.bogar-upi-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.65rem;
+  width: 100%;
+}
+
+.bogar-upi-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.85rem 0.75rem;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 0.88rem;
+  cursor: pointer;
+  border: 1px solid rgba(212, 182, 117, 0.3);
+  background: rgba(255, 255, 255, 0.04);
+  color: #FAF7F2;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.bogar-upi-btn:hover {
+  background: rgba(212, 182, 117, 0.15);
+  border-color: #D4B675;
+  transform: translateY(-1px);
+}
+
+.bogar-upi-btn--gpay {
+  border-color: rgba(66, 133, 244, 0.4);
+  background: rgba(66, 133, 244, 0.08);
+}
+.bogar-upi-btn--gpay:hover {
+  border-color: #4285F4;
+  background: rgba(66, 133, 244, 0.18);
+}
+
+.bogar-upi-btn--phonepe {
+  border-color: rgba(103, 57, 183, 0.4);
+  background: rgba(103, 57, 183, 0.08);
+}
+.bogar-upi-btn--phonepe:hover {
+  border-color: #6739B7;
+  background: rgba(103, 57, 183, 0.18);
+}
+
+.bogar-upi-btn--paytm {
+  border-color: rgba(0, 186, 242, 0.4);
+  background: rgba(0, 186, 242, 0.08);
+}
+.bogar-upi-btn--paytm:hover {
+  border-color: #00BAF2;
+  background: rgba(0, 186, 242, 0.18);
+}
+
+.bogar-upi-btn--any {
+  border-color: rgba(46, 125, 50, 0.4);
+  background: rgba(46, 125, 50, 0.08);
+}
+.bogar-upi-btn--any:hover {
+  border-color: #2E7D32;
+  background: rgba(46, 125, 50, 0.18);
+}
+
+.bogar-qr-section {
+  background: #FFFFFF;
+  border-radius: 14px;
+  padding: 16px;
+  text-align: center;
+  margin: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+.bogar-qr-img {
+  width: 175px;
+  height: 175px;
+  border-radius: 8px;
+  border: 1px solid #E5E7EB;
+  display: block;
+}
+
+.bogar-qr-label {
+  color: #374151;
+  font-size: 0.82rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.bogar-qr-sub {
+  color: #6B7280;
+  font-size: 0.74rem;
+  margin: 0;
+}
+
+/* Responsive adjustments for Mobile View */
+@media (max-width: 768px) {
+  .bogar-qr-section,
+  .bogar-qr-section--desktop-only {
+    display: none !important;
+  }
+  .bogar-gateway-iframe-wrapper {
+    height: 75vh;
+    max-height: 82vh;
+  }
+  .bogar-gateway-top-bar {
+    padding: 0.65rem 0.85rem;
+  }
+}

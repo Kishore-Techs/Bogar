@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
+import { crmService } from '../services/crmService';
 
 const BogarContext = createContext(null);
 
@@ -284,60 +285,272 @@ export function BogarProvider({ children }) {
   };
 
   // Create Product Order (Buy Now or Cart)
-  const createProductOrder = ({ product, quantity = 1, phone, email, devoteeName, deliveryAddress, paymentMethod = 'Online Payment Gateway', transactionId }) => {
+  const createProductOrder = ({
+    product,
+    quantity = 1,
+    phone,
+    email,
+    devoteeName,
+    deliveryAddress,
+    streetAddress,
+    city = '',
+    state = '',
+    pincode = '',
+    subtotal,
+    shippingCharges = 0,
+    totalAmount,
+    paymentMethod = 'Online Payment Gateway',
+    transactionId,
+    status = 'Confirmed',
+    paymentStatus,
+  }) => {
     const orderId = 'BOGAR-ORD-' + Math.floor(100000 + Math.random() * 900000);
+    const unitPrice = parseFloat(product?.price) || 0;
+    const calcSubtotal = subtotal !== undefined ? parseFloat(subtotal) : unitPrice * (quantity || 1);
+    const calcShipping = shippingCharges !== undefined ? parseFloat(shippingCharges) : 0;
+    const calcTotal = totalAmount !== undefined ? parseFloat(totalAmount) : (calcSubtotal + calcShipping);
+
     const newOrder = {
       orderId,
-      productName: product.name,
+      productName: product?.name || 'Sacred Offering',
       product,
       quantity,
+      subtotal: calcSubtotal,
+      shippingCharges: calcShipping,
+      totalAmount: calcTotal,
       orderDate: new Date().toISOString().split('T')[0],
       phone: phone || currentUser?.phone || '',
       email: email || currentUser?.email || '',
       devoteeName: devoteeName || currentUser?.name || currentUser?.fullName || 'Devotee',
       deliveryAddress: deliveryAddress || currentUser?.address || '',
+      streetAddress: streetAddress || deliveryAddress || '',
+      city: city || currentUser?.city || '',
+      state: state || currentUser?.state || '',
+      pincode: pincode || currentUser?.pincode || '',
       paymentMethod,
       transactionId: transactionId || ('TXN_' + Date.now().toString(36).toUpperCase()),
-      paymentStatus: paymentMethod === 'Cash on Delivery' ? 'Pending' : 'Paid',
-      status: 'Confirmed',
+      paymentStatus: paymentStatus || (paymentMethod === 'Cash on Delivery' ? 'Pending' : status === 'Cancelled' ? 'Cancelled' : 'Paid'),
+      status: status || 'Confirmed',
+      backendOrderId: null,
     };
 
     setOrders((prev) => [newOrder, ...prev]);
     setActiveOrder(newOrder);
+
+    // Live sync order to Vandanmart CRM
+    crmService
+      .syncOrderToCrm({
+        order: newOrder,
+        customer: currentUser,
+      })
+      .then((res) => {
+        if (res.success && res.backendOrderId) {
+          setOrders((prev) =>
+            prev.map((ord) =>
+              ord.orderId === newOrder.orderId
+                ? {
+                    ...ord,
+                    backendOrderId: res.backendOrderId,
+                    backendOrderNo: res.orderNo,
+                    paytmOrderId: res.paytmOrderId,
+                    customerId: res.customerId,
+                  }
+                : ord
+            )
+          );
+        }
+      })
+      .catch((err) => {
+        console.warn('CRM sync error on order creation:', err);
+      });
+
     return { success: true, order: newOrder };
   };
 
   const cancelOrder = (orderId) => {
+    let targetOrder = null;
     setOrders((prev) =>
-      prev.map((ord) =>
-        ord.orderId === orderId ? { ...ord, status: 'Cancelled' } : ord
-      )
+      prev.map((ord) => {
+        if (ord.orderId === orderId) {
+          targetOrder = { ...ord, status: 'Cancelled', paymentStatus: 'Cancelled' };
+          return targetOrder;
+        }
+        return ord;
+      })
     );
+
+    // Live update CRM status and payment status
+    if (targetOrder) {
+      if (targetOrder.backendOrderId) {
+        crmService
+          .updateCrmOrderStatus({
+            backendOrderId: targetOrder.backendOrderId,
+            status: 'cancelled',
+            paymentStatus: 'failed',
+            paytmOrderId: targetOrder.paytmOrderId,
+            totalAmount: targetOrder.totalAmount,
+            customerId: targetOrder.customerId || currentUser?.id,
+            transactionId: targetOrder.transactionId,
+          })
+          .catch((err) => console.warn('CRM cancel update error:', err));
+      } else {
+        crmService
+          .syncOrderToCrm({
+            order: { ...targetOrder, status: 'Cancelled', paymentStatus: 'Cancelled' },
+            customer: currentUser,
+          })
+          .catch((err) => console.warn('CRM cancel sync error:', err));
+      }
+    }
+
     return { success: true };
   };
 
-  const checkoutCart = ({ phone, email, devoteeName, deliveryAddress, paymentMethod = 'Online Payment Gateway', transactionId }) => {
+  const removeOrder = (orderId) => {
+    setOrders((prev) => prev.filter((ord) => ord.orderId !== orderId));
+    return { success: true };
+  };
+
+  // Live CRM synchronization effect: any backend changes in CRM reflect live on website orders
+  useEffect(() => {
+    let isMounted = true;
+
+    const syncWithCrm = async () => {
+      try {
+        const phone = currentUser?.phone || '';
+        const res = await crmService.fetchLiveCrmOrders(phone);
+        if (!isMounted || !res.success || !res.orders) return;
+
+        const crmOrders = res.orders;
+
+        setOrders((prevOrders) => {
+          let hasChanged = false;
+          const updated = prevOrders.map((ord) => {
+            const match = crmOrders.find(
+              (co) =>
+                (ord.backendOrderId && (co.id === ord.backendOrderId || co.order_id === ord.backendOrderId)) ||
+                (co.order_no && (co.order_no === ord.orderId || co.order_no === ord.backendOrderNo || co.order_no === ord.transactionId)) ||
+                (co.payment_id && ord.transactionId && co.payment_id === ord.transactionId)
+            );
+
+            if (match) {
+              const rawStatus = (match.status || '').toLowerCase();
+              let normalizedStatus = ord.status;
+              if (rawStatus === 'cancelled' || ord.status === 'Cancelled') {
+                normalizedStatus = 'Cancelled';
+              } else if (rawStatus === 'confirmed') {
+                normalizedStatus = 'Confirmed';
+              } else if (rawStatus === 'shipped') {
+                normalizedStatus = 'Shipped';
+              } else if (rawStatus === 'delivered') {
+                normalizedStatus = 'Delivered';
+              } else if (rawStatus === 'processing') {
+                normalizedStatus = 'Processing';
+              }
+
+              const backendId = match.id || match.order_id;
+              const trackingNum = match.tracking_number || ord.trackingNumber;
+
+              if (
+                ord.status !== normalizedStatus ||
+                (!ord.backendOrderId && backendId) ||
+                (trackingNum && ord.trackingNumber !== trackingNum)
+              ) {
+                hasChanged = true;
+                return {
+                  ...ord,
+                  status: normalizedStatus,
+                  backendOrderId: backendId || ord.backendOrderId,
+                  trackingNumber: trackingNum || ord.trackingNumber,
+                };
+              }
+            }
+            return ord;
+          });
+
+          return hasChanged ? updated : prevOrders;
+        });
+      } catch (e) {
+        // Silent catch during periodic polling
+      }
+    };
+
+    syncWithCrm();
+    const interval = setInterval(syncWithCrm, 5000);
+
+    return () => {
+      isMounted = false;
+      clearInterval(interval);
+    };
+  }, [currentUser]);
+
+  const checkoutCart = ({
+    phone,
+    email,
+    devoteeName,
+    deliveryAddress,
+    streetAddress,
+    city,
+    state,
+    pincode,
+    subtotal,
+    shippingCharges = 0,
+    paymentMethod = 'Online Payment Gateway',
+    transactionId,
+  }) => {
     if (cart.length === 0) return { success: false, error: 'Your cart is empty.' };
 
-    const newOrders = cart.map((item, idx) => ({
-      orderId: 'BOGAR-ORD-' + (Math.floor(100000 + Math.random() * 900000) + idx),
-      productName: item.product.name,
-      product: item.product,
-      quantity: item.quantity,
-      orderDate: new Date().toISOString().split('T')[0],
-      phone: phone || currentUser?.phone || '',
-      email: email || currentUser?.email || '',
-      devoteeName: devoteeName || currentUser?.name || currentUser?.fullName || 'Devotee',
-      deliveryAddress: deliveryAddress || currentUser?.address || '',
-      paymentMethod,
-      transactionId: transactionId || ('TXN_' + (Date.now() + idx).toString(36).toUpperCase()),
-      paymentStatus: paymentMethod === 'Cash on Delivery' ? 'Pending' : 'Paid',
-      status: 'Confirmed',
-    }));
+    const newOrders = cart.map((item, idx) => {
+      const unitPrice = parseFloat(item.product?.price) || 0;
+      const calcSubtotal = unitPrice * (item.quantity || 1);
+      const totalAmount = calcSubtotal + (shippingCharges || 0);
+      return {
+        orderId: 'BOGAR-ORD-' + (Math.floor(100000 + Math.random() * 900000) + idx),
+        productName: item.product.name,
+        product: item.product,
+        quantity: item.quantity,
+        subtotal: calcSubtotal,
+        shippingCharges: shippingCharges,
+        totalAmount,
+        orderDate: new Date().toISOString().split('T')[0],
+        phone: phone || currentUser?.phone || '',
+        email: email || currentUser?.email || '',
+        devoteeName: devoteeName || currentUser?.name || currentUser?.fullName || 'Devotee',
+        deliveryAddress: deliveryAddress || currentUser?.address || '',
+        streetAddress: streetAddress || deliveryAddress || currentUser?.address || '',
+        city: city || currentUser?.city || '',
+        state: state || currentUser?.state || '',
+        pincode: pincode || currentUser?.pincode || '',
+        paymentMethod,
+        transactionId: transactionId || ('TXN_' + (Date.now() + idx).toString(36).toUpperCase()),
+        paymentStatus: paymentMethod === 'Cash on Delivery' ? 'Pending' : 'Paid',
+        status: 'Confirmed',
+        backendOrderId: null,
+      };
+    });
 
     setOrders((prev) => [...newOrders, ...prev]);
     setActiveOrder(newOrders[0]);
     clearCart();
+
+    // Async sync all checkout orders to CRM
+    newOrders.forEach((nord) => {
+      crmService
+        .syncOrderToCrm({ order: nord, customer: currentUser })
+        .then((res) => {
+          if (res.success && res.backendOrderId) {
+            setOrders((prev) =>
+              prev.map((o) =>
+                o.orderId === nord.orderId
+                  ? { ...o, backendOrderId: res.backendOrderId, backendOrderNo: res.orderNo }
+                  : o
+              )
+            );
+          }
+        })
+        .catch((err) => console.warn('CRM sync error during checkoutCart:', err));
+    });
+
     return { success: true, orders: newOrders };
   };
 
@@ -361,6 +574,7 @@ export function BogarProvider({ children }) {
         createBooking,
         orders,
         cancelOrder,
+        removeOrder,
         createProductOrder,
         checkoutCart,
         activeTicket,
